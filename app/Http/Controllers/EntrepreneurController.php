@@ -12,6 +12,6 @@ class EntrepreneurController extends Controller
     }
     public function entrepreneur()
     {
-        return view('users.entrepreneur');
+        return view('users.entrepreneur.entrepreneur');
     }
 }
