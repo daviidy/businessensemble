@@ -35,3 +35,8 @@ Route::get('/entrepreneur', 'EntrepreneurController@entrepreneur')
 Route::get('/investor', 'InvestorController@investor')
     ->middleware('is_investor')
     ->name('investor');
+
+
+
+    //ajax routes
+    Route::post('/uploadAvatar', 'UserController@uploadAvatar');
