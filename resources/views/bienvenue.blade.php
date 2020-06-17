@@ -12,7 +12,7 @@ span.countdown-period{text-transform:uppercase;margin-top:2px;font-size:12px;fon
 @media all{
 .float-left{float:left;}
 .text-right{text-align:right;}
-.wpneo-modal-wrapper{background:rgba(0, 0, 0, 0.3);bottom:0;left:0;position:fixed;right:0;top:0;-webkit-transition:opacity 400ms ease-in 0s;transition:opacity 400ms ease-in 0s;z-index:99999;-webkit-animation-name:animatetop;-webkit-animation-duration:0.4s;animation-name:animatetop;animation-duration:0.4s;display:none;width:100%;font-family:'Rubik', sans-serif;color:#686C8B;font-size:14px;}
+.wpneo-modal-wrapper{background:rgba(0, 0, 0, 0.3);bottom:0;left:0;position:fixed;right:0;top:0;-webkit-transition:opacity 400ms ease-in 0s;transition:opacity 400ms ease-in 0s;z-index:99999;-webkit-animation-name:animatetop;-webkit-animation-duration:0.4s;animation-name:animatetop;animation-duration:0.4s;display:none;width:100%;font-family: 'Montserrat', sans-serif;color:#686C8B;font-size:14px;}
 .wpneo-modal-wrapper h3,.wpneo-modal-wrapper h4{font-weight:500;}
 div.wpneo-modal-wrapper-head{background-color:#ffffff;border-radius:6px 6px 0 0;position:relative;}
 div.wpneo-modal-wrapper-head h4{border-bottom:1px solid #e5e5e5;font-size:18px;margin-bottom:0;padding:15px 0px 15px 30px;text-transform:capitalize;}
@@ -116,8 +116,7 @@ h6{font-size:1rem;}
 .col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
 .col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
 }
-.fade{opacity:0;transition:opacity .15s linear;}
-.fade.show{opacity:1;}
+
 .nav{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none;}
 .nav-link{display:block;padding:.5rem 1rem;}
 .nav-link:focus,.nav-link:hover{text-decoration:none;}
@@ -128,13 +127,7 @@ h6{font-size:1rem;}
 .close{float:right;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5;}
 .close:focus,.close:hover{color:#000;text-decoration:none;opacity:.75;}
 button.close{padding:0;background:0 0;border:0;-webkit-appearance:none;}
-.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;display:none;overflow:hidden;outline:0;}
-.modal.fade .modal-dialog{transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;transition:transform .3s ease-out,-webkit-transform .3s ease-out;-webkit-transform:translate(0,-25%);transform:translate(0,-25%);}
-.modal-dialog{position:relative;width:auto;margin:10px;pointer-events:none;}
-.modal-content{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;outline:0;}
-@media (min-width:576px){
-.modal-dialog{max-width:500px;margin:30px auto;}
-}
+
 .clearfix::after{display:block;clear:both;content:"";}
 .d-inline-block{display:inline-block!important;}
 .d-flex{display:-ms-flexbox!important;display:flex!important;}
@@ -231,11 +224,7 @@ div.wpneo-modal-wrapper-head h4{border-bottom:1px solid #e7e7e7;font-size:18px;p
 .wpneo-modal-content-inner img.profile-avatar{border-radius:4px;margin-right:20px;}
 .wpneo-profile-name{font-size:18px;font-weight:400;line-height:40px;color:#393939;}
 .wpneo-profile-about .wpneo-icon{border-radius:4px;}
-.modal{text-align:center;}
-.modal .modal-dialog,.wpneo-modal-content{max-width:650px;}
-.modal .modal-content{border-radius:4px;background-color:#fff;margin-top:100px;text-align:center;}
-.modal button.close{filter:alpha(opacity=60);opacity:.6;background:none;}
-.modal button.close span{font-size:20px;font-size:15px;border-radius:50%;border:1px solid #B2B2B2;color:#999;width:30px;height:30px;line-height:30px;display:inline-block;height:30px;background:#fff;}
+
 .themeum-tab-inner{height:100%;text-align:center;border-radius:4px;padding:20px 30px;background-color:#fff;border:1px solid #EBEBF1;}
 .themeum-campaign-tab-post .progressbar-content-wrapper{padding:0;border-bottom-color:transparent;}
 .themeum-campaign-tab-post .themeum-camp-author{padding:0;}
@@ -249,7 +238,7 @@ div.wpneo-modal-wrapper-head h4{border-bottom:1px solid #e7e7e7;font-size:18px;p
 .themeum-tab-category a.thm-btn{margin-top:10px;}
 .themeum-tab-navigation{margin-bottom:20px;}
 .themeum-tab-navigation li a{font-size:16px;font-weight:300;color:#9C9CA0;margin-bottom:10px;line-height:35px;padding:0 15px;}
-.themeum-tab-navigation li a.active{background-color:#fff;color:#33d3c0;border-radius:4px;border:1px solid #EBEBF1;}
+.themeum-tab-navigation li a.active{background-color:#fff;color:#1B6DC1;border-radius:4px;border:1px solid #EBEBF1;}
 .themeum-campaign-tab-post .themeum-camp-author{padding-top:12px;}
 .themeum-campaign-time-exp{position:relative;overflow:hidden;padding-left:215px;margin:15px 0;border:1px solid #EBEBF1;border-radius:5px;background-color:#fff;}
 .themeum-campaign-time-exp .themeum-campaign-thumb{width:215px;height:100%;position:absolute;left:0;top:0;background-size:cover;background-position:center center;}
@@ -302,19 +291,19 @@ div.wpneo-modal-wrapper-head h4{text-align:left;}
 a{text-decoration:none!important;}
 a:focus{outline:0;outline-offset:0;}
 ul li{padding:5px 0;}
-.elementor-widget-backnow-product-grid .themeum-campaign-post .entry-title a{color:#343a40!important;font-family:Montserrat!important;font-weight:400!important;}
+.elementor-widget-backnow-product-grid .themeum-campaign-post .entry-title a{color:#343a40!important; font-family: 'Montserrat', sans-serif!important;font-weight:400!important;}
 }
 /*! CSS Used from: Embedded */
-a,.themeum-campaign-post .entry-category a:hover,.themeum-campaign-post h3 a:hover,.thm-btn:hover,.wpneo-profile-button:hover,.themeum-campaign-img .thm-camp-hvr .thm-ch-icon,.themeum-tab-category .thm-cat-icon,.themeum-tab-inner .themeum-campaign-post-content h3 a:hover,.themeum-campaign-exp-content h3 a:hover{color:#33d3c0;}
-.thm-progress-bar .progress-bar,.themeum-campaign-post .themeum-campaign-img::after,.progressbar-content-wrapper .thm-progress-bar .progress .progress-bar,.themeum-campaign-time-exp .thm-progress-bar .progress .progress-bar,.thm-btn,.themeum-campaign-post a.thm-love-btn:hover{background:#33d3c0;}
+a,.themeum-campaign-post .entry-category a:hover,.themeum-campaign-post h3 a:hover,.thm-btn:hover,.wpneo-profile-button:hover,.themeum-campaign-img .thm-camp-hvr .thm-ch-icon,.themeum-tab-category .thm-cat-icon,.themeum-tab-inner .themeum-campaign-post-content h3 a:hover,.themeum-campaign-exp-content h3 a:hover{color:#1B6DC1;}
+.thm-progress-bar .progress-bar,.themeum-campaign-post .themeum-campaign-img::after,.progressbar-content-wrapper .thm-progress-bar .progress .progress-bar,.themeum-campaign-time-exp .thm-progress-bar .progress .progress-bar,.thm-btn,.themeum-campaign-post a.thm-love-btn:hover{background:#1B6DC1;}
 .themeum-campaign-post .entry-title a:hover{color:#33d3c0!important;}
-.thm-btn{background-color:#33d3c0;border-color:#33d3c0;}
-.progressbar-content-wrapper .thm-progress-bar .progress .progress-bar,.themeum-campaign-time-exp .thm-progress-bar .progress .progress-bar{background:#33d3c0;background:-moz-linear-gradient(left, #00bf9c 0%, #33d3c0 100%);background:-webkit-linear-gradient(left, #00bf9c 0%,#33d3c0 100%);background:linear-gradient(to right, #00bf9c 0%,#33d3c0 100%);}
+.thm-btn{background-color:#1B6DC1;border-color:#1B6DC1;}
+.progressbar-content-wrapper .thm-progress-bar .progress .progress-bar,.themeum-campaign-time-exp .thm-progress-bar .progress .progress-bar{background:#1B6DC1;background:-moz-linear-gradient(left, #1B6DC1 0%, #1B6DC1 100%);background:-webkit-linear-gradient(left, #1B6DC1 0%,#1B6DC1 100%);background:linear-gradient(to right, #1B6DC1 0%,#1B6DC1 100%);}
 a:hover{color:#00bf9c;}
-h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:#414040;}
-h3{font-size:26px;font-family:Montserrat;font-weight:400;line-height:28px;color:#414040;}
-h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:#414040;}
-h5{font-size:16px;font-family:Montserrat;font-weight:600;line-height:24px;color:#414040;}
+h2{font-size:36px;font-family: 'Montserrat', sans-serif;font-weight:400;line-height:42px;color:#414040;}
+h3{font-size:26px;font-family: 'Montserrat', sans-serif;font-weight:400;line-height:28px;color:#414040;}
+h4{font-size:18px;font-family: 'Montserrat', sans-serif;font-weight:600;line-height:26px;color:#414040;}
+h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-height:24px;color:#414040;}
 .wpneo-profile-button{background-color:#33d3c0;border-color:#33d3c0;color:#fff!important;}
 .wpneo-profile-button:hover{background-color:#33d3c0;border-color:#33d3c0;color:#fff!important;}
 /*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.6.7 ; media=all */
@@ -398,7 +387,7 @@ h5{font-size:16px;font-family:Montserrat;font-weight:600;line-height:24px;color:
 .elementor-1953 .elementor-element.elementor-element-d88ad52 .slider-title{padding:20px 0px 40px 0px;color:#ffffff;font-size:67px;font-weight:700;line-height:60px;}
 .elementor-1953 .elementor-element.elementor-element-d88ad52 .slider-subtitle{color:#ffffff;font-size:16px;font-weight:400;}
 .elementor-1953 .elementor-element.elementor-element-d88ad52 .slider-content{color:#ffffff;line-height:23px;}
-.elementor-1953 .elementor-element.elementor-element-d88ad52 .slider-button-1{color:#ffffff;background-color:#33d3c0;padding:8px 25px 8px 25px;margin:50px 0px 0px 0px;}
+.elementor-1953 .elementor-element.elementor-element-d88ad52 .slider-button-1{color:#ffffff;background-color:#1B6DC1;padding:8px 25px 8px 25px;margin:50px 0px 0px 0px;}
 .elementor-1953 .elementor-element.elementor-element-d88ad52 a.slider-button-1{border-radius:3px 3px 3px 3px;}
 .elementor-1953 .elementor-element.elementor-element-3uh2bpk:not(.elementor-motion-effects-element-type-background){background-color:#f7f7f9;background-image:url("http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/slide.png");}
 .elementor-1953 .elementor-element.elementor-element-3uh2bpk > .elementor-background-overlay{opacity:1;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}
@@ -792,15 +781,27 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
 
 
                                                                         <ul class="thm-slide-control" style="display: block;" role="tablist">
-                                                                            <li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="-1">1</button></li>
-                                                                            <li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="0"
-                                                                                  aria-selected="true">2</button></li>
-                                                                            <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button></li>
+                                                                            <li class="" role="presentation">
+                                                                              <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="-1">
+                                                                                1
+                                                                              </button>
+                                                                            </li>
+                                                                            <li role="presentation" class="slick-active">
+                                                                              <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="0"
+                                                                                  aria-selected="true">
+                                                                                  2
+                                                                              </button>
+                                                                            </li>
+                                                                            <li role="presentation" class="">
+                                                                              <button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">
+                                                                                3
+                                                                              </button>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                     <script type="text/javascript">
                                                                         jQuery(document).ready(function($) {
-                                                                            'use strict';
+
                                                                             $('.slider_content_wrapper').css('visibility', 'visible');
                                                                         });
                                                                     </script>
@@ -887,7 +888,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#33d3c0"><i class="back-polo-shirt"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#33d3c0"><i class="fas fa-tshirt"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/" data-hcolor="#33d3c0">Clothing</a></h3>
                                                                                                     <h6>940+ Popular Project</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/"
@@ -1049,7 +1050,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#00BED6"><i class="back-scissors"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#00BED6"><i class="fas fa-cut"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/crafts/" data-hcolor="#00BED6">Crafts</a></h3>
                                                                                                     <h6>320+ Popular Project</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/crafts/"
@@ -1211,7 +1212,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#00a5e4"><i class="back-random-line"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#00a5e4"><i class="fas fa-pen-nib"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/design/" data-hcolor="#00a5e4">Design</a></h3>
                                                                                                     <h6>300+ popular projects</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/design/"
@@ -1374,7 +1375,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#0088df"><i class="back-video-camera2"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#0088df"><i class="fas fa-video"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/flim-video/" data-hcolor="#0088df">Film &amp; Video</a></h3>
                                                                                                     <h6>250+ popular projects</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/flim-video/"
@@ -1537,7 +1538,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#6f63c3"><i class="back-fast-food"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#6f63c3"><i class="fas fa-hamburger"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/food/" data-hcolor="#6f63c3">Food</a></h3>
                                                                                                     <h6>450+ popular projects</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/food/"
@@ -1699,7 +1700,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#ffc658"><i class="back-gamepad2"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#ffc658"><i class="fas fa-gamepad"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/games/" data-hcolor="#ffc658">Games</a></h3>
                                                                                                     <h6>300+ popular projects</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/games/"
@@ -1861,7 +1862,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#ff945c"><i class="back-hand-mic"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#ff945c"><i class="fas fa-microphone-alt"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/journalism/" data-hcolor="#ff945c">Journalism</a></h3>
                                                                                                     <h6>440+ Popular Project</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/journalism/"
@@ -2023,7 +2024,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#f8666e"><i class="back-music-note-black-symbol"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#f8666e"><i class="fas fa-music"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/music/" data-hcolor="#f8666e">Music</a></h3>
                                                                                                     <h6>1000+ Popular Project</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/music/"
@@ -2186,7 +2187,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#d14482"><i class="back-photo-camera2"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#d14482"><i class="fas fa-camera"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/photography/" data-hcolor="#d14482">Photography</a></h3>
                                                                                                     <h6>800+ Popular Project</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p><a href="https://demo.themeum.com/wordpress/backnow/product-category/photography/"
@@ -2348,7 +2349,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                         <div class="col-lg-4">
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
                                                                                                 <div class="themeum-tab-category">
-                                                                                                    <div class="thm-cat-icon" style="color:#963790"><i class="back-robot-head"></i></div>
+                                                                                                    <div class="thm-cat-icon" style="color:#963790"><i class="fas fa-robot"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="https://demo.themeum.com/wordpress/backnow/product-category/technology/" data-hcolor="#963790">Technology</a></h3>
                                                                                                     <h6>1000+ Popular Project</h6>
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices </p><a href="https://demo.themeum.com/wordpress/backnow/product-category/technology/"
@@ -2546,14 +2547,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project36-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="1860" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/technology/" rel="tag">Technology</a></span>
                                                                                         <h3 class="entry-title">
@@ -2614,14 +2615,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/backit-product3-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="1859" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/" rel="tag">Clothing</a></span>
                                                                                         <h3 class="entry-title">
@@ -2682,14 +2683,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project30-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="1858" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/crafts/" rel="tag">Crafts</a></span>
                                                                                         <h3 class="entry-title">
@@ -2750,14 +2751,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project29-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="1857" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/design/" rel="tag">Design</a></span>
                                                                                         <h3 class="entry-title">
@@ -2818,14 +2819,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project24-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="1856" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/flim-video/" rel="tag">Film &amp; Video</a></span>
                                                                                         <h3 class="entry-title">
@@ -2886,14 +2887,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/backit-product11-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="1855" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/journalism/" rel="tag">Journalism</a></span>
                                                                                         <h3 class="entry-title">
@@ -3023,14 +3024,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/backit-product3-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="1859" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/" rel="tag">Clothing</a></span>
                                                                                         <h3 class="entry-title">
@@ -3091,14 +3092,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project36-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="1860" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/technology/" rel="tag">Technology</a></span>
                                                                                         <h3 class="entry-title">
@@ -3159,14 +3160,14 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                                               src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2014/08/project27-660x400.jpg" class="img-fluid wp-post-image" alt=""></a>
                                                                                         <div class="thm-camp-hvr">
                                                                                             <div class="thm-ch-icon">
-                                                                                                <i class="fa fa-heart-o"></i>
+                                                                                                <i class="far fa-heart"></i>
                                                                                             </div>
                                                                                             <h4>Project You Love</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                         <a href="#" class="thm-love-btn " data-campaign="770" data-user="0">
-                                                                                            <i class="fa fa-heart-o"></i>
+                                                                                            <i class="far fa-heart"></i>
                                                                                         </a>
                                                                                         <span class="entry-category"><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/" rel="tag">Clothing</a></span>
                                                                                         <h3 class="entry-title">
@@ -3303,7 +3304,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                     <div class="elementor-icon-box-wrapper">
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
-                                                                                <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i> </span>
+                                                                                <i class="fas fa-assistive-listening-systems"></i> </span>
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
@@ -3326,7 +3327,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                     <div class="elementor-icon-box-wrapper">
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
-                                                                                <i class="fa fa-gg" aria-hidden="true"></i> </span>
+                                                                                <i class="fab fa-gg"></i> </span>
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
@@ -3349,7 +3350,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                                                                     <div class="elementor-icon-box-wrapper">
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
-                                                                                <i class="fa fa-sun-o" aria-hidden="true"></i> </span>
+                                                                                <i class="far fa-sun"></i> </span>
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
