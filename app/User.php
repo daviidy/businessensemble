@@ -10,13 +10,27 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    const ADMIN_TYPE = 'admin';
+    const ENTREPRENEUR_TYPE = 'entrepreneur';
+    const INVESTOR_TYPE = 'investor';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'email',
+        'password',
+        'first_name',
+        'last_name',
+        'city',
+        'country',
+        'phone',
+        'bio',
+        'type',
+        'image',
     ];
 
     /**
@@ -36,4 +50,21 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isAdmin()
+    {
+        return $this->type === self::ADMIN_TYPE;
+    }
+
+    public function isEntrepreneur()
+    {
+        return $this->type === self::ENTREPRENEUR_TYPE;
+    }
+
+    public function isInvestor()
+    {
+        return $this->type === self::INVESTOR_TYPE;
+    }
+
+
 }

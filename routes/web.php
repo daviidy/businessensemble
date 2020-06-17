@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('bienvenue');
 });
+
+Auth::routes();
+
+Route::resource('users', 'UserController');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin', 'AdminController@admin')
+    ->middleware('is_admin')
+    ->name('admin');
+
+Route::get('/entrepreneur', 'EntrepreneurController@entrepreneur')
+    ->middleware('is_entrepreneur')
+    ->name('entrepreneur');
+
+
+Route::get('/investor', 'InvestorController@investor')
+    ->middleware('is_investor')
+    ->name('investor');
+
+
+
+    //ajax routes
+    Route::post('/uploadAvatar', 'UserController@uploadAvatar');
