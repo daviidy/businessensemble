@@ -2364,75 +2364,8 @@ $(document).ready(function(){
 });
 </script>
 
-<script src="/plugin/build/js/intlTelInput.js"></script>
-  <script>
-    var input = document.querySelector("#phone");
-    window.intlTelInput(input, {
 
-      autoPlaceholder: "polite",
 
-       hiddenInput: "mobile_tel",
 
-       nationalMode: true,
-
-       preferredCountries: ["ci", "fr"],
-       separateDialCode: true,
-      utilsScript: "/plugin/build/js/utils.js",
-    });
-  </script>
-<script src="/plugin/build/js/countrySelect.min.js"></script>
-<script>
-  $("#country").countrySelect();
-  $("#country_2").countrySelect();
-  $("#country_4").countrySelect();
-  $("#country_5").countrySelect();
-</script>
-
-<script>
-	$(document).ready(function(){
-
-		var x = $('#pays');
-		$(x).change(function(){
-			if(x.val()=="Côte d'Ivoire"){
-				$('#commune').removeClass('commune_0');
-				$('#commune0').addClass('commune_0');
-			}
-			else{
-				$('#commune0').removeClass('commune_0');
-	        	$('#commune').addClass('commune_0');
-			}
-		});
-
-		var z = $('#nationalite_1');
-		$(z).change(function(){
-			if(z.val()=='CIV'){
-				$('#region_2').removeClass('rgsel-1');
-	        	$('#region1').addClass('rgsel-1');
-			}
-			else{
-				$('#region1').removeClass('rgsel-1');
-	        	$('#region_2').addClass('rgsel-1');
-			}
-		});
-
-		var y = $('#nationalite');
-		$(y).change(function(){
-			if(y.val()=='CIV'){
-				$('#region_1').removeClass('rgsel');
-	        	$('#region').addClass('rgsel');
-			}
-			else{
-				$('#region').removeClass('rgsel');
-	        	$('#region_1').addClass('rgsel');
-			}
-		});
-		/*
-	    var x =$("#nationalite_1").val('CIV');
-	    $(x).click(function(){
-	    		$('#region_2').removeClass('rgsel-1');
-	        	$('#region1').addClass('rgsel-1');
-	    });*/
-	});
-</script>
 
 @endsection

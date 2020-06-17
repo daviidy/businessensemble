@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', ucfirst($user->name))
+@section('title', ucfirst(Auth::user()->name))
 
 @section('content')
 
@@ -273,167 +273,119 @@ border-bottom: 1px solid #dfdfdf;
 
 </style>
 
-<!--onglets style-->
-<style media="screen">
-/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/bower_components/bootstrap/dist/css/bootstrap.css */
-section{display:block;}
-a{background-color:transparent;-webkit-text-decoration-skip:objects;}
-a:active,a:hover{outline-width:0;}
-img{border-style:none;}
-@media print{
-*,*::before,*::after,p::first-letter,div::first-letter,li::first-letter,p::first-line,div::first-line,li::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
-a,a:visited{text-decoration:underline;}
-img{page-break-inside:avoid;}
-p{orphans:3;widows:3;}
-}
-*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
-h4{margin-top:0;margin-bottom:.5rem;}
-p{margin-top:0;margin-bottom:1rem;}
-ul{margin-top:0;margin-bottom:1rem;}
-a{color:#0275d8;text-decoration:none;}
-a:focus,a:hover{color:#014c8c;text-decoration:underline;}
-img{vertical-align:middle;}
-a,label{-ms-touch-action:manipulation;touch-action:manipulation;}
-label{display:inline-block;margin-bottom:.5rem;}
-h4{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
-h4{font-size:1.5rem;}
-.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
-@media (min-width: 576px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 768px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 992px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 1200px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 576px){
-.container{width:540px;max-width:100%;}
-}
-@media (min-width: 768px){
-.container{width:720px;max-width:100%;}
-}
-@media (min-width: 992px){
-.container{width:960px;max-width:100%;}
-}
-@media (min-width: 1200px){
-.container{width:1140px;max-width:100%;}
-}
-.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
-@media (min-width: 576px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 768px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 992px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 1200px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-.col-sm-4,.col-lg-12{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
-@media (min-width: 576px){
-.col-sm-4,.col-lg-12{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 768px){
-.col-sm-4,.col-lg-12{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 992px){
-.col-sm-4,.col-lg-12{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 1200px){
-.col-sm-4,.col-lg-12{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 576px){
-.col-sm-4{-webkit-box-flex:0;-webkit-flex:0 0 33.333333%;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
-}
-@media (min-width: 992px){
-.col-lg-12{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
-}
-.fade{opacity:0;-webkit-transition:opacity 0.15s linear;-o-transition:opacity 0.15s linear;transition:opacity 0.15s linear;}
-.nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-left:0;margin-bottom:0;list-style:none;}
-.nav-link{display:block;padding:0.5em 1em;}
-.nav-link:focus,.nav-link:hover{text-decoration:none;}
-.nav-tabs{border-bottom:1px solid #ddd;}
-.nav-tabs .nav-item{margin-bottom:-1px;}
-.nav-tabs .nav-link{border:1px solid transparent;border-top-right-radius:0.25rem;border-top-left-radius:0.25rem;}
-.nav-tabs .nav-link:focus,.nav-tabs .nav-link:hover{border-color:#eceeef #eceeef #ddd;}
-.nav-tabs .nav-link.active{color:#464a4c;background-color:#fff;border-color:#ddd #ddd #fff;}
-.tab-content > .tab-pane{display:none;}
-.tab-content > .active{display:block;}
-.card{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;background-color:#fff;border:1px solid rgba(0, 0, 0, 0.125);border-radius:0.25rem;}
-.card-block{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;padding:1.25rem;}
-.media{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;}
-.media-body{-webkit-box-flex:1;-webkit-flex:1 1 0%;-ms-flex:1 1 0%;flex:1 1 0%;}
-.rounded-circle{border-radius:50%;}
-/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
-.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.fa-briefcase:before{content:"\f0b1";}
-.fa-envelope:before{content:"\f0e0";}
-.fa-ellipsis-v:before{content:"\f142";}
-div,h4,p,a,img,i,section{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-section{display:block;}
-h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
-h4{font-size:18px;line-height:36px;}
-p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
-a{color:#fff;text-decoration:none;outline:0;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
-a:hover,a:focus,a:active,a.active{text-decoration:none;outline:0;color:#D86000!important;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
-ul{margin:0;}
-ul{list-style:none outside;}
-li{line-height:24px;}
-a{cursor:pointer;outline:0;}
-a{cursor:pointer;outline:0;}
-.posts-2{width:100%;background:#f2f2f2;padding-top:50px;padding-bottom:30px;}
-.card{margin-bottom:30px;margin-right:10px;margin-left:10px;border-radius:10px!important;box-shadow:0 1px 5px rgba(49, 58, 70, 0.4);}
-.card a{text-decoration:none!important;color:inherit;}
-@media only screen and (max-width: 768px){
-p{margin-bottom:0px!important;}
-}
-@media only screen and (max-width: 768px){
-p{margin-bottom:0px!important;}
-}
-.nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;color:#3b4354;}
-.followers .card-profile .media{margin-top:0;}
-.followers .card-profile .media .media-left{padding-right:15px;}
-.followers .card-profile .media .media-object{width:48px;padding:2px;border:2px solid #eaecf0;}
-.followers .media-object{display:block;}
-.followers .media-body{display:table-cell;vertical-align:top;width:10000px;}
-.followers .media-heading{font-family:'Montserrat', sans-serif;margin-top:5px;margin-bottom:2px;font-size:16px;font-weight:700;color:#3b4354;}
-.followers .media-usermeta{font-family:'Montserrat', sans-serif;margin-top:4px;color:#909bb1;}
-.followers .media-usermeta i{display:inline-block;margin-right:5px;vertical-align:baseline;}
-.followers .card-options{position:absolute;top:15px;right:20px;padding:0;margin:0;}
-.followers .card-options > li{display:block;float:left;list-style:none;}
-.followers .card-options > li > a{color:#bdc3d1;-webkit-transition:all 0.2s ease-out 0s;-o-transition:all 0.2s ease-out 0s;transition:all 0.2s ease-out 0s;}
-.followers .card-options > li > a > i{display:inline-block;vertical-align:middle;}
-.followers .people-info .row{margin:0;}
-.followers .people-info .col-sm-4{padding:0;font-size:12px;}
-.followers .people-info .col-sm-4:first-child > .info-group{margin-left:0;}
-.followers .people-info .info-group{font-family:'Montserrat', sans-serif;font-size:14px;padding:15px;background-color:#f9fafb;margin-left:1px;}
-.followers .people-info .info-group label{display:block;margin-bottom:5px;text-transform:uppercase;font-family:'Montserrat', sans-serif;font-weight:700;font-size:11px;letter-spacing:.5px;color:#3b4354;}
-.followers .people-info .row + .row{margin-top:1px;}
-.followers .people-info h4{font-family:'Montserrat', sans-serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
-.nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
 
+
+<!--style tab dashboard-->
+<style media="screen">
+/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/plugins/wp-crowdfunding/assets/css/crowdfunding-front.css?ver=2.0.2 ; media=all */
+@media all{
+.wp-crowd-btn{padding:10px 20px;text-decoration:none;box-shadow:none;border:none;font-size:14px;font-weight:300;border-radius:3px;text-transform:capitalize;transition:400ms;}
+.wp-crowd-btn:hover,.wp-crowd-btn:focus{text-decoration:none;outline:0;}
+.wpneo-links div a.wp-crowd-btn-primary:hover,.wp-crowd-btn-primary:focus{color:#fff;}
+.wpneo-head{margin-bottom:30px;background:#fff;padding:0 20px;}
+.wpneo-links .wpneo-links-list{display:inline-block;}
+.wpneo-links .wpneo-links-list a{display:block;color:#686C8B;font-size:14px;line-height:58px;padding:0;margin-right:25px;text-decoration:none;font-weight:400;box-shadow:none;}
+.wpneo-links .wpneo-links-list a:focus{outline:0;}
+.wpneo-links a{box-shadow:none;line-height:20px;}
+.wp-crowd-new-campaign{float:right;margin-top:7px;}
+.wpneo-shadow{-webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.1);box-shadow:0 0 3px rgba(0, 0, 0, 0.1);background:#fff;border-radius:4px;}
+.wp-crowd-parent{position:relative;}
+.wpneo-links-list{display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.wpneo-links-lists{display:block;padding:0 25px;}
+.wpneo-links .wpneo-links-list .wpneo-links-lists a{line-height:40px;}
+.wp-crowd-submenu{position:absolute;width:230px;top:100%;left:0;padding:10px 0;opacity:0;visibility:hidden;-webkit-transiton:350ms;-moz-transition:350ms;-ms-transition:350ms;-o-transition:350ms;transition:350ms;-webkit-transform:translate(0, 25px);transform:translate(0, 25px);z-index:1;}
+.wpneo-links-list:hover .wp-crowd-submenu{opacity:1;visibility:visible;-webkit-transform:translate(0, 1px);transform:translate(0, 1px);}
+.wpcrowd-arrow-down{border:solid #686C8B;border-width:0 2px 2px 0;display:inline-block;padding:2.5px;transform:rotate(45deg);-webkit-transform:rotate(45deg);position:relative;left:5px;top:-2px;}
+.wp-crowd-btn-primary{background-color:#1adc68;color:#fff;}
+.wp-crowd-btn-primary:hover{background-color:#18ce43;color:#fff;}
+.wpneo-links div a:hover,.wpneo-links div.active a{color:#1adc68;}
+.wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #1adc68;border-width:0 2px 2px 0;}
+@media (max-width: 992px){
+.wpneo-links .wpneo-links-list a{font-size:14px;margin-right:20px;line-height:24px;}
+.wpneo-head{padding-top:10px;}
+.wp-crowd-new-campaign{float:none;display:inline-block;margin-bottom:24px;}
+}
+@media (max-width: 767px){
+.wp-crowd-submenu{right:-60%;left:auto;}
+}
+}
+/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/bootstrap.min.css?ver=all ; media=all */
+@media all{
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+a,a:visited{text-decoration:underline;}
+}
+*,::after,::before{box-sizing:border-box;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+a{-ms-touch-action:manipulation;touch-action:manipulation;}
+.clearfix::after{display:block;clear:both;content:"";}
+}
+/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/main.css?ver=all ; media=all */
+@media all{
+.wp-crowd-new-campaign{margin-top:17px;}
+.wp-crowd-btn{border-radius:50px;}
+.wpneo-head{background:#fff;}
+.wpneo-links .wpneo-links-list a{font-weight:300;}
+}
+/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/custom.css?ver=all ; media=all */
+@media all{
+.wp-crowd-submenu{width:230px;}
+}
+/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/style.css?ver=4.9.15 ; media=all */
+@media all{
+a{text-decoration:none!important;}
+a:focus{outline:0;outline-offset:0;}
+}
+/*! CSS Used from: Embedded */
+a{color:#33d3c0;}
+a:hover{color:#00bf9c;}
+/*! CSS Used from: Embedded */
+.wp-crowd-btn-primary{background-color:#33d3c0;color:#fff;}
+.wp-crowd-btn-primary:hover{background-color:#1dc4e9;color:#fff;}
+.wpneo-links div a:hover,.wpneo-links div.active a{color:#33d3c0;}
+.wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #33d3c0;border-width:0 2px 2px 0;}
 </style>
 
-@include('includes.user_header_visit')
+@include('includes.user_header')
 
+
+<div style="width: 82%;
+    margin: auto;" class="wpneo-head wpneo-shadow">
+    <div class="wpneo-links clearfix">
+        <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Dashboard</a></div>
+        <div class="wpneo-links-list wp-crowd-parent"><a href="#">My Account<span class="wpcrowd-arrow-down"></span></a>
+            <div class="wp-crowd-submenu wpneo-shadow">
+                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=profile">Profile</a></div>
+                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=contact">Contact</a></div>
+                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=password">Password</a></div>
+                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=rewards">Rewards</a></div>
+                <div class="wpneo-links-lists"><a href="https://demo.themeum.com/wordpress/backnow/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fdemo.themeum.com%2Fwordpress%2Fbacknow&amp;_wpnonce=18302b08e3">Logout</a></div>
+            </div>
+        </div>
+        <div class="wpneo-links-list wp-crowd-parent"><a href="#">Campaigns<span class="wpcrowd-arrow-down"></span></a>
+            <div class="wp-crowd-submenu wpneo-shadow">
+                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=campaign">My Campaigns</a></div>
+                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=backed_campaigns">My Invested Campaigns</a></div>
+                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=pledges_received">Pledges Received</a></div>
+                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=bookmark">Bookmarks</a></div>
+            </div>
+        </div>
+        <div class="wp-crowd-new-campaign"><a class="wp-crowd-btn wp-crowd-btn-primary" href="https://demo.themeum.com/wordpress/backnow/cf-campaign-form/">Add New Campaign</a></div>
+    </div>
+</div>
 
 <div class="ss-content-wrapper">
-    <div class="ss-page-title">Aperçu des informations de {{$user->name}}</div>
+    <div class="ss-page-title">Aperçu des informations de {{Auth::user()->name}}</div>
     <div class="profile-page">
         <div class="ss-profile-info">
             <div class="ss-profile-details">
                 <div class="ss-flex">
                     <div class="ss-flex-item-info email">
                         <div class="ss-field-label-large">
-                            {{ucfirst($user->name)}} </div>
+                            {{ucfirst(Auth::user()->name)}} </div>
                         <div class="field-value">
-                            {{$user->email}} </div>
+                            {{Auth::user()->email}} </div>
                     </div>
 
                 </div>
@@ -455,111 +407,18 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de naissance:</div>
                         <div class="field-value ss-empty-value">
-                           <p> @if($user->birth_city)
-                            {{$user->birth_city}}
-                            @else
-                            Aucune ville renseignée
-                            @endif
+                           <p>
+                               test
                             </p>
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de naissance</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->birth_country)
-                            {{$user->birth_country}}
-                            @else
-                            Aucun Pays renseigné
-                            @endif
+                        	pays
                         </div>
                     </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Profession:</div>
-                        <div class="field-value ss-empty-value">
 
-                        </div>
-                    </div>
-                    <!--div class="ss-flex-item">
-                        <div class="ss-field-label">Industry:</div>
-                        <div class="field-value ss-empty-value">
-                            The industry of your profession </div>
-                    </div-->
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Pays de résidence</div>
-                        <div class="field-value ss-empty-value">
-                        	@if($user->living_country)
-                            {{$user->living_country}}
-                            @else
-                            Aucun Pays renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Etat de résidence</div>
-                        <div class="field-value ss-empty-value">
-                        	@if($user->living_state)
-                            {{$user->living_state}}
-                            @else
-                            Aucun Etat renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Ville de résidence</div>
-                        <div class="field-value ss-empty-value">
-                        	@if($user->living_city)
-                            {{$user->living_city}}
-                            @else
-                            Aucune ville renseignée
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Code Postal</div>
-                        <div class="field-value ss-empty-value">
-                        	@if($user->zip_code)
-                            {{$user->zip_code}}
-                            @else
-                            Aucun Code Postal renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Situation matrimonial</div>
-                        <div class="field-value ss-empty-value">
-                        	@if($user->marital_status)
-                            {{$user->marital_status}}
-                            @else
-                            Aucune Situation matrimonial renseignée
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Nombre d'enfant</div>
-                        <div class="field-value ss-empty-value">
-                        	@if($user->children_number)
-                            {{$user->children_number}}
-                            @else
-                            Aucun Nombre d'enfant renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Numéro de téléphone</div>
-                        <div class="field-value ss-empty-value">
-                        	@if($user->mobile_tel)
-                            {{$user->mobile_tel}}
-                            @else
-                            Aucun Numéro renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-item-flex-full">
-                        <div class="ss-field-label">Short Bio:</div>
-                        <div class="field-value bio-field ss-empty-value">
-
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="ss-profile-social bot">
@@ -569,8 +428,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nom du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->father_traditional_first_name)
-                            {{$user->father_traditional_first_name}}
+                        	@if(Auth::user()->father_traditional_first_name)
+                            {{Auth::user()->father_traditional_first_name}}
                             @else
                             Aucun Nom renseigné
                             @endif
@@ -579,8 +438,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Prénoms du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->father_last_name)
-                            {{$user->father_last_name}}
+                        	@if(Auth::user()->father_last_name)
+                            {{Auth::user()->father_last_name}}
                             @else
                             Aucun Prénoms renseigné
                             @endif
@@ -589,8 +448,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Autre noms du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->father_other_name)
-                            {{$user->father_other_name}}
+                        	@if(Auth::user()->father_other_name)
+                            {{Auth::user()->father_other_name}}
                             @else
                             Aucun Autre noms renseigné
                             @endif
@@ -599,8 +458,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de résidence du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->father_birth_country)
-                            {{$user->father_birth_country}}
+                        	@if(Auth::user()->father_birth_country)
+                            {{Auth::user()->father_birth_country}}
                             @else
                             Aucun Pays renseigné
                             @endif
@@ -609,8 +468,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->father_town)
-                            {{$user->father_town}}
+                        	@if(Auth::user()->father_town)
+                            {{Auth::user()->father_town}}
                             @else
                             Aucune ville renseignée
                             @endif
@@ -619,8 +478,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nombre d'enfant du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->father_children_number)
-                            {{$user->father_children_number}}
+                        	@if(Auth::user()->father_children_number)
+                            {{Auth::user()->father_children_number}}
                             @else
                             Aucun Nombre d'enfant renseigné
                             @endif
@@ -635,8 +494,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nom de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->mother_traditional_first_name)
-                            {{$user->mother_traditional_first_name}}
+                        	@if(Auth::user()->mother_traditional_first_name)
+                            {{Auth::user()->mother_traditional_first_name}}
                             @else
                             Aucun Nom renseigné
                             @endif
@@ -645,8 +504,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Prénoms de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->mother_last_name)
-                            {{$user->mother_last_name}}
+                        	@if(Auth::user()->mother_last_name)
+                            {{Auth::user()->mother_last_name}}
                             @else
                             Aucun Prénoms renseigné
                             @endif
@@ -655,8 +514,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Autre noms de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->mother_other_name)
-                            {{$user->mother_other_name}}
+                        	@if(Auth::user()->mother_other_name)
+                            {{Auth::user()->mother_other_name}}
                             @else
                             Aucun Autre noms renseigné
                             @endif
@@ -665,8 +524,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de résidence de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->mother_birth_country)
-                            {{$user->mother_birth_country}}
+                        	@if(Auth::user()->mother_birth_country)
+                            {{Auth::user()->mother_birth_country}}
                             @else
                             Aucun Pays renseigné
                             @endif
@@ -675,8 +534,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->mother_birth_city)
-                            {{$user->mother_birth_city}}
+                        	@if(Auth::user()->mother_birth_city)
+                            {{Auth::user()->mother_birth_city}}
                             @else
                             Aucune ville renseignée
                             @endif
@@ -685,8 +544,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nombre d'enfant de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if($user->mother_children_number)
-                            {{$user->mother_children_number}}
+                        	@if(Auth::user()->mother_children_number)
+                            {{Auth::user()->mother_children_number}}
                             @else
                             Aucun Nombre d'enfant renseigné
                             @endif
@@ -694,9 +553,11 @@ p{margin-bottom:0px!important;}
                     </div>
                 </div>
             </div>
-            {{--
-            <a class="ss-edit-profile-button" href="{{route('users.edit', $user)}}" rel="noopener">Modifier le profil</a>
-            --}}
+            <div class="boutton">
+            	<a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Modifier le profil</a>
+
+            	<a class="ss-edit-profile-button" href="#" rel="noopener">Télécharger vos informations</a>
+            </div>
         </div>
     </div>
 </div>
