@@ -12,6 +12,6 @@ class InvestorController extends Controller
     }
     public function investor()
     {
-        return view('users.investor.investor');
+        return view('users.investor.home');
     }
 }

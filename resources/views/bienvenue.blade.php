@@ -601,6 +601,72 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
         </style>
 
 
+
+        <!--slider style-->
+        <style media="screen">
+        /*! CSS Used from: Embedded */
+*{box-sizing:border-box;margin:0;padding:0;}
+img{max-width:100%;height:auto;}
+p,h1{font-size:inherit;font-weight:normal;max-width:60rem;}
+button,input{background-image:none;}
+input{color:#3c3b37;}
+*:focus,input:focus,button:focus{outline:none;}
+.udlite-heading-md{font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:700;line-height:1.2;letter-spacing:-0.02rem;font-size:1.6rem;}
+.udlite-text-md{font-family:'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:400;line-height:1.4;font-size:1.6rem;}
+.udlite-sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);}
+.udlite-btn{position:relative;align-items:center;border-radius:4px;border:none;cursor:pointer;display:inline-flex;min-width:10rem;padding:0 1.6rem;justify-content:center;user-select:none;vertical-align:bottom;}
+.udlite-btn:focus{color:#0f7c90;}
+.udlite-btn::-moz-focus-inner{border:0;}
+.udlite-btn-large{height:4.8rem;}
+.udlite-btn-ghost:active,.udlite-btn-ghost:hover{color:#094c59;}
+.udlite-btn-ghost{color:#0f7c90;background-color:transparent;min-width:auto;padding:0;}
+.udlite-btn-icon{min-width:auto;}
+.udlite-btn-icon-large{padding:0 1.2rem;width:4.8rem;}
+.udlite-icon{fill:currentColor;display:inline-block;flex-shrink:0;}
+.udlite-icon-large{width:2.4rem;height:2.4rem;}
+.udlite-icon-color-neutral{color:#73726c;}
+/*! CSS Used from: Embedded */
+.udlite-text-input{border-radius:4px;border:1px solid #989586;display:block;padding:0 1.6rem;min-width:24rem;width:100%;max-width:60rem;}
+.udlite-text-input::-moz-placeholder{color:#73726c;opacity:1;}
+.udlite-text-input:-ms-input-placeholder{color:#73726c;}
+.udlite-text-input::-webkit-input-placeholder{color:#73726c;}
+.udlite-text-input:hover{border-color:#797667;}
+.udlite-text-input:focus{border-color:#3c3b37;}
+.udlite-text-input-large{height:4.8rem;}
+.udlite-search-form-autocomplete{position:relative;min-width:24rem;max-width:60rem;}
+.udlite-search-form-autocomplete .udlite-search-form-autocomplete-input{border:0;flex:1;min-width:0;}
+.udlite-search-form-autocomplete-input-group{display:flex;align-items:center;height:100%;}
+/*! CSS Used from: Embedded */
+.billboard--billboard--3-fQr{display:block;margin:0 auto 0rem auto;position:relative;width:100%;}
+.billboard--billboard--3-fQr .billboard--search-bar--3s2y1{border:1px solid #dcdacb;border-radius:4px;margin-top:1.6rem;}
+.billboard--billboard--3-fQr .billboard--search-bar--3s2y1:hover{border-color:#c3c0a6;}
+.billboard--billboard--3-fQr .billboard--image-container--2JRqQ img{width:100%;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ{display:flex;flex-direction:column;position:absolute;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.08);padding:2.4rem;}
+@media (min-width:61.31em){
+.billboard--billboard--3-fQr{max-width:134rem;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ{left:4.8rem;top:6.4rem;max-width:44rem;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ h1{font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:700;line-height:1.2;letter-spacing:-0.02rem;font-size:4rem;margin-bottom:.8rem;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ p{font-family:'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:400;line-height:1.4;font-size:1.9rem;}
+}
+@media (min-width:43.81em) and (max-width:75em){
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ{width:34rem;left:2.4rem;top:2.4rem;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ h1{font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:700;line-height:1.2;letter-spacing:-0.02rem;font-size:3.2rem;margin-bottom:.8rem;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ p{font-family:'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:400;line-height:1.4;font-size:1.6rem;}
+}
+@media (min-width:43.81em) and (max-width:61.25em){
+.billboard--billboard--3-fQr .billboard--image-container--2JRqQ{height:25rem;overflow:hidden;}
+}
+@media (max-width:43.75em){
+.billboard--billboard--3-fQr{margin:0 auto 2.4rem auto;}
+.billboard--billboard--3-fQr .billboard--image-container--2JRqQ{height:20rem;margin-bottom:1.6rem;}
+.billboard--billboard--3-fQr .billboard--image-container--2JRqQ img{object-fit:cover;height:100%;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ{box-shadow:none;position:static;padding:0 2.4rem;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ h1{font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:700;line-height:1.2;letter-spacing:-0.02rem;font-size:3.2rem;margin-bottom:.8rem;}
+.billboard--billboard--3-fQr .billboard--content-box--JtXUJ p{font-family:'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:400;line-height:1.4;font-size:1.6rem;}
+}
+        </style>
+
+
         <section id="main" class="clearfix">
             <div id="content" class="site-content" role="main">
 
@@ -611,208 +677,26 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
                         <div data-elementor-type="post" data-elementor-id="1953" class="elementor elementor-1953 elementor-bc-flex-widget" data-elementor-settings="[]">
                             <div class="elementor-inner">
                                 <div class="elementor-section-wrap">
-                                    <section
-                                      class="elementor-element elementor-element-6beb684 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
-                                      data-id="6beb684" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1349px; left: 0px;">
-                                        <div class="elementor-container elementor-column-gap-default">
-                                            <div class="elementor-row">
-                                                <div class="elementor-element elementor-element-fccd886 elementor-column elementor-col-100 elementor-top-column" data-id="fccd886" data-element_type="column">
-                                                    <div class="elementor-column-wrap  elementor-element-populated">
-                                                        <div class="elementor-widget-wrap">
-                                                            <div class="elementor-element elementor-element-d88ad52 elementor-widget elementor-widget-thm-slider" data-id="d88ad52" data-element_type="widget" data-widget_type="thm-slider.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="slider_content_wrapper novisible slick-initialized slick-slider slick-dotted" data-control="yes" data-autoplay="yes" style="visibility: visible;">
 
+                                    <!--slider-->
+                                    <div class="ud-component--logged-out-home--billboard"
+                                      data-component-props="{&quot;image&quot;:&quot;https://img-b.udemycdn.com/notices/home_banner/image/048e0cdc-3e71-47dc-ae30-e9ac7a3504b5.jpg&quot;,&quot;title_responsive&quot;:&quot;Apprenez \u00e0 votre rythme&quot;,&quot;image_responsive&quot;:&quot;https://img-b.udemycdn.com/notices/home_banner/image_responsive/f9cd7c14-72c2-48a4-908f-917ec4d2150f.jpg&quot;,&quot;image_udlite&quot;:&quot;https://img-b.udemycdn.com/notices/home_banner/image_udlite/7cf844b2-4371-45ea-9ef5-e10ea212eac2.jpg&quot;,&quot;subtitle_responsive&quot;:&quot;\u00c9tudiez \u00e0 tout moment le sujet que vous souhaitez. Faites d\u00e8s maintenant votre choix parmi des milliers de cours enseign\u00e9s par des formateurs confirm\u00e9s.&quot;,&quot;id&quot;:8310,&quot;image_responsive_udlite&quot;:&quot;https://img-b.udemycdn.com/notices/home_banner/image_responsive_udlite/772d511b-f5ff-4d43-8b27-1fab0560d0e5.jpg&quot;,&quot;title&quot;:&quot;Apprenez \u00e0 votre rythme&quot;,&quot;url&quot;:&quot;&quot;,&quot;subtitle&quot;:&quot;\u00c9tudiez \u00e0 tout moment le sujet que vous souhaitez. Faites d\u00e8s maintenant votre choix parmi des milliers de cours enseign\u00e9s par des formateurs confirm\u00e9s.&quot;}"
+                                      ng-non-bindable="">
+                                        <div data-purpose="billboard" class="billboard--billboard--3-fQr" data-reactroot="">
+                                            <div class="billboard--image-container--2JRqQ"><img src="https://img-b.udemycdn.com/notices/home_banner/image_udlite/7cf844b2-4371-45ea-9ef5-e10ea212eac2.jpg" width="1340" height="400" alt=""></div>
+                                            <div class="billboard--content-box--JtXUJ">
+                                                <h1 style="font-size: 2rem;">Apprenez à votre rythme</h1>
+                                                <p style="font-size: 1.5rem;">Étudiez à tout moment le sujet que vous souhaitez. Faites dès maintenant votre choix parmi des milliers de cours enseignés par des formateurs confirmés.</p>
 
-
-
-                                                                        <div class="slick-list draggable" style="height: 700px;">
-                                                                            <div class="slick-track" style="opacity: 1; width: 9443px; transform: translate3d(-2698px, 0px, 0px);">
-                                                                                <div class="slider-single-wrapper d-flex align-items-center slick-slide slick-cloned"
-                                                                                  style="background-image: url(&quot;http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/banner5.jpg&quot;), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); width: 1349px;"
-                                                                                  data-slick-index="-1" aria-hidden="true" tabindex="-1">
-                                                                                    <div class="container">
-                                                                                        <div class="row">
-
-                                                                                            <div class="col-12 center_text text-center">
-                                                                                                <div class="slider-subtitle animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Enovation</div>
-                                                                                                <div class="slider-title animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Plant cellulose raw <br> material</div>
-                                                                                                <div class="slider-content animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">The world has become so fast paced that
-                                                                                                    people don’t want to stand by reading a page of information, they <br> would much rather look at a presentation and understand the message. It has come to a
-                                                                                                    point where images<br> and videos are used more to promote a product or service </div>
-                                                                                                <div class="slider-button">
-                                                                                                    <a class="d-inline-block slider-button-1 animated" data-animation="fadeInDown" data-speed="1.25s" href="#" tabindex="-1"
-                                                                                                      style="animation-duration: 1.25s;">Back to this project</a> </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="slider-single-wrapper d-flex align-items-center slick-slide"
-                                                                                  style="background-image: url(&quot;http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/Bitmap.jpg&quot;), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); width: 1349px;"
-                                                                                  data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
-                                                                                    <div class="container">
-                                                                                        <div class="row">
-
-                                                                                            <div class="col-12 center_text text-center">
-                                                                                                <div class="slider-subtitle animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Technology</div>
-                                                                                                <div class="slider-title animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">A Brief History Of <br> Creation</div>
-                                                                                                <div class="slider-content animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">The world has become so fast paced that
-                                                                                                    people don’t want to stand by reading a page of information, they <br> would much rather look at a presentation and understand the message. It has come to a
-                                                                                                    point where images<br> and videos are used more to promote a product or service </div>
-                                                                                                <div class="slider-button">
-                                                                                                    <a class="d-inline-block slider-button-1 animated" data-animation="fadeInDown" data-speed="1.25s" href="#" tabindex="-1"
-                                                                                                      style="animation-duration: 1.25s;">Back to this project</a> </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="slider-single-wrapper d-flex align-items-center slick-slide slick-current slick-active"
-                                                                                  style="background-image: url(&quot;http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/banner4.jpg&quot;), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); width: 1349px;"
-                                                                                  data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
-                                                                                    <div class="container">
-                                                                                        <div class="row">
-
-                                                                                            <div class="col-12 center_text text-center">
-                                                                                                <div class="slider-subtitle animated fadeInDown" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Enovation</div>
-                                                                                                <div class="slider-title animated fadeInDown" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">One accurate version <br> abusive
-                                                                                                </div>
-                                                                                                <div class="slider-content animated fadeInDown" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">The world has become so fast
-                                                                                                    paced that people don’t want to stand by reading a page of information, they <br> would much rather look at a presentation and understand the message. It has
-                                                                                                    come to a point where images<br> and videos are used more to promote a product or service </div>
-                                                                                                <div class="slider-button">
-                                                                                                    <a class="d-inline-block slider-button-1 animated fadeInDown" data-animation="fadeInDown" data-speed="1.25s" href="#" tabindex="0"
-                                                                                                      style="animation-duration: 1.25s;">Back to this project</a> </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="slider-single-wrapper d-flex align-items-center slick-slide"
-                                                                                  style="background-image: url(&quot;http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/banner5.jpg&quot;), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); width: 1349px;"
-                                                                                  data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
-                                                                                    <div class="container">
-                                                                                        <div class="row">
-
-                                                                                            <div class="col-12 center_text text-center">
-                                                                                                <div class="slider-subtitle animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Enovation</div>
-                                                                                                <div class="slider-title animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Plant cellulose raw <br> material</div>
-                                                                                                <div class="slider-content animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">The world has become so fast paced that
-                                                                                                    people don’t want to stand by reading a page of information, they <br> would much rather look at a presentation and understand the message. It has come to a
-                                                                                                    point where images<br> and videos are used more to promote a product or service </div>
-                                                                                                <div class="slider-button">
-                                                                                                    <a class="d-inline-block slider-button-1 animated" data-animation="fadeInDown" data-speed="1.25s" href="#" tabindex="-1"
-                                                                                                      style="animation-duration: 1.25s;">Back to this project</a> </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="slider-single-wrapper d-flex align-items-center slick-slide slick-cloned"
-                                                                                  style="background-image: url(&quot;http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/Bitmap.jpg&quot;), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); width: 1349px;"
-                                                                                  data-slick-index="3" aria-hidden="true" tabindex="-1">
-                                                                                    <div class="container">
-                                                                                        <div class="row">
-
-                                                                                            <div class="col-12 center_text text-center">
-                                                                                                <div class="slider-subtitle animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Technology</div>
-                                                                                                <div class="slider-title animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">A Brief History Of <br> Creation</div>
-                                                                                                <div class="slider-content animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">The world has become so fast paced that
-                                                                                                    people don’t want to stand by reading a page of information, they <br> would much rather look at a presentation and understand the message. It has come to a
-                                                                                                    point where images<br> and videos are used more to promote a product or service </div>
-                                                                                                <div class="slider-button">
-                                                                                                    <a class="d-inline-block slider-button-1 animated" data-animation="fadeInDown" data-speed="1.25s" href="#" tabindex="-1"
-                                                                                                      style="animation-duration: 1.25s;">Back to this project</a> </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="slider-single-wrapper d-flex align-items-center slick-slide slick-cloned"
-                                                                                  style="background-image: url(&quot;http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/banner4.jpg&quot;), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); width: 1349px;"
-                                                                                  data-slick-index="4" aria-hidden="true" tabindex="-1">
-                                                                                    <div class="container">
-                                                                                        <div class="row">
-
-                                                                                            <div class="col-12 center_text text-center">
-                                                                                                <div class="slider-subtitle animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Enovation</div>
-                                                                                                <div class="slider-title animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">One accurate version <br> abusive</div>
-                                                                                                <div class="slider-content animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">The world has become so fast paced that
-                                                                                                    people don’t want to stand by reading a page of information, they <br> would much rather look at a presentation and understand the message. It has come to a
-                                                                                                    point where images<br> and videos are used more to promote a product or service </div>
-                                                                                                <div class="slider-button">
-                                                                                                    <a class="d-inline-block slider-button-1 animated" data-animation="fadeInDown" data-speed="1.25s" href="#" tabindex="-1"
-                                                                                                      style="animation-duration: 1.25s;">Back to this project</a> </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="slider-single-wrapper d-flex align-items-center slick-slide slick-cloned"
-                                                                                  style="background-image: url(&quot;http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/banner5.jpg&quot;), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); width: 1349px;"
-                                                                                  data-slick-index="5" aria-hidden="true" tabindex="-1">
-                                                                                    <div class="container">
-                                                                                        <div class="row">
-
-                                                                                            <div class="col-12 center_text text-center">
-                                                                                                <div class="slider-subtitle animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Enovation</div>
-                                                                                                <div class="slider-title animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">Plant cellulose raw <br> material</div>
-                                                                                                <div class="slider-content animated" data-animation="fadeInDown" data-speed="1.25s" style="animation-duration: 1.25s;">The world has become so fast paced that
-                                                                                                    people don’t want to stand by reading a page of information, they <br> would much rather look at a presentation and understand the message. It has come to a
-                                                                                                    point where images<br> and videos are used more to promote a product or service </div>
-                                                                                                <div class="slider-button">
-                                                                                                    <a class="d-inline-block slider-button-1 animated" data-animation="fadeInDown" data-speed="1.25s" href="#" tabindex="-1"
-                                                                                                      style="animation-duration: 1.25s;">Back to this project</a> </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-
-
-
-
-
-
-
-
-                                                                        <ul class="thm-slide-control" style="display: block;" role="tablist">
-                                                                            <li class="" role="presentation">
-                                                                              <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="-1">
-                                                                                1
-                                                                              </button>
-                                                                            </li>
-                                                                            <li role="presentation" class="slick-active">
-                                                                              <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="0"
-                                                                                  aria-selected="true">
-                                                                                  2
-                                                                              </button>
-                                                                            </li>
-                                                                            <li role="presentation" class="">
-                                                                              <button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">
-                                                                                3
-                                                                              </button>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <script type="text/javascript">
-                                                                        jQuery(document).ready(function($) {
-
-                                                                            $('.slider_content_wrapper').css('visibility', 'visible');
-                                                                        });
-                                                                    </script>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
-                                    </section>
+                                    </div>
+
+                                    <div class="ud-component--logged-out-home--value-props" data-component-props="{&quot;className&quot;:&quot;transfer_billboard_margin&quot;,&quot;type&quot;:&quot;lohp_value_props&quot;}" ng-non-bindable="">
+                                        <div class="discovery-unit-empty-render" data-reactroot=""></div>
+                                    </div>
+
+
                                     <section class="elementor-element elementor-element-3uh2bpk elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3uh2bpk"
                                       data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                         <div class="elementor-background-overlay"></div>

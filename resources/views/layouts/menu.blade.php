@@ -376,17 +376,17 @@
 
         </style>
     </head>
-    <body>
+    <body class="home page-template page-template-homepage page-template-homepage-php page page-id-33 logged-in woocommerce-js fullwidth-bg elementor-default elementor-page elementor-page-33">
         <header id="masthead" class="site-header header header-solid">
 
 
             <div class="site-header-wrap container">
                 <div class="row">
-                    <div class=" clearfix col-4">
+                    <div class=" clearfix col-5">
                         <div class="thm-explore float-left">
                             <a href="#">
                               <i class="fas fa-sliders-h"></i>
-                              Explore
+                              Explorer
                               <i class="fas fa-angle-down"></i>
                             </a>
                             <ul class="thm-iconic-category">
@@ -486,30 +486,23 @@
                         <div id="main-menu" class="common-menu-wrap float-left d-none d-lg-block">
                             <ul id="menu-main-menu" class="nav">
                                 <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children active has-menu-child"><a
-                                      href="http://demo.themeum.com/wordpress/backnow/">Home</a>
-                                      <i class="fas fa-angle-down"></i>
-                                    <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
-                                          <a href="https://demo.themeum.com/wordpress/backnow/homepage-2/">Homepage 2</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1953 current_page_item active has-menu-child">
-                                          <a href="https://demo.themeum.com/wordpress/backnow/homepage-3/">Homepage 3</a></li>
-                                    </ul>
+                                      href="/">Accueil</a>
+
                                 </li>
-                                <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-menu-child"><a href="#">Page</a>
+                                <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-menu-child"><a href="#">Investir</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/blog/">Blog</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Blog fullwidth</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/about/">About</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/contact/">Contact</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/coming-soon/">Coming Soon</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/404-page/">404 Page</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/blog/">Investir</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Explorer</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/about/">Rechercher</a></li>
+
                                     </ul>
                                 </li>
-                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover/">Discover</a>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover/">Lever des fonds</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Discover Style 2</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Créer une annonce</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -524,7 +517,7 @@
                                 <!-- Start Campaign Section -->
                                 <li>
                                   <a href="http://demo.themeum.com/wordpress/backnow/start-campaign/" class="backnow-login backnow-dashboard">
-                                    START A CAMPAIGN
+                                    Créer une annonce
                                   </a>
                                 </li>
                                 <!-- End Campaign -->
@@ -535,10 +528,10 @@
                     <!--/.col-md-7-->
 
 
-                    <div class=" col-md-3 col-5 col-sm-3 order-lg-2 col-lg-auto" style="width: 25%!important; text-align: center;">
+                    <div class=" col-md-3 col-5 col-sm-3 order-lg-2 col-lg-auto" style="">
                         <div class="themeum-navbar-header">
                             <div class="logo-wrapper">
-                                <a class="themeum-navbar-brand" href="https://demo.themeum.com/wordpress/backnow">
+                                <a class="themeum-navbar-brand" href="/">
                                     <img class="enter-logo img-responsive" src="/assets/imgs/logo-be.jpg" alt="Logo" title="Logo">
                                 </a>
                             </div>
@@ -620,17 +613,24 @@
                     <div class="d-none d-lg-block order-lg-3 col-lg">
 
                         <div class="backnow-login-register">
+                            <!--
                             <div class="backnow-search-wrap">
                                 <a href="#" class="backnow-search search-open-icon"><i class="fas fa-search"></i></a>
                             </div>
+                        -->
 
                             <ul>
+                                @guest
                                 <!-- Login Section -->
-                                <li><a data-toggle="modal" data-target="#myModal" href="#"> <i class="fas fa-user-alt"></i>Login/Sign Up</a></li>
+                                <li><a href="{{route('login')}}"> <i class="fas fa-user-alt"></i>Connexion/Inscription</a></li>
                                 <!-- End Login section -->
+                                @endguest
+                                @auth
+                                <li><a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a></li>
+                                @endauth
 
                                 <!-- Start Campaign Section -->
-                                <li><a href="http://demo.themeum.com/wordpress/backnow/start-campaign/" class="backnow-login backnow-dashboard">START A CAMPAIGN</a></li>
+                                <li><a href="http://demo.themeum.com/wordpress/backnow/start-campaign/" class="backnow-login backnow-dashboard">Créer une annonce</a></li>
                                 <!-- End Campaign -->
                             </ul>
 
