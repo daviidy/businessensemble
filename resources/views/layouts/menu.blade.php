@@ -5,6 +5,8 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+            <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
         <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -261,16 +263,16 @@
 			/*! CSS Used from: Embedded */
 			a,#mobile-menu ul li.active>a,#mobile-menu ul li a:hover,input[type=submit]:hover,.thm-explore ul li a:hover{color:#33d3c0;}
 			input:focus{border-color:#33d3c0;}
-			.backnow-login-register a.backnow-dashboard:hover{background:#519eec;}
+			.backnow-login-register a.backnow-dashboard:hover{background:#fff;}
 			a:hover{color:#00bf9c;}
 			.common-menu-wrap .nav>li>a,.thm-explore ul li a,.thm-explore a,.common-menu-wrap .nav> li > ul li a{font-size:14px;font-family:Montserrat;font-weight:300;line-height:30px;color:#676767;}
 			.site-header{background:#fff;}
 			.site-header{padding-top:10px;}
 			.site-header{padding-bottom:10px;}
 			.themeum-navbar-header .themeum-navbar-brand img{width:130px;max-width:none;}
-			input[type=submit]{background-color:#33d3c0;border-color:#1B6DC1;color:#fff!important;}
+			input[type=submit]{background-color:#1B6DC1;border-color:#1B6DC1;color:#fff!important;}
 			.backnow-login-register a.backnow-dashboard{background-color:#1B6DC1;}
-			input[type=submit]:hover{background-color:#33d3c0;border-color:#1B6DC1;color:#fff!important;}
+			input[type=submit]:hover{background-color:#1B6DC1;border-color:#1B6DC1;color:#fff!important;}
 			.header-solid .common-menu-wrap .nav>li.menu-item-has-children:after,.header-solid .common-menu-wrap .nav>li>a,.header-solid .common-menu-wrap .nav>li>a:after,.backnow-search{color:#676767;}
 			.header-solid .common-menu-wrap .nav>li>a:hover,.header-solid .common-menu-wrap .nav>li>a:hover:after,.backnow-search-wrap a.backnow-search:hover{color:#33d3c0;}
 			.header-solid .common-menu-wrap .nav>li.active>a{color:#33d3c0;}
@@ -709,25 +711,25 @@
                 <div class="footer-copyright">
                     <div class="row">
                         <div class="col-md-6 text-left copy-wrapper">
-                            <img class="enter-logo img-responsive" src="http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/footer-logo.png" alt="Logo" title="Logo">
-                            <span>© 2018 Backnow. All Rights Reserved.</span>
+                            <img class="enter-logo img-responsive" src="/assets/imgs/logo-be.jpg" alt="Logo" title="Logo" width="100">
+                            © <span id="year">2018</span> All Rights Reserved.
                         </div> <!-- end row -->
                         <div class="col-md-6 text-right copy-wrapper">
 
                             <div class="social-share">
                                 <ul>
-                                    <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-facebook"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-google-plus-g"></i></a></li>
 
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-linkedin"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-dribbble"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-behance"></i></a></li>
                                 </ul>
                             </div>
                         </div> <!-- end row -->
@@ -752,6 +754,13 @@
           });
         });
       </script>
+
+      <!--COPYRIGTH SCRIPT-->
+    <script type="text/javascript">
+        var date = new Date();
+        var annee = date.getFullYear();
+        document.getElementById('year').innerHTML = annee;
+    </script>
 
     </body>
 </html>
