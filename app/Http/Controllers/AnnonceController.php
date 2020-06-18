@@ -3,6 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Annonce;
+use App\Category;
+use App\Team;
+use App\Multimedia;
+use App\User;
+use Auth;
+use Image;
 use Illuminate\Http\Request;
 
 class AnnonceController extends Controller
