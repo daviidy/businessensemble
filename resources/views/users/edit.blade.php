@@ -3,361 +3,6 @@
 
 @section('content')
 
-<style media="screen">
-    @media screen and (min-width: 768px)
-    {
-        .ss-content-wrapper{
-            margin: 5rem;
-        }
-        .text-right{text-align: center!important;}
-    }
-</style>
-
-<style media="screen">
-.profile-bg-picture {
-background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url(../img/blog/13.jpg) no-repeat center center fixed;
-background-position: center center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-background-attachment: scroll;
-color: #fff;
-height: 55vh;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-</style>
-
-<!--user-section-->
-<style media="screen">
-/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/bower_components/bootstrap/dist/css/bootstrap.css */
-section{display:block;}
-small{font-size:80%;}
-img{border-style:none;}
-button{font-family:'Montserrat', sans-serif;font-size:100%;line-height:1.15;margin:0;}
-button{overflow:visible;}
-button{text-transform:none;}
-button,html [type="button"]{-webkit-appearance:button;}
-button::-moz-focus-inner,[type="button"]::-moz-focus-inner{border-style:none;padding:0;}
-button:-moz-focusring,[type="button"]:-moz-focusring{outline:1px dotted ButtonText;}
-@media print{
-*,*::before,*::after,p::first-letter,div::first-letter,p::first-line,div::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
-img{page-break-inside:avoid;}
-p{orphans:3;widows:3;}
-}
-*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
-h4{margin-top:0;margin-bottom:.5rem;}
-p{margin-top:0;margin-bottom:1rem;}
-img{vertical-align:middle;}
-button{-ms-touch-action:manipulation;touch-action:manipulation;}
-button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
-button{line-height:inherit;}
-h4{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
-h4{font-size:1.5rem;}
-small{font-size:80%;font-weight:normal;}
-.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
-@media (min-width: 576px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 768px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 992px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 1200px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 576px){
-.container{width:540px;max-width:100%;}
-}
-@media (min-width: 768px){
-.container{width:720px;max-width:100%;}
-}
-@media (min-width: 992px){
-.container{width:960px;max-width:100%;}
-}
-@media (min-width: 1200px){
-.container{width:1140px;max-width:100%;}
-}
-.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
-@media (min-width: 576px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 768px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 992px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 1200px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-.col-sm-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
-@media (min-width: 576px){
-.col-sm-6{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 768px){
-.col-sm-6{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 992px){
-.col-sm-6{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 1200px){
-.col-sm-6{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 576px){
-.col-sm-6{-webkit-box-flex:0;-webkit-flex:0 0 50%;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
-}
-.btn{display:inline-block;font-weight:normal;line-height:1.25;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:0.5rem 1rem;font-size:1rem;border-radius:0.25rem;-webkit-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
-.btn:focus,.btn:hover{text-decoration:none;}
-.btn:focus{outline:0;-webkit-box-shadow:0 0 0 2px rgba(2, 117, 216, 0.25);box-shadow:0 0 0 2px rgba(2, 117, 216, 0.25);}
-.btn:disabled{cursor:not-allowed;opacity:.65;}
-.btn:active{background-image:none;}
-.btn-success{color:#fff;background-color:#5cb85c;border-color:#5cb85c;}
-.btn-success:hover{color:#fff;background-color:#449d44;border-color:#419641;}
-.btn-success:focus{-webkit-box-shadow:0 0 0 2px rgba(92, 184, 92, 0.5);box-shadow:0 0 0 2px rgba(92, 184, 92, 0.5);}
-.btn-success:disabled{background-color:#5cb85c;border-color:#5cb85c;}
-.btn-success:active{color:#fff;background-color:#449d44;background-image:none;border-color:#419641;}
-.media-body{-webkit-box-flex:1;-webkit-flex:1 1 0%;-ms-flex:1 1 0%;flex:1 1 0%;}
-.text-right{text-align:right;}
-.text-muted{color:#636c72!important;}
-/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
-.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.pull-left{float:left;}
-.fa-user:before{content:"\f007";}
-div,span,h4,p,img,small,i,section{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-section{display:block;}
-h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
-h4{font-size:18px;line-height:36px;}
-p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
-small{font-size:80%;}
-@media only screen and (max-width: 768px){
-p{margin-bottom:0px!important;}
-}
-.user-section .profile-user-box{background-color:#ffffff;padding:20px;border:1px solid #e2e2e2;position:relative;top:-50px;border-radius:5px;align-self:flex-end;}
-.user-section .m-r-15{margin-right:15px!important;}
-.user-section .pull-left{float:left!important;}
-.user-section .thumb-lg{height:88px;width:88px;}
-.user-section .media-body{display:table-cell;vertical-align:top;}
-.user-section .media-body{width:10000px;}
-.user-section .media-body h4{font-family:'Montserrat', sans-serif;font-size:23px!important;color:#1ab394;}
-.user-section .media-body p{font-family:'Montserrat', sans-serif;}
-.user-section .m-b-0{margin-bottom:0!important;}
-.user-section .btn-success{font-family:'Montserrat', sans-serif;font-size:14px!important;background-color:#1B6DC1!important;border:1px solid #1B6DC1!important;}
-.user-section .m-r-5{margin-right:5px!important;}
-@media only screen and (max-width: 768px){
-p{margin-bottom:0px!important;}
-}
-
-</style>
-
-
-<!--mindvalley style-->
-<style media="screen">
-/*! CSS Used from: https://beta.mindvalley.com/css/app-7b34aadc7487ebee416140622cdcb51a.css?vsn=d */
-a{background-color:transparent;}
-img{border-style:none;}
-input{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}
-input{overflow:visible;}
-*,:after,:before{box-sizing:inherit;}
-a{text-decoration:none;}
-@media (min-width:992px){
-.profile-page .avatar-container{display:none;}
-}
-.field-value{color:#333;font-family:'Montserrat', sans-serif;font-size:1rem;letter-spacing:.11px;line-height:1.5em;padding-bottom:1.25em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-@media (min-width:992px){
-.field-value{padding-bottom:1.875em;}
-}
-.field-value.social{padding-top:.3125em;}
-@media (min-width:992px){
-.field-value.social{padding-bottom:1.875em;}
-}
-.bio-field{white-space:pre-wrap;word-wrap:break-word;}
-input:invalid{border:1px solid #fa524f;}
-input:invalid:focus{outline:0;}
-.text-input-icon{text-indent:1.875em;background-position:left .625em;}
-.text-input-icon{background-repeat:no-repeat;background-size:1.25em;}
-.ss-avatar-upload-wrapper{position:relative;display:inline-block;margin-bottom:1.25em;max-width:16.875em;}
-.ss-avatar-upload-wrapper .ss-avatar{height:auto;border-radius:10px;max-width:100%;}
-.ss-avatar-upload-wrapper .ss-edit-avatar{text-align:center;flex:auto;font-size:.875rem;background-color:rgba(0,0,0,.5);color:hsla(0,0%,100%,.8);border-radius:0 0 10px 10px;padding:.8em 0 .7em;position:absolute;bottom:5px;right:0;left:0;cursor:pointer;margin:0;}
-.ss-avatar-upload-wrapper .ss-edit-avatar:before{content:"";display:inline-block;background:url(https://static.mindvalley.com/public/assets/2019/04/ico-solid-camera.svg) no-repeat;width:20px;height:1.09375rem;margin-right:.3125em;opacity:.7;vertical-align:text-bottom;}
-.ss-avatar-upload-wrapper .ss-avatar-progress-bar{display:none;text-align:center;font-size:.875rem;color:hsla(0,0%,100%,.8);padding:.8em 0 .7em;height:2.6rem;position:absolute;bottom:5px;right:0;left:0;background:#000;border-radius:0 0 10px 10px;box-shadow:inset 0 -1px 1px hsla(0,0%,100%,.3);}
-.ss-avatar-upload-wrapper .ss-avatar-progress-bar .ss-avatar-progress-bar-animation{width:0;display:block;height:100%;position:absolute;bottom:0;right:0;left:0;border-radius:0 0 10px 10px;background-color:#575e65;box-shadow:inset 0 2px 9px hsla(0,0%,100%,.3),inset 0 -2px 6px rgba(0,0,0,.4);overflow:hidden;}
-.ss-avatar-upload-wrapper .ss-avatar-progress-bar .ss-avatar-progress-bar-animation:after{content:"";position:absolute;top:0;left:0;bottom:0;right:0;background-image:linear-gradient(-45deg,hsla(0,0%,100%,.2) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.2) 0,hsla(0,0%,100%,.2) 75%,transparent 0,transparent);z-index:1;background-size:50px 50px;animation:move 2s linear infinite;border-top-right-radius:8px;border-bottom-right-radius:8px;border-top-left-radius:20px;border-bottom-left-radius:20px;overflow:hidden;}
-.ss-avatar-upload-wrapper .ss-avatar-progress-bar .ss-avatar-progress-bar-animation:after{content:"";position:absolute;top:0;left:0;bottom:0;right:0;background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(.25,hsla(0,0%,100%,.2)),color-stop(.25,transparent),color-stop(.5,transparent),color-stop(.5,hsla(0,0%,100%,.2)),color-stop(.75,hsla(0,0%,100%,.2)),color-stop(.75,transparent),to(transparent));background-image:-moz-linear-gradient(-45deg,hsla(0,0%,100%,.2) 25%,transparent 25%,transparent 50%,hsla(0,0%,100%,.2) 50%,hsla(0,0%,100%,.2) 75%,transparent 75%,transparent);z-index:1;-webkit-background-size:50px 50px;-moz-background-size:50px 50px;-webkit-animation:move 2s linear infinite;-webkit-border-top-right-radius:8px;-webkit-border-bottom-right-radius:8px;-moz-border-radius-topright:8px;-moz-border-radius-bottomright:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;-webkit-border-top-left-radius:20px;-webkit-border-bottom-left-radius:20px;-moz-border-radius-topleft:20px;-moz-border-radius-bottomleft:20px;border-top-left-radius:20px;border-bottom-left-radius:20px;overflow:hidden;}
-.ss-avatar-upload-wrapper .ss-avatar-progress-bar .ss-avatar-progress-bar-animation:after{animation:move 2s linear infinite;}
-.ss-avatar-upload-wrapper .ss-avatar-input{display:none;}
-.ss-avatar-error-message{color:red;font-size:.8rem;margin-top:-1em;margin-bottom:1em;text-align:center;display:none;}
-.ss-page-title{font-family: 'Montserrat', sans-serif;color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;text-align: center;}
-.ss-profile-info{border-radius:8px;background-color:#fff;box-shadow:0 10px 20px 0 rgba(0,0,0,.1);padding:1.875em 1.25em;margin-bottom:3.13em;}
-@media (min-width:480px){
-.ss-profile-info{padding:1.875em;}
-}
-@media (min-width:992px){
-.ss-profile-info{padding:2.5em 4.375em;}
-}
-.ss-profile-details{border-bottom:1px solid #dfdfdf;padding-bottom:1.875em;}
-.ss-profile-social{padding-top:3.125em;}
-.bot{
-border-bottom: 1px solid #dfdfdf;
-    padding-bottom: 1.875em;
-    }
-@media (min-width:992px){
-.ss-profile-social{padding-top:2.5em;}
-}
-.ss-social-title{color:#2c313b;font-size:1.375rem;font-weight:700;letter-spacing:.16px;line-height:1.18em;font-family: 'Montserrat', sans-serif;}
-@media (min-width:768px){
-.ss-social-title{color:#333;}
-}
-@media (min-width:992px){
-.ss-social-title{font-size:1.25rem;line-height:1.2em;letter-spacing:.14px;}
-}
-.ss-social-subtitle{font-family: 'Montserrat', sans-serif;color:#62686e;font-size:.875rem;letter-spacing:.1px;line-height:1.286em;padding:.71em 0 2.14em;}
-@media (min-width:768px){
-.ss-social-subtitle{padding-bottom:2.14em;}
-}
-@media (min-width:992px){
-.ss-social-subtitle{font-size:1rem;line-height:1.3125em;}
-}
-.ss-flex{display:flex;flex-wrap:wrap;}
-.ss-flex-item-info{width:100%;}
-@media (min-width:480px){
-.ss-flex-item-info{width:50%;}
-.ss-flex-item-info.email{order:2;padding:0 0 0 .9375em;align-self:center;}
-.ss-flex-item-info.avatar{order:1;padding:0 .9375em 0 0;}
-}
-@media (min-width:768px){
-.ss-flex-item-info.email{padding:0 0 0 2.1875em;}
-.ss-flex-item-info.avatar{padding:0 2.1875em 0 0;}
-}
-@media (min-width:992px){
-.ss-flex-item-info.email{order:1;padding:0 .9375em 0 0;}
-.ss-flex-item-info.avatar{order:2;padding:0 0 0 .9375em;}
-}
-.ss-flex-item{width:100%;}
-@media (min-width:480px){
-.ss-flex-item{text-align:left;width:50%;}
-.ss-flex-item:nth-of-type(2n){padding-left:.9375em;}
-.ss-flex-item:nth-of-type(2n-1){padding-right:.9375em;}
-}
-@media (min-width:768px){
-.ss-flex-item:nth-of-type(2n){padding-left:2.1875em;}
-.ss-flex-item:nth-of-type(2n-1){padding-right:2.1875em;}
-}
-@media (min-width:992px) and (max-width:1200px){
-.ss-flex-item:nth-of-type(2n){padding-left:.9375em;}
-.ss-flex-item:nth-of-type(2n-1){padding-right:.9375em;}
-}
-.ss-item-flex-full{width:100%;}
-.ss-field-label{font-family: 'Montserrat', sans-serif; color:#62686e;font-size:.875rem;letter-spacing:.1px;line-height:1.286em;padding:.714em .3125em .714em 0;}
-.ss-field-label-large{font-family: 'Montserrat', sans-serif;color:#2c313b;font-size:1.5rem;font-weight:700;padding-bottom:.5em;}
-.ss-empty-value{color:#95989d;}
-.ss-field-privacy-notice{border-radius:9.5px;background-color:#f5f5f5;font-size:.75rem;letter-spacing:.09px;line-height:1.417em;color:#95989d;padding:.416em .833em;}
-.ss-field-privacy-notice .ss-lock{height:.625rem;}
-.ss-icon-facebook{background-size:inherit;text-indent:1.5625em;}
-.ss-edit-profile-button{font-family: 'Montserrat', sans-serif;display:inline-block;background-color:#1B6DC1;border-radius:91px;color:#fff;width:100%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
-.ss-edit-profile-button:focus{outline:0;}
-.ss-edit-profile-button:hover{background-color:#ffffff;border: 2px solid #1B6DC1;}
-@media (min-width:768px){
-.ss-edit-profile-button{padding-left:40px;padding-right:40px;max-width:16em;}
-}
-@media (min-width:992px){
-.ss-two-column-page .ss-content-wrapper{width:75%;}
-}
-.ss-two-column-page .ss-page-title{color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;margin:0;font-family: 'Montserrat', sans-serif;}
-.lazyload{opacity:0;}
-.lazyloaded{opacity:1;transition:opacity .3s;}
-
-</style>
-
-
-
-<!--style tab dashboard-->
-<style media="screen">
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/plugins/wp-crowdfunding/assets/css/crowdfunding-front.css?ver=2.0.2 ; media=all */
-@media all{
-.wp-crowd-btn{padding:10px 20px;text-decoration:none;box-shadow:none;border:none;font-size:14px;font-weight:300;border-radius:3px;text-transform:capitalize;transition:400ms;}
-.wp-crowd-btn:hover,.wp-crowd-btn:focus{text-decoration:none;outline:0;}
-.wpneo-links div a.wp-crowd-btn-primary:hover,.wp-crowd-btn-primary:focus{color:#fff;}
-.wpneo-head{margin-bottom:30px;background:#fff;padding:0 20px;}
-.wpneo-links .wpneo-links-list{display:inline-block;}
-.wpneo-links .wpneo-links-list a{display:block;color:#686C8B;font-size:14px;line-height:58px;padding:0;margin-right:25px;text-decoration:none;font-weight:400;box-shadow:none;}
-.wpneo-links .wpneo-links-list a:focus{outline:0;}
-.wpneo-links a{box-shadow:none;line-height:20px;}
-.wp-crowd-new-campaign{float:right;margin-top:7px;}
-.wpneo-shadow{-webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.1);box-shadow:0 0 3px rgba(0, 0, 0, 0.1);background:#fff;border-radius:4px;}
-.wp-crowd-parent{position:relative;}
-.wpneo-links-list{display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
-.wpneo-links-lists{display:block;padding:0 25px;}
-.wpneo-links .wpneo-links-list .wpneo-links-lists a{line-height:40px;}
-.wp-crowd-submenu{position:absolute;width:230px;top:100%;left:0;padding:10px 0;opacity:0;visibility:hidden;-webkit-transiton:350ms;-moz-transition:350ms;-ms-transition:350ms;-o-transition:350ms;transition:350ms;-webkit-transform:translate(0, 25px);transform:translate(0, 25px);z-index:1;}
-.wpneo-links-list:hover .wp-crowd-submenu{opacity:1;visibility:visible;-webkit-transform:translate(0, 1px);transform:translate(0, 1px);}
-.wpcrowd-arrow-down{border:solid #686C8B;border-width:0 2px 2px 0;display:inline-block;padding:2.5px;transform:rotate(45deg);-webkit-transform:rotate(45deg);position:relative;left:5px;top:-2px;}
-.wp-crowd-btn-primary{background-color:#1B6DC1;color:#fff;}
-.wp-crowd-btn-primary:hover{background-color:#1B6DC1;color:#fff;}
-.wpneo-links div a:hover,.wpneo-links div.active a{color:#1B6DC1;}
-.wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #1adc68;border-width:0 2px 2px 0;}
-@media (max-width: 992px){
-.wpneo-links .wpneo-links-list a{font-size:14px;margin-right:20px;line-height:24px;}
-.wpneo-head{padding-top:10px;}
-.wp-crowd-new-campaign{float:none;display:inline-block;margin-bottom:24px;}
-}
-@media (max-width: 767px){
-.wp-crowd-submenu{right:-60%;left:auto;}
-}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/bootstrap.min.css?ver=all ; media=all */
-@media all{
-@media print{
-*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
-a,a:visited{text-decoration:underline;}
-}
-*,::after,::before{box-sizing:border-box;}
-a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
-a:hover{color:#0056b3;text-decoration:underline;}
-a{-ms-touch-action:manipulation;touch-action:manipulation;}
-.clearfix::after{display:block;clear:both;content:"";}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/main.css?ver=all ; media=all */
-@media all{
-.wp-crowd-new-campaign{margin-top:17px;}
-.wp-crowd-btn{border-radius:50px;}
-.wpneo-head{background:#fff;}
-.wpneo-links .wpneo-links-list a{font-weight:300;}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/custom.css?ver=all ; media=all */
-@media all{
-.wp-crowd-submenu{width:230px;}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/style.css?ver=4.9.15 ; media=all */
-@media all{
-a{text-decoration:none!important;}
-a:focus{outline:0;outline-offset:0;}
-}
-/*! CSS Used from: Embedded */
-a{color:#33d3c0;}
-a:hover{color:#00bf9c;}
-/*! CSS Used from: Embedded */
-.wp-crowd-btn-primary{background-color:#1B6DC1;color:#fff;}
-.wp-crowd-btn-primary:hover{background-color:#1B6DC1;color:#fff;}
-.wpneo-links div a:hover,.wpneo-links div.active a{color:#33d3c0;}
-.wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #1B6DC1;border-width:0 2px 2px 0;}
-.hide{display:none!important;}
-.form_style{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 20px;
-    border-radius: 20px;
-}
-.form_style_sec {margin: 5rem;}
-.header_form{background-color:#efeeee!important;}
-@media only screen and (max-width: 600px) {
-  .form_style_sec {margin: 1.5rem;}
-}
-</style>
-
 <!--style unsplash-->
 <style media="screen">
 /*! CSS Used from: https://unsplash.com/assets/application-f75735f5491078c7be55e653e6bbd242c88aaf155bc1fc4559cce30f0bfa0d8c.css ; media=all */
@@ -504,6 +149,311 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 </style>
 
 
+<style media="screen">
+.profile-bg-picture {
+background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url(../img/blog/13.jpg) no-repeat center center fixed;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-attachment: scroll;
+color: #fff;
+height: 55vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+</style>
+
+<!--user-section-->
+<style media="screen">
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/bower_components/bootstrap/dist/css/bootstrap.css */
+section{display:block;}
+small{font-size:80%;}
+img{border-style:none;}
+button{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0;}
+button{overflow:visible;}
+button{text-transform:none;}
+button,html [type="button"]{-webkit-appearance:button;}
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner{border-style:none;padding:0;}
+button:-moz-focusring,[type="button"]:-moz-focusring{outline:1px dotted ButtonText;}
+@media print{
+*,*::before,*::after,p::first-letter,div::first-letter,p::first-line,div::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+img{page-break-inside:avoid;}
+p{orphans:3;widows:3;}
+}
+*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
+h4{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+img{vertical-align:middle;}
+button{-ms-touch-action:manipulation;touch-action:manipulation;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button{line-height:inherit;}
+h4{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+h4{font-size:1.5rem;}
+small{font-size:80%;font-weight:normal;}
+.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 768px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 992px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 1200px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 576px){
+.container{width:540px;max-width:100%;}
+}
+@media (min-width: 768px){
+.container{width:720px;max-width:100%;}
+}
+@media (min-width: 992px){
+.container{width:960px;max-width:100%;}
+}
+@media (min-width: 1200px){
+.container{width:1140px;max-width:100%;}
+}
+.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+@media (min-width: 576px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 768px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 992px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 1200px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+.col-sm-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.col-sm-6{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 768px){
+.col-sm-6{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 992px){
+.col-sm-6{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 1200px){
+.col-sm-6{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 576px){
+.col-sm-6{-webkit-box-flex:0;-webkit-flex:0 0 50%;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+.btn{display:inline-block;font-weight:normal;line-height:1.25;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:0.5rem 1rem;font-size:1rem;border-radius:0.25rem;-webkit-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
+.btn:focus,.btn:hover{text-decoration:none;}
+.btn:focus{outline:0;-webkit-box-shadow:0 0 0 2px rgba(2, 117, 216, 0.25);box-shadow:0 0 0 2px rgba(2, 117, 216, 0.25);}
+.btn:disabled{cursor:not-allowed;opacity:.65;}
+.btn:active{background-image:none;}
+.btn-success{color:#fff;background-color:#5cb85c;border-color:#5cb85c;}
+.btn-success:hover{color:#fff;background-color:#449d44;border-color:#419641;}
+.btn-success:focus{-webkit-box-shadow:0 0 0 2px rgba(92, 184, 92, 0.5);box-shadow:0 0 0 2px rgba(92, 184, 92, 0.5);}
+.btn-success:disabled{background-color:#5cb85c;border-color:#5cb85c;}
+.btn-success:active{color:#fff;background-color:#449d44;background-image:none;border-color:#419641;}
+.media-body{-webkit-box-flex:1;-webkit-flex:1 1 0%;-ms-flex:1 1 0%;flex:1 1 0%;}
+.text-right{text-align:right;}
+.text-muted{color:#636c72!important;}
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.pull-left{float:left;}
+.fa-user:before{content:"\f007";}
+div,span,h4,p,img,small,i,section{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+section{display:block;}
+h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
+h4{font-size:18px;line-height:36px;}
+p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
+small{font-size:80%;}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
+}
+.user-section .profile-user-box{background-color:#ffffff;padding:20px;border:1px solid #e2e2e2;position:relative;top:-50px;border-radius:5px;align-self:flex-end;}
+.user-section .m-r-15{margin-right:15px!important;}
+.user-section .pull-left{float:left!important;}
+.user-section .thumb-lg{height:88px;width:88px;}
+.user-section .media-body{display:table-cell;vertical-align:top;}
+.user-section .media-body{width:10000px;}
+.user-section .media-body h4{font-family:'Montserrat', sans-serif;font-size:23px!important;color:#1ab394;}
+.user-section .media-body p{font-family:'Montserrat', sans-serif;}
+.user-section .m-b-0{margin-bottom:0!important;}
+.user-section .btn-success{font-family:'Montserrat', sans-serif;font-size:14px!important;background-color:#D86000
+!important;border:1px solid #D86000!important;}
+.user-section .m-r-5{margin-right:5px!important;}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
+}
+
+</style>
+
+
+
+<!--onglets style-->
+<style media="screen">
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/bower_components/bootstrap/dist/css/bootstrap.css */
+section{display:block;}
+a{background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:active,a:hover{outline-width:0;}
+img{border-style:none;}
+@media print{
+*,*::before,*::after,p::first-letter,div::first-letter,li::first-letter,p::first-line,div::first-line,li::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a,a:visited{text-decoration:underline;}
+img{page-break-inside:avoid;}
+p{orphans:3;widows:3;}
+}
+*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
+h4{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+ul{margin-top:0;margin-bottom:1rem;}
+a{color:#0275d8;text-decoration:none;}
+a:focus,a:hover{color:#014c8c;text-decoration:underline;}
+img{vertical-align:middle;}
+a,label{-ms-touch-action:manipulation;touch-action:manipulation;}
+label{display:inline-block;margin-bottom:.5rem;}
+h4{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+h4{font-size:1.5rem;}
+.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 768px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 992px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 1200px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 576px){
+.container{width:540px;max-width:100%;}
+}
+@media (min-width: 768px){
+.container{width:720px;max-width:100%;}
+}
+@media (min-width: 992px){
+.container{width:960px;max-width:100%;}
+}
+@media (min-width: 1200px){
+.container{width:1140px;max-width:100%;}
+}
+.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+@media (min-width: 576px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 768px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 992px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 1200px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+.col-sm-4,.col-lg-12{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.col-sm-4,.col-lg-12{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 768px){
+.col-sm-4,.col-lg-12{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 992px){
+.col-sm-4,.col-lg-12{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 1200px){
+.col-sm-4,.col-lg-12{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 576px){
+.col-sm-4{-webkit-box-flex:0;-webkit-flex:0 0 33.333333%;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
+}
+@media (min-width: 992px){
+.col-lg-12{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+}
+.fade{opacity:0;-webkit-transition:opacity 0.15s linear;-o-transition:opacity 0.15s linear;transition:opacity 0.15s linear;}
+.nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-left:0;margin-bottom:0;list-style:none;}
+.nav-link{display:block;padding:0.5em 1em;}
+.nav-link:focus,.nav-link:hover{text-decoration:none;}
+.nav-tabs{border-bottom:1px solid #ddd;}
+.nav-tabs .nav-item{margin-bottom:-1px;}
+.nav-tabs .nav-link{border:1px solid transparent;border-top-right-radius:0.25rem;border-top-left-radius:0.25rem;}
+.nav-tabs .nav-link:focus,.nav-tabs .nav-link:hover{border-color:#eceeef #eceeef #ddd;}
+.nav-tabs .nav-link.active{color:#464a4c;background-color:#fff;border-color:#ddd #ddd #fff;}
+.tab-content > .tab-pane{display:none;}
+.tab-content > .active{display:block;}
+.card{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;background-color:#fff;border:1px solid rgba(0, 0, 0, 0.125);border-radius:0.25rem;}
+.card-block{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;padding:1.25rem;}
+.media{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;}
+.media-body{-webkit-box-flex:1;-webkit-flex:1 1 0%;-ms-flex:1 1 0%;flex:1 1 0%;}
+.rounded-circle{border-radius:50%;}
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.fa-briefcase:before{content:"\f0b1";}
+.fa-envelope:before{content:"\f0e0";}
+.fa-ellipsis-v:before{content:"\f142";}
+div,h4,p,a,img,i,section{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+section{display:block;}
+h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
+h4{font-size:18px;line-height:36px;}
+p{font-family:'Montserrat', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
+a{color:#fff;text-decoration:none;outline:0;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
+a:hover,a:focus,a:active,a.active{text-decoration:none;outline:0;color:#D86000!important;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
+ul{margin:0;}
+ul{list-style:none outside;}
+li{line-height:24px;}
+a{cursor:pointer;outline:0;}
+a{cursor:pointer;outline:0;}
+.posts-2{width:100%;background:#f2f2f2;padding-top:50px;padding-bottom:30px;}
+.card{margin-bottom:30px;margin-right:10px;margin-left:10px;border-radius:10px!important;box-shadow:0 1px 5px rgba(49, 58, 70, 0.4);}
+.card a{text-decoration:none!important;color:inherit;}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
+}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
+}
+.nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;color:#3b4354;}
+.followers .card-profile .media{margin-top:0;}
+.followers .card-profile .media .media-left{padding-right:15px;}
+.followers .card-profile .media .media-object{width:48px;padding:2px;border:2px solid #eaecf0;}
+.followers .media-object{display:block;}
+.followers .media-body{display:table-cell;vertical-align:top;width:10000px;}
+.followers .media-heading{font-family:'Montserrat', sans-serif;margin-top:5px;margin-bottom:2px;font-size:16px;font-weight:700;color:#3b4354;}
+.followers .media-usermeta{font-family:'Montserrat', sans-serif;margin-top:4px;color:#909bb1;}
+.followers .media-usermeta i{display:inline-block;margin-right:5px;vertical-align:baseline;}
+.followers .card-options{position:absolute;top:15px;right:20px;padding:0;margin:0;}
+.followers .card-options > li{display:block;float:left;list-style:none;}
+.followers .card-options > li > a{color:#bdc3d1;-webkit-transition:all 0.2s ease-out 0s;-o-transition:all 0.2s ease-out 0s;transition:all 0.2s ease-out 0s;}
+.followers .card-options > li > a > i{display:inline-block;vertical-align:middle;}
+.followers .people-info .row{margin:0;}
+.followers .people-info .col-sm-4{padding:0;font-size:12px;}
+.followers .people-info .col-sm-4:first-child > .info-group{margin-left:0;}
+.followers .people-info .info-group{font-family:'Montserrat', sans-serif;font-size:14px;padding:15px;background-color:#f9fafb;margin-left:1px;}
+.followers .people-info .info-group label{display:block;margin-bottom:5px;text-transform:uppercase;font-family:'Montserrat', sans-serif;font-weight:700;font-size:11px;letter-spacing:.5px;color:#3b4354;}
+.followers .people-info .row + .row{margin-top:1px;}
+.followers .people-info h4{font-family:'Montserrat', sans-serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
+.nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
+.form_style{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 20px;
+}
+.form_style_sec {margin: 5rem;}
+.header_form{background-color:#efeeee!important;}
+@media (max-width: 767px){
+
+	.form_style_sec {margin: 2rem;}
+	.arch .arch-right{text-align: center; margin-bottom: 15px;}
+}
+
+.rgsel, .rgsel-1, .commune_0{display: none;}
+
+
+</style>
 
 @include('includes.user_header')
 
@@ -550,13 +500,11 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
 
             <div class="form">
-                <form enctype="multipart/form-data" class="edit_user" id="edit_user_4646744" action="{{url('users', Auth::user())}}" accept-charset="UTF-8" method="post" >
+                <form enctype="multipart/form-data" class="edit_user" id="edit_user_4646744" action="{{url('users', Auth::user())}}" accept-charset="UTF-8" method="post">
                     @csrf
                     {{method_field('patch')}}
-                    <div class="container">
-                    	
                     <div class="row">
-                        <div class="col-xs-4 col-sm-4 text-center">
+                        <div class="col-xs-12 col-sm-4 text-center">
                             <a id="openimgupload" class="upload-circular-container profile-image-container js-general-uploader-pseudo-file-field">
                                 <div id="uploaded_image" class="upload-circular">
                                     <img sizes="128px"
@@ -589,19 +537,23 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
                         </div>
 
-                        <div class="col-xs-8 col-sm-8">
+                        <div class="col-xs-12 col-sm-8">
                             <div class="form-group">
-                                <label for="user_first_name">Nom </label>
-                                <input class="form-control" type="text" value="{{Auth::user()->first_name}}" name="first_name" id="user_first_name">
+                                <label for="user_first_name">Nom de famille</label>
+                                <input class="form-control" type="text" value="{{Auth::user()->last_name}}" name="last_name" id="user_first_name">
 
                             </div> <!-- close .form-group -->
 
                             <div class="form-group">
-                                <label for="user_last_name">Prénom </label>
-                                <input class="form-control" type="text" value="{{Auth::user()->last_name}}" name="last_name" id="user_last_name">
+                                <label for="user_last_name">Prénom Traditionnel</label>
+                                <input class="form-control" type="text" value="{{Auth::user()->traditional_first_name}}" name="traditional_first_name" id="user_last_name">
 
                             </div> <!-- close .form-group -->
-                            
+                            <div class="form-group">
+                                <label for="user_last_name">Autre prénom</label>
+                                <input class="form-control" type="text" value="{{Auth::user()->other_name}}" name="other_name" id="user_last_name">
+
+                            </div>
 
                             <div class="form-group">
                                 <label for="user_email">
@@ -611,30 +563,83 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
                             </div> <!-- close .form-group -->
 
-                            
+                            <div class="form-group">
+                                <label for="">
+                                    Industrie dans laquelle vous exercez ({{Auth::user()->job}})
+                                </label>
+							      <select name="job" class="form-control" id="sel1" placeholder="Métier">
+                                      @if(Auth::user()->job !== null)
+                                      <option selected value="{{Auth::user()->job}}">{{Auth::user()->job}}</option>
+                                      @endif
+							        <option value="Aéronautique Et Espace">Aéronautique Et Espace</option>
+							        <option value="Agriculture - Agroalimentaire">Agriculture - Agroalimentaire</option>
+							        <option value="Artisanat">Artisanat</option>
+							        <option value="Audiovisuel, Cinéma">Audiovisuel, Cinéma</option>
+							        <option value="Audit, Comptabilité, Gestion">Audit, Comptabilité, Gestion</option>
+							        <option value="Automobile">Automobile</option>
+							        <option value="Banque, Assurance">Banque, Assurance</option>
+							        <option value="Bâtiment, Travaux Publics">Bâtiment, Travaux Publics</option>
+							        <option value="Biologie, Chimie, Pharmacie">Biologie, Chimie, Pharmacie</option>
+							        <option value="Commerce, Distribution">Commerce, Distribution</option>
+							        <option value="Communication">Communication</option>
+							        <option value="Création, Métiers D'art">Création, Métiers D'art</option>
+							        <option value="Culture, Patrimoine">Culture, Patrimoine</option>
+							        <option value="Défense, Sécurité, Armée">Défense, Sécurité, Armée</option>
+							        <option value="Documentation, Bibliothèque">Documentation, Bibliothèque</option>
+							        <option value="Droit">Droit</option>
+							        <option value="Edition, Livre">Edition, Livre</option>
+							        <option value="Enseignement">Enseignement</option>
+							        <option value="Environnement">Environnement</option>
+							        <option value="Ferroviaire">Ferroviaire</option>
+							        <option value="Foires, Salons Et Congrès">Foires, Salons Et Congrès</option>
+							        <option value="Fonction Publique">Fonction Publique</option>
+							        <option value="Hôtellerie, Restauration">Hôtellerie, Restauration</option>
+							        <option value="Humanitaire">Humanitaire</option>
+							        <option value="Immobilier">Immobilier</option>
+							        <option value="Industrie">Industrie</option>
+							        <option value="Informatique, Télécoms, Web">Informatique, Télécoms, Web</option>
+							        <option value="Journalisme">Journalisme</option>
+							        <option value="Langues">Langues</option>
+							        <option value="Marketing, Publicité">Marketing, Publicité</option>
+							        <option value="Médical">Médical</option>
+							        <option value="Mode-Textile">Mode-Textile</option>
+							        <option value="Paramédical">Paramédical</option>
+							        <option value="Propreté Et Services Associés">Propreté Et Services Associés</option>
+							        <option value="Psychologie">Psychologie</option>
+							        <option value="Ressources Humaines">Ressources Humaines</option>
+							        <option value="Sciences Humaines Et Sociales">Sciences Humaines Et Sociales</option>
+							        <option value="Secrétariat">Secrétariat</option>
+							        <option value="Social">Social</option>
+							        <option value="Spectacle - Métiers De La Scène">Spectacle - Métiers De La Scène</option>
+							        <option value="Sport">Sport</option>
+							        <option value="Tourisme">Tourisme</option>
+							        <option value="Transport-Logistique">Transport-Logistique</option>
+							      </select>
+
+                            </div> <!-- close .form-group -->
 
                             <div class="form-group">
                                 <label for="Image_cover">
                                     Image de fond
                                 </label>
-                                <input class="form-control" type="file" value="" name="image" id="">
+                                <input class="form-control" type="file" value="" name="cover_image" id="">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
                     </div> <!-- close .row -->
-                    </div>
+
                     <div class="row">
 
-                        <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Pays 
+                                    Pays d'origine
                                 </label>
                                 <!--input class="form-control" placeholder="Pays de naissance" value="{{Auth::user()->birth_country}}" type="text" name="birth_country"  id="country"-->
-                                <select name="country" class="form-control" value="{{Auth::user()->country}}" id="pays">
+                                <select name="birth_country" class="form-control" value="{{Auth::user()->birth_country}}" id="pays">
 
-                                    @if(Auth::user()->country !== null)
-                                    <option selected value="{{Auth::user()->country}}">{{Auth::user()->country}}</option>
+                                    @if(Auth::user()->birth_country !== null)
+                                    <option selected value="{{Auth::user()->birth_country}}">{{Auth::user()->birth_country}}</option>
                                     @endif
 									<option value="Afghanistan">Afghanistan </option>
 									<option value="Afrique_Centrale">Afrique_Centrale </option>
@@ -893,50 +898,863 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
+                        {{--
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Etat de naissance
+                                </label>
+                                <!--input class="form-control" placeholder="Etat de naissance" type="text" name="user[url]" -->
 
-                        
-                        
+							    <select class="form-control" id="sel1" placeholder="Etat de naissance">
+							        <option>Abidjan</option>
+							        <option>Lacs</option>
+							        <option>Comoé</option>
+							        <option>Denguélé</option>
+							        <option>Gôh-Djiboua</option>
+							        <option>Lagunes</option>
+							        <option>Montagnes</option>
+							        <option>Sassandra-Marahoué</option>
+							        <option>Savanes</option>
+							        <option>Bas-Sassandra</option>
+							        <option>Vallée du Bandama</option>
+							        <option>Woroba</option>
+							        <option>Zanzan</option>
+							        <option>Yamoussoukro</option>
+							    </select>
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Ville de naissance
+                                </label>
+                                <input id="search_input" class="form-control" placeholder="Ville de naissance" type="text" value="{{Auth::user()->birth_city}}" name="birth_city" id="city" autocomplete="on" >
+                                <input class="form-control" type="hidden" id="loc_lat" />
+                                <input class="form-control" type="hidden" id="loc_long" />
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Ville
+                                </label>
+                                <input class="form-control" placeholder="Ville" type="text" name="town" id="user_url" value="{{Auth::user()->town}}">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        --}}
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Pays de résidence
+                                </label>
+                                <input id="country_2" class="form-control" placeholder="Pays de résidence" type="text" name="living_country" id="country_2 search_input-1" value="{{Auth::user()->living_country}}">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        <div class="col-xs-12 col-sm-6" id="commune0">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Votre village
+                                </label>
+                                <input class="form-control" placeholder="Votre village" type="text" name="town" id="user_url search_input-25" value="{{Auth::user()->town}}">
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        <div class="col-xs-12 col-sm-6 commune_0" id="commune">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Votre village
+                                </label>
+
+                                <select class="form-control"  value="" name="town">
+                                    @if(Auth::user()->town !== null)
+                                    <option value="{{Auth::user()->town}}">{{Auth::user()->town}}</option>
+                                    @endif
+							        <option value="Abengourou">Abengourou</option>
+							        <option value="Abobo">Abobo</option>
+							        <option value="Aboisso">Aboisso</option>
+							        <option value="Adiaké">Adiaké</option>
+							        <option value="Adjamé">Adjamé</option>
+							        <option value="Adzopé">Adzopé</option>
+							        <option value="Afféry">Afféry</option>
+							        <option value="Agboville">Agboville</option>
+							        <option value="Agnibilékrou">Agnibilékrou</option>
+							        <option value="Agou">Agou</option>
+							        <option value="Akoupé">Akoupé</option>
+							        <option value="Alépé">Alépé</option>
+							        <option value="Anoumaba">Anoumaba</option>
+							        <option value="Anyama">Anyama</option>
+							        <option value="Arrah">Arrah</option>
+							        <option value="Assinie">Assinie</option>
+							        <option value="Assuéffry">Assuéffry</option>
+							        <option value="Attécoubé">Attécoubé</option>
+							        <option value="Attiegouakro">Attiegouakro</option>
+							        <option value="Ayamé">Ayamé</option>
+							        <option value="Azaguié">Azaguié</option>
+							        <option value="Bako">Bako</option>
+							        <option value="Bangolo">Bangolo</option>
+							        <option value="Bassawa">Bassawa</option>
+							        <option value="Bédiala">Bédiala</option>
+							        <option value="Béoumi">Béoumi</option>
+							        <option value="Béttié">Béttié</option>
+							        <option value="Biankouma">Biankouma</option>
+							        <option value="Bin-Houyé">Bin-Houyé</option>
+							        <option value="Bingerville">Bingerville</option>
+							        <option value="Bloléquin">Bloléquin</option>
+							        <option value="Bocanda">Bocanda</option>
+							        <option value="Bodokro">Bodokro</option>
+							        <option value="Bondoukou">Bondoukou</option>
+							        <option value="Bongouanou">Bongouanou</option>
+							        <option value="Boniérédougou">Boniérédougou</option>
+							        <option value="Bonon">Bonon</option>
+							        <option value="Bonoua">Bonoua</option>
+							        <option value="Booko">Booko</option>
+							        <option value="Borotou">Borotou</option>
+							        <option value="Botro">Botro</option>
+							        <option value="Bouaflé">Bouaflé</option>
+							        <option value="Bouaké">Bouaké</option>
+							        <option value="Bouna">Bouna</option>
+							        <option value="Boundiali">Boundiali</option>
+							        <option value="Brobo">Brobo</option>
+							        <option value="Buyo">Buyo</option>
+							        <option value="Cocody">Cocody</option>
+							        <option value="Dabakala">Dabakala</option>
+							        <option value="Dabou">Dabou</option>
+							        <option value="Daloa">Daloa</option>
+							        <option value="Danané">Danané</option>
+							        <option value="Daoukro">Daoukro</option>
+							        <option value="Diabo">Diabo</option>
+							        <option value="Dianra">Dianra</option>
+							        <option value="Diawala">Diawala</option>
+							        <option value="Didiévi">Didiévi</option>
+							        <option value="Diégonéfla">Diégonéfla</option>
+							        <option value="Dikodougou">Dikodougou</option>
+							        <option value="Dimbokro">Dimbokro</option>
+							        <option value="Dioulatiédougou">Dioulatiédougou</option>
+							        <option value="Divo">Divo</option>
+							        <option value="Djebonoua">Djebonoua</option>
+							        <option value="Djèkanou">Djèkanou</option>
+							        <option value="Djibrosso">Djibrosso</option>
+							        <option value="Doropo">Doropo</option>
+							        <option value="Dualla">Dualla</option>
+							        <option value="Duékoué">Duékoué</option>
+							        <option value="Ettrokro">Ettrokro</option>
+							        <option value="Facobly">Facobly</option>
+							        <option value="Ferkessédougou">Ferkessédougou</option>
+							        <option value="Foumbolo">Foumbolo</option>
+							        <option value="Fresco">Fresco</option>
+							        <option value="Fronan">Fronan</option>
+							        <option value="Gagnoa">Gagnoa</option>
+							        <option value="Gbeleban">Gbeleban</option>
+							        <option value="Gboguhé">Gboguhé</option>
+							        <option value="Gbon">Gbon</option>
+							        <option value="Gbonné">Gbonné</option>
+							        <option value="Gohitafla">Gohitafla</option>
+							        <option value="Goulia">Goulia</option>
+							        <option value="Grabo">Grabo</option>
+							        <option value="Grand-Bassam">Grand-Bassam</option>
+							        <option value="Grand-Béréby">Grand-Béréby</option>
+							        <option value="Grand-Lahou">Grand-Lahou</option>
+							        <option value="Grand-Zattry">Grand-Zattry</option>
+							        <option value="Guéyo">Guéyo</option>
+							        <option value="Guibéroua">Guibéroua</option>
+							        <option value="Guiembé">Guiembé</option>
+							        <option value="Guiglo">Guiglo</option>
+							        <option value="Guintéguéla">Guintéguéla</option>
+							        <option value="Guitry">Guitry</option>
+							        <option value="Hiré">Hiré</option>
+							        <option value="Issia">Issia</option>
+							        <option value="Jacqueville">Jacqueville</option>
+							        <option value="Kanakono">Kanakono</option>
+							        <option value="Kani">Kani</option>
+							        <option value="Kaniasso">Kaniasso</option>
+							        <option value="Karakoro">Karakoro</option>
+							        <option value="Kasséré">Kasséré</option>
+							        <option value="Katiola">Katiola</option>
+							        <option value="Kokoumbo">Kokoumbo</option>
+							        <option value="Kolia">Kolia</option>
+							        <option value="Komborodougou">Komborodougou</option>
+							        <option value="Kong">Kong</option>
+							        <option value="Kongasso">Kongasso</option>
+							        <option value="Koonan">Koonan</option>
+							        <option value="Korhogo">Korhogo</option>
+							        <option value="Koro">Koro</option>
+							        <option value="Kouassi-Datékro">Kouassi-Datékro</option>
+							        <option value="Kouassi-Kouassikro">Kouassi-Kouassikro</option>
+							        <option value="Kouibly">Kouibly</option>
+							        <option value="Koumassi">Koumassi</option>
+							        <option value="Koumbala">Koumbala</option>
+							        <option value="Koun-Fao">Koun-Fao</option>
+							        <option value="Kounahiri">Kounahiri</option>
+							        <option value="Kouto">Kouto</option>
+							        <option value="Lakota">Lakota</option>
+							        <option value="Logoualé">Logoualé</option>
+							        <option value="M'bahiakro">M'bahiakro</option>
+							        <option value="M'batto">M'batto</option>
+							        <option value="M'bengué">M'bengué</option>
+							        <option value="Madinani">Madinani</option>
+							        <option value="Maféré">Maféré</option>
+							        <option value="Man">Man</option>
+							        <option value="Mankono">Mankono</option>
+							        <option value="Marcory">Marcory</option>
+							        <option value="Massala">Massala</option>
+							        <option value="Mayo">Mayo</option>
+							        <option value="Méagui">Méagui</option>
+							        <option value="Minignan">Minignan</option>
+							        <option value="Morondo">Morondo</option>
+							        <option value="N'douci">N'douci</option>
+							        <option value="Napié">Napié</option>
+							        <option value="Nassian">Nassian</option>
+							        <option value="Niablé">Niablé</option>
+							        <option value="Niakaramandougou">Niakaramandougou</option>
+							        <option value="Niéllé">Niéllé</option>
+							        <option value="Niofoin">Niofoin</option>
+							        <option value="Odienné">Odienné</option>
+							        <option value="Ouangolodougou">Ouangolodougou</option>
+							        <option value="Ouaninou">Ouaninou</option>
+							        <option value="Ouellé">Ouellé</option>
+							        <option value="Oumé">Oumé</option>
+							        <option value="Ouragahio">Ouragahio</option>
+							        <option value="Plateau">Plateau</option>
+							        <option value="Port-bouët">Port-bouët</option>
+							        <option value="Prikro">Prikro</option>
+							        <option value="Rubino">Rubino</option>
+							        <option value="Saïoua">Saïoua</option>
+							        <option value="Sakassou">Sakassou</option>
+							        <option value="Samatiguila">Samatiguila</option>
+							        <option value="San Pedro">San Pedro</option>
+							        <option value="Sandégué">Sandégué</option>
+							        <option value="Sangouiné">Sangouiné</option>
+							        <option value="Sarhala">Sarhala</option>
+							        <option value="Sassandra">Sassandra</option>
+							        <option value="Satama-Sokoro">Satama-Sokoro</option>
+							        <option value="Satama-Sokoura">Satama-Sokoura</option>
+							        <option value="Séguéla">Séguéla</option>
+							        <option value="Séguelon">Séguelon</option>
+							        <option value="Seydougou">Seydougou</option>
+							        <option value="Sifié">Sifié</option>
+							        <option value="Sikensi">Sikensi</option>
+							        <option value="Sinématiali">Sinématiali</option>
+							        <option value="Sinfra">Sinfra</option>
+							        <option value="Sipilou">Sipilou</option>
+							        <option value="Sirasso">Sirasso</option>
+							        <option value="Songon">Songon</option>
+							        <option value="Soubré">Soubré</option>
+							        <option value="Taabo">Taabo</option>
+							        <option value="Tabou">Tabou</option>
+							        <option value="Tafiré">Tafiré</option>
+							        <option value="Taï">Taï</option>
+							        <option value="Tanda">Tanda</option>
+							        <option value="Téhini">Téhini</option>
+							        <option value="Tengréla">Tengréla</option>
+							        <option value="Tiapoum">Tiapoum</option>
+							        <option value="Tiassalé">Tiassalé</option>
+							        <option value="Tie-n'diekro">Tie-n'diekro</option>
+							        <option value="Tiébissou">Tiébissou</option>
+							        <option value="Tiémé">Tiémé</option>
+							        <option value="Tiémélékro">Tiémélékro</option>
+							        <option value="Tiéningboué">Tiéningboué</option>
+							        <option value="Tienko">Tienko</option>
+							        <option value="Tioroniaradougou">Tioroniaradougou</option>
+							        <option value="Tortiya">Tortiya</option>
+							        <option value="Touba">Touba</option>
+							        <option value="Toulépleu">Toulépleu</option>
+							        <option value="Toumodi">Toumodi</option>
+							        <option value="Transua">Transua</option>
+							        <option value="Treichville">Treichville</option>
+							        <option value="Vavoua">Vavoua</option>
+							        <option value="Worofla">Worofla</option>
+							        <option value="Yakassé-Attobrou">Yakassé-Attobrou</option>
+							        <option value="Yamoussoukro">Yamoussoukro</option>
+							        <option value="Yopougon">Yopougon</option>
+							        <option value="Zikisso">Zikisso</option>
+							        <option value="Zouan-Hounien">Zouan-Hounien</option>
+							        <option value="Zoukougbeu">Zoukougbeu</option>
+							        <option value="Zuénoula">Zuénoula</option>
+
+							    </select>
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
                                     Ville de résidence
                                 </label>
-                                <input class="form-control" placeholder="Ville de résidence" type="text" name="city" id="user_url search_input-2" value="{{Auth::user()->city}}">
+                                <input class="form-control" placeholder="Ville de résidence" type="text" name="living_city" id="user_url search_input-2" value="{{Auth::user()->living_city}}">
+
+
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-                        
 
-                        <div class="col-xs-12 col-sm-6 col-md-6">
+                        {{--
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Etat de résidence
+                                </label>
+                                <input class="form-control" placeholder="Etat de résidence" type="text" name="living_state"  value="{{Auth::user()->living_state}}" id="search_input-3">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        --}}
+
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Situation matrimoniale
+                                </label>
+                                <input class="form-control" placeholder="Situation matrimonial" type="text" name="marital_status" id="user_url" value="{{Auth::user()->marital_status}}">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Code Postal
+                                </label>
+                                <input class="form-control" placeholder="Code Postal" type="text" name="zip_code" id="user_url" value="{{Auth::user()->zip_code}}">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nombre d'enfants
+                                </label>
+                                <input class="form-control" placeholder="Nombre d'enfant" type="number" name="children_number" id="user_url" value="{{Auth::user()->children_number}}">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
                                     Numéro de téléphone
                                 </label>
-                                <input class="form-control" placeholder="Numéro de téléphone" type="text" name="phone" id="phone" value="{{Auth::user()->phone}}">
+                                <input class="form-control" placeholder="Numéro de téléphone" type="text" name="mobile_tel" id="phone" value="{{Auth::user()->mobile_tel}}">
 
 
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <div class="form-group">
-                                <label for="user_url">
-                                    biographie
-                                </label>
-                                <input type="hidden" name="bio" value="">
-                           		<div class="" id="editorDetails" style="height: 200px;">
-                           			@if(Auth::user()->bio !== null)
-                                    {!!Auth::user()->bio!!}
-                                    @endif
-                           		</div>
-                            </div> <!-- close .form-group -->
-                        </div> <!-- close .col -->
-                       
 
                         <!--Father-->
-                        
-                        
+
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group header_form">
+                            	<hr>
+	                                <h1 for="user_url" style="text-align: center;">
+	                                    Profil du père
+	                                </h1>
+                                <hr>
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+
+                            <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nom du père
+                                </label>
+                                <input class="form-control" placeholder="Nom du père" type="text" name="father_traditional_first_name" id="user_url" value="{{Auth::user()->father_traditional_first_name}}">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Prénoms du père
+                                </label>
+                                <input class="form-control" placeholder="Prénoms du père" type="text" name="father_last_name" id="user_url" value="{{Auth::user()->father_last_name}}">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        {{--
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Autre noms du père
+                                </label>
+                                <input class="form-control" placeholder="Autre noms du père" type="text" name="father_other_name" id="user_url" value="{{Auth::user()->father_other_name}}">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        --}}
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nationalité du père
+                                </label>
+                                <!--input class="form-control" placeholder="Pays de résidence du père" type="text" name="father_birth_country" id="country_4" value="{{Auth::user()->father_birth_country}}"-->
+
+                                <select id="nationalite_1" class="form-control" placeholder="Nationalité du père" name="father_birth_country">
+                                    @if(Auth::user()->father_birth_country !== null)
+                                    <option value="{{Auth::user()->father_birth_country}}">{{Auth::user()->father_birth_country}}</option>
+                                    @endif
+							        <option value="AFG">Afghane (Afghanistan)</option>
+							        <option value="ALB">Albanaise (Albanie)</option>
+							        <option value="DZA">Algérienne (Algérie)</option>
+							        <option value="DEU">Allemande (Allemagne)</option>
+							        <option value="USA">Americaine (États-Unis)</option>
+							        <option value="AND">Andorrane (Andorre)</option>
+							        <option value="AGO">Angolaise (Angola)</option>
+							        <option value="ATG">Antiguaise-et-Barbudienne (Antigua-et-Barbuda)</option>
+							        <option value="ARG">Argentine (Argentine)</option>
+							        <option value="ARM">Armenienne (Arménie)</option>
+							        <option value="AUS">Australienne (Australie)</option>
+							        <option value="AUT">Autrichienne (Autriche)</option>
+							        <option value="AZE">Azerbaïdjanaise (Azerbaïdjan)</option>
+							        <option value="BHS">Bahamienne (Bahamas)</option>
+							        <option value="BHR">Bahreinienne (Bahreïn)</option>
+							        <option value="BGD">Bangladaise (Bangladesh)</option>
+							        <option value="BRB">Barbadienne (Barbade)</option>
+							        <option value="BEL">Belge (Belgique)</option>
+							        <option value="BLZ">Belizienne (Belize)</option>
+							        <option value="BEN">Béninoise (Bénin)</option>
+							        <option value="BTN">Bhoutanaise (Bhoutan)</option>
+							        <option value="BLR">Biélorusse (Biélorussie)</option>
+							        <option value="MMR">Birmane (Birmanie)</option>
+							        <option value="GNB">Bissau-Guinéenne (Guinée-Bissau)</option>
+							        <option value="BOL">Bolivienne (Bolivie)</option>
+							        <option value="BIH">Bosnienne (Bosnie-Herzégovine)</option>
+							        <option value="BWA">Botswanaise (Botswana)</option>
+							        <option value="BRA">Brésilienne (Brésil)</option>
+							        <option value="GBR">Britannique (Royaume-Uni)</option>
+							        <option value="BRN">Brunéienne (Brunéi)</option>
+							        <option value="BGR">Bulgare (Bulgarie)</option>
+							        <option value="BFA">Burkinabée (Burkina)</option>
+							        <option value="BDI">Burundaise (Burundi)</option>
+							        <option value="KHM">Cambodgienne (Cambodge)</option>
+							        <option value="CMR">Camerounaise (Cameroun)</option>
+							        <option value="CAN">Canadienne (Canada)</option>
+							        <option value="CPV">Cap-verdienne (Cap-Vert)</option>
+							        <option value="CAF">Centrafricaine (Centrafrique)</option>
+							        <option value="CHL">Chilienne (Chili)</option>
+							        <option value="CHN">Chinoise (Chine)</option>
+							        <option value="CYP">Chypriote (Chypre)</option>
+							        <option value="COL">Colombienne (Colombie)</option>
+							        <option value="COM">Comorienne (Comores)</option>
+							        <option value="COG">Congolaise (Congo-Brazzaville)</option>
+							        <option value="COD">Congolaise (Congo-Kinshasa)</option>
+							        <option value="COK">Cookienne (Îles Cook)</option>
+							        <option value="CRI">Costaricaine (Costa Rica)</option>
+							        <option value="HRV">Croate (Croatie)</option>
+							        <option value="CUB">Cubaine (Cuba)</option>
+							        <option value="DNK">Danoise (Danemark)</option>
+							        <option value="DJI">Djiboutienne (Djibouti)</option>
+							        <option value="DOM">Dominicaine (République dominicaine)</option>
+							        <option value="DMA">Dominiquaise (Dominique)</option>
+							        <option value="EGY">Égyptienne (Égypte)</option>
+							        <option value="ARE">Émirienne (Émirats arabes unis)</option>
+							        <option value="GNQ">Équato-guineenne (Guinée équatoriale)</option>
+							        <option value="ECU">Équatorienne (Équateur)</option>
+							        <option value="ERI">Érythréenne (Érythrée)</option>
+							        <option value="ESP">Espagnole (Espagne)</option>
+							        <option value="TLS">Est-timoraise (Timor-Leste)</option>
+							        <option value="EST">Estonienne (Estonie)</option>
+							        <option value="ETH">Éthiopienne (Éthiopie)</option>
+							        <option value="FJI">Fidjienne (Fidji)</option>
+							        <option value="FIN">Finlandaise (Finlande)</option>
+							        <option value="FRA">Française (France)</option>
+							        <option value="GAB">Gabonaise (Gabon)</option>
+							        <option value="GMB">Gambienne (Gambie)</option>
+							        <option value="GEO">Georgienne (Géorgie)</option>
+							        <option value="GHA">Ghanéenne (Ghana)</option>
+							        <option value="GRD">Grenadienne (Grenade)</option>
+							        <option value="GTM">Guatémaltèque (Guatemala)</option>
+							        <option value="GIN">Guinéenne (Guinée)</option>
+							        <option value="GUY">Guyanienne (Guyana)</option>
+							        <option value="HTI">Haïtienne (Haïti)</option>
+							        <option value="GRC">Hellénique (Grèce)</option>
+							        <option value="HND">Hondurienne (Honduras)</option>
+							        <option value="HUN">Hongroise (Hongrie)</option>
+							        <option value="IND">Indienne (Inde)</option>
+							        <option value="IDN">Indonésienne (Indonésie)</option>
+							        <option value="IRQ">Irakienne (Iraq)</option>
+							        <option value="IRN">Iranienne (Iran)</option>
+							        <option value="IRL">Irlandaise (Irlande)</option>
+							        <option value="ISL">Islandaise (Islande)</option>
+							        <option value="ISR">Israélienne (Israël)</option>
+							        <option value="ITA">Italienne (Italie)</option>
+							        <option value="CIV">Ivoirienne (Côte d'Ivoire)</option>
+							        <option value="JAM">Jamaïcaine (Jamaïque)</option>
+							        <option value="JPN">Japonaise (Japon)</option>
+							        <option value="JOR">Jordanienne (Jordanie)</option>
+							        <option value="KAZ">Kazakhstanaise (Kazakhstan)</option>
+							        <option value="KEN">Kenyane (Kenya)</option>
+							        <option value="KGZ">Kirghize (Kirghizistan)</option>
+							        <option value="KIR">Kiribatienne (Kiribati)</option>
+							        <option value="KNA">Kittitienne et Névicienne (Saint-Christophe-et-Niévès)</option>
+							        <option value="KWT">Koweïtienne (Koweït)</option>
+							        <option value="LAO">Laotienne (Laos)</option>
+							        <option value="LSO">Lesothane (Lesotho)</option>
+							        <option value="LVA">Lettone (Lettonie)</option>
+							        <option value="LBN">Libanaise (Liban)</option>
+							        <option value="LBR">Libérienne (Libéria)</option>
+							        <option value="LBY">Libyenne (Libye)</option>
+							        <option value="LIE">Liechtensteinoise (Liechtenstein)</option>
+							        <option value="LTU">Lituanienne (Lituanie)</option>
+							        <option value="LUX">Luxembourgeoise (Luxembourg)</option>
+							        <option value="MKD">Macédonienne (Macédoine)</option>
+							        <option value="MYS">Malaisienne (Malaisie)</option>
+							        <option value="MWI">Malawienne (Malawi)</option>
+							        <option value="MDV">Maldivienne (Maldives)</option>
+							        <option value="MDG">Malgache (Madagascar)</option>
+							        <option value="MLI">Maliennes (Mali)</option>
+							        <option value="MLT">Maltaise (Malte)</option>
+							        <option value="MAR">Marocaine (Maroc)</option>
+							        <option value="MHL">Marshallaise (Îles Marshall)</option>
+							        <option value="MUS">Mauricienne (Maurice)</option>
+							        <option value="MRT">Mauritanienne (Mauritanie)</option>
+							        <option value="MEX">Mexicaine (Mexique)</option>
+							        <option value="FSM">Micronésienne (Micronésie)</option>
+							        <option value="MDA">Moldave (Moldovie)</option>
+							        <option value="MCO">Monegasque (Monaco)</option>
+							        <option value="MNG">Mongole (Mongolie)</option>
+							        <option value="MNE">Monténégrine (Monténégro)</option>
+							        <option value="MOZ">Mozambicaine (Mozambique)</option>
+							        <option value="NAM">Namibienne (Namibie)</option>
+							        <option value="NRU">Nauruane (Nauru)</option>
+							        <option value="NLD">Néerlandaise (Pays-Bas)</option>
+							        <option value="NZL">Néo-Zélandaise (Nouvelle-Zélande)</option>
+							        <option value="NPL">Népalaise (Népal)</option>
+							        <option value="NIC">Nicaraguayenne (Nicaragua)</option>
+							        <option value="NGA">Nigériane (Nigéria)</option>
+							        <option value="NER">Nigérienne (Niger)</option>
+							        <option value="NIU">Niuéenne (Niue)</option>
+							        <option value="PRK">Nord-coréenne (Corée du Nord)</option>
+							        <option value="NOR">Norvégienne (Norvège)</option>
+							        <option value="OMN">Omanaise (Oman)</option>
+							        <option value="UGA">Ougandaise (Ouganda)</option>
+							        <option value="UZB">Ouzbéke (Ouzbékistan)</option>
+							        <option value="PAK">Pakistanaise (Pakistan)</option>
+							        <option value="PLW">Palaosienne (Palaos)</option>
+							        <option value="PSE">Palestinienne (Palestine)</option>
+							        <option value="PAN">Panaméenne (Panama)</option>
+							        <option value="PNG">Papouane-Néo-Guinéenne (Papouasie-Nouvelle-Guinée)</option>
+							        <option value="PRY">Paraguayenne (Paraguay)</option>
+							        <option value="PER">Péruvienne (Pérou)</option>
+							        <option value="PHL">Philippine (Philippines)</option>
+							        <option value="POL">Polonaise (Pologne)</option>
+							        <option value="PRT">Portugaise (Portugal)</option>
+							        <option value="QAT">Qatarienne (Qatar)</option>
+							        <option value="ROU">Roumaine (Roumanie)</option>
+							        <option value="RUS">Russe (Russie)</option>
+							        <option value="RWA">Rwandaise (Rwanda)</option>
+							        <option value="LCA">Saint-Lucienne (Sainte-Lucie)</option>
+							        <option value="SMR">Saint-Marinaise (Saint-Marin)</option>
+							        <option value="VCT">Saint-Vincentaise et Grenadine (Saint-Vincent-et-les Grenadines)</option>
+							        <option value="SLB">Salomonaise (Îles Salomon)</option>
+							        <option value="SLV">Salvadorienne (Salvador)</option>
+							        <option value="WSM">Samoane (Samoa)</option>
+							        <option value="STP">Santoméenne (Sao Tomé-et-Principe)</option>
+							        <option value="SAU">Saoudienne (Arabie saoudite)</option>
+							        <option value="SEN">Sénégalaise (Sénégal)</option>
+							        <option value="SRB">Serbe (Serbie)</option>
+							        <option value="SYC">Seychelloise (Seychelles)</option>
+							        <option value="SLE">Sierra-Léonaise (Sierra Leone)</option>
+							        <option value="SGP">Singapourienne (Singapour)</option>
+							        <option value="SVK">Slovaque (Slovaquie)</option>
+							        <option value="SVN">Slovène (Slovénie)</option>
+							        <option value="SOM">Somalienne (Somalie)</option>
+							        <option value="SDN">Soudanaise (Soudan)</option>
+							        <option value="LKA">Sri-Lankaise (Sri Lanka)</option>
+							        <option value="ZAF">Sud-Africaine (Afrique du Sud)</option>
+							        <option value="KOR">Sud-Coréenne (Corée du Sud)</option>
+							        <option value="SSD">Sud-Soudanaise (Soudan du Sud)</option>
+							        <option value="SWE">Suédoise (Suède)</option>
+							        <option value="CHE">Suisse (Suisse)</option>
+							        <option value="SUR">Surinamaise (Suriname)</option>
+							        <option value="SWZ">Swazie (Swaziland)</option>
+							        <option value="SYR">Syrienne (Syrie)</option>
+							        <option value="TJK">Tadjike (Tadjikistan)</option>
+							        <option value="TZA">Tanzanienne (Tanzanie)</option>
+							        <option value="TCD">Tchadienne (Tchad)</option>
+							        <option value="CZE">Tchèque (Tchéquie)</option>
+							        <option value="THA">Thaïlandaise (Thaïlande)</option>
+							        <option value="TGO">Togolaise (Togo)</option>
+							        <option value="TON">Tonguienne (Tonga)</option>
+							        <option value="TTO">Trinidadienne (Trinité-et-Tobago)</option>
+							        <option value="TUN">Tunisienne (Tunisie)</option>
+							        <option value="TKM">Turkmène (Turkménistan)</option>
+							        <option value="TUR">Turque (Turquie)</option>
+							        <option value="TUV">Tuvaluane (Tuvalu)</option>
+							        <option value="UKR">Ukrainienne (Ukraine)</option>
+							        <option value="URY">Uruguayenne (Uruguay)</option>
+							        <option value="VUT">Vanuatuane (Vanuatu)</option>
+							        <option value="VAT">Vaticane (Vatican)</option>
+							        <option value="VEN">Vénézuélienne (Venezuela)</option>
+							        <option value="VNM">Vietnamienne (Viêt Nam)</option>
+							        <option value="YEM">Yéménite (Yémen)</option>
+							        <option value="ZMB">Zambienne (Zambie)</option>
+							        <option value="ZWE">Zimbabwéenne (Zimbabwe)</option>
+								</select>
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Village du père
+                                </label>
+                                <input class="form-control" value="{{Auth::user()->father_town}}" placeholder="Village du père" type="text" name="father_town" id="region1">
+
+                                <select class="form-control rgsel-1" id="region_2" placeholder="Village du père" name="father_town">
+                                    @if(Auth::user()->father_town !== null)
+                                    <option value="{{Auth::user()->father_town}}">{{Auth::user()->father_town}}</option>
+                                    @endif
+							        <option value="Abengourou">Abengourou</option>
+							        <option value="Abobo">Abobo</option>
+							        <option value="Aboisso">Aboisso</option>
+							        <option value="Adiaké">Adiaké</option>
+							        <option value="Adjamé">Adjamé</option>
+							        <option value="Adzopé">Adzopé</option>
+							        <option value="Afféry">Afféry</option>
+							        <option value="Agboville">Agboville</option>
+							        <option value="Agnibilékrou">Agnibilékrou</option>
+							        <option value="Agou">Agou</option>
+							        <option value="Akoupé">Akoupé</option>
+							        <option value="Alépé">Alépé</option>
+							        <option value="Anoumaba">Anoumaba</option>
+							        <option value="Anyama">Anyama</option>
+							        <option value="Arrah">Arrah</option>
+							        <option value="Assinie">Assinie</option>
+							        <option value="Assuéffry">Assuéffry</option>
+							        <option value="Attécoubé">Attécoubé</option>
+							        <option value="Attiegouakro">Attiegouakro</option>
+							        <option value="Ayamé">Ayamé</option>
+							        <option value="Azaguié">Azaguié</option>
+							        <option value="Bako">Bako</option>
+							        <option value="Bangolo">Bangolo</option>
+							        <option value="Bassawa">Bassawa</option>
+							        <option value="Bédiala">Bédiala</option>
+							        <option value="Béoumi">Béoumi</option>
+							        <option value="Béttié">Béttié</option>
+							        <option value="Biankouma">Biankouma</option>
+							        <option value="Bin-Houyé">Bin-Houyé</option>
+							        <option value="Bingerville">Bingerville</option>
+							        <option value="Bloléquin">Bloléquin</option>
+							        <option value="Bocanda">Bocanda</option>
+							        <option value="Bodokro">Bodokro</option>
+							        <option value="Bondoukou">Bondoukou</option>
+							        <option value="Bongouanou">Bongouanou</option>
+							        <option value="Boniérédougou">Boniérédougou</option>
+							        <option value="Bonon">Bonon</option>
+							        <option value="Bonoua">Bonoua</option>
+							        <option value="Booko">Booko</option>
+							        <option value="Borotou">Borotou</option>
+							        <option value="Botro">Botro</option>
+							        <option value="Bouaflé">Bouaflé</option>
+							        <option value="Bouaké">Bouaké</option>
+							        <option value="Bouna">Bouna</option>
+							        <option value="Boundiali">Boundiali</option>
+							        <option value="Brobo">Brobo</option>
+							        <option value="Buyo">Buyo</option>
+							        <option value="Cocody">Cocody</option>
+							        <option value="Dabakala">Dabakala</option>
+							        <option value="Dabou">Dabou</option>
+							        <option value="Daloa">Daloa</option>
+							        <option value="Danané">Danané</option>
+							        <option value="Daoukro">Daoukro</option>
+							        <option value="Diabo">Diabo</option>
+							        <option value="Dianra">Dianra</option>
+							        <option value="Diawala">Diawala</option>
+							        <option value="Didiévi">Didiévi</option>
+							        <option value="Diégonéfla">Diégonéfla</option>
+							        <option value="Dikodougou">Dikodougou</option>
+							        <option value="Dimbokro">Dimbokro</option>
+							        <option value="Dioulatiédougou">Dioulatiédougou</option>
+							        <option value="Divo">Divo</option>
+							        <option value="Djebonoua">Djebonoua</option>
+							        <option value="Djèkanou">Djèkanou</option>
+							        <option value="Djibrosso">Djibrosso</option>
+							        <option value="Doropo">Doropo</option>
+							        <option value="Dualla">Dualla</option>
+							        <option value="Duékoué">Duékoué</option>
+							        <option value="Ettrokro">Ettrokro</option>
+							        <option value="Facobly">Facobly</option>
+							        <option value="Ferkessédougou">Ferkessédougou</option>
+							        <option value="Foumbolo">Foumbolo</option>
+							        <option value="Fresco">Fresco</option>
+							        <option value="Fronan">Fronan</option>
+							        <option value="Gagnoa">Gagnoa</option>
+							        <option value="Gbeleban">Gbeleban</option>
+							        <option value="Gboguhé">Gboguhé</option>
+							        <option value="Gbon">Gbon</option>
+							        <option value="Gbonné">Gbonné</option>
+							        <option value="Gohitafla">Gohitafla</option>
+							        <option value="Goulia">Goulia</option>
+							        <option value="Grabo">Grabo</option>
+							        <option value="Grand-Bassam">Grand-Bassam</option>
+							        <option value="Grand-Béréby">Grand-Béréby</option>
+							        <option value="Grand-Lahou">Grand-Lahou</option>
+							        <option value="Grand-Zattry">Grand-Zattry</option>
+							        <option value="Guéyo">Guéyo</option>
+							        <option value="Guibéroua">Guibéroua</option>
+							        <option value="Guiembé">Guiembé</option>
+							        <option value="Guiglo">Guiglo</option>
+							        <option value="Guintéguéla">Guintéguéla</option>
+							        <option value="Guitry">Guitry</option>
+							        <option value="Hiré">Hiré</option>
+							        <option value="Issia">Issia</option>
+							        <option value="Jacqueville">Jacqueville</option>
+							        <option value="Kanakono">Kanakono</option>
+							        <option value="Kani">Kani</option>
+							        <option value="Kaniasso">Kaniasso</option>
+							        <option value="Karakoro">Karakoro</option>
+							        <option value="Kasséré">Kasséré</option>
+							        <option value="Katiola">Katiola</option>
+							        <option value="Kokoumbo">Kokoumbo</option>
+							        <option value="Kolia">Kolia</option>
+							        <option value="Komborodougou">Komborodougou</option>
+							        <option value="Kong">Kong</option>
+							        <option value="Kongasso">Kongasso</option>
+							        <option value="Koonan">Koonan</option>
+							        <option value="Korhogo">Korhogo</option>
+							        <option value="Koro">Koro</option>
+							        <option value="Kouassi-Datékro">Kouassi-Datékro</option>
+							        <option value="Kouassi-Kouassikro">Kouassi-Kouassikro</option>
+							        <option value="Kouibly">Kouibly</option>
+							        <option value="Koumassi">Koumassi</option>
+							        <option value="Koumbala">Koumbala</option>
+							        <option value="Koun-Fao">Koun-Fao</option>
+							        <option value="Kounahiri">Kounahiri</option>
+							        <option value="Kouto">Kouto</option>
+							        <option value="Lakota">Lakota</option>
+							        <option value="Logoualé">Logoualé</option>
+							        <option value="M'bahiakro">M'bahiakro</option>
+							        <option value="M'batto">M'batto</option>
+							        <option value="M'bengué">M'bengué</option>
+							        <option value="Madinani">Madinani</option>
+							        <option value="Maféré">Maféré</option>
+							        <option value="Man">Man</option>
+							        <option value="Mankono">Mankono</option>
+							        <option value="Marcory">Marcory</option>
+							        <option value="Massala">Massala</option>
+							        <option value="Mayo">Mayo</option>
+							        <option value="Méagui">Méagui</option>
+							        <option value="Minignan">Minignan</option>
+							        <option value="Morondo">Morondo</option>
+							        <option value="N'douci">N'douci</option>
+							        <option value="Napié">Napié</option>
+							        <option value="Nassian">Nassian</option>
+							        <option value="Niablé">Niablé</option>
+							        <option value="Niakaramandougou">Niakaramandougou</option>
+							        <option value="Niéllé">Niéllé</option>
+							        <option value="Niofoin">Niofoin</option>
+							        <option value="Odienné">Odienné</option>
+							        <option value="Ouangolodougou">Ouangolodougou</option>
+							        <option value="Ouaninou">Ouaninou</option>
+							        <option value="Ouellé">Ouellé</option>
+							        <option value="Oumé">Oumé</option>
+							        <option value="Ouragahio">Ouragahio</option>
+							        <option value="Plateau">Plateau</option>
+							        <option value="Port-bouët">Port-bouët</option>
+							        <option value="Prikro">Prikro</option>
+							        <option value="Rubino">Rubino</option>
+							        <option value="Saïoua">Saïoua</option>
+							        <option value="Sakassou">Sakassou</option>
+							        <option value="Samatiguila">Samatiguila</option>
+							        <option value="San Pedro">San Pedro</option>
+							        <option value="Sandégué">Sandégué</option>
+							        <option value="Sangouiné">Sangouiné</option>
+							        <option value="Sarhala">Sarhala</option>
+							        <option value="Sassandra">Sassandra</option>
+							        <option value="Satama-Sokoro">Satama-Sokoro</option>
+							        <option value="Satama-Sokoura">Satama-Sokoura</option>
+							        <option value="Séguéla">Séguéla</option>
+							        <option value="Séguelon">Séguelon</option>
+							        <option value="Seydougou">Seydougou</option>
+							        <option value="Sifié">Sifié</option>
+							        <option value="Sikensi">Sikensi</option>
+							        <option value="Sinématiali">Sinématiali</option>
+							        <option value="Sinfra">Sinfra</option>
+							        <option value="Sipilou">Sipilou</option>
+							        <option value="Sirasso">Sirasso</option>
+							        <option value="Songon">Songon</option>
+							        <option value="Soubré">Soubré</option>
+							        <option value="Taabo">Taabo</option>
+							        <option value="Tabou">Tabou</option>
+							        <option value="Tafiré">Tafiré</option>
+							        <option value="Taï">Taï</option>
+							        <option value="Tanda">Tanda</option>
+							        <option value="Téhini">Téhini</option>
+							        <option value="Tengréla">Tengréla</option>
+							        <option value="Tiapoum">Tiapoum</option>
+							        <option value="Tiassalé">Tiassalé</option>
+							        <option value="Tie-n'diekro">Tie-n'diekro</option>
+							        <option value="Tiébissou">Tiébissou</option>
+							        <option value="Tiémé">Tiémé</option>
+							        <option value="Tiémélékro">Tiémélékro</option>
+							        <option value="Tiéningboué">Tiéningboué</option>
+							        <option value="Tienko">Tienko</option>
+							        <option value="Tioroniaradougou">Tioroniaradougou</option>
+							        <option value="Tortiya">Tortiya</option>
+							        <option value="Touba">Touba</option>
+							        <option value="Toulépleu">Toulépleu</option>
+							        <option value="Toumodi">Toumodi</option>
+							        <option value="Transua">Transua</option>
+							        <option value="Treichville">Treichville</option>
+							        <option value="Vavoua">Vavoua</option>
+							        <option value="Worofla">Worofla</option>
+							        <option value="Yakassé-Attobrou">Yakassé-Attobrou</option>
+							        <option value="Yamoussoukro">Yamoussoukro</option>
+							        <option value="Yopougon">Yopougon</option>
+							        <option value="Zikisso">Zikisso</option>
+							        <option value="Zouan-Hounien">Zouan-Hounien</option>
+							        <option value="Zoukougbeu">Zoukougbeu</option>
+							        <option value="Zuénoula">Zuénoula</option>
+							      </select>
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+
+                        <!--div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Village du père
+                                </label>
+                                <input class="form-control" placeholder="Ville de résidence du père" type="text" name="father_town" id="user_url" value="{{Auth::user()->father_town}}">
+
+                            </div> <!-- close .form-group ->
+                        </div--> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nombre d'enfants du père
+                                </label>
+                                <input class="form-control" placeholder="Nombre d'enfant du père" type="number" name="father_children_number" id="user_url" value="{{Auth::user()->father_children_number}}">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
 
                         <!--End Father-->
 
@@ -944,9 +1762,506 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
 
 
-                        
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group header_form">
+                            	<hr>
+                                <h1 for="" style="text-align: center;">
+                                    Profil de la mère
+                                </h1>
+                                <hr>
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+
+                            <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="">
+                                    Nom de la mère
+                                </label>
+                                <input class="form-control" placeholder="Nom de la mère" type="text" name="mother_traditional_first_name" id="user_url" value="{{Auth::user()->mother_traditional_first_name}}">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="">
+                                    Prénoms de la mère
+                                </label>
+                                <input class="form-control" placeholder="Prénoms de la mère" type="text" name="mother_last_name" id="user_url" value="{{Auth::user()->mother_last_name}}">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        {{--
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="">
+                                    Autre noms de la mère
+                                </label>
+                                <input class="form-control" placeholder="Autre noms de la mère" type="text" name="mother_other_name" id="user_url" value="{{Auth::user()->mother_other_name}}">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        --}}
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="">
+                                    Nationalité de la mère
+                                </label>
+                                <!--input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="mother_birth_country" id="country_5" value="{{Auth::user()->mother_birth_country}}"-->
+
+                                <select id="nationalite" class="form-control" placeholder="Etat de naissance" name="mother_birth_country">
+                                    @if(Auth::user()->mother_birth_country !== null)
+                                    <option value="{{Auth::user()->mother_birth_country}}">{{Auth::user()->mother_birth_country}}</option>
+                                    @endif
+							        <option value="AFG">Afghane (Afghanistan)</option>
+							        <option value="ALB">Albanaise (Albanie)</option>
+							        <option value="DZA">Algérienne (Algérie)</option>
+							        <option value="DEU">Allemande (Allemagne)</option>
+							        <option value="USA">Americaine (États-Unis)</option>
+							        <option value="AND">Andorrane (Andorre)</option>
+							        <option value="AGO">Angolaise (Angola)</option>
+							        <option value="ATG">Antiguaise-et-Barbudienne (Antigua-et-Barbuda)</option>
+							        <option value="ARG">Argentine (Argentine)</option>
+							        <option value="ARM">Armenienne (Arménie)</option>
+							        <option value="AUS">Australienne (Australie)</option>
+							        <option value="AUT">Autrichienne (Autriche)</option>
+							        <option value="AZE">Azerbaïdjanaise (Azerbaïdjan)</option>
+							        <option value="BHS">Bahamienne (Bahamas)</option>
+							        <option value="BHR">Bahreinienne (Bahreïn)</option>
+							        <option value="BGD">Bangladaise (Bangladesh)</option>
+							        <option value="BRB">Barbadienne (Barbade)</option>
+							        <option value="BEL">Belge (Belgique)</option>
+							        <option value="BLZ">Belizienne (Belize)</option>
+							        <option value="BEN">Béninoise (Bénin)</option>
+							        <option value="BTN">Bhoutanaise (Bhoutan)</option>
+							        <option value="BLR">Biélorusse (Biélorussie)</option>
+							        <option value="MMR">Birmane (Birmanie)</option>
+							        <option value="GNB">Bissau-Guinéenne (Guinée-Bissau)</option>
+							        <option value="BOL">Bolivienne (Bolivie)</option>
+							        <option value="BIH">Bosnienne (Bosnie-Herzégovine)</option>
+							        <option value="BWA">Botswanaise (Botswana)</option>
+							        <option value="BRA">Brésilienne (Brésil)</option>
+							        <option value="GBR">Britannique (Royaume-Uni)</option>
+							        <option value="BRN">Brunéienne (Brunéi)</option>
+							        <option value="BGR">Bulgare (Bulgarie)</option>
+							        <option value="BFA">Burkinabée (Burkina)</option>
+							        <option value="BDI">Burundaise (Burundi)</option>
+							        <option value="KHM">Cambodgienne (Cambodge)</option>
+							        <option value="CMR">Camerounaise (Cameroun)</option>
+							        <option value="CAN">Canadienne (Canada)</option>
+							        <option value="CPV">Cap-verdienne (Cap-Vert)</option>
+							        <option value="CAF">Centrafricaine (Centrafrique)</option>
+							        <option value="CHL">Chilienne (Chili)</option>
+							        <option value="CHN">Chinoise (Chine)</option>
+							        <option value="CYP">Chypriote (Chypre)</option>
+							        <option value="COL">Colombienne (Colombie)</option>
+							        <option value="COM">Comorienne (Comores)</option>
+							        <option value="COG">Congolaise (Congo-Brazzaville)</option>
+							        <option value="COD">Congolaise (Congo-Kinshasa)</option>
+							        <option value="COK">Cookienne (Îles Cook)</option>
+							        <option value="CRI">Costaricaine (Costa Rica)</option>
+							        <option value="HRV">Croate (Croatie)</option>
+							        <option value="CUB">Cubaine (Cuba)</option>
+							        <option value="DNK">Danoise (Danemark)</option>
+							        <option value="DJI">Djiboutienne (Djibouti)</option>
+							        <option value="DOM">Dominicaine (République dominicaine)</option>
+							        <option value="DMA">Dominiquaise (Dominique)</option>
+							        <option value="EGY">Égyptienne (Égypte)</option>
+							        <option value="ARE">Émirienne (Émirats arabes unis)</option>
+							        <option value="GNQ">Équato-guineenne (Guinée équatoriale)</option>
+							        <option value="ECU">Équatorienne (Équateur)</option>
+							        <option value="ERI">Érythréenne (Érythrée)</option>
+							        <option value="ESP">Espagnole (Espagne)</option>
+							        <option value="TLS">Est-timoraise (Timor-Leste)</option>
+							        <option value="EST">Estonienne (Estonie)</option>
+							        <option value="ETH">Éthiopienne (Éthiopie)</option>
+							        <option value="FJI">Fidjienne (Fidji)</option>
+							        <option value="FIN">Finlandaise (Finlande)</option>
+							        <option value="FRA">Française (France)</option>
+							        <option value="GAB">Gabonaise (Gabon)</option>
+							        <option value="GMB">Gambienne (Gambie)</option>
+							        <option value="GEO">Georgienne (Géorgie)</option>
+							        <option value="GHA">Ghanéenne (Ghana)</option>
+							        <option value="GRD">Grenadienne (Grenade)</option>
+							        <option value="GTM">Guatémaltèque (Guatemala)</option>
+							        <option value="GIN">Guinéenne (Guinée)</option>
+							        <option value="GUY">Guyanienne (Guyana)</option>
+							        <option value="HTI">Haïtienne (Haïti)</option>
+							        <option value="GRC">Hellénique (Grèce)</option>
+							        <option value="HND">Hondurienne (Honduras)</option>
+							        <option value="HUN">Hongroise (Hongrie)</option>
+							        <option value="IND">Indienne (Inde)</option>
+							        <option value="IDN">Indonésienne (Indonésie)</option>
+							        <option value="IRQ">Irakienne (Iraq)</option>
+							        <option value="IRN">Iranienne (Iran)</option>
+							        <option value="IRL">Irlandaise (Irlande)</option>
+							        <option value="ISL">Islandaise (Islande)</option>
+							        <option value="ISR">Israélienne (Israël)</option>
+							        <option value="ITA">Italienne (Italie)</option>
+							        <option value="CIV">Ivoirienne (Côte d'Ivoire)</option>
+							        <option value="JAM">Jamaïcaine (Jamaïque)</option>
+							        <option value="JPN">Japonaise (Japon)</option>
+							        <option value="JOR">Jordanienne (Jordanie)</option>
+							        <option value="KAZ">Kazakhstanaise (Kazakhstan)</option>
+							        <option value="KEN">Kenyane (Kenya)</option>
+							        <option value="KGZ">Kirghize (Kirghizistan)</option>
+							        <option value="KIR">Kiribatienne (Kiribati)</option>
+							        <option value="KNA">Kittitienne et Névicienne (Saint-Christophe-et-Niévès)</option>
+							        <option value="KWT">Koweïtienne (Koweït)</option>
+							        <option value="LAO">Laotienne (Laos)</option>
+							        <option value="LSO">Lesothane (Lesotho)</option>
+							        <option value="LVA">Lettone (Lettonie)</option>
+							        <option value="LBN">Libanaise (Liban)</option>
+							        <option value="LBR">Libérienne (Libéria)</option>
+							        <option value="LBY">Libyenne (Libye)</option>
+							        <option value="LIE">Liechtensteinoise (Liechtenstein)</option>
+							        <option value="LTU">Lituanienne (Lituanie)</option>
+							        <option value="LUX">Luxembourgeoise (Luxembourg)</option>
+							        <option value="MKD">Macédonienne (Macédoine)</option>
+							        <option value="MYS">Malaisienne (Malaisie)</option>
+							        <option value="MWI">Malawienne (Malawi)</option>
+							        <option value="MDV">Maldivienne (Maldives)</option>
+							        <option value="MDG">Malgache (Madagascar)</option>
+							        <option value="MLI">Maliennes (Mali)</option>
+							        <option value="MLT">Maltaise (Malte)</option>
+							        <option value="MAR">Marocaine (Maroc)</option>
+							        <option value="MHL">Marshallaise (Îles Marshall)</option>
+							        <option value="MUS">Mauricienne (Maurice)</option>
+							        <option value="MRT">Mauritanienne (Mauritanie)</option>
+							        <option value="MEX">Mexicaine (Mexique)</option>
+							        <option value="FSM">Micronésienne (Micronésie)</option>
+							        <option value="MDA">Moldave (Moldovie)</option>
+							        <option value="MCO">Monegasque (Monaco)</option>
+							        <option value="MNG">Mongole (Mongolie)</option>
+							        <option value="MNE">Monténégrine (Monténégro)</option>
+							        <option value="MOZ">Mozambicaine (Mozambique)</option>
+							        <option value="NAM">Namibienne (Namibie)</option>
+							        <option value="NRU">Nauruane (Nauru)</option>
+							        <option value="NLD">Néerlandaise (Pays-Bas)</option>
+							        <option value="NZL">Néo-Zélandaise (Nouvelle-Zélande)</option>
+							        <option value="NPL">Népalaise (Népal)</option>
+							        <option value="NIC">Nicaraguayenne (Nicaragua)</option>
+							        <option value="NGA">Nigériane (Nigéria)</option>
+							        <option value="NER">Nigérienne (Niger)</option>
+							        <option value="NIU">Niuéenne (Niue)</option>
+							        <option value="PRK">Nord-coréenne (Corée du Nord)</option>
+							        <option value="NOR">Norvégienne (Norvège)</option>
+							        <option value="OMN">Omanaise (Oman)</option>
+							        <option value="UGA">Ougandaise (Ouganda)</option>
+							        <option value="UZB">Ouzbéke (Ouzbékistan)</option>
+							        <option value="PAK">Pakistanaise (Pakistan)</option>
+							        <option value="PLW">Palaosienne (Palaos)</option>
+							        <option value="PSE">Palestinienne (Palestine)</option>
+							        <option value="PAN">Panaméenne (Panama)</option>
+							        <option value="PNG">Papouane-Néo-Guinéenne (Papouasie-Nouvelle-Guinée)</option>
+							        <option value="PRY">Paraguayenne (Paraguay)</option>
+							        <option value="PER">Péruvienne (Pérou)</option>
+							        <option value="PHL">Philippine (Philippines)</option>
+							        <option value="POL">Polonaise (Pologne)</option>
+							        <option value="PRT">Portugaise (Portugal)</option>
+							        <option value="QAT">Qatarienne (Qatar)</option>
+							        <option value="ROU">Roumaine (Roumanie)</option>
+							        <option value="RUS">Russe (Russie)</option>
+							        <option value="RWA">Rwandaise (Rwanda)</option>
+							        <option value="LCA">Saint-Lucienne (Sainte-Lucie)</option>
+							        <option value="SMR">Saint-Marinaise (Saint-Marin)</option>
+							        <option value="VCT">Saint-Vincentaise et Grenadine (Saint-Vincent-et-les Grenadines)</option>
+							        <option value="SLB">Salomonaise (Îles Salomon)</option>
+							        <option value="SLV">Salvadorienne (Salvador)</option>
+							        <option value="WSM">Samoane (Samoa)</option>
+							        <option value="STP">Santoméenne (Sao Tomé-et-Principe)</option>
+							        <option value="SAU">Saoudienne (Arabie saoudite)</option>
+							        <option value="SEN">Sénégalaise (Sénégal)</option>
+							        <option value="SRB">Serbe (Serbie)</option>
+							        <option value="SYC">Seychelloise (Seychelles)</option>
+							        <option value="SLE">Sierra-Léonaise (Sierra Leone)</option>
+							        <option value="SGP">Singapourienne (Singapour)</option>
+							        <option value="SVK">Slovaque (Slovaquie)</option>
+							        <option value="SVN">Slovène (Slovénie)</option>
+							        <option value="SOM">Somalienne (Somalie)</option>
+							        <option value="SDN">Soudanaise (Soudan)</option>
+							        <option value="LKA">Sri-Lankaise (Sri Lanka)</option>
+							        <option value="ZAF">Sud-Africaine (Afrique du Sud)</option>
+							        <option value="KOR">Sud-Coréenne (Corée du Sud)</option>
+							        <option value="SSD">Sud-Soudanaise (Soudan du Sud)</option>
+							        <option value="SWE">Suédoise (Suède)</option>
+							        <option value="CHE">Suisse (Suisse)</option>
+							        <option value="SUR">Surinamaise (Suriname)</option>
+							        <option value="SWZ">Swazie (Swaziland)</option>
+							        <option value="SYR">Syrienne (Syrie)</option>
+							        <option value="TJK">Tadjike (Tadjikistan)</option>
+							        <option value="TZA">Tanzanienne (Tanzanie)</option>
+							        <option value="TCD">Tchadienne (Tchad)</option>
+							        <option value="CZE">Tchèque (Tchéquie)</option>
+							        <option value="THA">Thaïlandaise (Thaïlande)</option>
+							        <option value="TGO">Togolaise (Togo)</option>
+							        <option value="TON">Tonguienne (Tonga)</option>
+							        <option value="TTO">Trinidadienne (Trinité-et-Tobago)</option>
+							        <option value="TUN">Tunisienne (Tunisie)</option>
+							        <option value="TKM">Turkmène (Turkménistan)</option>
+							        <option value="TUR">Turque (Turquie)</option>
+							        <option value="TUV">Tuvaluane (Tuvalu)</option>
+							        <option value="UKR">Ukrainienne (Ukraine)</option>
+							        <option value="URY">Uruguayenne (Uruguay)</option>
+							        <option value="VUT">Vanuatuane (Vanuatu)</option>
+							        <option value="VAT">Vaticane (Vatican)</option>
+							        <option value="VEN">Vénézuélienne (Venezuela)</option>
+							        <option value="VNM">Vietnamienne (Viêt Nam)</option>
+							        <option value="YEM">Yéménite (Yémen)</option>
+							        <option value="ZMB">Zambienne (Zambie)</option>
+							        <option value="ZWE">Zimbabwéenne (Zimbabwe)</option>
+								</select>
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="">
+                                    Village de la mère
+                                </label>
+                                <input class="form-control" placeholder="Region de la mère" type="text" name="mother_town" id="region" value="{{Auth::user()->mother_town}}">
+
+                                <select class="form-control rgsel" id="region_1" placeholder="Region de la mère" value="" name="mother_town">
+                                    @if(Auth::user()->mother_town !== null)
+                                    <option value="{{Auth::user()->mother_town}}">{{Auth::user()->mother_town}}</option>
+                                    @endif
+							        <option value="Abengourou">Abengourou</option>
+							        <option value="Abobo">Abobo</option>
+							        <option value="Aboisso">Aboisso</option>
+							        <option value="Adiaké">Adiaké</option>
+							        <option value="Adjamé">Adjamé</option>
+							        <option value="Adzopé">Adzopé</option>
+							        <option value="Afféry">Afféry</option>
+							        <option value="Agboville">Agboville</option>
+							        <option value="Agnibilékrou">Agnibilékrou</option>
+							        <option value="Agou">Agou</option>
+							        <option value="Akoupé">Akoupé</option>
+							        <option value="Alépé">Alépé</option>
+							        <option value="Anoumaba">Anoumaba</option>
+							        <option value="Anyama">Anyama</option>
+							        <option value="Arrah">Arrah</option>
+							        <option value="Assinie">Assinie</option>
+							        <option value="Assuéffry">Assuéffry</option>
+							        <option value="Attécoubé">Attécoubé</option>
+							        <option value="Attiegouakro">Attiegouakro</option>
+							        <option value="Ayamé">Ayamé</option>
+							        <option value="Azaguié">Azaguié</option>
+							        <option value="Bako">Bako</option>
+							        <option value="Bangolo">Bangolo</option>
+							        <option value="Bassawa">Bassawa</option>
+							        <option value="Bédiala">Bédiala</option>
+							        <option value="Béoumi">Béoumi</option>
+							        <option value="Béttié">Béttié</option>
+							        <option value="Biankouma">Biankouma</option>
+							        <option value="Bin-Houyé">Bin-Houyé</option>
+							        <option value="Bingerville">Bingerville</option>
+							        <option value="Bloléquin">Bloléquin</option>
+							        <option value="Bocanda">Bocanda</option>
+							        <option value="Bodokro">Bodokro</option>
+							        <option value="Bondoukou">Bondoukou</option>
+							        <option value="Bongouanou">Bongouanou</option>
+							        <option value="Boniérédougou">Boniérédougou</option>
+							        <option value="Bonon">Bonon</option>
+							        <option value="Bonoua">Bonoua</option>
+							        <option value="Booko">Booko</option>
+							        <option value="Borotou">Borotou</option>
+							        <option value="Botro">Botro</option>
+							        <option value="Bouaflé">Bouaflé</option>
+							        <option value="Bouaké">Bouaké</option>
+							        <option value="Bouna">Bouna</option>
+							        <option value="Boundiali">Boundiali</option>
+							        <option value="Brobo">Brobo</option>
+							        <option value="Buyo">Buyo</option>
+							        <option value="Cocody">Cocody</option>
+							        <option value="Dabakala">Dabakala</option>
+							        <option value="Dabou">Dabou</option>
+							        <option value="Daloa">Daloa</option>
+							        <option value="Danané">Danané</option>
+							        <option value="Daoukro">Daoukro</option>
+							        <option value="Diabo">Diabo</option>
+							        <option value="Dianra">Dianra</option>
+							        <option value="Diawala">Diawala</option>
+							        <option value="Didiévi">Didiévi</option>
+							        <option value="Diégonéfla">Diégonéfla</option>
+							        <option value="Dikodougou">Dikodougou</option>
+							        <option value="Dimbokro">Dimbokro</option>
+							        <option value="Dioulatiédougou">Dioulatiédougou</option>
+							        <option value="Divo">Divo</option>
+							        <option value="Djebonoua">Djebonoua</option>
+							        <option value="Djèkanou">Djèkanou</option>
+							        <option value="Djibrosso">Djibrosso</option>
+							        <option value="Doropo">Doropo</option>
+							        <option value="Dualla">Dualla</option>
+							        <option value="Duékoué">Duékoué</option>
+							        <option value="Ettrokro">Ettrokro</option>
+							        <option value="Facobly">Facobly</option>
+							        <option value="Ferkessédougou">Ferkessédougou</option>
+							        <option value="Foumbolo">Foumbolo</option>
+							        <option value="Fresco">Fresco</option>
+							        <option value="Fronan">Fronan</option>
+							        <option value="Gagnoa">Gagnoa</option>
+							        <option value="Gbeleban">Gbeleban</option>
+							        <option value="Gboguhé">Gboguhé</option>
+							        <option value="Gbon">Gbon</option>
+							        <option value="Gbonné">Gbonné</option>
+							        <option value="Gohitafla">Gohitafla</option>
+							        <option value="Goulia">Goulia</option>
+							        <option value="Grabo">Grabo</option>
+							        <option value="Grand-Bassam">Grand-Bassam</option>
+							        <option value="Grand-Béréby">Grand-Béréby</option>
+							        <option value="Grand-Lahou">Grand-Lahou</option>
+							        <option value="Grand-Zattry">Grand-Zattry</option>
+							        <option value="Guéyo">Guéyo</option>
+							        <option value="Guibéroua">Guibéroua</option>
+							        <option value="Guiembé">Guiembé</option>
+							        <option value="Guiglo">Guiglo</option>
+							        <option value="Guintéguéla">Guintéguéla</option>
+							        <option value="Guitry">Guitry</option>
+							        <option value="Hiré">Hiré</option>
+							        <option value="Issia">Issia</option>
+							        <option value="Jacqueville">Jacqueville</option>
+							        <option value="Kanakono">Kanakono</option>
+							        <option value="Kani">Kani</option>
+							        <option value="Kaniasso">Kaniasso</option>
+							        <option value="Karakoro">Karakoro</option>
+							        <option value="Kasséré">Kasséré</option>
+							        <option value="Katiola">Katiola</option>
+							        <option value="Kokoumbo">Kokoumbo</option>
+							        <option value="Kolia">Kolia</option>
+							        <option value="Komborodougou">Komborodougou</option>
+							        <option value="Kong">Kong</option>
+							        <option value="Kongasso">Kongasso</option>
+							        <option value="Koonan">Koonan</option>
+							        <option value="Korhogo">Korhogo</option>
+							        <option value="Koro">Koro</option>
+							        <option value="Kouassi-Datékro">Kouassi-Datékro</option>
+							        <option value="Kouassi-Kouassikro">Kouassi-Kouassikro</option>
+							        <option value="Kouibly">Kouibly</option>
+							        <option value="Koumassi">Koumassi</option>
+							        <option value="Koumbala">Koumbala</option>
+							        <option value="Koun-Fao">Koun-Fao</option>
+							        <option value="Kounahiri">Kounahiri</option>
+							        <option value="Kouto">Kouto</option>
+							        <option value="Lakota">Lakota</option>
+							        <option value="Logoualé">Logoualé</option>
+							        <option value="M'bahiakro">M'bahiakro</option>
+							        <option value="M'batto">M'batto</option>
+							        <option value="M'bengué">M'bengué</option>
+							        <option value="Madinani">Madinani</option>
+							        <option value="Maféré">Maféré</option>
+							        <option value="Man">Man</option>
+							        <option value="Mankono">Mankono</option>
+							        <option value="Marcory">Marcory</option>
+							        <option value="Massala">Massala</option>
+							        <option value="Mayo">Mayo</option>
+							        <option value="Méagui">Méagui</option>
+							        <option value="Minignan">Minignan</option>
+							        <option value="Morondo">Morondo</option>
+							        <option value="N'douci">N'douci</option>
+							        <option value="Napié">Napié</option>
+							        <option value="Nassian">Nassian</option>
+							        <option value="Niablé">Niablé</option>
+							        <option value="Niakaramandougou">Niakaramandougou</option>
+							        <option value="Niéllé">Niéllé</option>
+							        <option value="Niofoin">Niofoin</option>
+							        <option value="Odienné">Odienné</option>
+							        <option value="Ouangolodougou">Ouangolodougou</option>
+							        <option value="Ouaninou">Ouaninou</option>
+							        <option value="Ouellé">Ouellé</option>
+							        <option value="Oumé">Oumé</option>
+							        <option value="Ouragahio">Ouragahio</option>
+							        <option value="Plateau">Plateau</option>
+							        <option value="Port-bouët">Port-bouët</option>
+							        <option value="Prikro">Prikro</option>
+							        <option value="Rubino">Rubino</option>
+							        <option value="Saïoua">Saïoua</option>
+							        <option value="Sakassou">Sakassou</option>
+							        <option value="Samatiguila">Samatiguila</option>
+							        <option value="San Pedro">San Pedro</option>
+							        <option value="Sandégué">Sandégué</option>
+							        <option value="Sangouiné">Sangouiné</option>
+							        <option value="Sarhala">Sarhala</option>
+							        <option value="Sassandra">Sassandra</option>
+							        <option value="Satama-Sokoro">Satama-Sokoro</option>
+							        <option value="Satama-Sokoura">Satama-Sokoura</option>
+							        <option value="Séguéla">Séguéla</option>
+							        <option value="Séguelon">Séguelon</option>
+							        <option value="Seydougou">Seydougou</option>
+							        <option value="Sifié">Sifié</option>
+							        <option value="Sikensi">Sikensi</option>
+							        <option value="Sinématiali">Sinématiali</option>
+							        <option value="Sinfra">Sinfra</option>
+							        <option value="Sipilou">Sipilou</option>
+							        <option value="Sirasso">Sirasso</option>
+							        <option value="Songon">Songon</option>
+							        <option value="Soubré">Soubré</option>
+							        <option value="Taabo">Taabo</option>
+							        <option value="Tabou">Tabou</option>
+							        <option value="Tafiré">Tafiré</option>
+							        <option value="Taï">Taï</option>
+							        <option value="Tanda">Tanda</option>
+							        <option value="Téhini">Téhini</option>
+							        <option value="Tengréla">Tengréla</option>
+							        <option value="Tiapoum">Tiapoum</option>
+							        <option value="Tiassalé">Tiassalé</option>
+							        <option value="Tie-n'diekro">Tie-n'diekro</option>
+							        <option value="Tiébissou">Tiébissou</option>
+							        <option value="Tiémé">Tiémé</option>
+							        <option value="Tiémélékro">Tiémélékro</option>
+							        <option value="Tiéningboué">Tiéningboué</option>
+							        <option value="Tienko">Tienko</option>
+							        <option value="Tioroniaradougou">Tioroniaradougou</option>
+							        <option value="Tortiya">Tortiya</option>
+							        <option value="Touba">Touba</option>
+							        <option value="Toulépleu">Toulépleu</option>
+							        <option value="Toumodi">Toumodi</option>
+							        <option value="Transua">Transua</option>
+							        <option value="Treichville">Treichville</option>
+							        <option value="Vavoua">Vavoua</option>
+							        <option value="Worofla">Worofla</option>
+							        <option value="Yakassé-Attobrou">Yakassé-Attobrou</option>
+							        <option value="Yamoussoukro">Yamoussoukro</option>
+							        <option value="Yopougon">Yopougon</option>
+							        <option value="Zikisso">Zikisso</option>
+							        <option value="Zouan-Hounien">Zouan-Hounien</option>
+							        <option value="Zoukougbeu">Zoukougbeu</option>
+							        <option value="Zuénoula">Zuénoula</option>
+							      </select>
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+
+                        <!--div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Village de la mère
+                                </label>
+                                <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="mother_birth_city" id="user_url" value="{{Auth::user()->mother_birth_city}}">
+
+                            </div> <!-- close .form-group ->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nombre d'enfants de la mère
+                                </label>
+                                <input class="form-control" placeholder="Nombre d'enfant de la mère" type="number" name="mother_children_number" id="user_url" value="{{Auth::user()->mother_children_number}}">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
                         <!--End mother-->
-                       
+
                     </div>
 
                     <div class="row">
@@ -986,53 +2301,6 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
     </div>
 </section>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-<script src="/js/quill/image-resize.min.js"></script>
-<script src="/js/quill/video-resize.min.js"></script>
-
-
-        <script>
-        var options = {
-        modules: {
-          toolbar: [
-            [{ header: [1, 2, false] }],
-            ['size', 'bold', 'italic', 'underline'],
-            ['blockquote', 'align',],
-            [{ list: 'ordered' }, { list: 'bullet' }]
-        ],
-        imageResize: {
-             modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
-         },
-         videoResize: {
-                modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
-            },
-         syntax: true,
-        },
-        placeholder: 'Ecrivez ici...',
-        theme: 'snow'  // or 'bubble'
-        };
-        var quill = new Quill('#editorDetails', options);
-
-            //a la sumissio  du formulmaire ob recupêre
-            //le contenu de la div qui a le texte riche
-            //et on met ce contenu dans l'input hidden
-            var form = document.getElementById('edit_user_4646744');
-            form.onsubmit = function() {
-              // Populate hidden form on submit
-              var text = document.querySelector('input[name=bio]');
-              text.value = quill.root.innerHTML;
-
-            //   console.log("Submitted", $(form).serialize(), $(form).serializeArray());
-
-              // No back end to actually submit to!
-            //   alert('Open the console to see the submit data!')
-              return true;
-            };
-          </script>
-
 
 
 

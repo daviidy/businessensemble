@@ -73,7 +73,7 @@ h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;}
 p{margin-top:0;margin-bottom:1rem;}
 ul{margin-top:0;margin-bottom:1rem;}
 a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
-a:hover{color:#1B6DC1;text-decoration:underline;}
+a:hover{color:#0056b3;text-decoration:underline;}
 img{vertical-align:middle;border-style:none;}
 [role=button],a,button{-ms-touch-action:manipulation;touch-action:manipulation;}
 button{border-radius:0;}
@@ -296,10 +296,10 @@ ul li{padding:5px 0;}
 /*! CSS Used from: Embedded */
 a,.themeum-campaign-post .entry-category a:hover,.themeum-campaign-post h3 a:hover,.thm-btn:hover,.wpneo-profile-button:hover,.themeum-campaign-img .thm-camp-hvr .thm-ch-icon,.themeum-tab-category .thm-cat-icon,.themeum-tab-inner .themeum-campaign-post-content h3 a:hover,.themeum-campaign-exp-content h3 a:hover{color:#1B6DC1;}
 .thm-progress-bar .progress-bar,.themeum-campaign-post .themeum-campaign-img::after,.progressbar-content-wrapper .thm-progress-bar .progress .progress-bar,.themeum-campaign-time-exp .thm-progress-bar .progress .progress-bar,.thm-btn,.themeum-campaign-post a.thm-love-btn:hover{background:#1B6DC1;}
-.themeum-campaign-post .entry-title a:hover{color:#1B6DC1!important;}
+.themeum-campaign-post .entry-title a:hover{color:#33d3c0!important;}
 .thm-btn{background-color:#1B6DC1;border-color:#1B6DC1;}
 .progressbar-content-wrapper .thm-progress-bar .progress .progress-bar,.themeum-campaign-time-exp .thm-progress-bar .progress .progress-bar{background:#1B6DC1;background:-moz-linear-gradient(left, #1B6DC1 0%, #1B6DC1 100%);background:-webkit-linear-gradient(left, #1B6DC1 0%,#1B6DC1 100%);background:linear-gradient(to right, #1B6DC1 0%,#1B6DC1 100%);}
-a:hover{color:#1B6DC1;}
+a:hover{color:#00bf9c;}
 h2{font-size:36px;font-family: 'Montserrat', sans-serif;font-weight:400;line-height:42px;color:#414040;}
 h3{font-size:26px;font-family: 'Montserrat', sans-serif;font-weight:400;line-height:28px;color:#414040;}
 h4{font-size:18px;font-family: 'Montserrat', sans-serif;font-weight:600;line-height:26px;color:#414040;}
@@ -485,7 +485,7 @@ h3,h4{margin-top:0;margin-bottom:.5rem;}
 p{margin-top:0;margin-bottom:1rem;}
 ul{margin-top:0;margin-bottom:1rem;}
 a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
-a:hover{color:#1B6DC1;text-decoration:underline;}
+a:hover{color:#0056b3;text-decoration:underline;}
 img{vertical-align:middle;border-style:none;}
 a,button,input:not([type=range]),label{-ms-touch-action:manipulation;touch-action:manipulation;}
 label{display:inline-block;margin-bottom:.5rem;}
@@ -588,9 +588,9 @@ a:focus{outline:0;outline-offset:0;}
 ul li{padding:5px 0;}
 }
 /*! CSS Used from: Embedded */
-a,.bottom-widget .widget ul li a:hover,.widget ul li a:hover{color:#1B6DC1;}
+a,.bottom-widget .widget ul li a:hover,.widget ul li a:hover{color:#33d3c0;}
 input:focus{border-color:#33d3c0;}
-a:hover{color:#1B6DC1;}
+a:hover{color:#00bf9c;}
 h3{font-size:26px;font-family:Montserrat;font-weight:400;line-height:28px;color:#414040;}
 h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:#414040;}
 .bottom{background-color:#26262b;}
@@ -697,18 +697,6 @@ input{color:#3c3b37;}
                                     </div>
 
 
-                                                                            $('.slider_content_wrapper').css('visibility', 'visible');
-                                                                        });
-                                                                    </script>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                   
                                     <section class="elementor-element elementor-element-3uh2bpk elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3uh2bpk"
                                       data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                         <div class="elementor-background-overlay"></div>
