@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Annonce;
+use App\Team;
 use Illuminate\Http\Request;
 
-class AnnonceController extends Controller
+class TeamController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,12 +24,7 @@ class AnnonceController extends Controller
      */
     public function create()
     {
-        if (Auth::check()) {
-            return view('annonces.front.create');
-        }
-        else {
-            return redirect('home');
-        }
+        //
     }
 
     /**
@@ -46,10 +41,10 @@ class AnnonceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Annonce  $annonce
+     * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function show(Annonce $annonce)
+    public function show(Team $team)
     {
         //
     }
@@ -57,10 +52,10 @@ class AnnonceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Annonce  $annonce
+     * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function edit(Annonce $annonce)
+    public function edit(Team $team)
     {
         //
     }
@@ -69,10 +64,10 @@ class AnnonceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Annonce  $annonce
+     * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Annonce $annonce)
+    public function update(Request $request, Team $team)
     {
         //
     }
@@ -80,10 +75,10 @@ class AnnonceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Annonce  $annonce
+     * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Annonce $annonce)
+    public function destroy(Team $team)
     {
         //
     }
