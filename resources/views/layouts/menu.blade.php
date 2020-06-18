@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
             <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+            <!--Plugin form cdn jquery tel selector-->
+  <link rel="stylesheet" href="/plugin/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="/plugin/build/css/demo.css">
+    <!--End Plugin form cdn jquery-->
 
         <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">

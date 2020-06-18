@@ -914,8 +914,9 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
                                 </label>
                                 <input class="form-control" placeholder="Numéro de téléphone" type="text" name="phone" id="phone" value="{{Auth::user()->phone}}">
 
+                                
 
-
+                                
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
@@ -1096,7 +1097,22 @@ $(document).ready(function(){
 });
 </script>
 
+<script src="/plugin/build/js/intlTelInput.js"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
 
+      autoPlaceholder: "polite",
+
+       hiddenInput: "phone",
+
+       nationalMode: true,
+
+       preferredCountries: ["ci", "fr"],
+       separateDialCode: true,
+      utilsScript: "/plugin/build/js/utils.js",
+    });
+  </script>
 
 
 
