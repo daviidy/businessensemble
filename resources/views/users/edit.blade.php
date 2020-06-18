@@ -353,6 +353,9 @@ a:hover{color:#00bf9c;}
 }
 .form_style_sec {margin: 5rem;}
 .header_form{background-color:#efeeee!important;}
+@media only screen and (max-width: 600px) {
+  .form_style_sec {margin: 1.5rem;}
+}
 </style>
 
 <!--style unsplash-->
@@ -916,7 +919,7 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
-                        <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <label for="user_url">
                                     biographie
