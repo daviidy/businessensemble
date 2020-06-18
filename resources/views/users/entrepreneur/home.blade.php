@@ -146,7 +146,7 @@ p{margin-bottom:0px!important;}
 .user-section .media-body h4{font-family:'Montserrat', sans-serif;font-size:23px!important;color:#1ab394;}
 .user-section .media-body p{font-family:'Montserrat', sans-serif;}
 .user-section .m-b-0{margin-bottom:0!important;}
-.user-section .btn-success{font-family:'Montserrat', sans-serif;font-size:14px!important;background-color:#D86000!important;border:1px solid #D86000!important;}
+.user-section .btn-success{font-family:'Montserrat', sans-serif;font-size:14px!important;background-color:#1B6DC1!important;border:1px solid #1B6DC1!important;}
 .user-section .m-r-5{margin-right:5px!important;}
 @media only screen and (max-width: 768px){
 p{margin-bottom:0px!important;}
@@ -191,7 +191,7 @@ input:invalid:focus{outline:0;}
 .ss-avatar-upload-wrapper .ss-avatar-progress-bar .ss-avatar-progress-bar-animation:after{animation:move 2s linear infinite;}
 .ss-avatar-upload-wrapper .ss-avatar-input{display:none;}
 .ss-avatar-error-message{color:red;font-size:.8rem;margin-top:-1em;margin-bottom:1em;text-align:center;display:none;}
-.ss-page-title{font-family: 'Montserrat', sans-serif;color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;}
+.ss-page-title{font-family: 'Montserrat', sans-serif;color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;text-align: center;}
 .ss-profile-info{border-radius:8px;background-color:#fff;box-shadow:0 10px 20px 0 rgba(0,0,0,.1);padding:1.875em 1.25em;margin-bottom:3.13em;}
 @media (min-width:480px){
 .ss-profile-info{padding:1.875em;}
@@ -258,9 +258,9 @@ border-bottom: 1px solid #dfdfdf;
 .ss-field-privacy-notice{border-radius:9.5px;background-color:#f5f5f5;font-size:.75rem;letter-spacing:.09px;line-height:1.417em;color:#95989d;padding:.416em .833em;}
 .ss-field-privacy-notice .ss-lock{height:.625rem;}
 .ss-icon-facebook{background-size:inherit;text-indent:1.5625em;}
-.ss-edit-profile-button{font-family: 'Montserrat', sans-serif;display:inline-block;background-color:#D86000;border-radius:91px;color:#fff;width:100%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
+.ss-edit-profile-button{font-family: 'Montserrat', sans-serif;display:inline-block;background-color:#1B6DC1;border-radius:91px;color:#fff;width:100%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
 .ss-edit-profile-button:focus{outline:0;}
-.ss-edit-profile-button:hover{background-color:#ffffff;border: 2px solid #D86000;}
+.ss-edit-profile-button:hover{background-color:#ffffff;border: 2px solid #1B6DC1;}
 @media (min-width:768px){
 .ss-edit-profile-button{padding-left:40px;padding-right:40px;max-width:16em;}
 }
@@ -296,9 +296,9 @@ border-bottom: 1px solid #dfdfdf;
 .wp-crowd-submenu{position:absolute;width:230px;top:100%;left:0;padding:10px 0;opacity:0;visibility:hidden;-webkit-transiton:350ms;-moz-transition:350ms;-ms-transition:350ms;-o-transition:350ms;transition:350ms;-webkit-transform:translate(0, 25px);transform:translate(0, 25px);z-index:1;}
 .wpneo-links-list:hover .wp-crowd-submenu{opacity:1;visibility:visible;-webkit-transform:translate(0, 1px);transform:translate(0, 1px);}
 .wpcrowd-arrow-down{border:solid #686C8B;border-width:0 2px 2px 0;display:inline-block;padding:2.5px;transform:rotate(45deg);-webkit-transform:rotate(45deg);position:relative;left:5px;top:-2px;}
-.wp-crowd-btn-primary{background-color:#1adc68;color:#fff;}
-.wp-crowd-btn-primary:hover{background-color:#18ce43;color:#fff;}
-.wpneo-links div a:hover,.wpneo-links div.active a{color:#1adc68;}
+.wp-crowd-btn-primary{background-color:#1B6DC1;color:#fff;}
+.wp-crowd-btn-primary:hover{background-color:#1B6DC1;color:#fff;}
+.wpneo-links div a:hover,.wpneo-links div.active a{color:#1B6DC1;}
 .wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #1adc68;border-width:0 2px 2px 0;}
 @media (max-width: 992px){
 .wpneo-links .wpneo-links-list a{font-size:14px;margin-right:20px;line-height:24px;}
@@ -341,10 +341,10 @@ a:focus{outline:0;outline-offset:0;}
 a{color:#33d3c0;}
 a:hover{color:#00bf9c;}
 /*! CSS Used from: Embedded */
-.wp-crowd-btn-primary{background-color:#33d3c0;color:#fff;}
-.wp-crowd-btn-primary:hover{background-color:#1dc4e9;color:#fff;}
+.wp-crowd-btn-primary{background-color:#1B6DC1;color:#fff;}
+.wp-crowd-btn-primary:hover{background-color:#1B6DC1;color:#fff;}
 .wpneo-links div a:hover,.wpneo-links div.active a{color:#33d3c0;}
-.wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #33d3c0;border-width:0 2px 2px 0;}
+.wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #1B6DC1;border-width:0 2px 2px 0;}
 </style>
 
 @include('includes.user_header')
@@ -390,173 +390,101 @@ a:hover{color:#00bf9c;}
 
                 </div>
                 <div class="ss-flex">
-                    <!--div class="ss-flex-item">
-                        <div class="ss-field-label">Date de naissance:
-                            <span class="ss-field-privacy-notice">
-                                <img class="ss-lock lazyloaded" data-src="https://static.mindvalley.com/public/assets/2019/04/padlock.svg" alt="date of birth lock" src="https://static.mindvalley.com/public/assets/2019/04/padlock.svg">
-                                This info is kept private </span>
-                        </div>
-                        <div class="field-value ss-empty-value">
-                            Your date of birth goes here </div>
-                    </div-->
-                    <!--div class="ss-flex-item">
-                        <div class="ss-field-label">Language:</div>
-                        <div class="field-value">
-                        </div>
-                    </div-->
+                    
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Ville de naissance:</div>
+                        <div class="ss-field-label">Nom:</div>
                         <div class="field-value ss-empty-value">
                            <p>
-                               test
+	                            @if(Auth::user()->first_name)
+	                            {{Auth::user()->first_name}}
+	                            @else
+	                            Aucun Prénoms renseigné
+	                            @endif
                             </p>
                         </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Pays de naissance</div>
+                        <div class="ss-field-label">Prenoms</div>
                         <div class="field-value ss-empty-value">
-                        	pays
+                        	<p>
+                        		@if(Auth::user()->last_name)
+	                            {{Auth::user()->last_name}}
+	                            @else
+	                            Aucun Prénoms renseigné
+	                            @endif
+                        	</p>
                         </div>
                     </div>
 
                 </div>
-            </div>
-            <div class="ss-profile-social bot">
-                <div class="ss-social-title">Info sur le père</div>
-                <div class="ss-social-subtitle"></div>
                 <div class="ss-flex">
+                    
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Nom du père</div>
+                        <div class="ss-field-label">Ville :</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_traditional_first_name)
-                            {{Auth::user()->father_traditional_first_name}}
-                            @else
-                            Aucun Nom renseigné
-                            @endif
+                           <p>
+                               @if(Auth::user()->city)
+	                            {{Auth::user()->city}}
+	                            @else
+	                            Aucun Prénoms renseigné
+	                            @endif
+                           </p>
                         </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Prénoms du père</div>
+                        <div class="ss-field-label">Pays </div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_last_name)
-                            {{Auth::user()->father_last_name}}
-                            @else
-                            Aucun Prénoms renseigné
-                            @endif
+                        	<p>
+                        		@if(Auth::user()->country)
+	                            {{Auth::user()->country}}
+	                            @else
+	                            Aucun Prénoms renseigné
+	                            @endif
+                        	</p>
                         </div>
                     </div>
+
+                </div>
+
+                <div class="ss-flex">
+                    
+                    
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Autre noms du père</div>
+                        <div class="ss-field-label">Contact : </div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_other_name)
-                            {{Auth::user()->father_other_name}}
-                            @else
-                            Aucun Autre noms renseigné
-                            @endif
+                        	<p>
+                        		@if(Auth::user()->phone)
+	                            {{Auth::user()->phone}}
+	                            @else
+	                            Aucun Prénoms renseigné
+	                            @endif
+                        	</p>
                         </div>
                     </div>
+
+                </div>
+
+                <div class="ss-flex">
+                    
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Pays de résidence du père</div>
+                        <div class="ss-field-label">Biographie :</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_birth_country)
-                            {{Auth::user()->father_birth_country}}
-                            @else
-                            Aucun Pays renseigné
-                            @endif
+                           <p>
+                               @if(Auth::user()->bio)
+	                            {{Auth::user()->bio}}
+	                            @else
+	                            Aucun Prénoms renseigné
+	                            @endif
+                           </p>
                         </div>
                     </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Ville de résidence du père</div>
-                        <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_town)
-                            {{Auth::user()->father_town}}
-                            @else
-                            Aucune ville renseignée
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Nombre d'enfant du père</div>
-                        <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_children_number)
-                            {{Auth::user()->father_children_number}}
-                            @else
-                            Aucun Nombre d'enfant renseigné
-                            @endif
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
-            <div class="ss-profile-social">
-                <div class="ss-social-title">Info sur la Mère</div>
-                <div class="ss-social-subtitle"></div>
-                <div class="ss-flex">
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Nom de la Mère</div>
-                        <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_traditional_first_name)
-                            {{Auth::user()->mother_traditional_first_name}}
-                            @else
-                            Aucun Nom renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Prénoms de la Mère</div>
-                        <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_last_name)
-                            {{Auth::user()->mother_last_name}}
-                            @else
-                            Aucun Prénoms renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Autre noms de la Mère</div>
-                        <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_other_name)
-                            {{Auth::user()->mother_other_name}}
-                            @else
-                            Aucun Autre noms renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Pays de résidence de la Mère</div>
-                        <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_birth_country)
-                            {{Auth::user()->mother_birth_country}}
-                            @else
-                            Aucun Pays renseigné
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Ville de résidence de la Mère</div>
-                        <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_birth_city)
-                            {{Auth::user()->mother_birth_city}}
-                            @else
-                            Aucune ville renseignée
-                            @endif
-                        </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Nombre d'enfant de la Mère</div>
-                        <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_children_number)
-                            {{Auth::user()->mother_children_number}}
-                            @else
-                            Aucun Nombre d'enfant renseigné
-                            @endif
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="boutton">
             	<a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Modifier le profil</a>
 
-            	<a class="ss-edit-profile-button" href="#" rel="noopener">Télécharger vos informations</a>
             </div>
         </div>
     </div>

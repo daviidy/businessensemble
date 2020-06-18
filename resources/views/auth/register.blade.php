@@ -56,7 +56,7 @@
                     <div class="form-group">
                         <select class="form-control" name="type">
                             <option value="entrepreneur">Entrepreneur</option>
-                            <option value="investor">Investissur</option>
+                            <option value="investor">Investisseur</option>
                         </select>
                     </div>
 
