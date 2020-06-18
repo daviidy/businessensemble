@@ -100,7 +100,7 @@
 			.order-lg-1{-ms-flex-order:1;order:1;}
 			.order-lg-3{-ms-flex-order:3;order:3;}
 			}
-			.collapse{display:none;}
+			/*.collapse{display:none;}*/
 			.nav{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none;}
 			.navbar-nav{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none;}
 			.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center;}
@@ -151,7 +151,7 @@
 			@media all{
 			input[type=submit]{color:#fff;cursor:pointer;}
 			input[type=submit]:hover{background:#fff;}
-			.backnow-login-register a.backnow-dashboard{padding:5px 15px;border-radius:4px;color:#fff;transition:400ms;-webkit-transition:400ms;}
+			.backnow-login-register a.backnow-dashboard{padding:5px 10px;border-radius:4px;color:#fff;transition:400ms;-webkit-transition:400ms;}
 			input:focus,button:focus{outline-offset:0;outline:0;-webkit-box-shadow:none;box-shadow:none;}
 			.thm-explore{position:relative;padding-right:10px;}
 			.thm-explore::after{content:'';position:absolute;height:16px;width:1px;background:#DCDCDC;right:-10px;top:50%;margin-top:-8px;}
@@ -231,7 +231,7 @@
 			.common-menu-wrap .nav>li{margin-left:15px;}
 			}
 			@media (min-width: 768px) and (max-width: 1000px){
-			.navbar-collapse.collapse{display:none!important;overflow:hidden!important;}
+			
 			.navbar-collapse{padding-right:0;padding-left:0;}
 			#mobile-menu ul{padding:0;}
 			.header-solid #mobile-menu{top:100%;}
@@ -276,9 +276,9 @@
 			.site-header{padding-top:10px;}
 			.site-header{padding-bottom:10px;}
 			.themeum-navbar-header .themeum-navbar-brand img{width:130px;max-width:none;}
-			input[type=submit]{background-color:#33d3c0;border-color:#1B6DC1;color:#fff!important;}
+			input[type=submit]{background-color:#1B6DC1;border-color:#1B6DC1;color:#fff!important;}
 			.backnow-login-register a.backnow-dashboard{background-color:#1B6DC1;}
-			input[type=submit]:hover{background-color:#33d3c0;border-color:#1B6DC1;color:#fff!important;}
+			input[type=submit]:hover{background-color:#1B6DC1;border-color:#1B6DC1;color:#fff!important;}
 			.header-solid .common-menu-wrap .nav>li.menu-item-has-children:after,.header-solid .common-menu-wrap .nav>li>a,.header-solid .common-menu-wrap .nav>li>a:after,.backnow-search{color:#676767;}
 			.header-solid .common-menu-wrap .nav>li>a:hover,.header-solid .common-menu-wrap .nav>li>a:hover:after,.backnow-search-wrap a.backnow-search:hover{color:#33d3c0;}
 			.header-solid .common-menu-wrap .nav>li.active>a{color:#33d3c0;}
@@ -381,6 +381,10 @@
 			#footer{padding-top:30px;}
 			#footer{padding-bottom:30px;}
 			.footer-copyright,.footer-copyright a{color:#6e6e6e;}
+
+			.menu, .menu1, menu2{
+				display: block;
+			}
 
         </style>
     </head>
@@ -519,7 +523,7 @@
                     </div>
                     <!--/.col-md-5-->
 
-                    <div class="d-block d-lg-none col-8">
+                    <div class="d-block d-lg-none col-7">
                         <div class="backnow-login-register">
                             <ul>
                                 <!-- Start Campaign Section -->
@@ -552,20 +556,20 @@
                     <div class="col-7 col-sm-6 d-lg-none">
 
                         <button type="button" class="navbar-toggle float-right" data-toggle="collapse" data-target=".navbar-collapse">
-                            <i class="fa fa-navicon"></i>
+                            <i class="fas fa-bars"></i>
                             Menu </button>
 
 
                         <div class="backnow-login-register float-right">
                             <div class="backnow-search-wrap">
-                                <a href="#" class="backnow-search search-open-icon"><i class="back-magnifying-glass-2"></i></a>
+                                <a href="#" class="backnow-search search-open-icon"><i class="fas fa-search"></i></a>
                             </div>
 
                             <ul>
                                 <!-- Login Section -->
                                 <li>
                                   <a data-toggle="modal" data-target="#myModal" href="#" id="myBtn">
-                                    <i class="back-profile"></i>
+                                    <i class="fas fa-user"></i>
                                   </a>
                                 </li>
                                 <!-- End Login section -->
@@ -579,36 +583,30 @@
                             <div class="collapse navbar-collapse">
                                 <ul id="menu-main-menu-1" class="nav navbar-nav">
                                     <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-27 active"><a title="Home"
-                                          href="http://demo.themeum.com/wordpress/backnow/">Home</a>
-                                        <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-27">
-                                            <i class="fa fa-angle-right"></i>
-                                        </span>
-                                        <ul role="menu" class="collapse collapse-27 ">
-                                            <li id="menu-item-402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-402"><a title="Homepage 2" href="https://demo.themeum.com/wordpress/backnow/homepage-2/">Homepage 2</a></li>
-                                            <li id="menu-item-1956" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1953 current_page_item menu-item-1956 active">
-                                              <a title="Homepage 3" href="https://demo.themeum.com/wordpress/backnow/homepage-3/">Homepage 3</a></li>
-                                        </ul>
+                                          href="http://demo.themeum.com/wordpress/backnow/">Accueil</a>
+                                        
                                     </li>
-                                    <li id="menu-item-384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-384"><a title="Page" href="#">Page</a>
+                                    <li id="menu-item-384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-384"><a title="Page" href="#">Investir</a>
                                         <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-384">
-                                            <i class="fa fa-angle-right"></i>
+                                            <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-384 ">
-                                            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a title="Blog" href="https://demo.themeum.com/wordpress/backnow/blog/">Blog</a></li>
-                                            <li id="menu-item-1824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824"><a title="Blog fullwidth" href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Blog fullwidth</a></li>
-                                            <li id="menu-item-1470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1470"><a title="About" href="https://demo.themeum.com/wordpress/backnow/about/">About</a></li>
-                                            <li id="menu-item-419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419"><a title="Contact" href="https://demo.themeum.com/wordpress/backnow/contact/">Contact</a></li>
-                                            <li id="menu-item-417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-417"><a title="Coming Soon" href="https://demo.themeum.com/wordpress/backnow/coming-soon/">Coming Soon</a></li>
-                                            <li id="menu-item-418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-418"><a title="404 Page" href="https://demo.themeum.com/wordpress/backnow/404-page/">404 Page</a></li>
+                                            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a title="Blog" href="https://demo.themeum.com/wordpress/backnow/blog/">Investir</a></li>
+                                            <li id="menu-item-1824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824"><a title="Blog fullwidth" href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Explorer</a></li>
+                                            <li id="menu-item-1470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1470"><a title="About" href="https://demo.themeum.com/wordpress/backnow/about/">Rechercher</a></li>
+                                            
                                         </ul>
                                     </li>
-                                    <li id="menu-item-1823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="https://demo.themeum.com/wordpress/backnow/discover/">Discover</a>
+                                    <li id="menu-item-1823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="https://demo.themeum.com/wordpress/backnow/discover/">Lever des fonds</a>
                                         <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-1823">
-                                            <i class="fa fa-angle-right"></i>
+                                            <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-1823 ">
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Discover Style 2</a>
+                                              <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Créer une annonce</a>
+                                            </li>
+                                            <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
+                                              <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -717,25 +715,25 @@
                 <div class="footer-copyright">
                     <div class="row">
                         <div class="col-md-6 text-left copy-wrapper">
-                            <img class="enter-logo img-responsive" src="http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2018/01/footer-logo.png" alt="Logo" title="Logo">
-                            <span>© 2018 Backnow. All Rights Reserved.</span>
+                            <img class="enter-logo img-responsive" src="/assets/imgs/logo-be.jpg" alt="Logo" title="Logo" width="150">
+                           © <span id="year"> 2018 </span>  All Rights Reserved.
                         </div> <!-- end row -->
                         <div class="col-md-6 text-right copy-wrapper">
 
                             <div class="social-share">
                                 <ul>
-                                    <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
 
                                     <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
 
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-linkedin"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-dribbble"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-behance"></i></a></li>
                                 </ul>
                             </div>
                         </div> <!-- end row -->
@@ -743,6 +741,14 @@
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </footer>
+
+        <!--COPYRIGTH SCRIPT-->
+    <script type="text/javascript">
+        var date = new Date();
+        var annee = date.getFullYear();
+        document.getElementById('year').innerHTML = annee;
+    </script>
+
         <!--Tap script-->
 
       <script>
@@ -758,6 +764,8 @@
           $("#myBtn").click(function(){
             $("#myModal").modal();
           });
+
+          
         });
       </script>
 
