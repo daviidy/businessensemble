@@ -35,7 +35,7 @@ justify-content: center;
                         @if(\Route::current()->getName() == 'users.edit')
                         <a href="/home">
                             <button type="button" class="btn btn-success waves-effect waves-light">
-                                <i class="fa fa-user m-r-5"></i>
+                                <i class="fas fa-user"></i>
 
                                 Aperçu du profil
 
@@ -44,7 +44,7 @@ justify-content: center;
                         @else
                         <a href="{{route('users.edit', Auth::user())}}">
                             <button type="button" class="btn btn-success waves-effect waves-light">
-                                <i class="fa fa-user m-r-5"></i>
+                                <i class="far fa-edit"></i>
 
                                 Modifier le profil
 
