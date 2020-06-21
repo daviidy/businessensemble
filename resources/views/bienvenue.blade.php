@@ -1,4 +1,5 @@
 @extends('layouts.menu')
+@section('title', 'Bienvenue')
 
 @section('content')
 
