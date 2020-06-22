@@ -70,7 +70,7 @@
                 <div class="navbar-wrapper">
                     <div class="navbar-logo">
                         <a href="/">
-                            <img class="img-fluid" width="300" src="{{ asset('assets/logos/repetbox2.png') }}" alt="Logo RepetBox" />
+                            <img class="img-fluid" width="150" src="/assets/imgs/logo-be.jpg" alt="Logo RepetBox" />
                         </a>
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
                             <i class="icon-menu icon-toggle-right"></i>

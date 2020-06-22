@@ -3,7 +3,7 @@ body {
     font-size: .9375rem;
     overflow-x: hidden;
     color: #333;
-    font-family: open sans, sans-serif;
+    font-family:'Montserrat', sans-serif;
     background-image: linear-gradient(rgba(255, 255, 255, 0.7) 240px, #f2f7fb 0%)
 }
 
@@ -43,7 +43,7 @@ h4,
 h5,
 h6 {
     font-weight: 500;
-    font-family: quicksand, sans-serif
+    font-family:'Montserrat', sans-serif;
 }
 
 h1 {
@@ -992,7 +992,7 @@ a.bg-danger:hover {
     height: 100%;
     text-align: center;
     color: #fff;
-    font-family: courier new, Courier, monospace;
+    font-family:'Montserrat', sans-serif;
     padding: 50px 0
 }
 
@@ -3467,14 +3467,14 @@ table thead .border-bottom-info th {
     z-index: 1029;
     position: relative;
     display: block;
-    font-family: quicksand, sans-serif;
+    font-family:'Montserrat', sans-serif;
     -webkit-box-shadow: 0 2px 4px 0 rgba(43, 43, 43, .1);
     box-shadow: 0 2px 4px 0 rgba(43, 43, 43, .1)
 }
 
 .pcoded .pcoded-navbar {
     display: block;
-    font-family: quicksand, sans-serif
+    font-family:'Montserrat', sans-serif;
 }
 
 .pcoded .pcoded-navbar .nav-list {

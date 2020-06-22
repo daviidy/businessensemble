@@ -267,6 +267,7 @@ footer {
 .video_t{
     display: none;
 }
+
 </style>
 
 <!-- MultiStep Form -->

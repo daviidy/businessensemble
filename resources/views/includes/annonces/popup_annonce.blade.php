@@ -15,7 +15,18 @@
 
                     <!-- Modal body -->
                     <div class="modal-body body-annonce">
+                      <div class="input">
                         <input type="text" class="form-control form-control-lg" placeholder="Titre de la société " name="title">
+                      </div>
+                        <div class="input">
+                          <input type="text" class="form-control form-control-lg" placeholder="Pays " name="country" id="country" >
+                        </div>
+
+                        <div class="input">
+                          <input type="number" class="form-control form-control-lg" name="phone" id="" placeholder="Téléphone">
+                        </div>
+
+                        
                     </div>
 
                     <!-- Modal footer -->
@@ -30,3 +41,27 @@
 
 <!--/ Modal de l'ajout d'un membre de l'équipe-->
 <!-- /The Modal -->
+
+<script src="/plugin/build/js/intlTelInput.js"></script>
+  <script>
+    var input = document.querySelector("#phone_3");
+    window.intlTelInput(input, {
+
+      autoPlaceholder: "polite",
+
+       hiddenInput: "phone",
+
+       nationalMode: true,
+
+       preferredCountries: ["ci", "fr"],
+       separateDialCode: true,
+      utilsScript: "/plugin/build/js/utils.js",
+    });
+  </script>
+
+
+  <script src="/plugin/build/js/countrySelect.min.js"></script>
+  <script>
+    $("#country").countrySelect();
+
+  </script>
