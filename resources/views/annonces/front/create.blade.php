@@ -8,9 +8,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /*basic reset*/
-* {
-margin: 0;
-padding: 0;
+
+.country-select.inside input, .country-select.inside input[type=text] {
+    padding-right: 6px!important;
+    padding-left: 52px!important;
+    margin-left: 0;
 }
 
 html {
@@ -20,12 +22,13 @@ background: -webkit-linear-gradient(to left, #6441A5, #2a0845); /* Chrome 10-25,
 }
 
 body {
+height: 100%!important;
 font-family: montserrat, arial, verdana;
 background: transparent;
 }
 
 /*form styles*/
-#msform {
+#msform, #msform1 {
 text-align: center;
 position: relative;
 margin-top: 30px;
@@ -39,7 +42,7 @@ box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 padding: 20px 30px;
 box-sizing: border-box;
 width: 80%;
-margin: 0 10%;
+margin: 30px auto;
 
 /*stacking fieldsets above each other*/
 position: relative;
@@ -51,7 +54,7 @@ display: none;
 }
 
 /*inputs*/
-#msform input, #msform textarea {
+#msform input, #msform textarea, #msform1 input, #msform1 textarea {
 padding: 15px;
 border: 1px solid #ccc;
 border-radius: 0px;
@@ -63,11 +66,11 @@ color: #2C3E50;
 font-size: 13px;
 }
 
-#msform textarea {
+#msform textarea, #msform1 textarea {
 resize: vertical;
 min-height: 50px
 }
-#msform select {
+#msform select, #msform1 select {
 padding: 15px;
 border: 1px solid #ccc;
 border-radius: 0px;
@@ -79,7 +82,7 @@ color: #2C3E50;
 font-size: 13px;
 }
 
-#msform input:focus, #msform textarea:focus {
+#msform input:focus, #msform textarea:focus, #msform1 input:focus, #msform1 textarea:focus {
 -moz-box-shadow: none !important;
 -webkit-box-shadow: none !important;
 box-shadow: none !important;
@@ -92,7 +95,7 @@ transition: All 0.5s ease-in;
 }
 
 /*buttons*/
-#msform .action-button {
+#msform .action-button, #msform1 .action-button {
 width: 100px;
 background: #ee0979;
 font-weight: bold;
@@ -219,74 +222,139 @@ font-size: 12px;
 background: #C5C5F1;
 text-decoration: none;
 }
+ul li{
+    padding: 0!important;
+}
+</style>
+
+<style>
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  margin-bottom: 15px;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.closebtn {
+  padding-left: 10px;
+  color: #888;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #000;
+}
+
+footer {
+    padding-bottom: 30px;
+    display: none;
+}
+.video_t{
+    display: none;
+}
 </style>
 
 <!-- MultiStep Form -->
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-        <form id="msform">
-            <!-- progressbar -->
-            <ul id="progressbar">
-                <li class="active">General Information</li>
-                <li>TRIP Information</li>
-                <li>Physical and Financial Status</li>
-                <li>Submit</li>
-            </ul>
-            <!-- fieldsets -->
-            <fieldset>
-                <h2 class="fs-title">General Information</h2>
-                <h3 class="fs-subtitle">Tell us something more about the project</h3>
-                <label for="fname">Project Title</label>
-                <input type="text" name="fname" placeholder="Project Title" />
-                <label for="fname">Description</label>
-                <textarea name="lname" placeholder="Description"></textarea>
-                <label for="fname">Basis for Implementation</label>
-                <input type="text" name="fname" placeholder="Basis for implementation" />
-                <label for="fname">Program or Project</label>
-                <select class="form-input">
-                    <option>Program</option>
-                    <option>Project</option>
-                </select>
+<div class="container">
+    
 
+    <div class="row">
+        <div class="col-md-12 col-md-offset-3">
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">La société</li>
+                    <li>La présentation et l'offre</li>
+                    <li>L'équipe</li>
+                    <li>Médias et documents</li>
+                </ul>
+                <!-- fieldsets -->
+                @include('includes.annonces.societe')
+                @include('includes.annonces.presentation')
+                @include('includes.annonces.equipe')
+                @include('includes.annonces.document')
 
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-
-            <fieldset>
-                <h2 class="fs-title">TRIP Information</h2>
-                <h3 class="fs-subtitle">Your presence on the social network</h3>
-                <input type="text" name="twitter" placeholder="Twitter" />
-                <input type="text" name="facebook" placeholder="Facebook" />
-                <input type="text" name="gplus" placeholder="Google Plus" />
-                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-
-            <fieldset>
-                <h2 class="fs-title">Physical and Financial Status</h2>
-                <h3 class="fs-subtitle">Your presence on the social network</h3>
-                <input type="text" name="twitter" placeholder="Twitter" />
-                <input type="text" name="facebook" placeholder="Facebook" />
-                <input type="text" name="gplus" placeholder="Google Plus" />
-                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-
-            <fieldset>
-                <h2 class="fs-title">Submit project</h2>
-                <h3 class="fs-subtitle">Fill in your credentials to authorize submission</h3>
-                <input type="text" name="email" placeholder="Username" />
-                <input type="password" name="pass" placeholder="Password" />
-                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
-            </fieldset>
-        </form>
-        <!-- link to designify.me code snippets -->
-        <!-- /.link to designify.me code snippets -->
+                
+                
+                
+            </form>
+            <!-- link to designify.me code snippets -->
+            <!-- /.link to designify.me code snippets -->
+        </div>
     </div>
 </div>
 <!-- /.MultiStep Form -->
 
+<!--Modal de l'ajout d'un membre de l'équipe-->
+<!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <form id="msform1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                       
+                        <h4 class="modal-title text-center">Ajouter un membres de l'équipe</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="card" style="">
+                            <div class="row" style="padding: 25px">
+                                <div class="col-md-6 col-sm-12">
+                                    <img class="card-img-top rounded-circle" src="/assets/imgs/vatar.png" alt="Card image"  style="width:35%">
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="file" name="" placeholder="" />
+                                </div>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="text" id="" placeholder="Nom" name="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="url" id="" placeholder="Réseax social" name="pswd">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="" placeholder="Titre ou poste dans la société" name="pswd">
+                                </div>
+                                
+                                <textarea name="lname" placeholder="Bio"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ajouter</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                  </div>
+                </div>
+            </form>
+          </div>
+
+<!--/ Modal de l'ajout d'un membre de l'équipe-->
+<!-- /The Modal -->
 
 
 <script
@@ -380,5 +448,29 @@ $(".submit").click(function(){
 })
 
 </script>
+
+<script src="/plugin/build/js/intlTelInput.js"></script>
+          <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+
+              autoPlaceholder: "polite",
+
+               hiddenInput: "phone",
+
+               nationalMode: true,
+
+               preferredCountries: ["ci", "fr"],
+               separateDialCode: true,
+              utilsScript: "/plugin/build/js/utils.js",
+            });
+          </script>
+  
+
+        <script src="/plugin/build/js/countrySelect.min.js"></script>
+        <script>
+          $("#country").countrySelect();
+          
+        </script>
 
 @endsection

@@ -8,9 +8,20 @@
 
             <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
             <!--Plugin form cdn jquery tel selector-->
-  <link rel="stylesheet" href="/plugin/build/css/intlTelInput.css">
-  <link rel="stylesheet" href="/plugin/build/css/demo.css">
-    <!--End Plugin form cdn jquery-->
+		  <link rel="stylesheet" href="/plugin/build/css/intlTelInput.css">
+		  <link rel="stylesheet" href="/plugin/build/css/demo.css">
+		    <!--End Plugin form cdn jquery-->
+
+		    <!--Plugin form cdn jquery contry selector-->
+		    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		    <link rel="stylesheet" href="/plugin/build/css/countrySelect.css">
+		    <link rel="stylesheet" href="/plugin/build/css/demo1.css">
+		    <link rel="stylesheet" href="/path/to/countrySelect.css">
+		    <script src="/path/to/cdn/jquery.min.js"></script>
+		    <script src="/path/to/countrySelect.js"></script>
+		  <!--End Plugin form cdn jquery-->
+
+
 
         <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -386,6 +397,19 @@
 				display: block;
 			}
 
+			.title-annonce {
+    
+			    text-align: center !important;
+			    text-transform: uppercase !important;
+			    padding: 54px 30px 0 30px !important;
+			    width: 100% !important;
+			}
+
+			.body-annonce {
+			   
+			    padding: 3rem!important;
+			}
+
         </style>
     </head>
     <body class="home page-template page-template-homepage page-template-homepage-php page page-id-33 logged-in woocommerce-js fullwidth-bg elementor-default elementor-page elementor-page-33">
@@ -537,6 +561,7 @@
                         </div>
 
                     </div>
+                    @include('includes.annonces.popup_annonce')
                     <!--/.col-md-7-->
 
 
@@ -635,8 +660,8 @@
                                 <li><a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a></li>
                                 @endauth
 
-                                <!-- Start Campaign Section -->
-                                <li><a href="{{route('annonces.create')}}" class="backnow-login backnow-dashboard">Créer une annonce</a></li>
+                                <!-- Start Campaign Section {{route('annonces.create')}} -->
+                                <li><a class="backnow-login backnow-dashboard" data-toggle="modal" data-target="#myModal_2" href="#" > Créer une annonce</a></li>
                                 <!-- End Campaign -->
                             </ul>
 
@@ -660,52 +685,6 @@
             </div>
             <!--/.container-->
         </header>
-
-          <!-- The Modal -->
-            <div class="modal fade show" id="myModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                  </div>
-
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    <form action="/action_page.php">
-                      <div class="form-group">
-                        <label for="email"></label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                      </div>
-                      <div class="form-group">
-                        <label for="pwd"></label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                      </div>
-                      <div class="form-group form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                  </div>
-
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <div class="">
-                        <a href="https://demo.themeum.com/wordpress/backnow/my-account/lost-password/">Forgot password?</a>
-                    </div>
-                    <div class="">
-                        <a data-toggle="modal" data-target="#registerlog" href="#" data-dismiss="modal">Sign Up</a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
 
         @yield('content')
 
@@ -763,9 +742,7 @@
         $(document).ready(function(){
           $("#myBtn").click(function(){
             $("#myModal").modal();
-          });
-
-          
+          });  
         });
       </script>
 
