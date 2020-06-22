@@ -16,7 +16,14 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        if (Auth::check() && Auth::user()->isAdmin()) {
+            $users = User::orderby('id', 'asc')->paginate(30);
+            return view('users.admin.users.index', ['users' => $users]);
+        }
+        else {
+            return redirect('home');
+        }
+
     }
 
     /**
@@ -49,7 +56,13 @@ class UserController extends Controller
     public function show(User $user)
     {
         if (Auth::check()) {
-            return view('users.show', ['user' => $user,]);
+            if (Auth::user()->isAdmin()) {
+                return view('users.admin.users.show', ['user' => $user,]);
+            }
+            else {
+                return view('users.show', ['user' => $user,]);
+            }
+
         }
         else {
             return redirect('home');
@@ -86,7 +99,7 @@ class UserController extends Controller
             if ($request->hasFile('cover_image') ) {
                 $image = $request->file('cover_image');
                 $filename = time() . '.' . $image->getClientOriginalExtension();
-                Image::make($image)->save(storage_path('app/public/images/users/covers'.$filename));
+                Image::make($image)->save(storage_path('app/public/images/users/covers/'.$filename));
                 $user->cover_image = $filename;
                 $user->save();
             }

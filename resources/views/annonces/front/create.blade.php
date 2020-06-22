@@ -271,7 +271,7 @@ footer {
 
 <!-- MultiStep Form -->
 <div class="container">
-    
+
 
     <div class="row">
         <div class="col-md-12 col-md-offset-3">
@@ -289,9 +289,9 @@ footer {
                 @include('includes.annonces.equipe')
                 @include('includes.annonces.document')
 
-                
-                
-                
+
+
+
             </form>
             <!-- link to designify.me code snippets -->
             <!-- /.link to designify.me code snippets -->
@@ -306,14 +306,14 @@ footer {
             <form id="msform1">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
-                  
+
                     <!-- Modal Header -->
                     <div class="modal-header">
-                       
+
                         <h4 class="modal-title text-center">Ajouter un membres de l'équipe</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    
+
                     <!-- Modal body -->
                     <div class="modal-body">
                         <div class="card" style="">
@@ -325,7 +325,7 @@ footer {
                                     <input type="file" name="" placeholder="" />
                                 </div>
                             </div>
-                            
+
                             <div class="card-body">
                                 <div class="form-group">
                                     <input type="text" id="" placeholder="Nom" name="">
@@ -336,18 +336,18 @@ footer {
                                 <div class="form-group">
                                     <input type="text" id="" placeholder="Titre ou poste dans la société" name="pswd">
                                 </div>
-                                
+
                                 <textarea name="lname" placeholder="Bio"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Ajouter</button>
                         </div>
                     </div>
-                    
+
                     <!-- Modal footer -->
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
-                    
+
                   </div>
                 </div>
             </form>
@@ -465,12 +465,12 @@ $(".submit").click(function(){
               utilsScript: "/plugin/build/js/utils.js",
             });
           </script>
-  
+
 
         <script src="/plugin/build/js/countrySelect.min.js"></script>
         <script>
           $("#country").countrySelect();
-          
+
         </script>
 
 @endsection

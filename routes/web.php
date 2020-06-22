@@ -40,6 +40,9 @@ Route::get('/investor', 'InvestorController@investor')
     ->name('investor');
 
 
+Route::get('/admin/users/{user}', 'UserController@show');
+
+
 
     //ajax routes
     Route::post('/uploadAvatar', 'UserController@uploadAvatar');

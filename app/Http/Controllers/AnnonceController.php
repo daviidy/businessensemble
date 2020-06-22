@@ -46,7 +46,8 @@ class AnnonceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $annonce = Annonce::create($request->all());
+        return redirect('/annonces/'.$annonce->id.'/edit');
     }
 
     /**
@@ -68,7 +69,7 @@ class AnnonceController extends Controller
      */
     public function edit(Annonce $annonce)
     {
-        //
+        return view('annonces.front.edit', ['annonce' => $annonce]);
     }
 
     /**

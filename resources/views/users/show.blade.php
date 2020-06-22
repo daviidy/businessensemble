@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', ucfirst(Auth::user()->name))
+@section('title', 'Informations sur '.$user->name)
 
 @section('content')
 
@@ -275,117 +275,22 @@ border-bottom: 1px solid #dfdfdf;
 
 
 
-<!--style tab dashboard-->
-<style media="screen">
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/plugins/wp-crowdfunding/assets/css/crowdfunding-front.css?ver=2.0.2 ; media=all */
-@media all{
-.wp-crowd-btn{padding:10px 20px;text-decoration:none;box-shadow:none;border:none;font-size:14px;font-weight:300;border-radius:3px;text-transform:capitalize;transition:400ms;}
-.wp-crowd-btn:hover,.wp-crowd-btn:focus{text-decoration:none;outline:0;}
-.wpneo-links div a.wp-crowd-btn-primary:hover,.wp-crowd-btn-primary:focus{color:#fff;}
-.wpneo-head{margin-bottom:30px;background:#fff;padding:0 20px;}
-.wpneo-links .wpneo-links-list{display:inline-block;}
-.wpneo-links .wpneo-links-list a{display:block;color:#686C8B;font-size:14px;line-height:58px;padding:0;margin-right:25px;text-decoration:none;font-weight:400;box-shadow:none;}
-.wpneo-links .wpneo-links-list a:focus{outline:0;}
-.wpneo-links a{box-shadow:none;line-height:20px;}
-.wp-crowd-new-campaign{float:right;margin-top:7px;}
-.wpneo-shadow{-webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.1);box-shadow:0 0 3px rgba(0, 0, 0, 0.1);background:#fff;border-radius:4px;}
-.wp-crowd-parent{position:relative;}
-.wpneo-links-list{display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
-.wpneo-links-lists{display:block;padding:0 25px;}
-.wpneo-links .wpneo-links-list .wpneo-links-lists a{line-height:40px;}
-.wp-crowd-submenu{position:absolute;width:230px;top:100%;left:0;padding:10px 0;opacity:0;visibility:hidden;-webkit-transiton:350ms;-moz-transition:350ms;-ms-transition:350ms;-o-transition:350ms;transition:350ms;-webkit-transform:translate(0, 25px);transform:translate(0, 25px);z-index:1;}
-.wpneo-links-list:hover .wp-crowd-submenu{opacity:1;visibility:visible;-webkit-transform:translate(0, 1px);transform:translate(0, 1px);}
-.wpcrowd-arrow-down{border:solid #686C8B;border-width:0 2px 2px 0;display:inline-block;padding:2.5px;transform:rotate(45deg);-webkit-transform:rotate(45deg);position:relative;left:5px;top:-2px;}
-.wp-crowd-btn-primary{background-color:#1B6DC1;color:#fff;}
-.wp-crowd-btn-primary:hover{background-color:#1B6DC1;color:#fff;}
-.wpneo-links div a:hover,.wpneo-links div.active a{color:#1B6DC1;}
-.wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #1adc68;border-width:0 2px 2px 0;}
-@media (max-width: 992px){
-.wpneo-links .wpneo-links-list a{font-size:14px;margin-right:20px;line-height:24px;}
-.wpneo-head{padding-top:10px;}
-.wp-crowd-new-campaign{float:none;display:inline-block;margin-bottom:24px;}
-}
-@media (max-width: 767px){
-.wp-crowd-submenu{right:-60%;left:auto;}
-}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/bootstrap.min.css?ver=all ; media=all */
-@media all{
-@media print{
-*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
-a,a:visited{text-decoration:underline;}
-}
-*,::after,::before{box-sizing:border-box;}
-a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
-a:hover{color:#0056b3;text-decoration:underline;}
-a{-ms-touch-action:manipulation;touch-action:manipulation;}
-.clearfix::after{display:block;clear:both;content:"";}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/main.css?ver=all ; media=all */
-@media all{
-.wp-crowd-new-campaign{margin-top:17px;}
-.wp-crowd-btn{border-radius:50px;}
-.wpneo-head{background:#fff;}
-.wpneo-links .wpneo-links-list a{font-weight:300;}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/custom.css?ver=all ; media=all */
-@media all{
-.wp-crowd-submenu{width:230px;}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/style.css?ver=4.9.15 ; media=all */
-@media all{
-a{text-decoration:none!important;}
-a:focus{outline:0;outline-offset:0;}
-}
-/*! CSS Used from: Embedded */
-a{color:#33d3c0;}
-a:hover{color:#00bf9c;}
-/*! CSS Used from: Embedded */
-.wp-crowd-btn-primary{background-color:#1B6DC1;color:#fff;}
-.wp-crowd-btn-primary:hover{background-color:#1B6DC1;color:#fff;}
-.wpneo-links div a:hover,.wpneo-links div.active a{color:#33d3c0;}
-.wpneo-links div a:hover .wpcrowd-arrow-down{border:solid #1B6DC1;border-width:0 2px 2px 0;}
-</style>
-
-@include('includes.user_header')
+@include('includes.user_header_visit')
 
 
-<div style="width: 82%;
-    margin: auto;" class="wpneo-head wpneo-shadow">
-    <div class="wpneo-links clearfix">
-        <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Dashboard</a></div>
-        <div class="wpneo-links-list wp-crowd-parent"><a href="#">My Account<span class="wpcrowd-arrow-down"></span></a>
-            <div class="wp-crowd-submenu wpneo-shadow">
-                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=profile">Profile</a></div>
-                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=contact">Contact</a></div>
-                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=password">Password</a></div>
-                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=rewards">Rewards</a></div>
-                <div class="wpneo-links-lists"><a href="https://demo.themeum.com/wordpress/backnow/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fdemo.themeum.com%2Fwordpress%2Fbacknow&amp;_wpnonce=18302b08e3">Logout</a></div>
-            </div>
-        </div>
-        <div class="wpneo-links-list wp-crowd-parent"><a href="#">Campaigns<span class="wpcrowd-arrow-down"></span></a>
-            <div class="wp-crowd-submenu wpneo-shadow">
-                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=campaign">My Campaigns</a></div>
-                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=backed_campaigns">My Invested Campaigns</a></div>
-                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=pledges_received">Pledges Received</a></div>
-                <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=bookmark">Bookmarks</a></div>
-            </div>
-        </div>
-        <div class="wp-crowd-new-campaign"><a class="wp-crowd-btn wp-crowd-btn-primary" href="https://demo.themeum.com/wordpress/backnow/cf-campaign-form/">Add New Campaign</a></div>
-    </div>
-</div>
+
 
 <div class="ss-content-wrapper">
-    <div class="ss-page-title">Aperçu de vos informations</div>
+    <div class="ss-page-title">A propos de {{$user->name}}</div>
     <div class="profile-page">
         <div class="ss-profile-info">
             <div class="ss-profile-details">
                 <div class="ss-flex">
                     <div class="ss-flex-item-info email">
                         <div class="ss-field-label-large">
-                            {{ucfirst(Auth::user()->name)}} </div>
+                            {{ucfirst($user->name)}} </div>
                         <div class="field-value">
-                            {{Auth::user()->email}} </div>
+                            {{$user->email}} </div>
                     </div>
 
                 </div>
@@ -395,8 +300,8 @@ a:hover{color:#00bf9c;}
                         <div class="ss-field-label">Nom:</div>
                         <div class="field-value ss-empty-value">
                            <p>
-	                            @if(Auth::user()->first_name)
-	                            {{Auth::user()->first_name}}
+	                            @if($user->first_name)
+	                            {{$user->first_name}}
 	                            @else
 	                            Aucun prénom renseigné
 	                            @endif
@@ -407,8 +312,8 @@ a:hover{color:#00bf9c;}
                         <div class="ss-field-label">Prenoms</div>
                         <div class="field-value ss-empty-value">
                         	<p>
-                        		@if(Auth::user()->last_name)
-	                            {{Auth::user()->last_name}}
+                        		@if($user->last_name)
+	                            {{$user->last_name}}
 	                            @else
 	                            Aucun nom renseigné
 	                            @endif
@@ -423,8 +328,8 @@ a:hover{color:#00bf9c;}
                         <div class="ss-field-label">Ville :</div>
                         <div class="field-value ss-empty-value">
                            <p>
-                               @if(Auth::user()->city)
-	                            {{Auth::user()->city}}
+                               @if($user->city)
+	                            {{$user->city}}
 	                            @else
 	                            Aucune ville renseignée
 	                            @endif
@@ -435,8 +340,8 @@ a:hover{color:#00bf9c;}
                         <div class="ss-field-label">Pays </div>
                         <div class="field-value ss-empty-value">
                         	<p>
-                        		@if(Auth::user()->country)
-	                            {{Auth::user()->country}}
+                        		@if($user->country)
+	                            {{$user->country}}
 	                            @else
 	                            Aucun pays renseigné
 	                            @endif
@@ -453,8 +358,8 @@ a:hover{color:#00bf9c;}
                         <div class="ss-field-label">Contact : </div>
                         <div class="field-value ss-empty-value">
                         	<p>
-                        		@if(Auth::user()->phone)
-	                            {{Auth::user()->phone}}
+                        		@if($user->phone)
+	                            {{$user->phone}}
 	                            @else
 	                            Aucun numéro de téléphone
 	                            @endif
@@ -470,8 +375,8 @@ a:hover{color:#00bf9c;}
                         <div class="ss-field-label">Biographie :</div>
                         <div class="field-value ss-empty-value">
                            <p>
-                               @if(Auth::user()->bio)
-	                            {!!Auth::user()->bio!!}
+                               @if($user->bio)
+	                            {!!$user->bio!!}
 	                            @else
 	                            Aucune biographie
 	                            @endif
@@ -483,7 +388,7 @@ a:hover{color:#00bf9c;}
             </div>
 
             <div class="boutton">
-            	<a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Modifier le profil</a>
+            	<a class="ss-edit-profile-button" href="#" rel="noopener">Envoyer message</a>
 
             </div>
         </div>

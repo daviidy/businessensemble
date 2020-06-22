@@ -4,24 +4,18 @@
         <meta charset="utf-8">
         <title>@yield('title') | Business Ensemble</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{!! csrf_token() !!}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
-            <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-            <!--Plugin form cdn jquery tel selector-->
-		  <link rel="stylesheet" href="/plugin/build/css/intlTelInput.css">
-		  <link rel="stylesheet" href="/plugin/build/css/demo.css">
-		    <!--End Plugin form cdn jquery-->
-
-		    <!--Plugin form cdn jquery contry selector-->
-		    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-		    <link rel="stylesheet" href="/plugin/build/css/countrySelect.css">
-		    <link rel="stylesheet" href="/plugin/build/css/demo1.css">
-		    <link rel="stylesheet" href="/path/to/countrySelect.css">
-		    <script src="/path/to/cdn/jquery.min.js"></script>
-		    <script src="/path/to/countrySelect.js"></script>
-		  <!--End Plugin form cdn jquery-->
 
 
+          <!--highlight js-->
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+
+          <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/atom-one-dark.min.css">
+        <!--fin highlight js-->
 
         <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -30,6 +24,19 @@
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+        <!--Plugin form cdn jquery tel selector-->
+      <link rel="stylesheet" href="/plugin/build/css/intlTelInput.css">
+      <link rel="stylesheet" href="/plugin/build/css/demo.css">
+        <!--End Plugin form cdn jquery-->
+
+        <!--Plugin form cdn jquery contry selector-->
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/plugin/build/css/countrySelect.css">
+        <link rel="stylesheet" href="/plugin/build/css/demo1.css">
+
+      <!--End Plugin form cdn jquery-->
 
         <!--style header-->
         <style media="screen">
@@ -398,7 +405,7 @@
 			}
 
 			.title-annonce {
-    
+
 			    text-align: center !important;
 			    text-transform: uppercase !important;
 			    padding: 54px 30px 0 30px !important;
@@ -406,7 +413,7 @@
 			}
 
 			.body-annonce {
-			   
+
 			    padding: 3rem!important;
 			}
 
@@ -743,7 +750,7 @@
           $("#myBtn").click(function(){
             $("#myModal").modal();
 
-          });  
+          });
 
           });
       </script>

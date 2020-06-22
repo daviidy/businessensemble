@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Administration | @section('title')</title>
+    <title>@yield('title') | Business Ensemble </title>
 
 
     <!--[if lt IE 10]>
@@ -162,7 +162,7 @@
                                     </div>
                                     <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                                         <li>
-                                            <a href="{{url('users', Auth::user())}}">
+                                            <a href="{{route('users.edit', Auth::user())}}">
                                                 <i class="icon-settings"></i> Paramètres
                                             </a>
                                         </li>
@@ -341,95 +341,37 @@
                                     <li class="pcoded-hasmenu">
                                         <a href="javascript:void(0)" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="icon-diamond"></i></span>
-                                            <span class="pcoded-mtext">Métiers</span>
+                                            <span class="pcoded-mtext">Utilisateurs</span>
                                         </a>
                                         <ul class="pcoded-submenu">
 
                                             <li class="">
-                                                <a href="#" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Liste des métiers</span>
+                                                <a href="{{url('users')}}" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Liste des utilisateurs</span>
                                                 </a>
                                             </li>
-                                            <li class="">
-                                                <a href="/admin/pricings/create" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Ajout d'un métier</span>
-                                                </a>
-                                            </li>
-                                            <li class="">
-                                                <a href="/admin/characteristics" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Liste des caractéristiques</span>
-                                                </a>
-                                            </li>
-                                            <li class="">
-                                                <a href="/admin/characteristics/create" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Ajout d'une caractéristique</span>
-                                                </a>
-                                            </li>
+
                                         </ul>
                                     </li>
 
                                     <li class="pcoded-hasmenu">
                                         <a href="javascript:void(0)" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="icon-diamond"></i></span>
-                                            <span class="pcoded-mtext">Instruments</span>
+                                            <span class="pcoded-mtext">Annonces</span>
                                         </a>
                                         <ul class="pcoded-submenu">
 
                                             <li class="">
                                                 <a href="/admin/instruments" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Liste des instruments</span>
+                                                    <span class="pcoded-mtext">Liste des annonces</span>
                                                 </a>
                                             </li>
-                                            <li class="">
-                                                <a href="/admin/instruments/create" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Ajout d'un instrument</span>
-                                                </a>
-                                            </li>
+
 
                                         </ul>
                                     </li>
 
-                                    <li class="pcoded-hasmenu">
-                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="icon-diamond"></i></span>
-                                            <span class="pcoded-mtext">Compétences</span>
-                                        </a>
-                                        <ul class="pcoded-submenu">
 
-                                            <li class="">
-                                                <a href="/admin/skills" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Liste des compétences</span>
-                                                </a>
-                                            </li>
-                                            <li class="">
-                                                <a href="/admin/skills/create" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Ajout d'une compétence</span>
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-
-                                    <li class="pcoded-hasmenu">
-                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="icon-diamond"></i></span>
-                                            <span class="pcoded-mtext">Styles</span>
-                                        </a>
-                                        <ul class="pcoded-submenu">
-
-                                            <li class="">
-                                                <a href="/admin/styles" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Liste des styles</span>
-                                                </a>
-                                            </li>
-                                            <li class="">
-                                                <a href="/admin/styles/create" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Ajout d'un style</span>
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
 
                                 </ul>
 

@@ -550,14 +550,14 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
 
             <div class="form">
-                <form enctype="multipart/form-data" class="edit_user" id="edit_user_4646744" action="{{url('users', Auth::user())}}" accept-charset="UTF-8" method="post" >
+                <form enctype="multipart/form-data" class="edit_user" id="editForm" action="{{url('users', Auth::user())}}"  method="post" >
                     @csrf
                     {{method_field('patch')}}
                     <div class="container">
-                    	
+
                     <div class="row">
                         <div class="col-xs-4 col-sm-4 text-center">
-                            <a id="openimgupload" class="upload-circular-container profile-image-container js-general-uploader-pseudo-file-field">
+                            <a style="cursor: pointer;" id="openimgupload" class="upload-circular-container profile-image-container js-general-uploader-pseudo-file-field">
                                 <div id="uploaded_image" class="upload-circular">
                                     <img sizes="128px"
                                       class="upload-circular__image upload-circular__image--large js-general-uploader-new-upload-target"
@@ -567,10 +567,10 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
                                 </div> <!-- close .upload-circular -->
 
                                 <p class="text-center zeta js-edit-profile-image-trigger-text">Modifier l'image de profil</p>
-                                <input id="imgupload" hidden type="file" accept="image/jpeg,image/png">
+
                                 <input hidden type="text" name="user_id" value="{{Auth::user()->id}}">
                             </a> <!-- close .js -->
-
+                            <input hidden id="imgupload" type="file" accept="image/jpeg,image/png">
                             <div class="user-badges text-left">
 
                                 <div class="form-group">
@@ -592,16 +592,16 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
                         <div class="col-xs-8 col-sm-8">
                             <div class="form-group">
                                 <label for="user_first_name">Nom </label>
-                                <input class="form-control" type="text" value="{{Auth::user()->first_name}}" name="first_name" id="user_first_name">
+                                <input class="form-control" type="text" value="{{Auth::user()->last_name}}" name="first_name" id="user_first_name">
 
                             </div> <!-- close .form-group -->
 
                             <div class="form-group">
                                 <label for="user_last_name">Prénom </label>
-                                <input class="form-control" type="text" value="{{Auth::user()->last_name}}" name="last_name" id="user_last_name">
+                                <input class="form-control" type="text" value="{{Auth::user()->first_name}}" name="last_name" id="user_last_name">
 
                             </div> <!-- close .form-group -->
-                            
+
 
                             <div class="form-group">
                                 <label for="user_email">
@@ -611,13 +611,13 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
                             </div> <!-- close .form-group -->
 
-                            
+
 
                             <div class="form-group">
                                 <label for="Image_cover">
                                     Image de fond
                                 </label>
-                                <input class="form-control" type="file" value="" name="image" id="">
+                                <input class="form-control" type="file" value="" name="cover_image" id="">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -628,7 +628,7 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Pays 
+                                    Pays
                                 </label>
                                 <!--input class="form-control" placeholder="Pays de naissance" value="{{Auth::user()->birth_country}}" type="text" name="birth_country"  id="country"-->
                                 <select name="country" class="form-control" value="{{Auth::user()->country}}" id="pays">
@@ -894,8 +894,8 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
-                        
-                        
+
+
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
@@ -905,7 +905,7 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-                        
+
 
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="form-group">
@@ -922,9 +922,9 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <label for="user_url">
-                                    biographie
+                                    Biographie
                                 </label>
-                                <input type="hidden" name="bio" value="">
+                                <input hidden type="text" name="bio" value="">
                            		<div class="" id="editorDetails" style="height: 200px;">
                            			@if(Auth::user()->bio !== null)
                                     {!!Auth::user()->bio!!}
@@ -932,11 +932,11 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
                            		</div>
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-                       
+
 
                         <!--Father-->
-                        
-                        
+
+
 
                         <!--End Father-->
 
@@ -944,9 +944,9 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
 
 
 
-                        
+
                         <!--End mother-->
-                       
+
                     </div>
 
                     <div class="row">
@@ -987,58 +987,11 @@ a .pill--default .icon,a:hover .pill--default .icon{fill:#ffffff;}
     </div>
 </section>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-<script src="/js/quill/image-resize.min.js"></script>
-<script src="/js/quill/video-resize.min.js"></script>
-
-
-        <script>
-        var options = {
-        modules: {
-          toolbar: [
-            [{ header: [1, 2, false] }],
-            ['size', 'bold', 'italic', 'underline'],
-            ['blockquote', 'align',],
-            [{ list: 'ordered' }, { list: 'bullet' }]
-        ],
-        imageResize: {
-             modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
-         },
-         videoResize: {
-                modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
-            },
-         syntax: true,
-        },
-        placeholder: 'Ecrivez ici...',
-        theme: 'snow'  // or 'bubble'
-        };
-        var quill = new Quill('#editorDetails', options);
-
-            //a la sumissio  du formulmaire ob recupêre
-            //le contenu de la div qui a le texte riche
-            //et on met ce contenu dans l'input hidden
-            var form = document.getElementById('edit_user_4646744');
-            form.onsubmit = function() {
-              // Populate hidden form on submit
-              var text = document.querySelector('input[name=bio]');
-              text.value = quill.root.innerHTML;
-
-            //   console.log("Submitted", $(form).serialize(), $(form).serializeArray());
-
-              // No back end to actually submit to!
-            //   alert('Open the console to see the submit data!')
-              return true;
-            };
-          </script>
-
-
-
-
 <script type="text/javascript">
 
-$('#openimgupload').click(function(){ $('#imgupload').trigger('click'); });
+$('#openimgupload').click(function(){
+  $('#imgupload').trigger('click');
+});
 
 </script>
 
@@ -1095,6 +1048,53 @@ $(document).ready(function(){
  });
 });
 </script>
+
+
+
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="/js/quill/image-resize.min.js"></script>
+<script src="/js/quill/video-resize.min.js"></script>
+
+
+        <script type="text/javascript">
+
+        var options = {
+        modules: {
+          toolbar: [
+            [{ header: [1, 2, false] }],
+            ['size', 'bold', 'italic', 'underline'],
+            ['blockquote', 'align',],
+            [{ list: 'ordered' }, { list: 'bullet' }]
+        ],
+
+         syntax: true,
+        },
+        placeholder: 'Ecrivez ici...',
+        theme: 'snow'  // or 'bubble'
+        };
+        var quill = new Quill('#editorDetails', options);
+
+            //a la sumissio  du formulmaire ob recupêre
+            //le contenu de la div qui a le texte riche
+            //et on met ce contenu dans l'input hidden
+            var form = document.getElementById('editForm');
+            form.onsubmit = function() {
+              // Populate hidden form on submit
+              var text = document.querySelector('input[name=bio]');
+              text.value = quill.root.innerHTML;
+
+            //   console.log("Submitted", $(form).serialize(), $(form).serializeArray());
+
+              // No back end to actually submit to!
+            //   alert('Open the console to see the submit data!')
+              return true;
+            };
+          </script>
+
+
+
+
+
 
 <script src="/plugin/build/js/intlTelInput.js"></script>
   <script>

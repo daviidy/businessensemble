@@ -26,8 +26,8 @@ justify-content: center;
                     <span class="pull-left m-r-15"><img src="/storage/images/users/{{$user->image}}" alt="{{ucfirst($user->name)}}" class="thumb-lg img-circle"></span>
                     <div class="media-body">
                         <h4 class="m-t-5 m-b-5 ellipsis">{{$user->name}}</h4>
-                        <p class="font-13"> {{$user->job ? $user->job : 'Aucun métier renseigné'}}</p>
-                        <p class="text-muted m-b-0"><small>{{$user->job ? $user->living_city : 'Aucun lieu de résidence renseigné'}}</small></p>
+                        <p class="font-13"> {{$user->type}}</p>
+                        <p class="text-muted m-b-0"><small>{{$user->country ? $user->country : 'Aucun pays renseigné'}}</small></p>
                     </div><!-- /media-body -->
                 </div><!-- /col-sm-6 -->
                 <div class="col-sm-6">
