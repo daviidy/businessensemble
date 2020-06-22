@@ -125,11 +125,11 @@ a{text-decoration:none;}
 .ss-field-label{font-family:'Montserrat', sans-serif;color:#62686e;font-size:.875rem;letter-spacing:.1px;line-height:1.286em;padding:.714em .3125em .714em 0;}
 .ss-field-label-large{font-family:'Montserrat', sans-serif;color:#2c313b;font-size:1.5rem;font-weight:700;padding-bottom:.5em;}
 .ss-empty-value{color:#95989d;}
-.ss-edit-profile-button{font-family:'Montserrat', sans-serif;display:inline-block;background-color:#1B6DC1;border-radius:91px;color:#fff;width:100%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
+.ss-edit-profile-button{font-family:'Montserrat', sans-serif;display:inline-block;background-color:#af0309;border-radius:91px;color:#fff;width:100%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
 .ss-edit-profile-button:focus{outline:0;}
-.ss-edit-profile-button:hover{background-color:#ffffff;border:2px solid #1B6DC1;}
+.ss-edit-profile-button:hover{background-color:#ffffff;border:2px solid #af0309; color: #af0309}
 @media (min-width:768px){
-.ss-edit-profile-button{padding-left:40px;padding-right:40px;max-width:16em;}
+.ss-edit-profile-button{padding-left:20px;padding-right:20px;max-width:16em;}
 }
 }
 /*! CSS Used from: Embedded ; media=screen */

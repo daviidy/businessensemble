@@ -190,7 +190,7 @@ input:invalid:focus{outline:0;}
 .ss-avatar-upload-wrapper .ss-avatar-progress-bar .ss-avatar-progress-bar-animation:after{content:"";position:absolute;top:0;left:0;bottom:0;right:0;background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(.25,hsla(0,0%,100%,.2)),color-stop(.25,transparent),color-stop(.5,transparent),color-stop(.5,hsla(0,0%,100%,.2)),color-stop(.75,hsla(0,0%,100%,.2)),color-stop(.75,transparent),to(transparent));background-image:-moz-linear-gradient(-45deg,hsla(0,0%,100%,.2) 25%,transparent 25%,transparent 50%,hsla(0,0%,100%,.2) 50%,hsla(0,0%,100%,.2) 75%,transparent 75%,transparent);z-index:1;-webkit-background-size:50px 50px;-moz-background-size:50px 50px;-webkit-animation:move 2s linear infinite;-webkit-border-top-right-radius:8px;-webkit-border-bottom-right-radius:8px;-moz-border-radius-topright:8px;-moz-border-radius-bottomright:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;-webkit-border-top-left-radius:20px;-webkit-border-bottom-left-radius:20px;-moz-border-radius-topleft:20px;-moz-border-radius-bottomleft:20px;border-top-left-radius:20px;border-bottom-left-radius:20px;overflow:hidden;}
 .ss-avatar-upload-wrapper .ss-avatar-progress-bar .ss-avatar-progress-bar-animation:after{animation:move 2s linear infinite;}
 .ss-avatar-upload-wrapper .ss-avatar-input{display:none;}
-.ss-avatar-error-message{color:red;font-size:.8rem;margin-top:-1em;margin-bottom:1em;text-align:center;display:none;}
+.ss-avatar-error-message{color:#af0309;font-size:.8rem;margin-top:-1em;margin-bottom:1em;text-align:center;display:none;}
 .ss-page-title{font-family: 'Montserrat', sans-serif;color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;text-align: center;}
 .ss-profile-info{border-radius:8px;background-color:#fff;box-shadow:0 10px 20px 0 rgba(0,0,0,.1);padding:1.875em 1.25em;margin-bottom:3.13em;}
 @media (min-width:480px){
@@ -353,8 +353,8 @@ a:hover{color:#00bf9c;}
 <div style="width: 82%;
     margin: auto;" class="wpneo-head wpneo-shadow">
     <div class="wpneo-links clearfix">
-        <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Dashboard</a></div>
-        <div class="wpneo-links-list wp-crowd-parent"><a href="#">My Account<span class="wpcrowd-arrow-down"></span></a>
+        <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Tableau de bord</a></div>
+        <div class="wpneo-links-list wp-crowd-parent"><a href="#">Mon compte<span class="wpcrowd-arrow-down"></span></a>
             <div class="wp-crowd-submenu wpneo-shadow">
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=profile">Profile</a></div>
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=contact">Contact</a></div>
@@ -363,7 +363,7 @@ a:hover{color:#00bf9c;}
                 <div class="wpneo-links-lists"><a href="https://demo.themeum.com/wordpress/backnow/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fdemo.themeum.com%2Fwordpress%2Fbacknow&amp;_wpnonce=18302b08e3">Logout</a></div>
             </div>
         </div>
-        <div class="wpneo-links-list wp-crowd-parent"><a href="#">Campaigns<span class="wpcrowd-arrow-down"></span></a>
+        <div class="wpneo-links-list wp-crowd-parent"><a href="#">Mes annonces<span class="wpcrowd-arrow-down"></span></a>
             <div class="wp-crowd-submenu wpneo-shadow">
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=campaign">My Campaigns</a></div>
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=backed_campaigns">My Invested Campaigns</a></div>
@@ -371,7 +371,7 @@ a:hover{color:#00bf9c;}
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=bookmark">Bookmarks</a></div>
             </div>
         </div>
-        <div class="wp-crowd-new-campaign"><a class="wp-crowd-btn wp-crowd-btn-primary" href="https://demo.themeum.com/wordpress/backnow/cf-campaign-form/">Add New Campaign</a></div>
+        <div class="wp-crowd-new-campaign"><a class="wp-crowd-btn wp-crowd-btn-primary" data-toggle="modal" data-target="#myModal_2" href="#">Créer une annonce</a></div>
     </div>
 </div>
 

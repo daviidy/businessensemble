@@ -7,6 +7,14 @@
         <meta name="csrf-token" content="{!! csrf_token() !!}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
+        <!-- ==============================================
+		Favicons
+		=============================================== -->
+    <link rel="shortcut icon" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/logo-be.jpg">
+
 
 
           <!--highlight js-->
@@ -40,6 +48,9 @@
 
         <!--style header-->
         <style media="screen">
+        	.input{
+  padding: 15px 0;
+}
 
         .modal .modal-dialog, .wpneo-modal-content {
             max-width: 650px;
@@ -557,14 +568,17 @@
                     <div class="d-block d-lg-none col-7">
                         <div class="backnow-login-register">
                             <ul>
+                            	@auth
                                 <!-- Start Campaign Section -->
                                 <li>
-                                  <a href="http://demo.themeum.com/wordpress/backnow/start-campaign/" class="backnow-login backnow-dashboard">
+                                  <a class="backnow-login backnow-dashboard" data-toggle="modal" data-target="#myModal_2" href="#" >
                                     Créer une annonce
                                   </a>
                                 </li>
+                                @endauth
                                 <!-- End Campaign -->
                             </ul>
+                            
                         </div>
 
                     </div>
@@ -593,19 +607,24 @@
 
 
                         <div class="backnow-login-register float-right">
-                            <div class="backnow-search-wrap">
+                            <!--div class="backnow-search-wrap">
                                 <a href="#" class="backnow-search search-open-icon"><i class="fas fa-search"></i></a>
-                            </div>
+                            </div-->
 
                             <ul>
                                 <!-- Login Section -->
-                                <li>
-                                  <a data-toggle="modal" data-target="#myModal" href="#" id="myBtn">
-                                    <i class="fas fa-user"></i>
-                                  </a>
-                                </li>
+                                @guest
+                                <!-- Login Section -->
+                                	<li><a href="{{route('login')}}"> <i class="fas fa-user-alt"></i>Connexion/Inscription</a></li>
+                                <!-- End Login section -->
+                                @endguest
+                                @auth
+                                	<li><a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a></li>
+                                @endauth
+                                
                                 <!-- End Login section -->
                             </ul>
+                            
 
                         </div>
 

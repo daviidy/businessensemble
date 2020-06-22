@@ -19,10 +19,10 @@
     <!-- ==============================================
 		Favicons
 		=============================================== -->
-    <link rel="shortcut icon" href="/assets/main_theme/medium/img/logo.jpeg">
-    <link rel="apple-touch-icon" href="/assets/main_theme/medium/img/logo.jpeg">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/main_theme/medium/img/logo.jpeg">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/main_theme/medium/img/logo.jpeg">
+    <link rel="shortcut icon" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/logo-be.jpg">
 
     <!-- ==============================================
 		CSS

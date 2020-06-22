@@ -13,6 +13,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+.connect{
+    margin-top: 15px;
+}
 </style>
 
 <header class="profile-bg-picture"></header>
@@ -51,6 +54,17 @@ justify-content: center;
                             </button>
                         </a>
                         @endif
+
+                        <br>
+
+                        <a href="" >
+                            <button type="button" class="btn btn-success waves-effect waves-light connect" style="background-color: #af0309 !important; border: 1px solid #af0309!important">
+                                <i class="fas fa-sign-out-alt"></i>
+
+                                Déconnectez-vous
+
+                            </button>
+                        </a>
 
 
                     </div><!-- /text-right -->
