@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>@yield('title') | Business Ensemble</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
@@ -242,7 +242,7 @@
 			.common-menu-wrap .nav>li{margin-left:15px;}
 			}
 			@media (min-width: 768px) and (max-width: 1000px){
-			
+
 			.navbar-collapse{padding-right:0;padding-left:0;}
 			#mobile-menu ul{padding:0;}
 			.header-solid #mobile-menu{top:100%;}
@@ -609,7 +609,7 @@
                                 <ul id="menu-main-menu-1" class="nav navbar-nav">
                                     <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-27 active"><a title="Home"
                                           href="http://demo.themeum.com/wordpress/backnow/">Accueil</a>
-                                        
+
                                     </li>
                                     <li id="menu-item-384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-384"><a title="Page" href="#">Investir</a>
                                         <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-384">
@@ -619,7 +619,7 @@
                                             <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a title="Blog" href="https://demo.themeum.com/wordpress/backnow/blog/">Investir</a></li>
                                             <li id="menu-item-1824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824"><a title="Blog fullwidth" href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Explorer</a></li>
                                             <li id="menu-item-1470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1470"><a title="About" href="https://demo.themeum.com/wordpress/backnow/about/">Rechercher</a></li>
-                                            
+
                                         </ul>
                                     </li>
                                     <li id="menu-item-1823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="https://demo.themeum.com/wordpress/backnow/discover/">Lever des fonds</a>
@@ -742,8 +742,10 @@
         $(document).ready(function(){
           $("#myBtn").click(function(){
             $("#myModal").modal();
+
           });  
-        });
+
+          });
       </script>
 
     </body>
