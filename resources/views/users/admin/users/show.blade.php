@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('title', 'Informations de '.$user->name)
-@section('page_title', 'Informations de '.$user->Name)
+@section('page_title', 'Informations de '.$user->name)
 @section('link_title', 'Informations de '.$user->name)
 
 @section('content')
