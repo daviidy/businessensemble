@@ -7,6 +7,14 @@
         <meta name="csrf-token" content="{!! csrf_token() !!}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
+        <!-- ==============================================
+		Favicons
+		=============================================== -->
+    <link rel="shortcut icon" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/logo-be.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/logo-be.jpg">
+
 
 
           <!--highlight js-->
