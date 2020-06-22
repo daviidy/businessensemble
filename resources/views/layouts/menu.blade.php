@@ -635,7 +635,7 @@
                                         </span>
                                         <ul role="menu" class="collapse collapse-1823 ">
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Créer une annonce</a>
+                                              <a title="Discover Style 2" href="#">Créer une annonce</a>
                                             </li>
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
                                               <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a>
@@ -665,11 +665,12 @@
                                 @endguest
                                 @auth
                                 <li><a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a></li>
-                                @endauth
+
 
                                 <!-- Start Campaign Section {{route('annonces.create')}} -->
                                 <li><a class="backnow-login backnow-dashboard" data-toggle="modal" data-target="#myModal_2" href="#" > Créer une annonce</a></li>
                                 <!-- End Campaign -->
+                                @endauth
                             </ul>
 
                         </div>
