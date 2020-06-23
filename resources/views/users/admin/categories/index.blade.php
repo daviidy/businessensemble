@@ -1,7 +1,7 @@
 @extends('layouts.admin')
-@section('title', 'Liste des utilisateurs')
-@section('page_title', 'Liste des utilisateurs')
-@section('link_title', 'Liste des utilisateurs')
+@section('title', 'Liste des catégories')
+@section('page_title', 'Liste des catégories')
+@section('link_title', 'Liste des catégories')
 
 @section('content')
 
@@ -16,7 +16,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h5>Liste des utilisateurs</h5>
+                        <h5>Liste des catégories</h5>
                         <span>use class <code>table</code> inside table element</span>
                         <div class="card-header-right">
                             <ul class="list-unstyled card-option">
@@ -41,23 +41,23 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($users as $user)
+                                    @foreach($categories as $categorie)
                                     <tr>
                                         <th scope="row">{{$loop->index + 1}}</th>
-                                        <td>{{$user->name}}</td>
+                                        <td>{{$categorie->name}}</td>
                                         <td>
-                                            {{$user->email}}
+                                            {{$categorie->email}}
                                         </td>
-                                        <td>{{$user->type}}</td>
+                                        <td>{{$categorie->type}}</td>
                                         <td>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <a class="float-right" href="/admin/users/{{$user->id}}">
+                                                    <a class="float-right" href="/admin/categories/{{$categorie->id}}">
                                                         <i class="icon-pencil text-primary"></i>
                                                     </a>
                                                 </div>
                                                 <div class="col-6">
-                                                    <form action="{{ route('users.destroy', $user) }}" method="post">
+                                                    <form action="{{ route('categories.destroy', $categorie) }}" method="post">
                                                         {{ csrf_field() }}
                                                         {{ method_field('delete') }}
                                                         <button

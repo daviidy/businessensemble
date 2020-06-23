@@ -362,8 +362,30 @@
                                         <ul class="pcoded-submenu">
 
                                             <li class="">
-                                                <a href="/admin/instruments" class="waves-effect waves-dark">
+                                                <a href="#" class="waves-effect waves-dark">
                                                     <span class="pcoded-mtext">Liste des annonces</span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="icon-diamond"></i></span>
+                                            <span class="pcoded-mtext">Catégories</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+
+                                            <li class="">
+                                                <a href="/categories" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Liste des catégories</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="{{route('categories.create')}}" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Ajouter une catégorie</span>
                                                 </a>
                                             </li>
 

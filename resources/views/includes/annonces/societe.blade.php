@@ -1,28 +1,28 @@
         <fieldset>
                     <h2 class="fs-title">La société</h2>
-                    <h3 class="fs-subtitle">Tell us something more about the project</h3>
+                    <h3 class="fs-subtitle">Dites nous un peu plus sur votre entreprise</h3>
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Titre</label>
-                            <input type="text" name="title" placeholder="Titre" />
+                            <input value="{{$annonce->title}}" type="text" name="title" placeholder="Titre" />
                         </div>
                         <div class="col-md-6 col-sm-12 ">
                             <label for="fname">Site internet</label>
                             <input type="url" name="website" placeholder="Site internet" />
-                            
+
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Pays</label>
-                            <input  placeholder="Pays de résidence " type="text" name="country" id="country" >
+                            <input value="{{$annonce->country}}"  placeholder="Pays de résidence " type="text" name="country" id="country" >
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Téléhone</label>
-                            
-                             <input placeholder="Numéro de téléphone" type="text" name="phone" id="phone">
+
+                             <input value="{{$annonce->phone}}" placeholder="Numéro de téléphone" type="text" name="phone" id="phone">
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Catégories</label>
-                            <select class="form-input" name="">
+                            <select class="form-input" name="category_id">
                                 <option value="Program">Program</option>
                                 <option value="Project">Project</option>
                             </select>
@@ -30,12 +30,12 @@
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Stade de développement</label>
                             <select class="" name="stage" id="">
-                                <option value="Pré-démarrage/R&amp;D">Pré-démarrage/R&amp;D</option>
-                                <option value="Produit fini">Produit fini</option>
-                                <option value="Réalisation des ventes">Réalisation des ventes</option>
-                                <option value="Seuil de rentabilité">Seuil de rentabilité</option>
-                                <option value="Rentable">Rentable</option>
-                                <option value="Autre">Autre</option>
+                                <option {{$annonce->stage == 'Pré-démarrage/R&D' ? 'selected' : ''}} value="Pré-démarrage/R&D">Pré-démarrage/R&amp;D</option>
+                                <option {{$annonce->stage == 'Produit fini' ? 'selected' : ''}} value="Produit fini">Produit fini</option>
+                                <option {{$annonce->stage == 'Réalisation des ventes' ? 'selected' : ''}} value="Réalisation des ventes">Réalisation des ventes</option>
+                                <option {{$annonce->stage == 'Seuil de rentabilité' ? 'selected' : ''}} value="Seuil de rentabilité">Seuil de rentabilité</option>
+                                <option {{$annonce->stage == 'Rentable' ? 'selected' : ''}} value="Rentable">Rentable</option>
+                                <option {{$annonce->stage == 'Autre' ? 'selected' : ''}} value="Autre">Autre</option>
                             </select>
                         </div>
                         <div class="col-md-6 col-sm-12">
@@ -57,7 +57,7 @@
                             <label for="fname">Quel est le montant total que vous levez ?</label>
                             <input type="Number" name="title" placeholder="FCFA" />
                         </div>
-                        
+
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Combien de ce montant avez-vous déjà levé ?</label>
                             <input type="Number" name="title" placeholder="FCFA" />
@@ -66,10 +66,9 @@
                             <label for="fname">Quel est le montant minimum par investisseur?</label>
                             <input type="Number" name="title" placeholder="FCFA" />
                         </div>
-                        
+
 
                     </div>
-  
+
                     <input type="button" name="next" class="next action-button" value="Next" />
                 </fieldset>
-

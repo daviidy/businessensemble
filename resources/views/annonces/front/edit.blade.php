@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Créer une annonce')
+@section('title', $annonce->title)
 
 @section('content')
 

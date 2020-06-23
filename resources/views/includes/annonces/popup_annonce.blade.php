@@ -1,3 +1,4 @@
+@auth
 <!--Modal de l'ajout d'un membre de l'équipe-->
 <!-- The Modal -->
           <div class="modal fade" id="myModal_2">
@@ -26,7 +27,9 @@
                           <input type="number" class="form-control form-control-lg" name="phone" id="" placeholder="Téléphone">
                         </div>
 
-                        
+                        <input type="text" name="user_id" value="{{Auth::user()->id}}">
+
+
                     </div>
 
                     <!-- Modal footer -->
@@ -65,3 +68,5 @@
     $("#country").countrySelect();
 
   </script>
+
+  @endauth
