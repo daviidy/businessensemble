@@ -62,7 +62,5 @@
             $('#int, #vimeo').hide();
         });
 
-    
-
 });
 </script>
