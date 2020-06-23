@@ -103,7 +103,7 @@ a.active {
     font-size: 14px;
     padding: 13px 31px;
     color: #fff !important;
-    background: #0fc19e;
+    background: #00a78d;
     letter-spacing: 1px;
 }
 
@@ -150,7 +150,7 @@ a.active {
 
 .kafe-btn-mint:hover {
     color: #fff !important;
-    background: #1ea88d;
+    background: #00a78d;
     text-decoration: none;
 }
 
