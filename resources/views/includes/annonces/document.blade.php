@@ -14,63 +14,53 @@
             <label for="fname">Images</label>
             <input type="file" name="website" placeholder="Site internet" multiple/>
         </div>
-        <div class="col-md-6 col-sm-12">
-            <label for="fname">Vidéo (Intégrer)</label>
-            <div class="col-md-12 col-sm-12" id="check-input">
-                <div class="form-check-inline  custom-radio">
-                  <label class="form-check-label" for="radio1">
-                    <input type="radio" class="form-check-input " id="radio" name="video" value="Youtube" checked>Youtube
-                  </label>
-                </div>
-                <div class="form-check-inline custom-radio">
-                  <label class="form-check-label" for="radio2">
-                    <input type="radio" class="form-check-input " id="radio" name="video" value="Vimeo">Vimeo
-                  </label>
-                </div>
-                <div class="form-check-inline  custom-radio">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input " id="radio" name="video" value="Télécharger">Télécharger
-                  </label>
-                </div>
+        <div class="col-md-6 col-sm-12" style="padding: 15px 0;">
+            <label for="fname">Vidéo (Intégrer ou Télécharger)</label>
+            
+            <div class="container" style="padding: 15px 0;">
+                <button type="button" class="btn btn-basic btn-sm line">Youtube</button>
+                 <button type="button" class="btn btn-basic btn-sm vimeo">Vimeo</button>
+                <button type="button" class="btn btn-basic btn-sm update ">Télécharger</button>
             </div>
-            <input class=" " id="int" type="url" name="video" placeholder="Intégrer une vidéo" />
+            <input class="video_t " id="int" type="url" name="video" placeholder="Intégrer une vidéo Youtube" />
+            <input class="video_t " id="vimeo" type="url" name="video" placeholder="Intégrer une vidéo Vimeo" />
             <input class="video_t" id="tele" type="file" name="video" placeholder="Télécharger une vidéo" multiple/>
         </div>
         <div class="col-md-6 col-sm-12">
             <label for="fname">Plan d'Affaires</label>
-            <input type="file" name="video" placeholder="Télécharger une vidéo" multiple/>
+            <input type="file" name="video" placeholder="Télécharger un ou plusieurs documents" multiple/>
         </div>
         <div class="col-md-6 col-sm-12">
             <label for="fname">Données Financières</label>
-            <input type="file" name="video" placeholder="Télécharger une vidéo" multiple/>
+            <input type="file" name="video" placeholder="Télécharger un ou plusieurs documents" multiple/>
         </div>
         <div class="col-md-6 col-sm-12">
             <label for="fname">Documents Supplémentaires</label>
-            <input type="file" name="video" placeholder="Télécharger une vidéo" multiple/>
+            <input type="file" name="video" placeholder="Télécharger un ou plusieurs documents" multiple/>
         </div>
         
     </div>
-    
+        <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+        <input type="submit" name="submit" class="submit action-button" value="Submit"/>
 </fieldset>
 
 <script type="text/javascript">
     $(document).ready(function(){
 
-    $("input[type='button']").click(function(){
-            var radioValue = $("input[id='radio']:checked").val('Télécharger');
-           
-            if(radioValue==true){
-                $('#int').addClass('video_t');
-                $('#tele').removeClass('video_t');
-                
-            }
-            
-            else{
-                $('#int').addClass('video_t');
-                $('#tele').removeClass('video_t');
-            }
+        $('.line').click(function() {
+            $('#int').toggle('slow');
+            $('#tele, #vimeo').hide();
         });
 
+        $('.vimeo').click(function() {
+            $('#vimeo').toggle('slow');
+            $('#tele, #int').hide();
+        });
+
+        $('.update').click(function() {
+            $('#tele').toggle('slow');
+            $('#int, #vimeo').hide();
+        });
 
 });
 </script>

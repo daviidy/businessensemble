@@ -555,7 +555,11 @@
                                 <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover/">Lever des fonds</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Créer une annonce</a></li>
+                                    	@auth
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
+                                        	<a data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
+                                        </li>
+                                        @endauth
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a></li>
                                     </ul>
                                 </li>
@@ -653,9 +657,11 @@
                                             <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-1823 ">
+                                        	@auth
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="#">Créer une annonce</a>
+                                              <a title="Discover Style 2" data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
                                             </li>
+                                            @endauth
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
                                               <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a>
                                             </li>

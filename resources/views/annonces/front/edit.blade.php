@@ -17,8 +17,8 @@
 
 html {
 height: 100%;
-background: #6441A5; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #6441A5, #2a0845); /* Chrome 10-25, Safari 5.1-6 */
+background: #1B6DC1; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #1B6DC1, #1B6DC1); /* Chrome 10-25, Safari 5.1-6 */
 }
 
 body {
@@ -97,7 +97,7 @@ transition: All 0.5s ease-in;
 /*buttons*/
 #msform .action-button, #msform1 .action-button {
 width: 100px;
-background: #ee0979;
+background: #00a78d;
 font-weight: bold;
 color: white;
 border: 0 none;
@@ -108,7 +108,7 @@ margin: 10px 5px;
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
-box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+box-shadow: 0 0 0 2px white, 0 0 0 3px #00a78d;
 }
 
 #msform .action-button-previous {
@@ -197,7 +197,7 @@ content: none;
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before, #progressbar li.active:after {
-background: #ee0979;
+background: #00a78d;
 color: white;
 }
 
@@ -267,7 +267,9 @@ footer {
 .video_t{
     display: none;
 }
-
+.line, .vimeo, .update{
+  border: 1px solid #9e9e9e !important;
+}
 </style>
 
 <!-- MultiStep Form -->
