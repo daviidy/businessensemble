@@ -46,3 +46,6 @@ Route::get('/admin/users/{user}', 'UserController@show');
 
     //ajax routes
     Route::post('/uploadAvatar', 'UserController@uploadAvatar');
+    Route::post('/addTeam', 'TeamController@createAjax');
+    Route::post('/editTeam', 'TeamController@editAjax');
+    Route::post('/deleteTeam', 'TeamController@deleteAjax');

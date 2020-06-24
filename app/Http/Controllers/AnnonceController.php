@@ -69,7 +69,8 @@ class AnnonceController extends Controller
      */
     public function edit(Annonce $annonce)
     {
-        return view('annonces.front.edit', ['annonce' => $annonce]);
+        $categories = Category::orderby('id', 'asc')->get();
+        return view('annonces.front.edit', ['annonce' => $annonce, 'categories' => $categories]);
     }
 
     /**

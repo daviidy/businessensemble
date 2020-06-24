@@ -14,6 +14,8 @@ class Team extends Model
                            'url',
                            'image',
                            'bio',
+                           'annonce_id',
+                           'position'
 
                          ];
 

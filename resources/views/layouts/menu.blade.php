@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{!! csrf_token() !!}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-
+        <link rel="stylesheet" type="text/css" href="/notifs/amaran/amaran.min.css" />
         <!-- ==============================================
 		Favicons
 		=============================================== -->
@@ -582,7 +582,7 @@
                                 @endauth
                                 <!-- End Campaign -->
                             </ul>
-                            
+
                         </div>
 
                     </div>
@@ -625,10 +625,10 @@
                                 @auth
                                 	<li><a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a></li>
                                 @endauth
-                                
+
                                 <!-- End Login section -->
                             </ul>
-                            
+
 
                         </div>
 
@@ -753,6 +753,9 @@
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </footer>
+
+
+        <script type="text/javascript" src="/notifs/amaran/jquery.amaran.js"></script>
 
         <!--COPYRIGTH SCRIPT-->
     <script type="text/javascript">

@@ -27,7 +27,7 @@
                           <input type="number" class="form-control form-control-lg" name="phone" id="" placeholder="Téléphone">
                         </div>
 
-                        <input type="text" name="user_id" value="{{Auth::user()->id}}">
+                        <input hidden type="text" name="user_id" value="{{Auth::user()->id}}">
 
 
                     </div>

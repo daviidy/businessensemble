@@ -1095,8 +1095,7 @@ $(document).ready(function(){
 
 
 
-
-<script src="/plugin/build/js/intlTelInput.js"></script>
+          <script src="/plugin/build/js/intlTelInput.js"></script>
   <script>
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {
