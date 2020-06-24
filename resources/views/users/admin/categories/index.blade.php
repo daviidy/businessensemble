@@ -5,7 +5,11 @@
 
 @section('content')
 
-
+<style type="text/css">
+    .fa-fire-extinguisher:before{
+        color: #{{ $categorie ?? '' }};
+    }
+</style>
 
 <div class="pcoded-inner-content">
 
@@ -35,9 +39,9 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Nom d'utilisateur</th>
-                                        <th>Email</th>
-                                        <th>Type</th>
+                                        <th>Nom de la catégorie</th>
+                                        <th>icone</th>
+                                        <th>Couleur de la catégorie</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -46,9 +50,9 @@
                                         <th scope="row">{{$loop->index + 1}}</th>
                                         <td>{{$categorie->name}}</td>
                                         <td>
-                                            {{$categorie->email}}
+                                            <i class="fa {{$categorie->icon}}"></i>
                                         </td>
-                                        <td>{{$categorie->type}}</td>
+                                        <td > <span style="background-color: #{{$categorie->icon_color}}; padding: 5px 21px;">#{{$categorie->icon_color}}</span></td>
                                         <td>
                                             <div class="row">
                                                 <div class="col-6">
@@ -89,6 +93,7 @@
     <div id="styleSelector">
     </div>
 </div>
+
 
 
 @endsection
