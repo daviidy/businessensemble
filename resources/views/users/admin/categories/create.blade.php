@@ -27,11 +27,27 @@
                                 <form method="post" enctype="multipart/form-data" action="{{route('categories.store')}}">
                                     @csrf
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Nom</label>
+                                        <label class="col-sm-2 col-form-label">Nom de la catégorie</label>
                                         <div class="col-sm-10">
                                             <input name="name" type="text" class="form-control" placeholder="Nom de la catégorie">
                                         </div>
                                     </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">icone</label>
+                                        <div class="col-sm-10">
+                                            <input type=""  name="icon"   class="form-control input" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Couleur de la catégorie</label>
+                                        <div class="col-sm-10">
+                                            <input name="icon_color" data-jscolor="" value="ab2567" style="border-radius: 5px;border: 2px solid #00000000; padding:10px;">
+                                        </div>
+                                    </div>
+                                    
+                                
+
+                                    
 
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label"></label>
@@ -47,15 +63,6 @@
                             </div>
                         </div>
 
-
-
-
-
-
-
-
-
-
                     </div>
                 </div>
 
@@ -69,6 +76,16 @@
     <div id="styleSelector">
     </div>
 </div>
+<script src="/js/jscolor.js"></script>
 
+
+<script type="text/javascript">
+        $(document).ready(function(){
+          
+          $('.input').iconpicker(".input");
+
+
+          });
+      </script>
 
 @endsection
