@@ -46,6 +46,8 @@
     <link rel="stylesheet" type="text/css" href="/admin_dashboard/files/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/admin_dashboard/files/assets/css/widget.css">
 
+    
+
     <!-- ==============================================
         Favicons
         =============================================== -->
@@ -54,6 +56,17 @@
     <link rel="apple-touch-icon" href="/assets/imgs/logo-be.jpg">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/logo-be.jpg">
     <link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/logo-be.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
+
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="/plugin/build/css/simple-iconpicker.min.css" rel="stylesheet">
+    <script src="/plugin/build/js/simple-iconpicker.min.js"></script>
+
+    <script src="/js/jscolor.js"></script>
 </head>
 
 <body>
@@ -567,6 +580,8 @@
         gtag('config', 'UA-23581568-13');
     </script>
     <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="4ae1809b5ff4f05c7560522f-|49" defer=""></script>
+
+    
 </body>
 
 </html>
