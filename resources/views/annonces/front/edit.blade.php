@@ -278,7 +278,9 @@ footer {
 
     <div class="row">
         <div class="col-md-12 col-md-offset-3">
-            <form id="msform">
+            <form enctype="multipart/form-data" method="post" action="{{url('annonces', $annonce)}}" id="msform">
+              @csrf
+              {{method_field('patch')}}
                 <!-- progressbar -->
                 <ul id="progressbar">
                     <li class="active">La société</li>
@@ -678,16 +680,9 @@ var form_data = new FormData();
             processData: false,
             success: function(data) {
 
+                $.amaran({'message':"Membre de l\'équipe modifié avec succès!"});
 
-
-            $('#teammyTeam'+data.id).html("<img src='/storage/images/users/"+data.image+"' alt='"+data.name+"' width='96' height='96'>\
-            "+data.name+"\
-            <span class='closebtn deleteTeam'><i class='far fa-trash-alt' style='font-size: 15px;' aria-hidden='true'></i></span>\
-            <span class='closebtn'><i data-toggle='modal' data-target='#myTeam"+data.id+"' class='fas fa-pencil-alt' style='font-size: 15px;' aria-hidden='true'></i></span>");
-
-
-
-          $.amaran({'message':"Membre de l\'équipe modifié avec succès!"});
+                location.reload();
 
             },
             error: function (xhr, msg) {

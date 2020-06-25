@@ -7,6 +7,7 @@ use App\Category;
 use App\Team;
 use App\Multimedia;
 use App\User;
+use Validator;
 use Auth;
 use Image;
 use Illuminate\Http\Request;
@@ -122,7 +123,46 @@ class AnnonceController extends Controller
      */
     public function update(Request $request, Annonce $annonce)
     {
-        //
+        $annonce->update($request->all());
+
+        if ($request->hasFile('logo') ) {
+            $image = $request->file('logo');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->save(storage_path('app/public/images/annonces/'.$filename));
+            $annonce->logo = $filename;
+            $annonce->save();
+        }
+
+        if ($request->hasFile('banner') ) {
+            $image = $request->file('banner');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->save(storage_path('app/public/images/annonces/banners/'.$filename));
+            $annonce->banner = $filename;
+            $annonce->save();
+        }
+
+        $validation = Validator::make($request->all(), [
+              'input2.*' => 'required|file|mimes:jpeg,png,jpg,pdf,mp3,mp4|max:10000'
+          ],[
+              'input2.*.required' => 'Please upload a file',
+                'input2.*.mimes' => 'Only jpeg,png,jpg,pdf,mp3,mp4 files are allowed',
+                'input2.*.max' => 'Sorry! Maximum allowed size for an image is 10MB',
+          ]);
+
+        if ($validation->passes()) {
+            if ($request->hasFile('input2') ) {
+              foreach ($request->file('input2') as $file) {
+                $filename = $file->getClientOriginalName();
+                $media = Multimedia::create([
+                    'name' => $filename,
+                    'project_id' => $project->id,
+                ]);
+                $file->move(storage_path('app/public/files/projects'), $filename);
+              }
+          }
+        }
+
+
     }
 
     /**

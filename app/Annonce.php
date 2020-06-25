@@ -28,6 +28,8 @@ class Annonce extends Model
                            'team_description',
                            'logo',
                            'video',
+                           'banner',
+                           'category_id'
                          ];
 
 
