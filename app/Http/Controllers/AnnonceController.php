@@ -23,6 +23,18 @@ class AnnonceController extends Controller
         //
     }
 
+    public function indexAdmin()
+    {
+        if (Auth::check() && Auth::user()->isAdmin()) {
+            $annonces = Annonce::orderby('id', 'asc')->paginate(30);
+            return view('users.admin.annonces.index', ['annonces', $annonces]);
+        }
+        else {
+            return redirect('home');
+        }
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -49,6 +61,34 @@ class AnnonceController extends Controller
         $annonce = Annonce::create($request->all());
         return redirect('/annonces/'.$annonce->id.'/edit');
     }
+
+    //recommend
+    public function recommend(Annonce $annonce)
+    {
+        if (Auth::check() && Auth::user()->isAdmin()) {
+            $annonce->recommended = 1;
+            $annonce->save();
+            return redirect()->back()->with('status', 'L\'annonce été mise en avant avec succès');
+        }
+        else {
+            return redirect('home');
+        }
+
+    }
+
+    //unrecommend
+    public function unrecommend(Annonce $annonce)
+    {
+        if (Auth::check() && Auth::user()->isAdmin()) {
+            $annonce->recommended = 0;
+            $annonce->save();
+            return redirect()->back()->with('status', 'La mise en avant de l\'annonce a été annulée avec succès');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
 
     /**
      * Display the specified resource.
@@ -93,6 +133,12 @@ class AnnonceController extends Controller
      */
     public function destroy(Annonce $annonce)
     {
-        //
+        if (Auth::check() && Auth::user()->isAdmin()) {
+            $annonce->delete();
+            return redirect()->back()->with('status', 'L\'annonce été supprimée avec succès');
+        }
+        else {
+            return redirect('home');
+        }
     }
 }

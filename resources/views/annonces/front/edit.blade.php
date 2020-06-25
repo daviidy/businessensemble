@@ -306,7 +306,7 @@ footer {
 
 @foreach($annonce->teams as $team)
 
-<div class="modal fade" id="myTeam{{$team->id}}">
+<div class="modal fade" id="modalmyTeam{{$team->id}}">
 
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -320,7 +320,7 @@ footer {
           <!-- Modal body -->
           <div class="modal-body">
               <div class="card" style="">
-                  <form enctype="multipart/form-data" id="addTeam">
+                  <form class="myTeam" enctype="multipart/form-data" id="myTeam{{$team->id}}">
                   <div class="row" style="padding: 25px">
                       <div class="col-md-6 col-sm-12">
                           <img class="card-img-top rounded-circle" src="/storage/images/users/image.jpg" alt="Card image"  style="width:35%">
@@ -367,7 +367,7 @@ footer {
 
 <!--Modal de l'ajout d'un membre de l'équipe-->
 <!-- The Modal -->
-          <div class="modal fade" id="myModal">
+          <div class="modal fade" id="addTeamModal">
 
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
@@ -518,87 +518,185 @@ $(".submit").click(function(){
 </script>
 
 <script src="/plugin/build/js/intlTelInput.js"></script>
-          <script>
-            var input = document.querySelector("#phone");
-            window.intlTelInput(input, {
+<script>
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
 
-              autoPlaceholder: "polite",
+  autoPlaceholder: "polite",
 
-               hiddenInput: "phone",
+   hiddenInput: "phone",
 
-               nationalMode: true,
+   nationalMode: true,
 
-               preferredCountries: ["ci", "fr"],
-               separateDialCode: true,
-              utilsScript: "/plugin/build/js/utils.js",
-            });
-          </script>
-
-
-        <script src="/plugin/build/js/countrySelect.min.js"></script>
-        <script>
-          $("#country").countrySelect();
-
-        </script>
+   preferredCountries: ["ci", "fr"],
+   separateDialCode: true,
+  utilsScript: "/plugin/build/js/utils.js",
+});
+</script>
 
 
+<script src="/plugin/build/js/countrySelect.min.js"></script>
+<script>
+$("#country").countrySelect();
+
+</script>
 
 
-        <!--add team-->
-        <script type="text/javascript">
 
-        var form = $('#addTeam');
-        var form_data = new FormData();
-            form.submit(function(e) {
 
-            e.preventDefault();
+<!--add team-->
+<script type="text/javascript">
 
-            form_data.append("image", document.getElementById('team_image').files[0]);
-            form_data.append("name", $('#team_name').val());
-            form_data.append("url", $('#team_url').val());
-            form_data.append("position", $('#team_position').val());
-            form_data.append("annonce_id", $('#team_annonce_id').val());
-            form_data.append("bio", $('#team_bio').val());
+var form = $('#addTeam');
+var form_data = new FormData();
+form.submit(function(e) {
 
-            $.ajaxSetup({
-                       headers: {
-                           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                       }
-                   });
+e.preventDefault();
 
-            $.ajax({
-                type: 'post',
-                url: '/addTeam',
-                data: form_data,
-                dataType: 'json',
-                contentType: false,
-                cache: false,
-                processData: false,
-                success: function(data) {
-                    //reinitialisation du formulaire
-                $('#addTeam ')[0].reset();
+form_data.append("image", document.getElementById('team_image').files[0]);
+form_data.append("name", $(this).find('#team_name').val());
+form_data.append("url", $(this).find('#team_url').val());
+form_data.append("position", $(this).find('#team_position').val());
+form_data.append("annonce_id", $(this).find('#team_annonce_id').val());
+form_data.append("bio", $(this).find('#team_bio').val());
 
-                //close the popup
-                $('#myModal').modal('toggle');
+$.ajaxSetup({
+           headers: {
+               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+           }
+       });
 
-                $('#team_list').append("<div id=teammyTeam'"+data.id+"' class='chip'>\
-                  <img src='/storage/images/users/"+data.image+"' alt='"+data.name+"' width='96' height='96'>\
-                  "+data.name+"\
-                  <span class='closebtn deleteTeam'><i class='far fa-trash-alt' style='font-size: 15px;' aria-hidden='true'></i></span>\
-                  <span class='closebtn'><i data-toggle='modal' data-target='#myTeam"+data.id+"' class='fas fa-pencil-alt' style='font-size: 15px;' aria-hidden='true'></i></span>\
-                </div>");
+$.ajax({
+    type: 'post',
+    url: '/addTeam',
+    data: form_data,
+    dataType: 'json',
+    contentType: false,
+    cache: false,
+    processData: false,
+    success: function(data) {
+        console.log(data.name);
+        //reinitialisation du formulaire
+    $('#addTeam ')[0].reset();
 
-              $.amaran({'message':"Membre de l\'équipe ajouté avec succès!"});
+    //close the popup
+    $('#addTeamModal').modal('toggle');
 
-                },
-                error: function (xhr, msg) {
-                  console.log(msg + '\n' + xhr.responseText);
-              }
-            });
+    $('#team_list').append("<div id=teammyTeam'"+data.id+"' class='chip'>\
+      <img src='/storage/images/users/"+data.image+"' alt='"+data.name+"' width='96' height='96'>\
+      "+data.name+"\
+      <span class='closebtn deleteTeam'><i class='far fa-trash-alt' style='font-size: 15px;' aria-hidden='true'></i></span>\
+      <span class='closebtn'><i data-toggle='modal' data-target='#modalmyTeam"+data.id+"' class='fas fa-pencil-alt' style='font-size: 15px;' aria-hidden='true'></i></span>\
+    </div>");
+
+    $('body').append("<div class='modal fade' id='modalmyTeam"+data.id+"'>\
+          <div class='modal-dialog modal-dialog-centered'>\
+            <div class='modal-content'>\
+              <div class='modal-header'>\
+                  <h4 class='modal-title text-center'>Modifier un membre de votre équipe</h4>\
+                  <button type='button' class='close' data-dismiss='modal'>&times;</button>\
+              </div>\
+              <div class='modal-body'>\
+                  <div class='card' style=''>\
+                      <div class='myTeam' enctype='multipart/form-data' id='myTeam"+data.id+"'>\
+                      <div class='row' style='padding: 25px'>\
+                          <div class='col-md-6 col-sm-12'>\
+                              <img class='card-img-top rounded-circle' src='/storage/images/users/"+data.image+"' alt='Card image'  style='width:35%'>\
+                          </div>\
+                          <div class='col-md-6 col-sm-12'>\
+                              <input id='team_imagemyTeam"+data.id+"' type='file' name='image' placeholder='' />\
+                          </div>\
+                      </div>\
+                      <div class='card-body'>\
+                          <div class='form-group'>\
+                              <input value='"+data.name+"' id='team_name' type='text' id='' placeholder='Nom' name='name'>\
+                          </div>\
+                          <div class='form-group'>\
+                              <input value='"+data.url+"' id='team_url' type='url' id='' placeholder='Linkedin' name='url'>\
+                          </div>\
+                          <div class='form-group'>\
+                              <input value='"+data.position+"' id='team_position' type='text' id='' placeholder='Titre ou poste dans la société' name='position'>\
+                          </div>\
+                          <textarea id='team_bio' name='bio' placeholder='Bio'>\
+                              "+data.bio+"\
+                          </textarea>\
+                          <input id='team_id' type='text' hidden name='' value='"+data.id+"'>\
+                      </div>\
+                      <button type='button' class='btn btn-primary edit'>Modifier</button>\
+                      </div>\
+                  </div>\
+              </div>\
+              <div class='modal-footer'>\
+                <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\
+              </div>\
+            </div>\
+          </div>\
+    </div>");
+
+  $.amaran({'message':"Membre de l\'équipe ajouté avec succès!"});
+
+    },
+    error: function (xhr, msg) {
+      console.log(msg + '\n' + xhr.responseText);
+  }
+});
+});
+
+</script>
+
+<script type="text/javascript">
+
+var form_data = new FormData();
+
+
+    $(document).on('click', '.edit', function(e) {
+
+        form_data.append("image", document.getElementById('team_image'+$(this).parent().attr('id')).files[0]);
+        form_data.append("name", $(this).parent().find('#team_name').val());
+        form_data.append("team_id", $(this).parent().find('#team_id').val());
+        form_data.append("url", $(this).parent().find('#team_url').val());
+        form_data.append("position", $(this).parent().find('#team_position').val());
+        form_data.append("bio", $(this).parent().find('#team_bio').val());
+
+    //close the popup
+    $('#modal'+$(this).parent().attr('id')).modal('toggle');
+
+
+        $.ajaxSetup({
+                   headers: {
+                       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                   }
+               });
+
+        $.ajax({
+            type: 'post',
+            url: '/editTeam',
+            data: form_data,
+            dataType: 'json',
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(data) {
+
+
+
+            $('#teammyTeam'+data.id).html("<img src='/storage/images/users/"+data.image+"' alt='"+data.name+"' width='96' height='96'>\
+            "+data.name+"\
+            <span class='closebtn deleteTeam'><i class='far fa-trash-alt' style='font-size: 15px;' aria-hidden='true'></i></span>\
+            <span class='closebtn'><i data-toggle='modal' data-target='#myTeam"+data.id+"' class='fas fa-pencil-alt' style='font-size: 15px;' aria-hidden='true'></i></span>");
+
+
+
+          $.amaran({'message':"Membre de l\'équipe modifié avec succès!"});
+
+            },
+            error: function (xhr, msg) {
+              console.log(msg + '\n' + xhr.responseText);
+          }
         });
 
-        </script>
-
+});
+</script>
 
 
 
@@ -607,7 +705,7 @@ $(".submit").click(function(){
 
         var form_data = new FormData();
 
-            $('.myTeam').submit(function(e) {
+            $('.myTeam').on('submit', function(e) {
 
 
             e.preventDefault();
@@ -619,11 +717,8 @@ $(".submit").click(function(){
             form_data.append("position", $(this).find('#team_position').val());
             form_data.append("bio", $(this).find('#team_bio').val());
 
-            //reinitialisation du formulaire
-        $('#'+$(this).attr('id')).trigger("reset");
-
         //close the popup
-        $('#'+$(this).attr('id')).modal('toggle');
+        $('#modal'+$(this).attr('id')).modal('toggle');
 
             $.ajaxSetup({
                        headers: {
@@ -642,7 +737,7 @@ $(".submit").click(function(){
                 success: function(data) {
 
 
-                $('#team'+data.id).html("<img src='/storage/images/users/"+data.image+"' alt='"+data.name+"' width='96' height='96'>\
+                $('#teammyTeam'+data.id).html("<img src='/storage/images/users/"+data.image+"' alt='"+data.name+"' width='96' height='96'>\
                 "+data.name+"\
                 <span class='closebtn deleteTeam'><i class='far fa-trash-alt' style='font-size: 15px;' aria-hidden='true'></i></span>\
                 <span class='closebtn'><i data-toggle='modal' data-target='#myTeam"+data.id+"' class='fas fa-pencil-alt' style='font-size: 15px;' aria-hidden='true'></i></span>");
@@ -650,6 +745,49 @@ $(".submit").click(function(){
 
 
               $.amaran({'message':"Membre de l\'équipe modifié avec succès!"});
+
+                },
+                error: function (xhr, msg) {
+                  console.log(msg + '\n' + xhr.responseText);
+              }
+            });
+        });
+
+        </script>
+
+
+
+        <!--delete team-->
+        <script type="text/javascript">
+
+        var form_data = new FormData();
+
+            $('.deleteTeam').click(function(e) {
+
+
+            e.preventDefault();
+
+            form_data.append("team_id", $(this).attr('id'));
+
+            $('#teammyTeam'+$(this).attr('id')).remove();
+
+            $.ajaxSetup({
+                       headers: {
+                           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                       }
+                   });
+
+            $.ajax({
+                type: 'post',
+                url: '/deleteTeam',
+                data: form_data,
+                dataType: 'json',
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function(data) {
+
+              $.amaran({'message':"Membre de l\'équipe supprimé avec succès!"});
 
                 },
                 error: function (xhr, msg) {

@@ -11,23 +11,23 @@
             </textarea>
         </div>
 
-        <div id="team_list" class="col-md-12 col-sm-12">
+        <div class="col-md-12 col-sm-12">
             <label for="fname">Membres de l'équipe</label>
-            <div class="col-md-8 col-sm-12">
+            <div id="team_list" class="col-md-8 col-sm-12">
                 @foreach($annonce->teams as $team)
-                <div id="team{{$team->id}}" class="chip">
+                <div id="teammyTeam{{$team->id}}" class="chip">
                   <img src="/storage/images/users/{{$team->image}}" alt="{{$team->name}}" width="96" height="96">
                   {{$team->name}}
-                  <span class="closebtn deleteTeam">
+                  <span class="closebtn deleteTeam" id="{{$team->id}}">
                           <i class="far fa-trash-alt" style="font-size: 15px;"></i>
                 </span>
-                  <span class="closebtn"><i data-toggle="modal" data-target="#myTeam{{$team->id}}" class="fas fa-pencil-alt" style="font-size: 15px;"></i></span>
+                  <span class="pencil closebtn"><i data-toggle="modal" data-target="#modalmyTeam{{$team->id}}" class="fas fa-pencil-alt" style="font-size: 15px;"></i></span>
                 </div>
                 @endforeach
             </div>
 
         </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTeamModal">
             Ajouter un membre de l'équipe
           </button>
     </div>
