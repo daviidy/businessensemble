@@ -15,11 +15,11 @@
 
                     <!-- Modal body -->
                     <div class="modal-body body-annonce">
-                        <form action="{{route('annonces.store')}}" method="post" enctype="multipart/form-data" id="msform1">
+                      <form action="{{route('annonces.store')}}" method="post" enctype="multipart/form-data" id="msform1">
                             @csrf
-                      <div class="input">
-                        <input type="text" class="form-control form-control-lg" placeholder="Titre de la société " name="title">
-                      </div>
+                        <div class="input">
+                          <input type="text" class="form-control form-control-lg" placeholder="Titre de la société " name="title">
+                        </div>
                         <div class="input">
                           <input type="text" class="form-control form-control-lg" placeholder="Pays " name="country" id="country" >
                         </div>
@@ -29,13 +29,13 @@
                         </div>
 
                         <input hidden type="text" name="user_id" value="{{Auth::user()->id}}">
-                        <button type="submit" class="btn btn-primary">Créer</button>
-                        </form>
+                        <button style="background-color: #00a78d; color: #fff " type="submit" class="btn  text-center">Créer une annonce </button>
+                      </form>
                     </div>
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                      <!--button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button-->
                     </div>
 
                   </div>

@@ -608,7 +608,7 @@ h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:
         /*! CSS Used from: Embedded */
 *{box-sizing:border-box;margin:0;padding:0;}
 img{max-width:100%;height:auto;}
-p,h1{font-size:inherit;font-weight:normal;max-width:60rem;}
+p,h1{font-size:inherit;font-weight:normal;/*max-width:60rem;*/}
 button,input{background-image:none;}
 input{color:#3c3b37;}
 *:focus,input:focus,button:focus{outline:none;}

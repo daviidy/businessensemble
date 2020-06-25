@@ -27,7 +27,7 @@ class AnnonceController extends Controller
     {
         if (Auth::check() && Auth::user()->isAdmin()) {
             $annonces = Annonce::orderby('id', 'asc')->paginate(30);
-            return view('users.admin.annonces.index', ['annonces', $annonces]);
+            return view('users.admin.annonces.index', ['annonces'=> $annonces]);
         }
         else {
             return redirect('home');
