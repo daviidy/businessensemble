@@ -738,7 +738,7 @@
 
                                     <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-google"></i></a></li>
 
 
                                     <li><a target="_blank" href="#"><i class="fab fa-linkedin"></i></a></li>
