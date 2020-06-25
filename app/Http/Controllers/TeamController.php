@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Team;
+use Auth;
+use Image;
 use Illuminate\Http\Request;
 
 class TeamController extends Controller
@@ -25,6 +27,44 @@ class TeamController extends Controller
     public function create()
     {
         //
+    }
+
+    public function createAjax(Request $req) {
+        $data = Team::create($req->all());
+
+        if ($req->hasFile('image') ) {
+            $image = $req->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->save(storage_path('app/public/images/users/'.$filename));
+            $data->image = $filename;
+            $data->save();
+        }
+
+
+        return response()->json($data);
+    }
+
+    public function editAjax(Request $req) {
+        $data = Team::find($req->team_id);
+        $data->update($req->all());
+
+        if ($req->hasFile('image') ) {
+            $image = $req->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->save(storage_path('app/public/images/users/'.$filename));
+            $data->image = $filename;
+            $data->save();
+        }
+
+
+        return response()->json($data);
+    }
+
+    public function deleteAjax(Request $req) {
+        $data = Team::find($req->team_id);
+        $data->delete();
+
+        return response()->json();
     }
 
     /**

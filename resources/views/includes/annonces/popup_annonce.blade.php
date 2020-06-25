@@ -2,8 +2,7 @@
 <!--Modal de l'ajout d'un membre de l'équipe-->
 <!-- The Modal -->
           <div class="modal fade" id="myModal_2">
-            <form action="{{route('annonces.store')}}" method="post" enctype="multipart/form-data" id="msform1">
-                @csrf
+
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content" style="padding: 32px;">
 
@@ -16,6 +15,8 @@
 
                     <!-- Modal body -->
                     <div class="modal-body body-annonce">
+                        <form action="{{route('annonces.store')}}" method="post" enctype="multipart/form-data" id="msform1">
+                            @csrf
                       <div class="input">
                         <input type="text" class="form-control form-control-lg" placeholder="Titre de la société " name="title">
                       </div>
@@ -27,19 +28,19 @@
                           <input type="number" class="form-control form-control-lg" name="phone" id="" placeholder="Téléphone">
                         </div>
 
-                        <input type="text" name="user_id" value="{{Auth::user()->id}}">
-
-
+                        <input hidden type="text" name="user_id" value="{{Auth::user()->id}}">
+                        <button type="submit" class="btn btn-primary">Créer</button>
+                        </form>
                     </div>
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                      <button type="submit" class="btn btn-primary" data-dismiss="modal">Créer</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
                     </div>
 
                   </div>
                 </div>
-            </form>
+
           </div>
 
 <!--/ Modal de l'ajout d'un membre de l'équipe-->

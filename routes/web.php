@@ -41,8 +41,14 @@ Route::get('/investor', 'InvestorController@investor')
 
 
 Route::get('/admin/users/{user}', 'UserController@show');
+Route::get('/admin/annonces', 'AnnonceController@indexAdmin');
+Route::get('/admin/annonces/{annonce}/recommend', 'AnnonceController@recommend');
+Route::get('/admin/annonces/{annonce}/unrecommend', 'AnnonceController@unrecommend');
 
 
 
     //ajax routes
     Route::post('/uploadAvatar', 'UserController@uploadAvatar');
+    Route::post('/addTeam', 'TeamController@createAjax');
+    Route::post('/editTeam', 'TeamController@editAjax');
+    Route::post('/deleteTeam', 'TeamController@deleteAjax');
