@@ -469,137 +469,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
         </style>
 
 
-        <!--style div footer-->
-        <style media="screen">
-        /*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/bootstrap.min.css?ver=all ; media=all */
-@media all{
-@media print{
-*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
-a,a:visited{text-decoration:underline;}
-img{page-break-inside:avoid;}
-h3,p{orphans:3;widows:3;}
-h3{page-break-after:avoid;}
-}
-*,::after,::before{box-sizing:border-box;}
-[tabindex="-1"]:focus{outline:0!important;}
-h3,h4{margin-top:0;margin-bottom:.5rem;}
-p{margin-top:0;margin-bottom:1rem;}
-ul{margin-top:0;margin-bottom:1rem;}
-a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
-a:hover{color:#0056b3;text-decoration:underline;}
-img{vertical-align:middle;border-style:none;}
-a,button,input:not([type=range]),label{-ms-touch-action:manipulation;touch-action:manipulation;}
-label{display:inline-block;margin-bottom:.5rem;}
-button{border-radius:0;}
-button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
-button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
-button,input{overflow:visible;}
-button{text-transform:none;}
-[type=submit],button{-webkit-appearance:button;}
-[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none;}
-h3,h4{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;}
-h3{font-size:1.75rem;}
-h4{font-size:1.5rem;}
-.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
-@media (min-width:576px){
-.container{max-width:540px;}
-}
-@media (min-width:768px){
-.container{max-width:720px;}
-}
-@media (min-width:992px){
-.container{max-width:960px;}
-}
-@media (min-width:1200px){
-.container{max-width:1140px;}
-}
-.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
-.col-lg-3,.col-lg-4,.col-lg-8,.col-sm-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
-@media (min-width:576px){
-.col-sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
-}
-@media (min-width:992px){
-.col-lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}
-.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
-.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
-}
-.clearfix::after{display:block;clear:both;content:"";}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0 ; media=all */
-@media all{
-.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.fa-long-arrow-right:before{content:"\f178";}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/magnific-popup.css?ver=all ; media=all */
-@media all{
-button::-moz-focus-inner{padding:0;border:0;}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/main.css?ver=all ; media=all */
-@media all{
-input:focus,button:focus{outline-offset:0;outline:0;-webkit-box-shadow:none;box-shadow:none;}
-.widget{word-break:break-word;}
-.widget ul>li:last-child{border-bottom:none;}
-.widget_nav_menu ul{padding:0px;}
-.widget_nav_menu ul li{list-style:none;}
-.widget ul li:last-child a{padding-bottom:0;}
-.widget ul li a{color:#38434a;}
-.bottom .widget{color:#dedede;}
-.bottom .widget ul li a{color:#dedede;line-height:32px;transition:400ms;-webkit-transition:400ms;font-size:14px;font-weight:300;}
-.bottom{border-top:1px solid rgb(67, 67, 77);border-bottom:1px solid rgb(67, 67, 77);}
-.mailchimp-inner{border-left:1px solid rgb(67, 67, 77);text-align:center;padding:0 40px;}
-.bottom-widget{padding-top:15px;}
-.bottom-widget .widget h3.widget-title{font-size:18px;font-weight:300;margin-bottom:20px;color:#fff;margin-top:0;}
-.mc4wp-form-fields input[type="email"]{background:#323238;border:none;border-radius:3px;font-size:14px;padding:12px;color:#ccc;font-weight:300;height:46px;width:240px;display:inline-block;float:left;}
-.mchimp-newsletter h4{color:#fff!important;font-weight:300;}
-.mc4wp-form-fields input[type="email"]:focus{outline-offset:0px;outline:-webkit-focus-ring-color auto 0px;}
-.mc4wp-form-fields button:hover{background:#25b7a6;}
-.mc4wp-form-fields button{color:#fff;border-radius:0;border:none;padding:11px 16px;margin-left:-15px;border-radius:0 3px 3px 0;background:#34d3c0;-webkit-transition:.3s;transition:.3s;}
-img{max-width:100%;height:auto;}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/woocommerce.css?ver=all ; media=all */
-@media all{
-input[type="text"],input[type="email"]{font-size:16px;}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/custom.css?ver=all ; media=all */
-@media all{
-.mailchil-container{margin-top:25px;}
-.mchimp-newsletter p{font-size:14px;color:#dedede;font-weight:300;line-height:18px;}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/responsive.css?ver=all ; media=all */
-@media all{
-@media only screen and (max-width: 992px){
-.mailchimp-inner{border-color:transparent;}
-.mchimp-newsletter{position:relative;z-index:3;}
-.mc4wp-form-fields button{position:absolute;bottom:0;right:0;}
-.mc4wp-form-fields input[type="email"]{display:block;width:100%;float:none;}
-}
-@media (max-width: 767px){
-.mailchimp-inner{margin-bottom:15px;}
-.bottom-wrap{padding-bottom:0!important;;         padding-top:30px!important;}
-.bottom-widget h3{margin-bottom:25px;}
-.bottom-widget{width:100%;}
-.mc4wp-form-fields input[type="email"]{display:block;width:100%;float:none;}
-.bottom-widget{width:100%;}
-}
-}
-/*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/style.css?ver=4.9.15 ; media=all */
-@media all{
-a{text-decoration:none!important;}
-a:focus{outline:0;outline-offset:0;}
-ul li{padding:5px 0;}
-}
-/*! CSS Used from: Embedded */
-a,.bottom-widget .widget ul li a:hover,.widget ul li a:hover{color:#33d3c0;}
-input:focus{border-color:#33d3c0;}
-a:hover{color:#00bf9c;}
-h3{font-size:26px;font-family:Montserrat;font-weight:400;line-height:28px;color:#414040;}
-h4{font-size:18px;font-family:Montserrat;font-weight:600;line-height:26px;color:#414040;}
-.bottom{background-color:#26262b;}
-.bottom .widget ul li a{color:#6e6e6e;}
-.bottom-wrap{padding-top:58px;}
-.bottom-wrap{padding-bottom:58px;}
 
-        </style>
 
 
 
@@ -3624,6 +3494,7 @@ input{color:#3c3b37;}
             </div>
             <!--/#content-->
         </section>
+
 
         <div class="bottom footer-wrap">
             <div class="container bottom-footer-cont">
