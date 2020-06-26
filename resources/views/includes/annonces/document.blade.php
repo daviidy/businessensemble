@@ -12,7 +12,7 @@
         </div>
         <div class="col-md-6 col-sm-12">
             <label for="fname">Images</label>
-            <input type="file" name="images[]"/>
+            <input type="file" name="images[]" multiple/>
         </div>
         <div class="col-md-6 col-sm-12" style="padding: 15px 0;">
             <label for="fname">Vidéo (Intégrer ou Télécharger)</label>
@@ -24,7 +24,7 @@
             </div>
             <input class="video_t " id="int" type="url" name="youtube" placeholder="Intégrer une vidéo Youtube" />
             <input class="video_t " id="vimeo" type="url" name="vimeo" placeholder="Intégrer une vidéo Vimeo" />
-            <input class="video_t" id="tele" type="file" name="video"/>
+            <input class="video_t" id="tele" type="file" name="videoDownload"/>
         </div>
         <div class="col-md-6 col-sm-12">
             <label for="fname">Plan d'Affaires</label>
@@ -41,26 +41,5 @@
 
     </div>
         <input type="button" name="previous" class="previous action-button-previous" value="Précédent"/>
-        <input type="submit" name="submit" class="submit action-button" value="Envoyer"/>
+        <button type="submit" name="submit" class="submit action-button">Envoyer</button>
 </fieldset>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-
-        $('.line').click(function() {
-            $('#int').toggle('slow');
-            $('#tele, #vimeo').hide();
-        });
-
-        $('.vimeo').click(function() {
-            $('#vimeo').toggle('slow');
-            $('#tele, #int').hide();
-        });
-
-        $('.update').click(function() {
-            $('#tele').toggle('slow');
-            $('#int, #vimeo').hide();
-        });
-
-});
-</script>

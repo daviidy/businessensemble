@@ -275,6 +275,10 @@ footer {
 <!-- MultiStep Form -->
 <div class="container">
 
+  @if(session('status'))
+  @include('includes.status')
+  @endif
+
 
     <div class="row">
         <div class="col-md-12 col-md-offset-3">
@@ -432,6 +436,29 @@ footer {
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
 
+
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+
+          $('.line').click(function() {
+              $('#int').toggle('slow');
+              $('#tele, #vimeo').hide();
+          });
+
+          $('.vimeo').click(function() {
+              $('#vimeo').toggle('slow');
+              $('#tele, #int').hide();
+          });
+
+          $('.update').click(function() {
+              $('#tele').toggle('slow');
+              $('#int, #vimeo').hide();
+          });
+
+  });
+  </script>
+
 <script type="text/javascript">
 
 
@@ -513,9 +540,11 @@ $(".previous").click(function(){
 	});
 });
 
+/*
 $(".submit").click(function(){
 	return false;
 })
+*/
 
 </script>
 
