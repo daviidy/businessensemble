@@ -13,12 +13,12 @@
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Pays</label>
-                            <input value="{{$annonce->country}}"  placeholder="Pays de résidence " type="text" name="country" id="country" >
+                            <input value="{{$annonce->country}}"  placeholder="Pays de résidence " type="text" name="country" id="country_2" >
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Téléphone</label>
 
-                             <input value="{{$annonce->phone}}" placeholder="Numéro de téléphone" type="text" name="phone" id="phone">
+                             <input value="{{$annonce->phone}}" placeholder="Numéro de téléphone" type="text" name="phone" id="phone_2">
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Catégories</label>
@@ -70,3 +70,4 @@
 
                     <input type="button" name="next" class="next action-button" value="Suivant" />
                 </fieldset>
+

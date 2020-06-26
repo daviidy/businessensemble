@@ -350,30 +350,30 @@ a:hover{color:#00bf9c;}
 @include('includes.user_header')
 
 
-<div style="width: 82%;
+<!--div style="width: 82%;
     margin: auto;" class="wpneo-head wpneo-shadow">
     <div class="wpneo-links clearfix">
         <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Tableau de bord</a></div>
-        <div class="wpneo-links-list wp-crowd-parent"><a href="#">Mon compte<span class="wpcrowd-arrow-down"></span></a>
-            <div class="wp-crowd-submenu wpneo-shadow">
+        <div class="wpneo-links-list wp-crowd-parent"><a href="#" target="blank">Mes annonces<!--span class="wpcrowd-arrow-down"></span--></a>
+            <!--div class="wp-crowd-submenu wpneo-shadow">
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=profile">Profile</a></div>
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=contact">Contact</a></div>
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=password">Password</a></div>
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=rewards">Rewards</a></div>
                 <div class="wpneo-links-lists"><a href="https://demo.themeum.com/wordpress/backnow/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fdemo.themeum.com%2Fwordpress%2Fbacknow&amp;_wpnonce=18302b08e3">Logout</a></div>
-            </div>
+            </div--
         </div>
-        <div class="wpneo-links-list wp-crowd-parent"><a href="#">Mes annonces<span class="wpcrowd-arrow-down"></span></a>
-            <div class="wp-crowd-submenu wpneo-shadow">
+        <div class="wpneo-links-list wp-crowd-parent"><a href="#">Déconnection<!--span class="wpcrowd-arrow-down"></span-></a>
+            <!--div class="wp-crowd-submenu wpneo-shadow">
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=campaign">My Campaigns</a></div>
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=backed_campaigns">My Invested Campaigns</a></div>
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=pledges_received">Pledges Received</a></div>
                 <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=bookmark">Bookmarks</a></div>
-            </div>
+            </div->
         </div>
         <div class="wp-crowd-new-campaign"><a class="wp-crowd-btn wp-crowd-btn-primary" data-toggle="modal" data-target="#myModal_2" href="#">Créer une annonce</a></div>
     </div>
-</div>
+</div-->
 
 <div class="ss-content-wrapper">
     <div class="ss-page-title">Aperçu de vos informations</div>

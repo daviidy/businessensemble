@@ -25,7 +25,7 @@
                         </div>
 
                         <div class="input">
-                          <input type="number" class="form-control form-control-lg" name="phone" id="" placeholder="Téléphone">
+                          <input type="number" class="form-control form-control-lg" name="phone" id="phone_3" placeholder="Téléphone">
                         </div>
 
                         <input hidden type="text" name="user_id" value="{{Auth::user()->id}}">
@@ -33,7 +33,7 @@
                       </form>
                     </div>
 
-                    <!-- Modal footer -->
+                    <!-- Mwodal footer -->
                     <div class="modal-footer">
                       <!--button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button-->
                     </div>
