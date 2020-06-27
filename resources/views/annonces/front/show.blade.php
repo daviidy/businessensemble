@@ -680,14 +680,15 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                         <div class="wpneo-campaign-summary progressbar-content-wrapper">
                             <div class="wpneo-campaign-summary-inner thm-progress-bar" itemscope="" itemtype="http://schema.org/DonateAction">
                                 <ul class="thm-single-category">
-                                    <li><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/" style="color:#33d3c0;"><span>Clothing</span></a></li>
+                                    <li><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/" style="color:#33d3c0;"><span>{{$annonce->category->name}}</span></a></li>
                                 </ul>
                                 <div></div>
-                                <h2 class="wpneo-campaign-title">Dreamfall Chapters: The Longest Journey</h2>
+                                <h2 class="wpneo-campaign-title">{{$annonce->title}}</h2>
                                 <div class="wpneo-single-short-description">
                                     <div itemprop="description">
-                                        <p>Corned beef leberkas fatback porchetta, strip steak salami turkey short loin flank ham hock landjaeger. Leberkas pork belly kevin shoulder filet mignon. Bacon spare ribs rump chuck turkey, ham hock capicola.
-                                            Strip steak tongue kielbasa.</p>
+                                        <p>
+                                            {{$annonce->short_description}}
+                                        </p>
                                     </div>
                                 </div>
                                 <!-- Review Section Start -->
@@ -727,16 +728,16 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                         <li><a href="javascript:;" data-predefined-price="80"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>80.00</span></a> </li>
                                     </ul>
                                     <span class="thm-Price-amount">
-                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>4,500.00</span></span>
+                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>4,500.00</span></span>
                                     </span>
-                                    <span class="thm-raise-sp">Raised</span>
+                                    <span class="thm-raise-sp">Levés</span>
 
                                     <div class="thm-meta-desc pull-right text-right">
                                         <span class="thm-Price-amount">
-                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>7,000.00</span></span>
+                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$annonce->raising_amount}}</span></span>
                                         </span>
                                         <span class="thm-raise-sp">
-                                            Goal </span>
+                                            Objectif </span>
                                     </div>
                                 </div>
 
@@ -767,7 +768,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     </div>
                                 </div>
                                 <div class="wpneo-single-sidebar">
-                                    <a href="#backnow_project"><span class="wpneo_donate_button">Back This Project</span></a>
+                                    <a href="/backProject/{{$annonce->id}}"><span class="wpneo_donate_button">Je suis intéressé</span></a>
                                     <!-- <button class="backnow-remind-me"><?php// _e('Remind me', 'backnow'); ?></button> -->
                                 </div>
                                 <div class="wpneo-location-wrapper">
