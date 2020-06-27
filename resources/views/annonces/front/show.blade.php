@@ -647,8 +647,11 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                             <div class="wpneo-post-img">
 
                                 <div class="video-container pull-left"
-                                  style="background-image: url(https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/backit-product3.jpg); background-repeat:no-repeat; background-size:cover; width:100%; height:390px; margin-bottom:30px; ">
-                                    <a href="https://www.youtube.com/watch?v=D56aax2gw9g" id="videoPlay" class="pup-up-video" data-rel="prettyPhoto"><i class="far fa-play-circle"></i></a></div>
+                                  style="width:100%; height:390px; margin-bottom:30px; ">
+                                    <!--a href="https://www.youtube.com/watch?v=D56aax2gw9g" id="videoPlay" class="pup-up-video" data-rel="prettyPhoto"><i class="far fa-play-circle"></i></a-->
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A4ViC7NwbZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style=" width:100%; height:390px; margin-bottom:30px;"></iframe>
+                                </div>
+
                             </div>
 
                             <div id="campaign_loved_html">
