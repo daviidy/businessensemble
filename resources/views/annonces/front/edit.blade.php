@@ -270,6 +270,10 @@ footer {
 .line, .vimeo, .update{
   border: 1px solid #9e9e9e !important;
 }
+
+.footer-wrap{
+  display: none;
+}
 </style>
 
 <!-- MultiStep Form -->
