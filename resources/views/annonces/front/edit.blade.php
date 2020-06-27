@@ -161,6 +161,7 @@ width: 25%;
 float: left;
 position: relative;
 letter-spacing: 1px;
+padding: 0px !important;
 }
 
 #progressbar li:before {
@@ -223,7 +224,7 @@ background: #C5C5F1;
 text-decoration: none;
 }
 ul li{
-    padding: 0!important;
+    padding: 0;
 }
 </style>
 
@@ -440,6 +441,31 @@ footer {
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
 
+<script src="/plugin/build/js/intlTelInput.js"></script>
+<script>
+var input = document.querySelector("#phone_2");
+window.intlTelInput(input, {
+
+  autoPlaceholder: "polite",
+
+   hiddenInput: "phone",
+
+   nationalMode: true,
+
+   preferredCountries: ["ci", "fr"],
+   separateDialCode: true,
+  utilsScript: "/plugin/build/js/utils.js",
+});
+</script>
+
+
+<script src="/plugin/build/js/countrySelect.min.js"></script>
+<script>
+$("#country").countrySelect();
+$("#country_2").countrySelect();
+
+</script>
+
 
 
   <script type="text/javascript">
@@ -552,29 +578,6 @@ $(".submit").click(function(){
 
 </script>
 
-<script src="/plugin/build/js/intlTelInput.js"></script>
-<script>
-var input = document.querySelector("#phone");
-window.intlTelInput(input, {
-
-  autoPlaceholder: "polite",
-
-   hiddenInput: "phone",
-
-   nationalMode: true,
-
-   preferredCountries: ["ci", "fr"],
-   separateDialCode: true,
-  utilsScript: "/plugin/build/js/utils.js",
-});
-</script>
-
-
-<script src="/plugin/build/js/countrySelect.min.js"></script>
-<script>
-$("#country").countrySelect();
-
-</script>
 
 
 

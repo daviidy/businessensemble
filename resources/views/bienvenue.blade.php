@@ -438,7 +438,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
 .elementor-1953 .elementor-element.elementor-element-ab39082 .elementor-icon-box-title{margin-bottom:2px;}
 .elementor-1953 .elementor-element.elementor-element-ab39082 .elementor-icon-box-content .elementor-icon-box-title{color:#000000;font-size:16px;font-weight:400;}
 .elementor-1953 .elementor-element.elementor-element-ab39082 .elementor-icon-box-content .elementor-icon-box-description{color:#86939e;font-weight:300;}
-.elementor-1953 .elementor-element.elementor-element-6dbcf51:not(.elementor-motion-effects-element-type-background){background-color:#f7f7f9;}
+.elementor-1953 .elementor-element.elementor-element-6dbcf51:not(.elementor-motion-effects-element-type-background){background-color:#f7f7f9; display: none;}
 .elementor-1953 .elementor-element.elementor-element-6dbcf51{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:90px 0px 100px 0px;}
 .elementor-1953 .elementor-element.elementor-element-6350e80{text-align:center;}
 .elementor-1953 .elementor-element.elementor-element-6350e80 .thm-heading-title{color:#000000;font-family:"Montserrat", Sans-serif;font-size:36px;font-weight:300;}
@@ -478,7 +478,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
         /*! CSS Used from: Embedded */
 *{box-sizing:border-box;margin:0;padding:0;}
 img{max-width:100%;height:auto;}
-p,h1{font-size:inherit;font-weight:normal;max-width:60rem;}
+p,h1{font-size:inherit;font-weight:normal;/*max-width:60rem;*/}
 button,input{background-image:none;}
 input{color:#3c3b37;}
 *:focus,input:focus,button:focus{outline:none;}
@@ -583,8 +583,8 @@ input{color:#3c3b37;}
 
                                                                     <div class="backnow-title-content-wrapper">
 
-                                                                        <h2 class="thm-heading-title">Projects We Love</h2>
-                                                                        <p class="sub-title-content">Discover what’s possible when a community creates together.</p>
+                                                                        <h2 class="thm-heading-title">Nos projets par catégorie</h2>
+                                                                        <p class="sub-title-content">Naviguez parmi nos projets disponibles</p>
                                                                     </div>
 
                                                                 </div>
@@ -2286,8 +2286,8 @@ input{color:#3c3b37;}
 
                                                                     <div class="backnow-title-content-wrapper">
 
-                                                                        <h2 class="thm-heading-title">Recommended for you</h2>
-                                                                        <p class="sub-title-content">Discover what’s possible when a community creates together.</p>
+                                                                        <h2 class="thm-heading-title">Nos projets recommandés pour vous</h2>
+                                                                        <p class="sub-title-content">Découvrez les projets à fort potentiel.</p>
                                                                     </div>
 
                                                                 </div>
@@ -2763,8 +2763,8 @@ input{color:#3c3b37;}
 
                                                                     <div class="backnow-title-content-wrapper">
 
-                                                                        <h2 class="thm-heading-title">What's popular</h2>
-                                                                        <p class="sub-title-content">Discover what’s possible when a community creates together.</p>
+                                                                        <h2 class="thm-heading-title">Les plus populaires</h2>
+                                                                        <p class="sub-title-content">Découvrez les projets les plus appréciés par les investisseurs</p>
                                                                     </div>
 
                                                                 </div>
@@ -3036,8 +3036,8 @@ input{color:#3c3b37;}
 
                                                                     <div class="backnow-title-content-wrapper">
 
-                                                                        <h2 class="thm-heading-title">Increasing Prosperity With Positive Thinking</h2>
-                                                                        <p class="sub-title-content">Discover what’s possible when a community creates together.</p>
+                                                                        <h2 class="thm-heading-title">Secteur recherché</h2>
+                                                                        <p class="sub-title-content">Secteur concerné</p>
                                                                     </div>
 
                                                                 </div>
@@ -3065,9 +3065,9 @@ input{color:#3c3b37;}
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
-                                                                                <span>Empower Youth</span>
+                                                                                <span>Secteur 1</span>
                                                                             </h5>
-                                                                            <p class="elementor-icon-box-description">To keep your site safe from any of <br> hiccups.</p>
+                                                                            <p class="elementor-icon-box-description">Multimédia, Immobilier, Agriculture, Alimentation</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3088,9 +3088,9 @@ input{color:#3c3b37;}
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
-                                                                                <span>Empower Youth</span>
+                                                                                <span>Secteur 2</span>
                                                                             </h5>
-                                                                            <p class="elementor-icon-box-description">To keep your site safe from any of <br> hiccups.</p>
+                                                                            <p class="elementor-icon-box-description">Santé, Mode Matériel professionnel</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3111,9 +3111,9 @@ input{color:#3c3b37;}
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
-                                                                                <span>Empower Youth</span>
+                                                                                <span>Secteur 3</span>
                                                                             </h5>
-                                                                            <p class="elementor-icon-box-description">To keep your site safe from any of <br> hiccups.</p>
+                                                                            <p class="elementor-icon-box-description">Innovation technologiques etc…</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3402,9 +3402,8 @@ input{color:#3c3b37;}
 
                                                                     <div class="backnow-title-content-wrapper">
 
-                                                                        <h2 class="thm-heading-title">How Great Is The Strength Of Your Belief</h2>
-                                                                        <p class="sub-title-content">Improve Your Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pellentesque metus at dapibus. Fusce placerat cursus tortor. Class
-                                                                            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos ntesque metus at dapibu.</p>
+                                                                        <h2 class="thm-heading-title">Présentation</h2>
+                                                                        <p class="sub-title-content">Business Ensemble, leader mondial est la première plateforme dédiée à la mise en relation entre porteur de projet et investisseur, spécialiste de l’investissement digital .Il bouleverse les enjeux Networking et met tout le monde  sur le pied d’égalité. Ce créateur de richesse s’inscrit dans une politique structurelle de valorisation du capital humain, particulier, Start up, business Angel.</p>
                                                                     </div>
 
                                                                 </div>
@@ -3415,7 +3414,7 @@ input{color:#3c3b37;}
                                                                     <div class="elementor-button-wrapper">
                                                                         <a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
                                                                             <span class="elementor-button-content-wrapper">
-                                                                                <span class="elementor-button-text">Discover Idea</span>
+                                                                                <span class="elementor-button-text">Découvrez nos projets</span>
                                                                             </span>
                                                                         </a>
                                                                     </div>
@@ -3428,7 +3427,7 @@ input{color:#3c3b37;}
                                         </div>
                                     </section>
                                     <section class="elementor-element elementor-element-220eb3b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="220eb3b3"
-                                      data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                      data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="display: none;">
                                         <div class="elementor-container elementor-column-gap-default">
                                             <div class="elementor-row">
                                                 <div class="elementor-element elementor-element-2cbfbcb8 elementor-column elementor-col-25 elementor-top-column" data-id="2cbfbcb8" data-element_type="column">
@@ -3497,6 +3496,99 @@ input{color:#3c3b37;}
         </section>
 
 
+        <div class="bottom footer-wrap">
+            <div class="container bottom-footer-cont">
+                <div class="row clearfix">
+
+                    <!-- Without MailChimp -->
+
+                    <!-- With MailChimp -->
+                    <div class="col-lg-8">
+                        <div class="row">
+
+                            <div class="bottom-wrap col-sm-6 col-lg-5">
+                                <div class="bottom-widget">
+                                    <div id="nav_menu-4" class="widget widget_nav_menu">
+                                        <h3 class="widget-title">Contactez – nous</h3>
+                                        <div class="menu-footer-3-container">
+                                            <ul id="menu-footer-3" class="menu">
+                                                <li id="menu-item-252" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-252">
+                                                	<span class="far fa-envelope"> </span>
+                                                	<a href="mailto:infos@businessensemble.fr">infos@businessensemble.fr</a>
+                                                </li>
+                                                <li id="menu-item-253" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-253">
+                                                	<span class="fas fa-paper-plane"> </span>
+                                                	<a href="#">Av des champs Elysée Paris 8</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom-wrap col-sm-6 col-lg-5">
+                                <div class="bottom-widget">
+                                    <div id="nav_menu-5" class="widget widget_nav_menu">
+                                        <h3 class="widget-title">Espace Membre</h3>
+                                        <div class="menu-footer-4-container">
+                                            <ul id="menu-footer-4" class="menu">
+                                                <li id="menu-item-255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255">
+                                                	<span class="fas fa-globe"> </span>
+                                                	<a href="https://businessensemble.fr/wp-admin/">CONNEXION</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- mailchil-container start -->
+                    <div class="col-lg-4 mailchimp-inner bottom-wrap">
+                        <div class="mailchil-container">
+                            <img class="enter-logo img-responsive" alt="logo" src="http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/mail-icon.png">
+                            <div class="bottom-widget">
+                                <div id="mc4wp_form_widget-2" class="widget widget_mc4wp_form_widget">
+                                    <script>
+                                        (function() {
+                                            if (!window.mc4wp) {
+                                                window.mc4wp = {
+                                                    listeners: [],
+                                                    forms: {
+                                                        on: function(event, callback) {
+                                                            window.mc4wp.listeners.push({
+                                                                event: event,
+                                                                callback: callback
+                                                            });
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        })();
+                                    </script><!-- Mailchimp for WordPress v4.7.4 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                                    <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-262" method="post" data-id="262" data-name="">
+                                        <div class="mc4wp-form-fields">
+                                            <div class="mchimp-newsletter">
+                                                <h4>Find it first on Backnow</h4>
+                                                <p>Adipiscing elit Nulla ultrices pellentesque metus at dapibus.</p>
+                                                <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                                <button type="submit" value=""><i class="fas fa-arrow-right"></i></button>
+                                            </div>
+                                        </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden"
+                                          name="_mc4wp_timestamp" value="1592264102"><input type="hidden" name="_mc4wp_form_id" value="262"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+                                        <div class="mc4wp-response"></div>
+                                    </form><!-- / Mailchimp for WordPress Plugin -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mailchimp end -->
+
+                </div>
+            </div>
+        </div>
 
 
 @endsection

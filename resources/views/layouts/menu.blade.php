@@ -40,7 +40,6 @@
         <!--End Plugin form cdn jquery-->
 
         <!--Plugin form cdn jquery contry selector-->
-        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/plugin/build/css/countrySelect.css">
         <link rel="stylesheet" href="/plugin/build/css/demo1.css">
 
@@ -49,13 +48,14 @@
         <!--style header-->
         <style media="screen">
         	.input{
-  padding: 15px 0;
-}
+			  padding: 15px 0;
+			}
 
         .modal .modal-dialog, .wpneo-modal-content {
             max-width: 650px;
         }
 
+        #phone_3{padding-left:95px !important;}
             /*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/plugins/wp-crowdfunding/assets/css/crowdfunding-front.css?ver=2.0.2 ; media=all */
         	body{
         		color: #787878!important;
@@ -566,6 +566,15 @@
 			    padding: 3rem!important;
 			}
 
+			.dropdown-item{
+				margin: 15px 0;
+			}
+
+			.btn-info{
+				background-color: #1B6DC1!important;
+				color: #fff;
+			}
+
         </style>
     </head>
     <body class="home page-template page-template-homepage page-template-homepage-php page page-id-33 logged-in woocommerce-js fullwidth-bg elementor-default elementor-page elementor-page-33">
@@ -761,7 +770,19 @@
                                 <!-- End Login section -->
                                 @endguest
                                 @auth
-                                	<li><a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a></li>
+                                	<li class = "dropdown">
+
+                                		<!--a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a-->
+                                		<button class = "btn btn-info dropdown-toggle" type = "button" id = "dropdownMenuButton" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"><i class="fas fa-user-alt"></i> Tableau de bord</button>
+
+                                		<div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
+						                  <a class = "dropdown-item" href = "/home">Mon compte</a>
+						                  <a class = "dropdown-item" href = "#" target="_blank">Mes annonces</a>
+						                  <a class = "dropdown-item" href = "#">Déconnection</a>
+						               </div>
+
+                                	</li>
+                                	 
                                 @endauth
 
                                 <!-- End Login section -->
@@ -827,11 +848,22 @@
                                 <!-- End Login section -->
                                 @endguest
                                 @auth
-                                <li><a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a></li>
+                                <li class = "dropdown">
+
+                                		<!--a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a-->
+                                		<button class = "btn btn-info dropdown-toggle" type = "button" id = "dropdownMenuButton" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"><i class="fas fa-user-alt"></i> Tableau de bord</button>
+
+                                		<div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
+						                  <a class = "dropdown-item" href = "/home">Mon compte</a>
+						                  <a class = "dropdown-item" href = "#" target="_blank">Mes annonces</a>
+						                  <a class = "dropdown-item" href = "#">Déconnection</a>
+						               </div>
+
+                                	</li>
 
 
                                 <!-- Start Campaign Section {{route('annonces.create')}} -->
-                                <li><a class="backnow-login backnow-dashboard" data-toggle="modal" data-target="#myModal_2" href="#" > Créer une annonce</a></li>
+                                <li><a class="" data-toggle="modal" data-target="#myModal_2" href="#" ><button class = "btn btn-info backnow-login backnow-dashboard" type = "button" >Créer une annonce</button> </a></li>
                                 <!-- End Campaign -->
                                 @endauth
                             </ul>
@@ -970,7 +1002,7 @@
 
                                     <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
 
-                                    <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="fab fa-google"></i></a></li>
 
 
                                     <li><a target="_blank" href="#"><i class="fab fa-linkedin"></i></a></li>

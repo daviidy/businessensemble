@@ -5,11 +5,7 @@
 
 @section('content')
 
-<style type="text/css">
-    .fa-fire-extinguisher:before{
-        color: #{{ $categorie ?? '' }};
-    }
-</style>
+
 
 <div class="pcoded-inner-content">
 

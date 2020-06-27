@@ -452,28 +452,6 @@ $(".submit").click(function(){
 
 </script>
 
-<script src="/plugin/build/js/intlTelInput.js"></script>
-          <script>
-            var input = document.querySelector("#phone");
-            window.intlTelInput(input, {
 
-              autoPlaceholder: "polite",
-
-               hiddenInput: "phone",
-
-               nationalMode: true,
-
-               preferredCountries: ["ci", "fr"],
-               separateDialCode: true,
-              utilsScript: "/plugin/build/js/utils.js",
-            });
-          </script>
-
-
-        <script src="/plugin/build/js/countrySelect.min.js"></script>
-        <script>
-          $("#country").countrySelect();
-
-        </script>
 
 @endsection

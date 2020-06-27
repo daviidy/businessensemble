@@ -24,11 +24,11 @@
 .wpneocf-container{margin-right:auto;margin-left:auto;}
 .wpneo-wrapper{margin:0 auto;}
 .woocommerce-product-gallery__image{margin-bottom:20px;}
-.wpneo_donate_button{background-color:#1adc68;color:#fff;}
+.wpneo_donate_button{background-color:#00a78d;color:#fff;}
 .wpneo_donate_button:hover{background-color:#18ce43;color:#fff;}
 ul.wpcf_predefined_pledge_amount{margin:10px;}
 ul.wpcf_predefined_pledge_amount li{display:inline-block;}
-ul.wpcf_predefined_pledge_amount li a{display:block;padding:5px 10px;border:2px solid #18ce43;color:#686C8B;}
+ul.wpcf_predefined_pledge_amount li a{display:block;padding:5px 10px;border:2px solid #1B6DC1 !important;color:#fff !important;}
 @media (min-width: 1200px){
 .wpneocf-container{width:1170px;}
 }
@@ -49,11 +49,11 @@ ul.wpcf_predefined_pledge_amount li a{display:block;padding:5px 10px;border:2px 
 h2.wpneo-campaign-title{font-size:30px;line-height:40px;margin-bottom:5px;}
 .wpneo-single-sidebar{clear:both;margin-bottom:20px;margin-top:44px;}
 .wpneo-location-wrapper{color:#737373;display:inline-flex;margin-top:-7px;width:100%;}
-.wpneo_donate_button{background:#8dc63f;text-transform:none;margin:0px;line-height:18px;}
+.wpneo_donate_button{background:#00a78d;text-transform:none;margin:0px;line-height:18px;}
 @media screen and (min-width: 320px) and (max-width: 767px){
 .wpneo-campaign-single-left-info,.wpneo-campaign-summary{width:94%;padding:20px;}
 }
-ul.wpcf_predefined_pledge_amount li a{display:block;padding:5px 10px;border:2px solid #3ad9c7;color:#fff;background:#3ad9c7;border-radius:3px;}
+ul.wpcf_predefined_pledge_amount li a{display:block;padding:5px 10px;border:2px solid #1B6DC1 !important;color:#fff;background:#1B6DC1 !important;border-radius:3px;}
 ul.wpcf_predefined_pledge_amount li a:hover{background:#00bf9c;border:2px solid #00bf9c;}
 ul.wpcf_predefined_pledge_amount{margin:10px 0;}
 }
@@ -131,7 +131,7 @@ img{max-width:100%;height:auto;}
 .lead.backnow-review-cont{padding-bottom:22px;padding-top:5px;}
 .backnow-review-cont .text-center{display:inline-block;transform:translate(50%, 0%);cursor:pointer;}
 .progressbar-content-wrapper .thm-progress-bar .backnow-review-cont{font-size:16px!important;}
-.backnow-review-cont i{color:#33D3C0;}
+.backnow-review-cont i{color:#1B6DC1;}
 .wpneo-wrapper ul{width:100%;float:left;display:inline-block;}
 .wpneo-list-details p{color:#979AA1;text-align:justify;}
 .wpneo-list-details{margin-bottom:100px;}
@@ -173,16 +173,16 @@ ul li{padding:5px 0;}
 }
 /*! CSS Used from: Embedded */
 a,.wpneo_donate_button:hover{color:#33d3c0;}
-.thm-progress-bar .progress-bar,.progressbar-content-wrapper .thm-progress-bar .progress .progress-bar{background:#33d3c0;}
+.thm-progress-bar .progress-bar,.progressbar-content-wrapper .thm-progress-bar .progress .progress-bar{background:#1B6DC1 !important;}
 .wpneo-single-sidebar .wpneo_donate_button:hover{background:#00bf9c;}
 .progressbar-content-wrapper .thm-progress-bar .progress .progress-bar{background:#33d3c0;background:-moz-linear-gradient(left, #00bf9c 0%, #33d3c0 100%);background:-webkit-linear-gradient(left, #00bf9c 0%,#33d3c0 100%);background:linear-gradient(to right, #00bf9c 0%,#33d3c0 100%);}
 a:hover{color:#00bf9c;}
 .wpneo-wrapper{font-size:14px;font-family:Montserrat;font-weight:300;line-height:24px;color:#979aa1;}
 h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:#414040;}
-.wpneo_donate_button{background-color:#33d3c0;border-color:#33d3c0;color:#fff!important;}
-.wpneo_donate_button:hover{background-color:#33d3c0;border-color:#33d3c0;color:#fff!important;}
+.wpneo_donate_button{background-color:#00a78d;border-color:#00a78d;color:#fff!important;}
+.wpneo_donate_button:hover{background-color:#00a78d;border-color:#00a78d;color:#fff!important;}
 /*! CSS Used from: Embedded */
-.wpneo_donate_button{background-color:#33d3c0;color:#fff;}
+.wpneo_donate_button{background-color:#00a78d;color:#fff;}
 .wpneo_donate_button:hover{background-color:#1dc4e9;color:#fff;}
 
 </style>
@@ -196,7 +196,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
 .wpneocf-container{margin-right:auto;margin-left:auto;}
 .wpneo-wrapper{margin:0 auto;}
 .wpneo-tabs-menu li.wpneo-current{border-bottom:3px solid #1adc68;}
-.wpneo-tabs-menu li.wpneo-current a{color:#1adc68;}
+.wpneo-tabs-menu li.wpneo-current a{color:#1B6DC1;}
 @media (min-width: 1200px){
 .wpneocf-container{width:1170px;}
 }
@@ -257,13 +257,13 @@ a:focus{outline:0;outline-offset:0;}
 ul li{padding:5px 0;}
 }
 /*! CSS Used from: Embedded */
-a,.wpneo-tabs-menu li.wpneo-current a,.wpneo-tabs-menu li a:hover{color:#33d3c0;}
-.wpneo-tabs-menu li.wpneo-current{border-bottom:2px solid #33d3c0;}
+a,.wpneo-tabs-menu li.wpneo-current a,.wpneo-tabs-menu li a:hover{color:#1B6DC1;}
+.wpneo-tabs-menu li.wpneo-current{border-bottom:2px solid #1B6DC1;}
 a:hover{color:#00bf9c;}
 .wpneo-wrapper{font-size:14px;font-family:Montserrat;font-weight:300;line-height:24px;color:#979aa1;}
 /*! CSS Used from: Embedded */
-.wpneo-tabs-menu li.wpneo-current{border-bottom:3px solid #33d3c0;}
-.wpneo-tabs-menu li.wpneo-current a{color:#33d3c0;}
+.wpneo-tabs-menu li.wpneo-current{border-bottom:3px solid #1B6DC1;}
+.wpneo-tabs-menu li.wpneo-current a{color:#1B6DC1;}
 
 </style>
 
@@ -612,10 +612,10 @@ ul li{padding:5px 0;}
 div#wpneo-tab-baker_list{margin-top:80px;}
 }
 /*! CSS Used from: Embedded */
-a,.tab-rewards-wrapper h3,ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title,input[type=submit]:hover,.wpneo-profile-button:hover,.select_rewards_button:hover{color:#33d3c0;}
-.woocommerce #respond input#submit:hover,.form-submit input[type=submit],ul.wpneo-crowdfunding-update li:hover span.round-circle{background:#33d3c0;}
-#wpneo-tab-reviews .submit{background:#33d3c0!important;}
-input:focus,textarea:focus,select:focus{border-color:#33d3c0;}
+a,.tab-rewards-wrapper h3,ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title,input[type=submit]:hover,.wpneo-profile-button:hover,.select_rewards_button:hover{color:#1B6DC1;}
+.woocommerce #respond input#submit:hover,.form-submit input[type=submit],ul.wpneo-crowdfunding-update li:hover span.round-circle{background:#1B6DC1;}
+#wpneo-tab-reviews .submit{background:#1B6DC1!important;}
+input:focus,textarea:focus,select:focus{border-color:#1B6DC1;}
 a:hover{color:#00bf9c;}
 .wpneo-wrapper{font-size:14px;font-family:Montserrat;font-weight:300;line-height:24px;color:#979aa1;}
 h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:#414040;}
@@ -629,7 +629,9 @@ input[type=submit]:hover,.wpneo-profile-button:hover,.select_rewards_button:hove
 ul.wpneo-crowdfunding-update li:hover span.round-circle{background-color:#33d3c0;}
 ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 .tab-rewards-wrapper .overlay{background:rgba(51,211,192,.95);}
-
+.fade{
+	opacity: 0.9!important;
+}
 </style>
 
 
@@ -645,8 +647,11 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                             <div class="wpneo-post-img">
 
                                 <div class="video-container pull-left"
-                                  style="background-image: url(https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/backit-product3.jpg); background-repeat:no-repeat; background-size:cover; width:100%; height:390px; margin-bottom:30px; ">
-                                    <a href="https://www.youtube.com/watch?v=D56aax2gw9g" id="videoPlay" class="pup-up-video" data-rel="prettyPhoto"><i class="back-play-button"></i></a></div>
+                                  style="width:100%; height:390px; margin-bottom:30px; ">
+                                    <!--a href="https://www.youtube.com/watch?v=D56aax2gw9g" id="videoPlay" class="pup-up-video" data-rel="prettyPhoto"><i class="far fa-play-circle"></i></a-->
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A4ViC7NwbZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style=" width:100%; height:390px; margin-bottom:30px;"></iframe>
+                                </div>
+
                             </div>
 
                             <div id="campaign_loved_html">
@@ -689,14 +694,14 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                 <!-- Review Section Start -->
                                 <div class="lead backnow-review-cont">
                                     <span class="thm-Price-amount">
-                                        <span class="woocommerce-Price-amount amount"><i class="back-dove"></i>
+                                        <span class="woocommerce-Price-amount amount"><i class="fas fa-dove"></i>
                                             1 </span>
 
                                         Backer<span class="thm-raise-sp"></span> </span>
 
                                     <span class="thm-Price-amount text-center">
                                         <span class="thm-love-btn" data-campaign="1859" data-user="1048">
-                                            <i class="back-heart"></i>
+                                            <i class="far fa-heart"></i>
                                             <span class="woocommerce-Price-amount amount latest-price">
                                                 49 </span>
                                             <span class="thm-raise-sp">Love it</span>
@@ -706,7 +711,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     <!-- Review Count -->
                                     <span class="thm-Price-amount pull-right text-right">
                                         <span class="woocommerce-Price-amount amount">
-                                            <i class="back-favorites"></i>
+                                            <i class="far fa-star"></i>
                                             <span class="count">0</span> </span>
                                         <span class="thm-raise-sp">Reviews</span>
                                     </span>
@@ -841,7 +846,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     <form enctype="multipart/form-data" method="post" class="cart">
                                         <input type="number" min="0" placeholder="" name="wpneo_donate_amount_field" class="input-text amount wpneo_donate_amount_field text" value="100" data-min-price="" data-max-price="5000">
                                         <input type="hidden" value="1859" name="add-to-cart">
-                                        <button type="submit" class="qwpneo_donate_button"><i class="fa fa-long-arrow-right"></i></button>
+                                        <button type="submit" class="qwpneo_donate_button"><i class="fas fa-arrow-right"></i></button>
                                     </form>
                                 </div>
 
@@ -1142,5 +1147,24 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
         </div><!-- #primary -->
     </div>
 </div>
+
+<!--Tap script-->
+
+      <script>
+          $(document).ready(function(){
+             
+             $(function(){
+				$('.wpneo-tabs-menu li a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('wpneo-current')
+				$('.wpneo-tabs-menu li a').click(function(){
+					$(this).parent().addClass('wpneo-current').siblings().removeClass('wpneo-current')	
+				})
+			})
+            
+            $(".wpneo-tabs-menu li a").click(function () {
+		        $(".wpneo-tab .wpneo-tab-content").hide();
+		        $($(this).attr("href")).css('display', 'block');
+		    });
+          });
+      </script>
 
 @endsection
