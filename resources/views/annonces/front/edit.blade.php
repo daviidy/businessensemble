@@ -275,6 +275,97 @@ footer {
 .footer-wrap{
   display: none;
 }
+
+.wpneo-shadow {
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 4px;
+}
+
+.wpneo-head {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 0 20px;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.wpneo-links .wpneo-links-list {
+    display: inline-block;
+}
+
+.wpneo-links-list {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wp-crowd-parent {
+    position: relative;
+}
+
+.wp-crowd-new-campaign {
+    margin-top: 17px;
+}
+.wp-crowd-new-campaign {
+    float: right;
+    margin-top: 15px;
+}
+
+.wpneo-links div a:hover, .wpneo-links div.active a {
+    color: #33d3c0;
+}
+.wpneo-links div a:hover, .wpneo-links div.active a {
+    color: #1B6DC1;
+}
+.wpneo-links .wpneo-links-list a {
+    font-weight: 300;
+}
+.wpneo-links .wpneo-links-list a {
+    display: block;
+    color: #686C8B;
+    font-size: 14px;
+    line-height: 58px;
+    padding: 0;
+    margin-right: 25px;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: none;
+}
+.wpneo-links a {
+    box-shadow: none;
+    line-height: 20px;
+}
+
+.wp-crowd-btn-primary {
+    background-color: #1B6DC1;
+    color: #fff;
+}
+.wp-crowd-btn {
+    border-radius: 50px;
+}
+.wp-crowd-btn-primary {
+    background-color: #1B6DC1;
+    color: #fff;
+}
+.wp-crowd-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 3px;
+    text-transform: capitalize;
+    transition: 400ms;
+}
 </style>
 
 <!-- MultiStep Form -->
@@ -283,7 +374,29 @@ footer {
   @if(session('status'))
   @include('includes.status')
   @endif
-
+    <div style="width: 82%; margin: auto; top: 10px; position: relative;" class="wpneo-head wpneo-shadow">
+        <div class="wpneo-links clearfix">
+            <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Tableau de bord</a></div>
+            <div class="wpneo-links-list wp-crowd-parent"><a href="#" target="blank">Mes annonces<!--span class="wpcrowd-arrow-down"></span--></a>
+                <!--div class="wp-crowd-submenu wpneo-shadow">
+                    <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=profile">Profile</a></div>
+                    <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=contact">Contact</a></div>
+                    <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=password">Password</a></div>
+                    <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=rewards">Rewards</a></div>
+                    <div class="wpneo-links-lists"><a href="https://demo.themeum.com/wordpress/backnow/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fdemo.themeum.com%2Fwordpress%2Fbacknow&amp;_wpnonce=18302b08e3">Logout</a></div>
+                </div-->
+            </div>
+            <div class="wpneo-links-list wp-crowd-parent"><a href="#">Déconnection<!--span class="wpcrowd-arrow-down"></span--></a>
+                <!--div class="wp-crowd-submenu wpneo-shadow">
+                    <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=campaign">My Campaigns</a></div>
+                    <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=backed_campaigns">My Invested Campaigns</a></div>
+                    <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=pledges_received">Pledges Received</a></div>
+                    <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=bookmark">Bookmarks</a></div>
+                </div-->
+            </div>
+            <div class="wp-crowd-new-campaign"><a class="wp-crowd-btn wp-crowd-btn-primary"  href="{{url('annonces', $annonce)}}">Voir l'annonce</a></div>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-md-12 col-md-offset-3">
