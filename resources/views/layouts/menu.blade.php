@@ -575,6 +575,11 @@
 				color: #fff;
 			}
 
+			.dropdown-menu{
+				border: 1px solid rgba(0, 0, 0, 0)!important;
+			}
+
+
         </style>
     </head>
     <body class="home page-template page-template-homepage page-template-homepage-php page page-id-33 logged-in woocommerce-js fullwidth-bg elementor-default elementor-page elementor-page-33">
@@ -700,7 +705,7 @@
                                 	<li class = "dropdown">
 
                                 		<!--a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a-->
-                                		<button class = "btn btn-info dropdown-toggle" type = "button" id = "dropdownMenuButton" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"><i class="fas fa-user-alt"></i> Tableau de bord</button>
+                                		<p class = "dropdown-toggle" id = "dropdownMenuButton" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"><i class="fas fa-user-alt"></i> Tableau de bord</p>
 
                                 		<div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
 						                  <a class = "dropdown-item" href = "/home">Mon compte</a>
@@ -778,7 +783,7 @@
                                 <li class = "dropdown">
 
                                 		<!--a href="/home"> <i class="fas fa-user-alt"></i>Tableau de bord</a-->
-                                		<button class = "btn btn-info dropdown-toggle" type = "button" id = "dropdownMenuButton" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"><i class="fas fa-user-alt"></i> Tableau de bord</button>
+                                		<p class = "dropdown-toggle" type = "button" id = "dropdownMenuButton" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"><i class="fas fa-user-alt"></i> Tableau de bord</p>
 
                                 		<div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
 						                  <a class = "dropdown-item" href = "/home">Mon compte</a>
@@ -821,97 +826,99 @@
 
 
         <div class="bottom footer-wrap">
-                <div class="container bottom-footer-cont">
-                    <div class="row clearfix">
+            <div class="container bottom-footer-cont">
+                <div class="row clearfix">
 
-                        <!-- Without MailChimp -->
+                    <!-- Without MailChimp -->
 
-                        <!-- With MailChimp -->
-                        <div class="col-lg-8">
-                            <div class="row">
+                    <!-- With MailChimp -->
+                    <div class="col-lg-8">
+                        <div class="row">
 
-                                <div class="bottom-wrap col-sm-6 col-lg-3">
-                                    <div class="bottom-widget">
-                                        <div id="nav_menu-4" class="widget widget_nav_menu">
-                                            <h3 class="widget-title">Shop</h3>
-                                            <div class="menu-footer-3-container">
-                                                <ul id="menu-footer-3" class="menu">
-                                                    <li id="menu-item-252" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-252"><a href="https://demo.themeum.com/wordpress/backnow/product-category/photography/">Photography</a>
-                                                    </li>
-                                                    <li id="menu-item-253" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-253"><a href="https://demo.themeum.com/wordpress/backnow/product-category/flim-video/">Film &amp; Video</a>
-                                                    </li>
-                                                    <li id="menu-item-250" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-250"><a href="https://demo.themeum.com/wordpress/backnow/product-category/technology/">Technology</a></li>
-                                                    <li id="menu-item-249" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-249"><a href="https://demo.themeum.com/wordpress/backnow/product-category/games/">Games</a></li>
-                                                    <li id="menu-item-254" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-254"><a href="https://demo.themeum.com/wordpress/backnow/product-category/food/">Food</a></li>
-                                                    <li id="menu-item-251" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-251"><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/">Clothing</a></li>
-                                                </ul>
-                                            </div>
+                            <div class="bottom-wrap col-sm-6 col-lg-5">
+                                <div class="bottom-widget">
+                                    <div id="nav_menu-4" class="widget widget_nav_menu">
+                                        <h3 class="widget-title">Contactez – nous</h3>
+                                        <div class="menu-footer-3-container">
+                                            <ul id="menu-footer-3" class="menu">
+                                                <li id="menu-item-252" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-252">
+                                                	<span class="far fa-envelope"> </span>
+                                                	<a href="mailto:infos@businessensemble.fr">infos@businessensemble.fr</a>
+                                                </li>
+                                                <li id="menu-item-253" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-253">
+                                                	<span class="fas fa-paper-plane"> </span>
+                                                	<a href="#">Av des champs Elysée Paris 8</a>
+                                                </li>
+                                                
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="bottom-wrap col-sm-6 col-lg-3">
-                                    <div class="bottom-widget">
-                                        <div id="nav_menu-5" class="widget widget_nav_menu">
-                                            <h3 class="widget-title">Hello</h3>
-                                            <div class="menu-footer-4-container">
-                                                <ul id="menu-footer-4" class="menu">
-                                                    <li id="menu-item-255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255"><a href="#">Happening</a></li>
-                                                    <li id="menu-item-256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256"><a href="#">Company Blog</a></li>
-                                                    <li id="menu-item-258" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258"><a href="#">Contact</a></li>
-                                                    <li id="menu-item-309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-309"><a href="https://demo.themeum.com/wordpress/backnow/my-account/">My account</a></li>
-                                                </ul>
-                                            </div>
+                            <div class="bottom-wrap col-sm-6 col-lg-5">
+                                <div class="bottom-widget">
+                                    <div id="nav_menu-5" class="widget widget_nav_menu">
+                                        <h3 class="widget-title">Espace Membre</h3>
+                                        <div class="menu-footer-4-container">
+                                            <ul id="menu-footer-4" class="menu">
+                                                <li id="menu-item-255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255">
+                                                	<span class="fas fa-globe"> </span>
+                                                	<a href="https://businessensemble.fr/wp-admin/">CONNEXION</a></li>
+                                                
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- mailchil-container start -->
-                        <div class="col-lg-4 mailchimp-inner bottom-wrap">
-                            <div class="mailchil-container">
-                                <img class="enter-logo img-responsive" alt="logo" src="http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/mail-icon.png">
-                                <div class="bottom-widget">
-                                    <div id="mc4wp_form_widget-2" class="widget widget_mc4wp_form_widget">
-                                        <script>
-                                            (function() {
-                                                if (!window.mc4wp) {
-                                                    window.mc4wp = {
-                                                        listeners: [],
-                                                        forms: {
-                                                            on: function(event, callback) {
-                                                                window.mc4wp.listeners.push({
-                                                                    event: event,
-                                                                    callback: callback
-                                                                });
-                                                            }
+                    <!-- mailchil-container start -->
+                    <div class="col-lg-4 mailchimp-inner bottom-wrap">
+                        <div class="mailchil-container">
+                            <img class="enter-logo img-responsive" alt="logo" src="http://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/mail-icon.png">
+                            <div class="bottom-widget">
+                                <div id="mc4wp_form_widget-2" class="widget widget_mc4wp_form_widget">
+                                    <script>
+                                        (function() {
+                                            if (!window.mc4wp) {
+                                                window.mc4wp = {
+                                                    listeners: [],
+                                                    forms: {
+                                                        on: function(event, callback) {
+                                                            window.mc4wp.listeners.push({
+                                                                event: event,
+                                                                callback: callback
+                                                            });
                                                         }
                                                     }
                                                 }
-                                            })();
-                                        </script><!-- Mailchimp for WordPress v4.7.4 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-262" method="post" data-id="262" data-name="">
-                                            <div class="mc4wp-form-fields">
-                                                <div class="mchimp-newsletter">
-                                                    <h4>Find it first on Backnow</h4>
-                                                    <p>Adipiscing elit Nulla ultrices pellentesque metus at dapibus.</p>
-                                                    <input type="email" name="EMAIL" placeholder="Your email address" required="">
-                                                    <button type="submit" value=""><i class="fa fa-long-arrow-right"></i></button>
-                                                </div>
-                                            </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden"
-                                              name="_mc4wp_timestamp" value="1592264102"><input type="hidden" name="_mc4wp_form_id" value="262"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
-                                            <div class="mc4wp-response"></div>
-                                        </form><!-- / Mailchimp for WordPress Plugin -->
-                                    </div>
+                                            }
+                                        })();
+                                    </script><!-- Mailchimp for WordPress v4.7.4 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                                    <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-262" method="post" data-id="262" data-name="">
+                                        <div class="mc4wp-form-fields">
+                                            <div class="mchimp-newsletter">
+                                                <h4>Find it first on Backnow</h4>
+                                                <p>Adipiscing elit Nulla ultrices pellentesque metus at dapibus.</p>
+                                                <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                                <button type="submit" value=""><i class="fas fa-arrow-right"></i></button>
+                                            </div>
+                                        </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden"
+                                          name="_mc4wp_timestamp" value="1592264102"><input type="hidden" name="_mc4wp_form_id" value="262"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+                                        <div class="mc4wp-response"></div>
+                                    </form><!-- / Mailchimp for WordPress Plugin -->
                                 </div>
                             </div>
                         </div>
-                        <!-- mailchimp end -->
-
                     </div>
+                    <!-- mailchimp end -->
+
                 </div>
             </div>
+        </div>
+
 
         <footer id="footer">
             <div class="container">
