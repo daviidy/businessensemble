@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('bienvenue');
-});
+Route::get('/', 'HomeController@bienvenue');
 
 Auth::routes();
 

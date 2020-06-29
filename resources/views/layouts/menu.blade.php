@@ -591,94 +591,17 @@
                               <i class="fas fa-angle-down"></i>
                             </a>
                             <ul class="thm-iconic-category">
-
+                                @foreach($categories as $category)
                                 <li data-color="#33d3c0">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/">
-                                        <i class="fas fa-tshirt"></i>
-                                        <span>Clothing</span>
+                                    <a href="#">
+                                        <i class="fa {{$category->icon}}"></i>
+                                        <span>{{$category->name}}</span>
                                     </a>
                                 </li>
+                                @endforeach
 
 
 
-                                <li data-color="#00BED6">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/crafts/">
-                                        <i class="fas fa-cut"></i>
-                                        <span>Crafts</span>
-                                    </a>
-                                </li>
-
-
-
-                                <li data-color="#00a5e4">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/design/">
-                                        <i class="fas fa-pen-nib"></i>
-                                        <span>Design</span>
-                                    </a>
-                                </li>
-
-
-
-                                <li data-color="#0088df">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/flim-video/">
-                                        <i class="fas fa-video"></i>
-                                        <span>Film &amp; Video</span>
-                                    </a>
-                                </li>
-
-
-
-                                <li data-color="#6f63c3">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/food/">
-                                        <i class="fas fa-hamburger"></i>
-                                        <span>Food</span>
-                                    </a>
-                                </li>
-
-
-
-                                <li data-color="#ffc658">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/games/">
-                                        <i class="fas fa-gamepad"></i>
-                                        <span>Games</span>
-                                    </a>
-                                </li>
-
-
-
-                                <li data-color="#ff945c">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/journalism/">
-                                        <i class="fas fa-microphone-alt"></i>
-                                        <span>Journalism</span>
-                                    </a>
-                                </li>
-
-
-
-                                <li data-color="#f8666e">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/music/">
-                                        <i class="fas fa-music"></i>
-                                        <span>Music</span>
-                                    </a>
-                                </li>
-
-
-
-                                <li data-color="#d14482">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/photography/">
-                                        <i class="fas fa-camera"></i>
-                                        <span>Photography</span>
-                                    </a>
-                                </li>
-
-
-
-                                <li data-color="#963790">
-                                    <a href="https://demo.themeum.com/wordpress/backnow/product-category/technology/">
-                                        <i class="fas fa-robot"></i>
-                                        <span>Technology</span>
-                                    </a>
-                                </li>
 
 
                             </ul>
