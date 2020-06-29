@@ -559,6 +559,9 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
 			    font-size: 16px;
 			    text-align: justify;
 			  }
+			  .query{
+			  	padding: 32px 0px !important;
+			  }
 			}
     </style>
 

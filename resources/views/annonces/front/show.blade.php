@@ -632,6 +632,27 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 .fade{
 	opacity: 0.9!important;
 }
+
+	@media only screen and (max-width: 600px) {
+		 div#wpneo-tab-reviews #review_form #respond textarea{
+		 	width: 100%!important;
+		} 
+
+		.video-container.pull-left, .video-container.pull-left iframe{
+			height: 178px !important;
+			margin-bottom: 0px!important;
+		}
+
+		
+		.wpneo-campaign-single-left-info, .wpneo-campaign-summary {
+		    width: 100%;
+		    padding: 10px;
+		}
+
+		.wpneo-campaign-single-left-info .thumbnails{
+			display: inline-flex;
+		}
+	}
 </style>
 
 

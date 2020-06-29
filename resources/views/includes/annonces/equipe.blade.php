@@ -27,7 +27,7 @@
             </div>
 
         </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTeamModal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTeamModal" style="margin: 0 auto;">
             Ajouter un membre de l'équipe
           </button>
     </div>

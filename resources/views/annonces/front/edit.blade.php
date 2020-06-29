@@ -366,6 +366,18 @@ footer {
     text-transform: capitalize;
     transition: 400ms;
 }
+
+@media only screen and (max-width: 600px) {
+        
+  #msform fieldset {
+    padding: 20px ;
+    width: 100%;
+  }
+
+  .wpneo-head{
+    width: 100%!important;
+  }
+}
 </style>
 
 <!-- MultiStep Form -->
