@@ -367,22 +367,7 @@
                                         </ul>
                                     </li>
 
-                                    <li class="pcoded-hasmenu">
-                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="icon-diamond"></i></span>
-                                            <span class="pcoded-mtext">Annonces</span>
-                                        </a>
-                                        <ul class="pcoded-submenu">
 
-                                            <li class="">
-                                                <a href="#" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Liste des annonces</span>
-                                                </a>
-                                            </li>
-
-
-                                        </ul>
-                                    </li>
 
                                     <li class="pcoded-hasmenu">
                                         <a href="javascript:void(0)" class="waves-effect waves-dark">

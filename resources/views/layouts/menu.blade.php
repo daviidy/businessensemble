@@ -708,9 +708,11 @@
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
                                     	@auth
+                                        @if(Auth::user()->isEntrepreneur() || Auth::user()->isAdmin())
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
                                         	<a data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
                                         </li>
+                                        @endif
                                         @endauth
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a></li>
                                     </ul>
@@ -725,12 +727,14 @@
                         <div class="backnow-login-register">
                             <ul>
                             	@auth
+                                @if(Auth::user()->isEntrepreneur() || Auth::user()->isAdmin())
                                 <!-- Start Campaign Section -->
                                 <li>
                                   <a class="backnow-login backnow-dashboard" data-toggle="modal" data-target="#myModal_2" href="#" >
                                     Créer une annonce
                                   </a>
                                 </li>
+                                @endif
                                 @endauth
                                 <!-- End Campaign -->
                             </ul>
@@ -787,7 +791,7 @@
 						               </div>
 
                                 	</li>
-                                	 
+
                                 @endauth
 
                                 <!-- End Login section -->

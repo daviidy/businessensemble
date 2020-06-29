@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('title', 'Liste des catégories')
-@section('page_title', 'Liste des catégories')
-@section('link_title', 'Liste des catégories')
+@section('page_title', 'Liste des annonces')
+@section('link_title', 'Liste des annonces')
 
 @section('content')
 
@@ -46,7 +46,7 @@
                                         <th>Montant par investisseur</th>
                                         <th>Utilisateur</th>
                                         <th>Action</th>
-                                        
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -59,13 +59,23 @@
                                         <td>{{$annonce->raising_amount}}</td>
                                         <td>{{$annonce->min_investor_amount}}</td>
                                         <td>{{$annonce->user->name}}</td>
+<<<<<<< HEAD
                                         
+=======
+
+>>>>>>> 0fceb9d18e868ed6608f85920bc724a3058512d8
                                         <td>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <a class="float-right" href="/admin/annonces/{{$annonce->id}}">
+                                                    @if($annonnce->recommend == 0)
+                                                    <a class="float-right" href="/admin/annonces/{{$annonce->id}}/recommend">
                                                         <i class="far fa-star"></i>
                                                     </a>
+                                                    @else
+                                                    <a class="float-right" href="/admin/annonces/{{$annonce->id}}/unrecommend">
+                                                        <i class="far fa-star"></i>
+                                                    </a>
+                                                    @endif
                                                 </div>
                                                 <div class="col-6">
                                                     <form action="{{ route('annonces.destroy', $annonce) }}" method="post">
