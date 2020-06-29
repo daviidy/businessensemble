@@ -58,7 +58,7 @@
                                         <td>{{$annonce->phone}}</td>
                                         <td>{{$annonce->raising_amount}}</td>
                                         <td>{{$annonce->min_investor_amount}}</td>
-                                        <td>{{$annonce->$annonce->user->name}}</td>
+                                        <td>{{$annonce->user->name}}</td>
                                         
                                         <td>
                                             <div class="row">
