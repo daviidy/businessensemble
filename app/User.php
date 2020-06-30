@@ -66,5 +66,25 @@ class User extends Authenticatable
         return $this->type === self::INVESTOR_TYPE;
     }
 
+    /**
+     * [users description]
+     * relationship many to many with Annonce model
+     * @return [array] [description]
+     */
+     public function annoncesOne()
+     {
+         return $this->hasMany('App\Annonce');
+     }
+
+     /**
+      * [users description]
+      * relationship many to many with Annonce model
+      * @return [array] [description]
+      */
+      public function annonces()
+      {
+          return $this->belongsToMany('App\Annonce')->withPivot(['investing', 'interest', 'saved']);
+      }
+
 
 }

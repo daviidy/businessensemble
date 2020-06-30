@@ -57,14 +57,17 @@ justify-content: center;
 
                         <br>
 
-                        <a href="" >
-                            <button type="button" class="btn btn-success waves-effect waves-light connect" style="background-color: #af0309 !important; border: 1px solid #af0309!important">
-                                <i class="fas fa-sign-out-alt"></i>
-
-                                Déconnectez-vous
-
-                            </button>
+                        <a style="background-color: #af0309 !important; border: 1px solid #af0309!important" class = "btn btn-success waves-effect waves-light connect" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Déconnexion
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
                         </a>
+
+
 
 
                     </div><!-- /text-right -->

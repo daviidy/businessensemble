@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\Annonce;
 
 class HomeController extends Controller
 {
@@ -33,6 +34,14 @@ class HomeController extends Controller
         else {
             return view('users.entrepreneur.home');
         }
+
+    }
+
+
+    public function bienvenue()
+    {
+        $annonces = Annonce::orderby('id', 'asc')->paginate(15);
+        return view('bienvenue', ['annonces', $annonces]);
 
     }
 }

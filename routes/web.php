@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('bienvenue');
-});
+Route::get('/', 'HomeController@bienvenue');
 
 Auth::routes();
 
@@ -45,6 +43,7 @@ Route::get('/admin/annonces', 'AnnonceController@indexAdmin');
 Route::get('/admin/annonces/{annonce}/recommend', 'AnnonceController@recommend');
 Route::get('/admin/annonces/{annonce}/unrecommend', 'AnnonceController@unrecommend');
 
+Route::get('/myProjects', 'UserController@myProjects');
 
 
     //ajax routes
