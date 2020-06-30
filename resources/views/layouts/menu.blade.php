@@ -579,7 +579,20 @@
 				border: 1px solid rgba(0, 0, 0, 0)!important;
 			}
 
-
+			@media only screen and (max-width: 600px) {
+			  
+			  	.query{
+			  		padding: 32px 0px !important;
+			  	}
+			  	.body-annonce {
+				    padding: 1.5rem!important;
+				}
+				.title-annonce {
+				    
+				   padding: 0px !important;
+				    
+				}
+			}
         </style>
     </head>
     <body class="home page-template page-template-homepage page-template-homepage-php page page-id-33 logged-in woocommerce-js fullwidth-bg elementor-default elementor-page elementor-page-33">

@@ -5,11 +5,7 @@
 
 @section('content')
 
-<style type="text/css">
-    .fa-fire-extinguisher:before{
-        color: #{{ $categorie ?? '' }};
-    }
-</style>
+
 
 <div class="pcoded-inner-content">
 
@@ -59,11 +55,7 @@
                                         <td>{{$annonce->raising_amount}}</td>
                                         <td>{{$annonce->min_investor_amount}}</td>
                                         <td>{{$annonce->user->name}}</td>
-<<<<<<< HEAD
-                                        
-=======
 
->>>>>>> 0fceb9d18e868ed6608f85920bc724a3058512d8
                                         <td>
                                             <div class="row">
                                                 <div class="col-6">
