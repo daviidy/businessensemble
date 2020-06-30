@@ -633,6 +633,11 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 	opacity: 0.9!important;
 }
 
+.modal-dialog {
+    
+    top: 90px!important;
+}
+
 	@media only screen and (max-width: 600px) {
 		 div#wpneo-tab-reviews #review_form #respond textarea{
 		 	width: 100%!important;
