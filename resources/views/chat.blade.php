@@ -109,6 +109,10 @@
     .active {
         background: #eeeeee;
     }
+    .header-solid .common-menu-wrap .nav>li.active>a {
+    
+        background-color: #fff!important;
+    }
     .chat_img img{
         width: 90px; 
         height:90px; 
