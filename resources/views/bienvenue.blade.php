@@ -603,6 +603,7 @@ input{color:#3c3b37;}
                                                                                 <li class="nav-item">
                                                                                     <a class="nav-link" href="#{{$category->id}}" data-toggle="pill">{{$category->name}}</a>
                                                                                 </li>
+                                                                                @endif
                                                                                 @endforeach
 
                                                                             </ul>
