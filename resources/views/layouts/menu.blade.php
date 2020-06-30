@@ -882,8 +882,12 @@
                                             <ul id="menu-footer-4" class="menu">
                                                 <li id="menu-item-255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255">
                                                 	<span class="fas fa-globe"> </span>
-                                                	<a href="https://businessensemble.fr/wp-admin/">CONNEXION</a></li>
-
+                                                    @guest
+                                                	<a href="/login">CONNEXION</a></li>
+                                                    @endguest
+                                                    @auth
+                                                	<a href="/home">TABLEAU DE BORD</a></li>
+                                                    @endauth
                                             </ul>
                                         </div>
                                     </div>
@@ -918,9 +922,9 @@
                                     <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-262" method="post" data-id="262" data-name="">
                                         <div class="mc4wp-form-fields">
                                             <div class="mchimp-newsletter">
-                                                <h4>Find it first on Backnow</h4>
-                                                <p>Adipiscing elit Nulla ultrices pellentesque metus at dapibus.</p>
-                                                <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                                <h4>Abonnez-vous à notre newsletter</h4>
+                                                <p>Recevez nos actualités et conseils directement dans votre adresse email</p>
+                                                <input type="email" name="EMAIL" placeholder="Votre adresse email" required="">
                                                 <button type="submit" value=""><i class="fas fa-arrow-right"></i></button>
                                             </div>
                                         </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden"

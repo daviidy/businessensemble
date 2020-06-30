@@ -8,7 +8,7 @@
                 <div class="{{ ($message->from == Auth::id()) ? 'sent' : 'received' }}">
                     <div class="chat_img">
                         <a href="{{url('users', $users->where('id', $message->from)->first()->id)}}">
-                        <img src="storage/images/users/{{$users->where('id', $message->from)->first()->image}}" class="rounded-circle">
+                        <img src="/storage/images/users/{{$users->where('id', $message->from)->first()->image}}" class="rounded-circle">
                         </a>
                     </div>
                     <div>
