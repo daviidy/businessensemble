@@ -103,6 +103,10 @@
     .active {
         background: #eeeeee;
     }
+    .header-solid .common-menu-wrap .nav>li.active>a {
+    
+        background-color: #fff!important;
+    }
     input[type=text] {
         width: 100%;
         padding: 12px 20px;

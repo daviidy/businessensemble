@@ -4,7 +4,7 @@
           <div class="modal fade" id="myModal_2">
 
                 <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content" style="padding: 32px;">
+                  <div class="modal-content query" style="padding: 32px;">
 
                     <!-- Modal Header -->
                     <div class="modal-header">
