@@ -709,7 +709,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                                         <div class="themeum-camp-author clearfix">
                                                                                                                             <div class="themeum-author-img float-left">
                                                                                                                                 <img alt="" src="/storage/images/users/{{$category->annonces->first()->logo}}"
-                                                                                                                                  srcset="https://secure.gravatar.com/avatar/caa0224bc614077dd7c869f0217cde43?s=80&amp;d=mm&amp;r=g 2x"
+                                                                                                                                  srcset="/storage/images/users/{{$category->annonces->first()->logo}} 2x"
                                                                                                                                   class="avatar avatar-40 photo" height="40" width="40"> </div>
                                                                                                                             <div class="themeum-author-dsc pull-left">
                                                                                                                                 <a href="{{url('users', $category->annonces->first()->user)}}" class="wpneo-fund-modal-btn">{{$category->annonces->first()->user->name}}</a>
@@ -728,8 +728,8 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                         <!--/.col-sm-6-->
                                                                                                         <div class="col-sm-6">
                                                                                                             <div class="themeum-campaign-img">
-                                                                                                                <a class="review-item-image" href="https://demo.themeum.com/wordpress/backnow/product/dreamfall-chapters-the-longest-journey/"><img width="600"
-                                                                                                                      height="580" src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/backit-product3-600x580.jpg"
+                                                                                                                <a class="review-item-image" href="{{url('annonces', $category->annonces->first())}}"><img width="600"
+                                                                                                                      height="580" src="/storage/images/annonces/{{$category->annonces->first()->logo}}"
                                                                                                                       class="img-fluid wp-post-image" alt=""></a>
                                                                                                             </div>
                                                                                                         </div>

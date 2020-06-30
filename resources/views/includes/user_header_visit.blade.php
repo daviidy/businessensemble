@@ -34,7 +34,7 @@ justify-content: center;
                     <div class="text-right float-right">
                         <a href="/chat/{{$user->id}}">
                             <button type="button" class="btn btn-success waves-effect waves-light">
-                                <i class="fa fa-comment m-r-5"></i>
+                                <i class="fas fa-comment m-r-5"></i>
 
                                 Envoyer message
 

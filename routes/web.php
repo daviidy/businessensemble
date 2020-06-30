@@ -51,3 +51,12 @@ Route::get('/myProjects', 'UserController@myProjects');
     Route::post('/addTeam', 'TeamController@createAjax');
     Route::post('/editTeam', 'TeamController@editAjax');
     Route::post('/deleteTeam', 'TeamController@deleteAjax');
+
+
+    //chat routes
+    Route::get('/messages', 'MessageController@index')->name('message');
+    Route::get('/chat/{user}', 'MessageController@one')->name('message');
+    Route::get('/chat/message/{id}', 'MessageController@getMessage')->name('message');
+    Route::get('/message/{id}', 'MessageController@getMessage')->name('message');
+    Route::post('message', 'MessageController@sendMessage');
+    Route::post('/chat/message', 'MessageController@sendMessage');

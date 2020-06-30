@@ -29,7 +29,8 @@ class Annonce extends Model
                            'logo',
                            'video',
                            'banner',
-                           'category_id'
+                           'category_id',
+                           'status',
                          ];
 
 

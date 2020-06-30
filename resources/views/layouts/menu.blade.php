@@ -611,7 +611,7 @@
                             <ul class="thm-iconic-category">
                                 @foreach($categories as $category)
                                 <li data-color="#33d3c0">
-                                    <a href="#">
+                                    <a href="{{url('categories', $category)}}">
                                         <i class="fas {{$category->icon}}"></i>
                                         <span>{{$category->name}}</span>
                                     </a>
@@ -722,6 +722,7 @@
 
                                 		<div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
 						                  <a class = "dropdown-item" href = "/home">Mon compte</a>
+                                          <a class = "dropdown-item" href = "/messages">Messages</a>
 						                  <a class = "dropdown-item" href = "/myProjects">Mes annonces</a>
                                           <a class = "dropdown-item" href="{{ route('logout') }}"
                                                  onclick="event.preventDefault();
@@ -808,6 +809,7 @@
 
                                 		<div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
 						                  <a class = "dropdown-item" href = "/home">Mon compte</a>
+                                          <a class = "dropdown-item" href = "/messages">Messages</a>
 						                  <a class = "dropdown-item" href = "/myProjects">Mes annonces</a>
                                           <a class="dropdown-item" href="{{ route('logout') }}"
                                                  onclick="event.preventDefault();
@@ -893,8 +895,12 @@
                                             <ul id="menu-footer-4" class="menu">
                                                 <li id="menu-item-255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255">
                                                 	<span class="fas fa-globe"> </span>
-                                                	<a href="https://businessensemble.fr/wp-admin/">CONNEXION</a></li>
-
+                                                    @guest
+                                                	<a href="/login">CONNEXION</a></li>
+                                                    @endguest
+                                                    @auth
+                                                	<a href="/home">TABLEAU DE BORD</a></li>
+                                                    @endauth
                                             </ul>
                                         </div>
                                     </div>
@@ -929,9 +935,9 @@
                                     <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-262" method="post" data-id="262" data-name="">
                                         <div class="mc4wp-form-fields">
                                             <div class="mchimp-newsletter">
-                                                <h4>Find it first on Backnow</h4>
-                                                <p>Adipiscing elit Nulla ultrices pellentesque metus at dapibus.</p>
-                                                <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                                <h4>Abonnez-vous à notre newsletter</h4>
+                                                <p>Recevez nos actualités et conseils directement dans votre adresse email</p>
+                                                <input type="email" name="EMAIL" placeholder="Votre adresse email" required="">
                                                 <button type="submit" value=""><i class="fas fa-arrow-right"></i></button>
                                             </div>
                                         </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden"
@@ -1010,6 +1016,116 @@
 
           });
       </script>
+
+
+
+
+      <!--scripts pusher-->
+      @auth
+      <script src="https://js.pusher.com/5.0/pusher.min.js"></script>
+
+
+
+    <script>
+       var receiver_id = '';
+       var my_id = "{{ Auth::id() }}";
+       $(document).ready(function () {
+           // ajax setup form csrf token
+           $.ajaxSetup({
+               headers: {
+                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+               }
+           });
+           /*
+           // Enable pusher logging - don't include this in production
+      Pusher.logToConsole = true;
+
+      var pusher = new Pusher('cdd8ae74bdc2c7c57639', {
+        cluster: 'eu'
+      });
+
+      var channel = pusher.subscribe('my-channel');
+      channel.bind('my-event', function(data) {
+        alert('dave');
+      });
+           */
+           // Enable pusher logging - don't include this in production
+           Pusher.logToConsole = true;
+           var pusher = new Pusher('ba187d3f7ffec751fb4b', {
+               cluster: 'eu',
+               forceTLS: false
+           });
+           var channel = pusher.subscribe('my-channel');
+           channel.bind('my-event', function (data) {
+               if (my_id == data.from) {
+
+                   $('#' + data.to).click();
+               } else if (my_id == data.to) {
+                   if (receiver_id == data.from) {
+                       // if receiver is selected, reload the selected user ...
+                       $('#' + data.from).click();
+                   } else {
+                       // if receiver is not seleted, add notification for that user
+                       var pending = parseInt($('#' + data.from).find('.pending').html());
+                       if (pending) {
+                           $('#' + data.from).find('.pending').html(pending + 1);
+                       } else {
+                           $('#' + data.from).append('<span class="pending">1</span>');
+                       }
+                   }
+               }
+           });
+
+           $('.user').click(function () {
+               $('.user').removeClass('active');
+               $(this).addClass('active');
+               $(this).find('.pending').remove();
+               receiver_id = $(this).attr('id');
+               $.ajax({
+                   type: "get",
+                   url: "message/" + receiver_id, // need to create this route
+                   data: "",
+                   cache: false,
+                   success: function (data) {
+                       $('#messages').html(data);
+                       scrollToBottomFunc();
+                   }
+               });
+           });
+           $(document).on('keyup', '.input-text input', function (e) {
+               var message = $(this).val();
+               // check if enter key is pressed and message is not null also receiver is selected
+               if (e.keyCode == 13 && message != '' && receiver_id != '') {
+                   $(this).val(''); // while pressed enter text box will be empty
+                   var datastr = "receiver_id=" + receiver_id + "&message=" + message;
+                   $.ajax({
+                       type: "post",
+                       url: "message", // need to create this post route
+                       data: datastr,
+                       cache: false,
+                       success: function (data) {
+
+                       },
+                       error: function (jqXHR, status, err) {
+                       },
+                       complete: function () {
+                           scrollToBottomFunc();
+                       }
+                   })
+               }
+           });
+       });
+       // make a function to scroll down auto
+       function scrollToBottomFunc() {
+           $('.message-wrapper').animate({
+               scrollTop: $('.message-wrapper').get(0).scrollHeight
+           }, 50);
+       }
+   </script>
+
+   @endauth
+
+
 
     </body>
 </html>
