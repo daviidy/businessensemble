@@ -599,7 +599,7 @@
                                 @foreach($categories as $category)
                                 <li data-color="#33d3c0">
                                     <a href="#">
-                                        <i class="fa {{$category->icon}}"></i>
+                                        <i class="fas {{$category->icon}}"></i>
                                         <span>{{$category->name}}</span>
                                     </a>
                                 </li>
@@ -709,8 +709,16 @@
 
                                 		<div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
 						                  <a class = "dropdown-item" href = "/home">Mon compte</a>
-						                  <a class = "dropdown-item" href = "#" target="_blank">Mes annonces</a>
-						                  <a class = "dropdown-item" href = "#">Déconnection</a>
+						                  <a class = "dropdown-item" href = "/myProjects">Mes annonces</a>
+                                          <a class = "dropdown-item" href="{{ route('logout') }}"
+                                                 onclick="event.preventDefault();
+                                                           document.getElementById('logout-form').submit();">
+                                              <i class="fas fa-sign-out-alt"></i>
+                                              Déconnexion
+                                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                  @csrf
+                                              </form>
+                                          </a>
 						               </div>
 
                                 	</li>
@@ -787,8 +795,16 @@
 
                                 		<div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
 						                  <a class = "dropdown-item" href = "/home">Mon compte</a>
-						                  <a class = "dropdown-item" href = "#" target="_blank">Mes annonces</a>
-						                  <a class = "dropdown-item" href = "#">Déconnection</a>
+						                  <a class = "dropdown-item" href = "/myProjects">Mes annonces</a>
+                                          <a class="dropdown-item" href="{{ route('logout') }}"
+                                                 onclick="event.preventDefault();
+                                                           document.getElementById('logout-form').submit();">
+                                              <i class="fas fa-sign-out-alt"></i>
+                                              Déconnexion
+                                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                  @csrf
+                                              </form>
+                                          </a>
 						               </div>
 
                                 	</li>
@@ -849,7 +865,7 @@
                                                 	<span class="fas fa-paper-plane"> </span>
                                                 	<a href="#">Av des champs Elysée Paris 8</a>
                                                 </li>
-                                                
+
                                             </ul>
                                         </div>
                                     </div>
@@ -865,7 +881,7 @@
                                                 <li id="menu-item-255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255">
                                                 	<span class="fas fa-globe"> </span>
                                                 	<a href="https://businessensemble.fr/wp-admin/">CONNEXION</a></li>
-                                                
+
                                             </ul>
                                         </div>
                                     </div>

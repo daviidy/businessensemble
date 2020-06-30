@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Annonce;
 use Auth;
 use Image;
 use Illuminate\Http\Request;
@@ -24,6 +25,16 @@ class UserController extends Controller
             return redirect('home');
         }
 
+    }
+
+    public function myProjects(){
+        if (Auth::check() && Auth::user()->isEntrepreneur()) {
+            $annonces = Annonce::where('user_id', Auth::user()->id)->orderby('id', 'asc')->paginate(30);
+            return view('users.entrepreneur.annonces.index', ['annonces'=> $annonces]);
+        }
+        else {
+            return redirect('home');
+        }
     }
 
     /**

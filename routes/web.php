@@ -43,6 +43,7 @@ Route::get('/admin/annonces', 'AnnonceController@indexAdmin');
 Route::get('/admin/annonces/{annonce}/recommend', 'AnnonceController@recommend');
 Route::get('/admin/annonces/{annonce}/unrecommend', 'AnnonceController@unrecommend');
 
+Route::get('/myProjects', 'UserController@myProjects');
 
 
     //ajax routes
