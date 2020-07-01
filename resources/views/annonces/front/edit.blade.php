@@ -368,11 +368,11 @@ footer {
 }
 
 .modal-title {
-    
+
     margin: 0 auto;
 }
 .modal-header .close {
-    
+
     margin: -1rem -1rem -1rem 0;
 }
 .modal-header{
@@ -380,7 +380,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-        
+
   #msform fieldset {
     padding: 20px ;
     width: 100%;
@@ -401,7 +401,12 @@ footer {
     <div style="width: 82%; margin: auto; top: 10px; position: relative;" class="wpneo-head wpneo-shadow">
         <div class="wpneo-links clearfix">
             <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Mes annonces</a></div>
-            <div class="wpneo-links-list wp-crowd-parent"><a href="#" target="blank">Publier l'annonces<!--span class="wpcrowd-arrow-down"></span--></a>
+            <div class="wpneo-links-list wp-crowd-parent">
+                @if($annonce->published == 0)
+                <a href="/publishProject">Publier l'annonce<!--span class="wpcrowd-arrow-down"></span--></a>
+                @else
+                <a href="/unpublishProject">Mettre l'annonce en mode brouillon<!--span class="wpcrowd-arrow-down"></span--></a>
+                @endif
                 <!--div class="wp-crowd-submenu wpneo-shadow">
                     <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=profile">Profile</a></div>
                     <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=contact">Contact</a></div>
