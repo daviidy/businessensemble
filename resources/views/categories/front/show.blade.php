@@ -620,7 +620,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
                             </a>
                             @else
                             <a href="{{route('annonces.edit', $annonce)}}" class="thm-love-btn " data-campaign="1860" data-user="0">
-                                <i class="far fa-pencil" aria-hidden="true"></i>
+                                <i class="fas fa-pencil-alt"></i>
                             </a>
                             @endif
                             @endauth

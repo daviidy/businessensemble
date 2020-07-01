@@ -66,7 +66,10 @@
 
   <script src="/plugin/build/js/countrySelect.min.js"></script>
   <script>
-    $("#country").countrySelect();
+    $("#country").countrySelect({
+          preferredCountries: ['ci', 'fr',]
+        }
+      );
 
   </script>
 

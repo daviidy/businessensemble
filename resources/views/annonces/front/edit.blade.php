@@ -400,8 +400,8 @@ footer {
   @endif
     <div style="width: 82%; margin: auto; top: 10px; position: relative;" class="wpneo-head wpneo-shadow">
         <div class="wpneo-links clearfix">
-            <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Mes annonces</a></div>
-            <div class="wpneo-links-list wp-crowd-parent"><a href="#" target="blank">Publier l'annonces<!--span class="wpcrowd-arrow-down"></span--></a>
+            <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard" target="blank">Mes annonces</a></div>
+            <div class="wpneo-links-list wp-crowd-parent"><a href="#" target="blank">Publier l'annonce<!--span class="wpcrowd-arrow-down"></span--></a>
                 <!--div class="wp-crowd-submenu wpneo-shadow">
                     <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=profile">Profile</a></div>
                     <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=contact">Contact</a></div>
