@@ -795,7 +795,11 @@ button{background-image:none;}
                             </a>
                             @else
                             <a href="{{route('annonces.edit', $annonce)}}" class="thm-love-btn " data-campaign="1860" data-user="0">
+<<<<<<< HEAD
                                 <i class="fas fa-pencil" aria-hidden="true"></i>
+=======
+                                <i class="fas fa-pencil-alt"></i>
+>>>>>>> e4cae705d4501f9bd5ee23499657f28824380c71
                             </a>
                             @endif
                             @endauth
