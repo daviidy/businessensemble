@@ -10,6 +10,15 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
+    public function bienvenue()
+    {
+        $annonces = Annonce::orderby('id', 'asc')->paginate(15);
+        return view('bienvenue', ['annonces', $annonces]);
+
+    }
+
+
     /**
      * Display a listing of the resource.
      *

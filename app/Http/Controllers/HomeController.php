@@ -38,10 +38,5 @@ class HomeController extends Controller
     }
 
 
-    public function bienvenue()
-    {
-        $annonces = Annonce::orderby('id', 'asc')->paginate(15);
-        return view('bienvenue', ['annonces', $annonces]);
 
-    }
 }
