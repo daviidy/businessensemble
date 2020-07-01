@@ -45,6 +45,9 @@ Route::get('/admin/annonces/{annonce}/unrecommend', 'AnnonceController@unrecomme
 
 Route::get('/myProjects', 'UserController@myProjects');
 
+Route::get('/publishProject/{annonce}', 'AnnonceController@publishProject');
+Route::get('/unpublishProject/{annonce}', 'AnnonceController@unpublishProject');
+
 
     //ajax routes
     Route::post('/uploadAvatar', 'UserController@uploadAvatar');

@@ -36,6 +36,43 @@ class AnnonceController extends Controller
 
     }
 
+
+    public function publishProject(Annonce $annonce)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->isAdmin() || Auth::user()->isEntrepreneur()) {
+                $annonce->status = 1;
+                $annonce->save();
+                return redirect()->back()->with('status', 'Votre annonce a été publiée');
+            }
+            else {
+                return redirect('home');
+            }
+        }
+        else {
+            return redirect('home');
+        }
+
+    }
+
+    public function unpublishProject(Annonce $annonce)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->isAdmin() || Auth::user()->isEntrepreneur()) {
+                $annonce->status = 0;
+                $annonce->save();
+                return redirect()->back()->with('status', 'Votre annonce a été mise en mode brouillon');
+            }
+            else {
+                return redirect('home');
+            }
+        }
+        else {
+            return redirect('home');
+        }
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

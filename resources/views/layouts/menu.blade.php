@@ -580,7 +580,7 @@
 			}
 
 			@media only screen and (max-width: 600px) {
-			  
+
 			  	.query{
 			  		padding: 32px 0px !important;
 			  	}
@@ -588,9 +588,9 @@
 				    padding: 1.5rem!important;
 				}
 				.title-annonce {
-				    
+
 				   padding: 0px !important;
-				    
+
 				}
 			}
         </style>
@@ -610,12 +610,14 @@
                             </a>
                             <ul class="thm-iconic-category">
                                 @foreach($categories as $category)
+                                @if(count($category->annonces->where('status', 1)) > 0)
                                 <li data-color="#33d3c0">
                                     <a href="{{url('categories', $category)}}">
                                         <i class="fas {{$category->icon}}"></i>
                                         <span>{{$category->name}}</span>
                                     </a>
                                 </li>
+                                @endif
                                 @endforeach
 
 

@@ -789,17 +789,14 @@ button{background-image:none;}
                         </div>
                         <div class="themeum-campaign-post-content clearfix">
                             @auth
-                            @if($annonce->user->id !== Auth::user()->id)
+                            @if($annonce->user->id !== Auth::user()->id && Auth::user()->isInvestor())
                             <a href="#" class="thm-love-btn " data-campaign="1860" data-user="0">
                                 <i class="far fa-heart" aria-hidden="true"></i>
                             </a>
                             @else
                             <a href="{{route('annonces.edit', $annonce)}}" class="thm-love-btn " data-campaign="1860" data-user="0">
-<<<<<<< HEAD
-                                <i class="fas fa-pencil" aria-hidden="true"></i>
-=======
+
                                 <i class="fas fa-pencil-alt"></i>
->>>>>>> e4cae705d4501f9bd5ee23499657f28824380c71
                             </a>
                             @endif
                             @endauth
@@ -830,7 +827,7 @@ button{background-image:none;}
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: 58.82%;"></div>
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -847,7 +844,7 @@ button{background-image:none;}
                                     <span>{{$annonce->user->country}}</span>
                                 </div>
                                 <div class="themeum-author-funded pull-right">
-                                    <h6>58.82%</h6>
+                                    <h6>{{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%</h6>
                                     <span>Achevés</span>
                                 </div>
                             </div>

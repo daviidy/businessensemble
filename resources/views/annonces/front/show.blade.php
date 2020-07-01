@@ -634,21 +634,21 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 }
 
 .modal-dialog {
-    
+
     top: 90px!important;
 }
 
 	@media only screen and (max-width: 600px) {
 		 div#wpneo-tab-reviews #review_form #respond textarea{
 		 	width: 100%!important;
-		} 
+		}
 
 		.video-container.pull-left, .video-container.pull-left iframe{
 			height: 178px !important;
 			margin-bottom: 0px!important;
 		}
 
-		
+
 		.wpneo-campaign-single-left-info, .wpneo-campaign-summary {
 		    width: 100%;
 		    padding: 10px;
@@ -674,8 +674,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                 <div class="video-container pull-left"
                                   style="width:100%; height:390px; margin-bottom:30px; ">
-                                    <!--a href="https://www.youtube.com/watch?v=D56aax2gw9g" id="videoPlay" class="pup-up-video" data-rel="prettyPhoto"><i class="far fa-play-circle"></i></a-->
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A4ViC7NwbZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style=" width:100%; height:390px; margin-bottom:30px;"></iframe>
+                                    {!!$annonce->video!!}
                                 </div>
 
                             </div>
@@ -684,22 +683,17 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                             </div>
 
                             <div class="thumbnails">
-
-                                <div data-thumb="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project36-100x100.jpg" class="woocommerce-product-gallery__image"><a itemprop="image" class="woocommerce-main-image cloud-zoom"
-                                      href="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project36.jpg"><img width="215" height="130"
-                                          src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project36-660x400.jpg" class="attachment-215x130 size-215x130" alt="" title=""
-                                          data-src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project36.jpg" data-large_image="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project36.jpg"
-                                          data-large_image_width="1200" data-large_image_height="798"></a></div>
-                                <div data-thumb="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project35-100x100.jpg" class="woocommerce-product-gallery__image"><a itemprop="image" class="woocommerce-main-image cloud-zoom"
-                                      href="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project35.jpg"><img width="215" height="130"
-                                          src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project35-660x400.jpg" class="attachment-215x130 size-215x130" alt="" title=""
-                                          data-src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project35.jpg" data-large_image="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project35.jpg"
-                                          data-large_image_width="1200" data-large_image_height="798"></a></div>
-                                <div data-thumb="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project34-100x100.jpg" class="woocommerce-product-gallery__image"><a itemprop="image" class="woocommerce-main-image cloud-zoom"
-                                      href="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project34.jpg"><img width="215" height="130"
-                                          src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project34-660x400.jpg" class="attachment-215x130 size-215x130" alt="" title=""
-                                          data-src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project34.jpg" data-large_image="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/project34.jpg"
-                                          data-large_image_width="1200" data-large_image_height="798"></a></div>
+                                @foreach($annonce->multimedias as $multimedia)
+                                @if(strpos($multimedia->name, '.png') !== false || strpos($multimedia->name, '.jpg') !== false || strpos($multimedia->name, '.jpeg') !== false)
+                                <div class="woocommerce-product-gallery__image">
+                                    <a itemprop="image" class="woocommerce-main-image cloud-zoom"
+                                      href="#">
+                                      <img width="215" height="130"
+                                          src="/storage/files/annonces/{{$multimedia->name}}" class="attachment-215x130 size-215x130" alt="" title="">
+                                      </a>
+                                  </div>
+                                @endif
+                                @endforeach
                             </div>
                         </div>
 
@@ -719,28 +713,33 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                 </div>
                                 <!-- Review Section Start -->
                                 <div class="lead backnow-review-cont">
+                                    <!--
                                     <span class="thm-Price-amount">
                                         <span class="woocommerce-Price-amount amount"><i class="fas fa-dove"></i>
                                             1 </span>
 
-                                        Backer<span class="thm-raise-sp"></span> </span>
+                                        Backer<span class="thm-raise-sp"></span>
+                                    </span>
+                                -->
 
                                     <span class="thm-Price-amount text-center">
                                         <span class="thm-love-btn" data-campaign="1859" data-user="1048">
                                             <i class="far fa-heart"></i>
                                             <span class="woocommerce-Price-amount amount latest-price">
                                                 49 </span>
-                                            <span class="thm-raise-sp">Love it</span>
+                                            <span class="thm-raise-sp">ont enregistré cette annonce</span>
                                         </span>
                                     </span>
 
                                     <!-- Review Count -->
+                                    <!--
                                     <span class="thm-Price-amount pull-right text-right">
                                         <span class="woocommerce-Price-amount amount">
                                             <i class="far fa-star"></i>
                                             <span class="count">0</span> </span>
                                         <span class="thm-raise-sp">Reviews</span>
                                     </span>
+                                -->
                                     <!-- Review Count End -->
                                 </div>
                                 <!-- Review End -->
@@ -748,10 +747,12 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                 <div class="lead">
                                     <ul class="wpcf_predefined_pledge_amount">
-                                        <li><a href="javascript:;" data-predefined-price="50"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>50.00</span></a> </li>
+                                        <li><a href="javascript:;" data-predefined-price="50"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Montant minimum par investisseur: </span>{{$annonce->min_investor_amount}} FCFA</span></a> </li>
+                                        <!--
                                         <li><a href="javascript:;" data-predefined-price="60"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>60.00</span></a> </li>
                                         <li><a href="javascript:;" data-predefined-price="70"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>70.00</span></a> </li>
                                         <li><a href="javascript:;" data-predefined-price="80"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>80.00</span></a> </li>
+                                    -->
                                     </ul>
                                     <span class="thm-Price-amount">
                                         <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>4,500.00</span></span>
@@ -770,12 +771,12 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
 
                                 <div class="wpneo-raised-percent">
-                                    <div class="wpneo-meta-name">Raised Percent :</div>
-                                    <div class="wpneo-meta-desc">64.29%</div>
+                                    <div class="wpneo-meta-name">Pourcentage achevé :</div>
+                                    <div class="wpneo-meta-desc">{{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%</div>
                                 </div>
 
                                 <div class="progress">
-                                    <div class="progress-bar" style="width: 64.29%"></div> <br>
+                                    <div class="progress-bar" style="width: {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%"></div> <br>
                                 </div>
 
 
@@ -787,10 +788,10 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     <div class="thm-meta-desc pull-right text-right">
                                         <span class="thm-Price-amount">
                                             <span class="woocommerce-Price-amount amount">
-                                                64.29%</span>
+                                                {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%</span>
                                         </span>
                                         <span class="thm-raise-sp">
-                                            Funded </span>
+                                            Achevés </span>
                                     </div>
                                 </div>
                                 <div class="wpneo-single-sidebar">
@@ -817,7 +818,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
         <div class="wpneo-tabs">
             <ul class="wpneo-tabs-menu">
                 <li class="wpneo-current description_tab">
-                    <a href="#wpneo-tab-description">Campaign Story</a>
+                    <a href="#wpneo-tab-description">A propos</a>
                 </li>
                 <li class=" update_tab">
                     <a href="#wpneo-tab-update">Updates</a>
@@ -844,25 +845,16 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                     <div class="wpneo-tab">
                         <div id="wpneo-tab-description" class="wpneo-tab-content" style="display: block;">
                             <div class="tab-description tab_col_9 tab-campaign-story-left">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus justo vitae sem molestie bibendum. Vivamus ultrices nec nunc nec facilisis. Vestibulum ac tristique eros. Class aptent taciti sociosqu ad
-                                    litora torquent per conubia nostra, per inceptos himenaeos. Quisque nisi neque, tempus sit amet ipsum nec, aliquet dignissim orci. Nullam dapibus eros eu ultricies efficitur. Ut in eros sem. Phasellus est arcu,
-                                    ornare eu nibh ut, consequat cursus massa. Suspendisse potenti. Nulla ac dolor ut elit dictum efficitur et at nulla. Vestibulum a tincidunt lacus, ac mattis mi.</p>
-                                <p><img class="aligncenter wp-image-953 size-full" src="http://demo.themeum.com/wordpress/backer/wp-content/uploads/2017/05/Project-Image-2.jpg" alt="" width="693" height="300"></p>
-                                <p>Donec hendrerit id leo ut suscipit. Mauris pellentesque dui ut convallis blandit. Donec libero odio, molestie in magna in, vestibulum euismod erat. Praesent id ligula in lectus rhoncus sagittis id vitae ex.
-                                    Suspendisse consectetur tincidunt mauris non volutpat. Sed eu metus eget lorem iaculis faucibus ut nec tellus. Quisque faucibus dolor non mattis rhoncus. Morbi scelerisque turpis non nisi laoreet, a porttitor mi
-                                    rutrum. Mauris iaculis, nibh a aliquam sollicitudin, augue tellus mollis quam, et ornare est velit cursus ipsum. Morbi efficitur felis id nulla facilisis porta. Aenean ut pharetra lorem.</p>
-                                <p>Morbi hendrerit sem sit amet tellus consectetur tincidunt. Praesent sapien ipsum, sodales eget nisi sit amet, mollis porta mi. Mauris vel nunc volutpat, eleifend ligula quis, aliquet sapien. Suspendisse facilisis
-                                    magna nec dui maximus eleifend. Suspendisse tellus tortor, maximus vel sagittis eu, eleifend in lacus. Maecenas vel quam ut arcu vulputate mattis eget eget velit. Quisque at leo arcu.</p>
-                                <p><img class="aligncenter size-full wp-image-952" src="http://demo.themeum.com/wordpress/backer/wp-content/uploads/2017/05/Project-Image-1.jpg" alt="" width="693" height="300"></p>
-                                <p>Cras laoreet id metus nec rutrum. Donec cursus placerat enim. Aenean sagittis erat turpis, nec consequat sem rhoncus vel. Nunc varius hendrerit condimentum. Vestibulum efficitur magna ut sapien interdum
-                                    sollicitudin. Aenean a venenatis neque, in tincidunt metus. Maecenas lobortis et tellus ut posuere. Nulla porta eros ut purus semper, eget vehicula ipsum convallis. Duis vitae varius nunc. Sed augue risus, dictum
-                                    in tempor sit amet, cursus vel neque. Cras posuere nisi in mi pellentesque volutpat. Donec condimentum, justo non sodales finibus, ipsum mi ornare elit, quis accumsan justo lacus vel lorem.</p>
-                                <p>Sed cursus hendrerit odio, at aliquet leo hendrerit a. Nulla ultricies sagittis dolor, quis maximus magna consectetur eu. Cras pharetra aliquam fringilla. Integer placerat sapien dapibus varius luctus. Lorem ipsum
-                                    dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquam urna, ultrices lobortis lacus. Praesent mi enim, congue semper volutpat ut, bibendum tempor arcu.</p>
+                                <h2>Bref résumé</h2>
+                                <p>{{$annonce->short_description}}</p>
+
+                                <h2>Description de l'entreprise</h2>
+                                <p>{{$annonce->company_description}}</p>
+
                             </div>
                             <div class="tab-rewards tab_col_3 tab-campaign-story-right">
                                 <!-- Quantity Box WooCommerce -->
-
+                                {{--
                                 <div id="backnow_project" class="quantity_box">
                                     <span>Make a pledge without a reward </span>
                                     <span class="wpneo-tooltip">
@@ -916,16 +908,23 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                     </div>
                                 </div>
+                                --}}
 
                                 <div class="tab-rewards-wrapper">
                                     <div class="backnow-reward-cont">
                                         <h3>
-                                            $200 - $299 </h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquam urna, ultrices lobortis lacus. Praesent mi enim, congue semper volutpat ut, bibendum tempor arcu.</p>
-                                        <p>0 backnows</p>
+                                            En résumé </h3>
+                                        <p>
+                                            Stade de développement: {{$annonce->stage}}
+                                        </p>
 
+                                        <p>
+                                            Rôle de l'investisseur: {{$annonce->investor_role}}
+                                        </p>
+                                        <!--
                                         <div class="backnow-estimate-date">
                                             <span>Estimated Delivery: </span><span>Mar, 2019</span> </div>
+                                        -->
 
 
 
@@ -950,7 +949,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                     </div>
                                 </div>
-
+                                {{--
                                 <div class="tab-rewards-wrapper">
                                     <div class="backnow-reward-cont">
                                         <h3>
@@ -984,6 +983,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                     </div>
                                 </div>
+                                --}}
                                 <div style="clear: both"></div>
                                 <div style="clear: both"></div>
                             </div>
@@ -994,9 +994,9 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                         <div class="backnow-info-img">
 
 
-                                            <img width="80" height="80" src="https://demo.themeum.com/wordpress/backnow/wp-content/uploads/2017/11/1065-IMG_2529.jpg" alt="">
+                                            <img width="80" height="80" src="/storage/images/users/{{$annonce->user->image}}" alt="">
 
-                                            <a data-toggle="modal" data-target="#bioinfo" href="#" class="wpneo-fund-modal-btn">Fahim Murshaed</a>
+                                            <a data-toggle="modal" data-target="#bioinfo" href="#" class="wpneo-fund-modal-btn">{{$annonce->user->name}}</a>
                                         </div>
 
 
@@ -1028,7 +1028,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     <div class="modal-content">
                                         <div class="wpneo-modal-content">
                                             <div class="wpneo-modal-wrapper-head">
-                                                <h4>About the campaign creator</h4>
+                                                <h4>A propos de {{$annonce->user->name}}</h4>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                             </div>
 
@@ -1037,36 +1037,39 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                                 </div>
 
                                                 <div class="wpneo-profile-right">
-                                                    <div class="wpneo-profile-name">Fahim Murshaed</div>
-                                                    <div class="wpneo-profile-campaigns">0 Campaigns | 2 Loved campaigns</div>
+                                                    <div class="wpneo-profile-name">{{$annonce->user->name}}</div>
+                                                    <div class="wpneo-profile-campaigns">{{count($annonce->user->annonces->where('status', 1))}} Annonces</div>
                                                 </div>
 
                                                 <div class="wpneo-profile-about">
-                                                    <h3>About</h3>
-                                                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                                                        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-
-                                                        What is Lorem Ipsum?
-                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                                                        type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                                                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                    <h3>Bio</h3>
+                                                    <p>{{$annonce->user->bio}}</p>
                                                 </div>
+                                                <!--
                                                 <div class="wpneo-profile-about">
                                                     <h3>Portfolio</h3>
                                                     <p>Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                                 </div>
+                                            -->
                                                 <div class="wpneo-profile-about">
-                                                    <h3>Contact Info</h3>
+                                                    <a href="/chat/{{$annonce->user->id}}">
+                                                        <h3>Envoyer message</h3>
+                                                    </a>
+
+                                                    <!--
                                                     <p>Email: rejuancse@gmail.com</p>
                                                     <p>Phone: 01727424216</p>
                                                     <p>Fax: 890989099</p>
                                                     <p>Website: <a href="http://www.demosite.com"> http://www.demosite.com </a></p><a class="wpneo-profile-button" href="mailto:rejuancse@gmail.com" target="_top">Contact Me</a>
+                                                -->
                                                 </div>
+                                                <!--
                                                 <div class="wpneo-profile-about">
                                                     <h3>Social Link</h3><a class="wpneo-social-link" href="#"><i class="wpneo-icon wpneo-icon-facebook"></i></a><a class="wpneo-social-link" href="#"><i class="wpneo-icon wpneo-icon-twitter"></i></a><a
                                                       class="wpneo-social-link" href="#"><i class="wpneo-icon wpneo-icon-gplus"></i></a><a class="wpneo-social-link" href="#"><i class="wpneo-icon wpneo-icon-linkedin"></i></a><a
                                                       class="wpneo-social-link" href="#"><i class="wpneo-icon wpneo-icon-pinterest"></i></a>
                                                 </div>
+                                            -->
                                             </div>
                                         </div>
                                     </div>
@@ -1178,14 +1181,14 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
       <script>
           $(document).ready(function(){
-             
+
              $(function(){
 				$('.wpneo-tabs-menu li a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('wpneo-current')
 				$('.wpneo-tabs-menu li a').click(function(){
-					$(this).parent().addClass('wpneo-current').siblings().removeClass('wpneo-current')	
+					$(this).parent().addClass('wpneo-current').siblings().removeClass('wpneo-current')
 				})
 			})
-            
+
             $(".wpneo-tabs-menu li a").click(function () {
 		        $(".wpneo-tab .wpneo-tab-content").hide();
 		        $($(this).attr("href")).css('display', 'block');

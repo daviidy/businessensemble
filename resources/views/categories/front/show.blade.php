@@ -582,7 +582,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
             <div class="col-12 text-center">
                 <span class="backnow-icons"><i class="fas {{$category->icon}}"></i></span>
                 <h2 style="color: #fff !important;" class="page-leading">{{$category->name}}</h2>
-                <p>{{count($category->annonces)}} Projets</p>
+                <p>{{count($category->annonces->where('status', 1))}} Projets</p>
             </div>
         </div>
     </div>
@@ -597,7 +597,8 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
 <div class="elementor-element elementor-element-b3c10bd elementor-widget elementor-widget-backnow-product-grid" data-id="b3c10bd" data-element_type="widget" data-widget_type="backnow-product-grid.default">
     <div style="padding: 4rem;" class="elementor-widget-container">
         <div class="row">
-            @foreach($category->annonces as $annonce)
+            @if(count($category->annonces->where('status', 1)) > 0)
+            @foreach($category->annonces->where('status', 1) as $annonce)
             <div class="col-12 col-sm-6 thm-post-grid-col col-lg-4">
                 <div class="themeum-campaign-post d-flex flex-wrap">
                     <div class="clearfix">
@@ -614,7 +615,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
                         </div>
                         <div class="themeum-campaign-post-content clearfix">
                             @auth
-                            @if($annonce->user->id !== Auth::user()->id)
+                            @if($annonce->user->id !== Auth::user()->id && Auth::user()->isInvestor())
                             <a href="#" class="thm-love-btn " data-campaign="1860" data-user="0">
                                 <i class="far fa-heart" aria-hidden="true"></i>
                             </a>
@@ -651,7 +652,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: 58.82%;"></div>
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -668,7 +669,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
                                     <span>{{$annonce->user->country}}</span>
                                 </div>
                                 <div class="themeum-author-funded pull-right">
-                                    <h6>58.82%</h6>
+                                    <h6>{{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%</h6>
                                     <span>Achevés</span>
                                 </div>
                             </div>
@@ -715,6 +716,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
                 </div>
             </div>
             @endforeach
+            @endif
 
 
             <div class="col-12">

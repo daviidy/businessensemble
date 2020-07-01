@@ -627,7 +627,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                             <ul class="nav themeum-tab-navigation justify-content-center">
 
                                                                                 @foreach($categories as $category)
-                                                                                @if(count($category->annonces) > 0)
+                                                                                @if(count($category->annonces->where('status', 1)) > 0)
                                                                                 <li class="nav-item">
                                                                                     <a class="nav-link" href="#{{$category->id}}" data-toggle="pill">{{$category->name}}</a>
                                                                                 </li>
@@ -641,7 +641,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                         <div class="col-12">
                                                                             <div class="tab-content" id="pills-tabContent">
                                                                                 @foreach($categories as $category)
-                                                                                @if(count($category->annonces) > 0)
+                                                                                @if(count($category->annonces->where('status', 1)) > 0)
                                                                                 <div class="tab-pane fade {{$loop->first ? 'active show' : ''}}" id="{{$category->id}}">
 
 
@@ -655,7 +655,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                 <div class="themeum-tab-category">
                                                                                                     <div class="thm-cat-icon" style="color:#{{$category->icon_color}}"><i class="fas {{$category->icon}}"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="{{url('categories', $category)}}" data-hcolor="#33d3c0">{{ucfirst($category->name)}}</a></h3>
-                                                                                                    <h6>{{count($category->annonces)}}+ Projets</h6>
+                                                                                                    <h6>{{count($category->annonces->where('status', 1))}}+ Projets</h6>
                                                                                                     <!--
                                                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ulla ultrices</p>
                                                                                                 -->
@@ -676,23 +676,23 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                                 <div class="themeum-campaign-tab-post">
                                                                                                                     <div class="themeum-campaign-post-content clearfix">
                                                                                                                         <h3 class="entry-title">
-                                                                                                                            <a href="{{url('annonces', $category->annonces->first())}}">
-                                                                                                                                {{$category->annonces->first()->name}}
+                                                                                                                            <a href="{{url('annonces', $category->annonces->where('status', 1)->first())}}">
+                                                                                                                                {{$category->annonces->where('status', 1)->first()->name}}
                                                                                                                             </a>
                                                                                                                         </h3>
-                                                                                                                        <p>{{$category->annonces->first()->short_description}} </p>
+                                                                                                                        <p>{{$category->annonces->where('status', 1)->first()->short_description}} </p>
                                                                                                                     </div>
                                                                                                                     <div class="progressbar-content-wrapper">
                                                                                                                         <div class="thm-progress-bar">
                                                                                                                             <div class="lead">
                                                                                                                                 <span class="thm-Price-amount">
-                                                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$category->annonces->first()->previous_raising_amount}}</span> </span>
+                                                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$category->annonces->where('status', 1)->first()->previous_raising_amount}}</span> </span>
                                                                                                                                 <span class="thm-raise-sp">
                                                                                                                                     Levés
                                                                                                                                 </span>
                                                                                                                                 <div class="thm-meta-desc pull-right text-right">
                                                                                                                                     <span class="thm-Price-amount">
-                                                                                                                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$category->annonces->first()->raising_amount}}</span>
+                                                                                                                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$category->annonces->where('status', 1)->first()->raising_amount}}</span>
                                                                                                                                     </span>
                                                                                                                                     <span class="thm-raise-sp">
                                                                                                                                         Objectif
@@ -701,23 +701,23 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                                             </div>
                                                                                                                             <div class="progress">
                                                                                                                                 <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="64.29"
-                                                                                                                                  style="width: 64.29%;"></div>
+                                                                                                                                  style="width: {{($category->annonces->where('status', 1)->first()->previous_raising_amount / $category->annonces->where('status', 1)->first()->raising_amount) * 100}}%;"></div>
                                                                                                                             </div>
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <div class="themeum-campaign-author">
                                                                                                                         <div class="themeum-camp-author clearfix">
                                                                                                                             <div class="themeum-author-img float-left">
-                                                                                                                                <img alt="" src="/storage/images/users/{{$category->annonces->first()->logo}}"
-                                                                                                                                  srcset="/storage/images/users/{{$category->annonces->first()->logo}} 2x"
+                                                                                                                                <img alt="" src="/storage/images/users/{{$category->annonces->where('status', 1)->first()->user->image}}"
+                                                                                                                                  srcset="/storage/images/users/{{$category->annonces->where('status', 1)->first()->user->image}} 2x"
                                                                                                                                   class="avatar avatar-40 photo" height="40" width="40"> </div>
                                                                                                                             <div class="themeum-author-dsc pull-left">
-                                                                                                                                <a href="{{url('users', $category->annonces->first()->user)}}" class="wpneo-fund-modal-btn">{{$category->annonces->first()->user->name}}</a>
+                                                                                                                                <a href="{{url('users', $category->annonces->where('status', 1)->first()->user)}}" class="wpneo-fund-modal-btn">{{$category->annonces->where('status', 1)->first()->user->name}}</a>
 
-                                                                                                                                <span>{{$category->annonces->first()->country}}</span>
+                                                                                                                                <span>{{$category->annonces->where('status', 1)->first()->country}}</span>
                                                                                                                             </div>
                                                                                                                             <div class="themeum-author-funded pull-right">
-                                                                                                                                <h6>64.29%</h6>
+                                                                                                                                <h6>{{($category->annonces->where('status', 1)->first()->previous_raising_amount / $category->annonces->where('status', 1)->first()->raising_amount) * 100}}%</h6>
                                                                                                                                 <span>Achevés</span>
                                                                                                                             </div>
                                                                                                                         </div>
@@ -728,8 +728,8 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                         <!--/.col-sm-6-->
                                                                                                         <div class="col-sm-6">
                                                                                                             <div class="themeum-campaign-img">
-                                                                                                                <a class="review-item-image" href="{{url('annonces', $category->annonces->first())}}"><img width="600"
-                                                                                                                      height="580" src="/storage/images/annonces/{{$category->annonces->first()->logo}}"
+                                                                                                                <a class="review-item-image" href="{{url('annonces', $category->annonces->where('status', 1)->first())}}"><img width="600"
+                                                                                                                      height="580" src="/storage/images/annonces/{{$category->annonces->where('status', 1)->first()->logo}}"
                                                                                                                       class="img-fluid wp-post-image" alt=""></a>
                                                                                                             </div>
                                                                                                         </div>

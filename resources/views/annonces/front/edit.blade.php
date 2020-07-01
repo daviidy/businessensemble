@@ -402,10 +402,10 @@ footer {
         <div class="wpneo-links clearfix">
             <div class="wpneo-links-list active"><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=dashboard">Mes annonces</a></div>
             <div class="wpneo-links-list wp-crowd-parent">
-                @if($annonce->published == 0)
-                <a href="/publishProject">Publier l'annonce<!--span class="wpcrowd-arrow-down"></span--></a>
+                @if($annonce->status == 0)
+                <a href="/publishProject/{{$annonce->id}}">Publier l'annonce<!--span class="wpcrowd-arrow-down"></span--></a>
                 @else
-                <a href="/unpublishProject">Mettre l'annonce en mode brouillon<!--span class="wpcrowd-arrow-down"></span--></a>
+                <a href="/unpublishProject/{{$annonce->id}}">Mettre l'annonce en mode brouillon<!--span class="wpcrowd-arrow-down"></span--></a>
                 @endif
                 <!--div class="wp-crowd-submenu wpneo-shadow">
                     <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=profile">Profile</a></div>
