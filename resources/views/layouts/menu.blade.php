@@ -633,26 +633,28 @@
                                       href="/">Accueil</a>
 
                                 </li>
-                                <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-menu-child"><a href="#">Investir</a>
+                                <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-menu-child">
+                                    <a href="#">Investisseur</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/blog/">Investir</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Explorer</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/about/">Rechercher</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Investir</a></li>
 
                                     </ul>
                                 </li>
-                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover/">Lever des fonds</a>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-menu-child">
+                                <a href="#">Porteur de projet</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                    	@auth
-                                        @if(Auth::user()->isEntrepreneur() || Auth::user()->isAdmin())
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Lever des fonds</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/searchUsers">Trouver un associé</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/whichCategories">Créer une annonce</a></li>
+                                        <!--
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
                                         	<a data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
                                         </li>
-                                        @endif
-                                        @endauth
+
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a></li>
+                                    -->
                                     </ul>
                                 </li>
                             </ul>

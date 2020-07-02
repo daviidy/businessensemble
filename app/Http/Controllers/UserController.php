@@ -46,6 +46,11 @@ class UserController extends Controller
         }
     }
 
+    public function search(){
+            $users = User::orderby('id', 'asc')->paginate(30);
+            return view('users.search', ['users'=> $users]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
