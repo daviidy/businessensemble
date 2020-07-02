@@ -591,7 +591,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
 
 
 
-<div class="ss-page-title">Tous les projets</div>
+<div class="ss-page-title">Tous les projets de la catégorie {{$category->name}}</div>
 
 
 <div class="elementor-element elementor-element-b3c10bd elementor-widget elementor-widget-backnow-product-grid" data-id="b3c10bd" data-element_type="widget" data-widget_type="backnow-product-grid.default">

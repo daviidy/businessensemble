@@ -24,6 +24,12 @@ class CategoryController extends Controller
         }
     }
 
+    public function indexForAnnonces()
+    {
+            $categories = Category::orderby('id', 'asc')->paginate(30);
+            return view('categories.front.index', ['categories' => $categories]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

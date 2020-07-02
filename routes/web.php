@@ -48,6 +48,10 @@ Route::get('/myProjects', 'UserController@myProjects');
 Route::get('/publishProject/{annonce}', 'AnnonceController@publishProject');
 Route::get('/unpublishProject/{annonce}', 'AnnonceController@unpublishProject');
 
+Route::get('/whichCategories', 'CategoryController@indexForAnnonces');
+
+Route::get('/searchUsers', 'UserController@search');
+
 
     //ajax routes
     Route::post('/uploadAvatar', 'UserController@uploadAvatar');
