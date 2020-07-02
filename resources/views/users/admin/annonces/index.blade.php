@@ -61,7 +61,7 @@
                                        <td>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    @if($annonnce->recommend == 0)
+                                                    @if($annonce->recommend == 0)
                                                     <a class="float-right" href="/admin/annonces/{{$annonce->id}}/recommend">
                                                         <i class="far fa-star"></i>
                                                     </a>
@@ -77,13 +77,13 @@
                                                         {{ method_field('delete') }}
                                                         <button
                                                           id="test-id-unpublish-btn"
-                                                          class="btn rounded"><i class="icon-trash text-danger"></i></button>
+                                                          class="btn rounded" style="padding: 2px!important;"><i class="icon-trash text-danger"></i></button>
                                                     </form>
                                                 </div>
 
                                             </div>
                                         </td>
-                                        <td><a href="">Publier l'annonce</a></td>
+                                        <td><a href="#">Publier l'annonce</a></td>
                                     </tr>
                                     @endforeach
                                 </tbody>

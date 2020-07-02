@@ -661,6 +661,10 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 		.wpneo-campaign-single-left-info .thumbnails{
 			display: inline-flex;
 		}
+
+		.save{
+			margin-top: 40px;
+		}
 	}
 </style>
 
@@ -784,11 +788,11 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                 </div>
 
 
-                                <div class="lead">
+                                <div class="lead" style="padding: 15px 0;">
                                     <span class="thm-Price-amount">
-                                        <span class="woocommerce-Price-amount amount">0</span>
+                                        <!--span class="woocommerce-Price-amount amount">0</span-->
                                     </span>
-                                    <span class="thm-raise-sp">Days to go</span>
+                                    <!--span class="thm-raise-sp">Days to go</span-->
                                     <div class="thm-meta-desc pull-right text-right">
                                         <span class="thm-Price-amount">
                                             <span class="woocommerce-Price-amount amount">
@@ -798,10 +802,16 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                             Achevés </span>
                                     </div>
                                 </div>
-                                <div class="wpneo-single-sidebar">
-                                    <a href="/backProject/{{$annonce->id}}"><span class="wpneo_donate_button">Je suis intéressé</span></a>
+                                <div class="wpneo-single-sidebar row">
+                                	<div class="col-md-6 col-sm-12">
+                                		<a href="/backProject/{{$annonce->id}}"><span class="wpneo_donate_button">Je suis intéressé</span></a>
+                                	</div>
+                                	<div class="col-md-6 col-sm-12 save" >
+                                		<a href="#"><span class="wpneo_donate_button_2">Sauvegarder</span></a>
+                                	</div>
+                                    
 
-                                    <a href=""><span class="wpneo_donate_button_2">Sauvegarder</span></a>
+                                    
                                     <!-- <button class="backnow-remind-me"><?php// _e('Remind me', 'backnow'); ?></button> -->
                                 </div>
                                 <div class="wpneo-location-wrapper">
@@ -1130,7 +1140,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                         <td>
                                             Fahim Murshaed </td>
                                         <td>
-                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>4,500.00</span> </td>
+                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span> 4,500.00</span> </td>
                                         <td>November 28, 2017</td>
                                     </tr>
                                 </tbody>
