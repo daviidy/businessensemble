@@ -540,6 +540,19 @@ h4{font-size:1.5rem;}
 *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
 }
 }
+#phone_4 {
+    padding-left: 95px !important;
+}
+
+#modalauth{
+	text-align: center;
+}
+.modalauth{
+	padding: 25px;
+}
+.modal {
+    
+    top: 150px;}
 </style>
 
 
@@ -607,7 +620,7 @@ h4{font-size:1.5rem;}
                           <input type="text" class="form-control form-control-lg" placeholder="Titre de la société " name="title">
                         </div>
                         <div class="input">
-                          <input type="text" class="form-control form-control-lg" placeholder="Pays " name="country" id="country" >
+                          <input type="text" class="form-control form-control-lg" placeholder="Pays " name="country" id="country8" >
                         </div>
 
                         <div class="input">
@@ -615,7 +628,7 @@ h4{font-size:1.5rem;}
                         </div>
 
                         <div class="input">
-                          <input type="number" class="form-control form-control-lg" name="phone" id="phone_3" placeholder="Téléphone">
+                          <input type="number" class="form-control form-control-lg" name="phone" id="phone_4" placeholder="Téléphone">
                         </div>
 
                         <input hidden type="text" name="user_id" value="{{Auth::user()->id}}">
@@ -638,7 +651,7 @@ h4{font-size:1.5rem;}
 
 
   <script>
-    var input = document.querySelector("#phone_3");
+    var input = document.querySelector("#phone_4");
     window.intlTelInput(input, {
 
       autoPlaceholder: "polite",
@@ -656,7 +669,7 @@ h4{font-size:1.5rem;}
 
 
   <script>
-    $("#country").countrySelect({
+    $("#country8").countrySelect({
           preferredCountries: ['ci', 'fr',]
         }
       );
@@ -668,5 +681,24 @@ h4{font-size:1.5rem;}
 @endforeach
 
 @endauth
+
+<!-- The Modal login-->
+<div class="modal" id="modalauth">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+      	<h2 class="modal-title modalauth">Veuillez vous connecter afin de créer votre annonce.</h2>
+        <a href="/login">
+            <button type="button" class="btn " style="background-color: #00a78dff; color:#fff">Connectez-vous</button>
+        </a>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
 
 @endsection

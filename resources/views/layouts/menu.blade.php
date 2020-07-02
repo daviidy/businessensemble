@@ -7,13 +7,18 @@
         <meta name="csrf-token" content="{!! csrf_token() !!}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="/notifs/amaran/amaran.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	
+	    <link href="/plugin/build/css/simple-iconpicker.min.css" rel="stylesheet">
+	    <script src="/plugin/build/js/simple-iconpicker.min.js"></script>
         <!-- ==============================================
 		Favicons
 		=============================================== -->
-    <link rel="shortcut icon" href="/assets/imgs/logo-be.jpg">
-    <link rel="apple-touch-icon" href="/assets/imgs/logo-be.jpg">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/logo-be.jpg">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/logo-be.jpg">
+	    <link rel="shortcut icon" href="/assets/imgs/logo-be.jpg">
+	    <link rel="apple-touch-icon" href="/assets/imgs/logo-be.jpg">
+	    <link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/logo-be.jpg">
+	    <link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/logo-be.jpg">
 
 
 
@@ -670,7 +675,7 @@
                                 @if(Auth::user()->isEntrepreneur() || Auth::user()->isAdmin())
                                 <!-- Start Campaign Section -->
                                 <li>
-                                  <a class="backnow-login backnow-dashboard" data-toggle="modal" data-target="#myModal_2" href="#" >
+                                  <a class="backnow-login backnow-dashboard" data-toggle="modal" data-target="#myModal_2" href="/whichCategories" >
                                     Créer une annonce
                                   </a>
                                 </li>
@@ -682,7 +687,7 @@
                         </div>
 
                     </div>
-                    @include('includes.annonces.popup_annonce')
+                    
                     <!--/.col-md-7-->
 
 
@@ -758,30 +763,34 @@
                                           href="http://demo.themeum.com/wordpress/backnow/">Accueil</a>
 
                                     </li>
-                                    <li id="menu-item-384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-384"><a title="Page" href="#">Investir</a>
+                                    <li id="menu-item-384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-384"><a title="Page" href="#">Investisseur</a>
                                         <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-384">
                                             <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-384 ">
                                             <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a title="Blog" href="https://demo.themeum.com/wordpress/backnow/blog/">Investir</a></li>
-                                            <li id="menu-item-1824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824"><a title="Blog fullwidth" href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Explorer</a></li>
-                                            <li id="menu-item-1470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1470"><a title="About" href="https://demo.themeum.com/wordpress/backnow/about/">Rechercher</a></li>
+                                            <!--li id="menu-item-1824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824"><a title="Blog fullwidth" href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Explorer</a></li>
+                                            <li id="menu-item-1470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1470"><a title="About" href="https://demo.themeum.com/wordpress/backnow/about/">Rechercher</a></li-->
 
                                         </ul>
                                     </li>
-                                    <li id="menu-item-1823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="https://demo.themeum.com/wordpress/backnow/discover/">Lever des fonds</a>
+                                    <li id="menu-item-1823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="https://demo.themeum.com/wordpress/backnow/discover/">Porteur de projet</a>
                                         <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-1823">
                                             <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-1823 ">
+                                        	<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
+                                              <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Lever des fonds</a>
+                                            </li>
+                                            <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
+                                              <a title="Discover Style 2" href="/searchUsers">Trouver un associé</a>
+                                            </li>
                                         	@auth
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
+                                              <a title="Discover Style 2"  href="/whichCategories" >Créer une annonce</a>
                                             </li>
                                             @endauth
-                                            <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a>
-                                            </li>
+                                            
                                         </ul>
                                     </li>
                                 </ul>
@@ -830,7 +839,7 @@
 
 
                                 <!-- Start Campaign Section {{route('annonces.create')}} -->
-                                <li><a class="" data-toggle="modal" data-target="#myModal_2" href="#" ><button class = "btn btn-info backnow-login backnow-dashboard" type = "button" >Créer une annonce</button> </a></li>
+                                <li><a class=""  href="/whichCategories" ><button class = "btn btn-info backnow-login backnow-dashboard" type = "button" >Créer une annonce</button> </a></li>
                                 <!-- End Campaign -->
                                 @endauth
                             </ul>
