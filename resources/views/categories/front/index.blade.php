@@ -557,8 +557,13 @@ h4{font-size:1.5rem;}
 @foreach($categories as $category)
 
     <div class="col-sm-4">
-
+                @auth
                 <a data-toggle="modal" data-target="#modal{{$category->id}}" class="styles__CategoryButton-vgii8s-4 fUQatb" href="#">
+                @endauth
+                @guest
+                <a data-toggle="modal" data-target="#modalauth" class="styles__CategoryButton-vgii8s-4 fUQatb" href="#">
+                @endguest
+
                     <div class="styles__CategoryButton_Icon-vgii8s-6 fjEdZT">
                         <i style="color: #{{$category->icon_color}}; font-size: 5rem;" class="fas {{$category->icon}}"></i>
                     </div>
