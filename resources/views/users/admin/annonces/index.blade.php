@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Liste des catégories')
+@section('title', 'Liste des  annonces')
 @section('page_title', 'Liste des annonces')
 @section('link_title', 'Liste des annonces')
 
@@ -42,6 +42,7 @@
                                         <th>Montant par investisseur</th>
                                         <th>Utilisateur</th>
                                         <th>Action</th>
+                                        <th></th>
 
                                     </tr>
                                 </thead>
@@ -55,8 +56,9 @@
                                         <td>{{$annonce->raising_amount}}</td>
                                         <td>{{$annonce->min_investor_amount}}</td>
                                         <td>{{$annonce->user->name}}</td>
+                                        
 
-                                        <td>
+                                       <td>
                                             <div class="row">
                                                 <div class="col-6">
                                                     @if($annonnce->recommend == 0)
@@ -80,10 +82,8 @@
                                                 </div>
 
                                             </div>
-
-
-
                                         </td>
+                                        <td><a href="">Publier l'annonce</a></td>
                                     </tr>
                                     @endforeach
                                 </tbody>
