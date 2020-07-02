@@ -638,13 +638,13 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
                             <div class="thm-progress-bar">
                                 <div class="lead">
                                     <span class="thm-Price-amount">
-                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>  {{$annonce->previous_raising_amount}}</span> </span>
+                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>  {{$annonce->previous_raising_amount}}</span> </span>
                                     <span class="thm-raise-sp">
                                         Levés
                                     </span>
                                     <div class="thm-meta-desc pull-right text-right">
                                         <span class="thm-Price-amount">
-                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>  {{$annonce->raising_amount}}</span>
+                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>  {{$annonce->raising_amount}}</span>
                                         </span>
                                         <span class="thm-raise-sp">
                                             Objectif

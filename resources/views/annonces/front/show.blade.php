@@ -755,7 +755,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                 <div class="lead">
                                     <ul class="wpcf_predefined_pledge_amount">
-                                        <li><a href="javascript:;" data-predefined-price="50"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Montant minimum par investisseur: </span>{{$annonce->min_investor_amount}} FCFA</span></a> </li>
+                                        <li><a href="javascript:;" data-predefined-price="50"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Montant minimum par investisseur: </span>{{$annonce->min_investor_amount}} €</span></a> </li>
                                         <!--
                                         <li><a href="javascript:;" data-predefined-price="60"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>60.00</span></a> </li>
                                         <li><a href="javascript:;" data-predefined-price="70"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>70.00</span></a> </li>
@@ -763,13 +763,13 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     -->
                                     </ul>
                                     <span class="thm-Price-amount">
-                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>  4,500.00</span></span>
+                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>  4,500.00</span></span>
                                     </span>
                                     <span class="thm-raise-sp">Levés</span>
 
                                     <div class="thm-meta-desc pull-right text-right">
                                         <span class="thm-Price-amount">
-                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>  {{$annonce->raising_amount}}</span></span>
+                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>  {{$annonce->raising_amount}}</span></span>
                                         </span>
                                         <span class="thm-raise-sp">
                                             Objectif </span>
