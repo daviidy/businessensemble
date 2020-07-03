@@ -793,6 +793,7 @@ button{background-image:none;}
 <div class="elementor-element elementor-element-b3c10bd elementor-widget elementor-widget-backnow-product-grid" data-id="b3c10bd" data-element_type="widget" data-widget_type="backnow-product-grid.default">
     <div style="padding: 4rem;" class="elementor-widget-container">
         <div class="row">
+            @if($user->isEntrepreneur())
             @foreach($user->annoncesOne as $annonce)
             <div class="col-12 col-sm-6 thm-post-grid-col col-lg-4">
                 <div class="themeum-campaign-post d-flex flex-wrap">
@@ -816,7 +817,7 @@ button{background-image:none;}
                             </a>
                             @else
                             <a href="{{route('annonces.edit', $annonce)}}" class="thm-love-btn " data-campaign="1860" data-user="0">
-                                
+
                                 <i class="fas fa-pencil-alt"></i>
                             </a>
                             @endif
@@ -912,6 +913,118 @@ button{background-image:none;}
                 </div>
             </div>
             @endforeach
+            @endif
+
+            @if($user->isInvestor())
+            @foreach($user->annonces as $annonce)
+            <div class="col-12 col-sm-6 thm-post-grid-col col-lg-4">
+                <div class="themeum-campaign-post d-flex flex-wrap">
+                    <div class="clearfix">
+                        <div class="themeum-campaign-img">
+                            <a class="review-item-image" href="{{url('annonces', $annonce)}}">
+                                <img width="660" height="400"
+                                  src="/storage/images/annonces/{{$annonce->logo}}" class="img-fluid wp-post-image" alt=""></a>
+                            <div class="thm-camp-hvr">
+                                <div class="thm-ch-icon">
+                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                </div>
+                                <h4>Project You Love</h4>
+                            </div>
+                        </div>
+                        <div class="themeum-campaign-post-content clearfix">
+
+                            <span class="entry-category"><a href="{{url('categories', $annonce->category)}}" rel="tag">{{$annonce->category->name}}</a></span>
+                            <h3 class="entry-title">
+                                <a href="{{url('annonces', $annonce)}}">
+                                    {{$annonce->title}}
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="clearfix align-self-end w-100">
+                        <div class="progressbar-content-wrapper">
+                            <div class="thm-progress-bar">
+                                <div class="lead">
+                                    <span class="thm-Price-amount">
+                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$annonce->previous_raising_amount}}</span> </span>
+                                    <span class="thm-raise-sp">
+                                        Levés
+                                    </span>
+                                    <div class="thm-meta-desc pull-right text-right">
+                                        <span class="thm-Price-amount">
+                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$annonce->raising_amount}}</span>
+                                        </span>
+                                        <span class="thm-raise-sp">
+                                            Objectif
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: 58.82%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="themeum-campaign-author">
+                            <div class="themeum-camp-author clearfix">
+                                <div class="themeum-author-img float-left">
+                                    <img alt="" src="/storage/images/users/{{$annonce->user->image}}" srcset="https://secure.gravatar.com/avatar/caa0224bc614077dd7c869f0217cde43?s=80&amp;d=mm&amp;r=g 2x"
+                                      class="avatar avatar-40 photo" height="40" width="40">
+                                </div>
+                                <div class="themeum-author-dsc pull-left">
+                                    <a data-toggle="modal" data-target="#bioinfo{{$annonce->id}}" href="#" class="wpneo-fund-modal-btn">{{$annonce->user->name}}</a>
+
+                                    <span>{{$annonce->user->country}}</span>
+                                </div>
+                                <div class="themeum-author-funded pull-right">
+                                    <h6>58.82%</h6>
+                                    <span>Achevés</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal Content | Author Info -->
+            <div class="modal fade wpneo-modal-wrapper" id="bioinfo{{$annonce->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="wpneo-modal-content">
+                            <div class="wpneo-modal-wrapper-head">
+                                <h4>A propos du promoteur de ce projet</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            </div>
+
+                            <div class="wpneo-modal-content-inner">
+                                <div class="wpneo-profile-left">
+                                </div>
+
+                                <div class="wpneo-profile-right">
+                                    <div class="wpneo-profile-name">{{$annonce->user->name}}</div>
+                                    <div class="wpneo-profile-campaigns">{{count($annonce->user->annoncesOne)}} Campagne(s)</div>
+                                </div>
+
+                                <div class="wpneo-profile-about">
+                                    <a href="{{url('users', $annonce->user)}}">
+                                        <h3>Voir le profil</h3>
+                                    </a>
+
+                                </div>
+                                <div class="wpneo-profile-about">
+                                    <a href="/chat">
+                                        <h3>Envoyer message</h3>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            @endif
 
 
             <div class="col-12">

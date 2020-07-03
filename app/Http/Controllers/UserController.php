@@ -36,15 +36,7 @@ class UserController extends Controller
 
     }
 
-    public function myProjects(){
-        if (Auth::check() && Auth::user()->isEntrepreneur()) {
-            $annonces = Annonce::where('user_id', Auth::user()->id)->orderby('id', 'asc')->paginate(30);
-            return view('users.entrepreneur.annonces.index', ['annonces'=> $annonces]);
-        }
-        else {
-            return redirect('home');
-        }
-    }
+
 
     public function search(){
             $users = User::orderby('id', 'asc')->paginate(30);
