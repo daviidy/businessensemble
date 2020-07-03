@@ -540,19 +540,18 @@ h4{font-size:1.5rem;}
 *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
 }
 }
-#phone_4 {
+.phone_4 {
     padding-left: 95px !important;
 }
 
 #modalauth{
 	text-align: center;
+	top: 150px;
 }
 .modalauth{
 	padding: 25px;
 }
-.modal {
-    
-    top: 150px;}
+
 </style>
 
 
@@ -620,15 +619,15 @@ h4{font-size:1.5rem;}
                           <input type="text" class="form-control form-control-lg" placeholder="Titre de la société " name="title">
                         </div>
                         <div class="input">
-                          <input type="text" class="form-control form-control-lg" placeholder="Pays " name="country" id="country8" >
+                          <input type="text" class="form-control form-control-lg" placeholder="Pays " name="country" id="country{{$category->id}}" >
                         </div>
 
                         <div class="input">
-                          <input readonly type="text" class="form-control form-control-lg" value="{{$category->name}}" name="category_id" >
+                          <input readonly type="text" class="form-control form-control-lg" value="{{$category->name}}" name="$category->name" >
                         </div>
 
                         <div class="input">
-                          <input type="number" class="form-control form-control-lg" name="phone" id="phone_4" placeholder="Téléphone">
+                          <input type="number" class="form-control form-control-lg phone_4" name="phone" id="phone{{$category->id}}" placeholder="Téléphone">
                         </div>
 
                         <input hidden type="text" name="user_id" value="{{Auth::user()->id}}">
@@ -651,7 +650,7 @@ h4{font-size:1.5rem;}
 
 
   <script>
-    var input = document.querySelector("#phone_4");
+    var input = document.querySelector("#phone{{$category->id}}");
     window.intlTelInput(input, {
 
       autoPlaceholder: "polite",
@@ -669,7 +668,7 @@ h4{font-size:1.5rem;}
 
 
   <script>
-    $("#country8").countrySelect({
+    $("#country{{$category->id}}").countrySelect({
           preferredCountries: ['ci', 'fr',]
         }
       );

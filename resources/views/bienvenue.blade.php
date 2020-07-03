@@ -686,13 +686,13 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                                         <div class="thm-progress-bar">
                                                                                                                             <div class="lead">
                                                                                                                                 <span class="thm-Price-amount">
-                                                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$category->annonces->where('status', 1)->first()->previous_raising_amount}}</span> </span>
+                                                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>{{$category->annonces->where('status', 1)->first()->previous_raising_amount}}</span> </span>
                                                                                                                                 <span class="thm-raise-sp">
                                                                                                                                     Levés
                                                                                                                                 </span>
                                                                                                                                 <div class="thm-meta-desc pull-right text-right">
                                                                                                                                     <span class="thm-Price-amount">
-                                                                                                                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$category->annonces->where('status', 1)->first()->raising_amount}}</span>
+                                                                                                                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>{{$category->annonces->where('status', 1)->first()->raising_amount}}</span>
                                                                                                                                     </span>
                                                                                                                                     <span class="thm-raise-sp">
                                                                                                                                         Objectif
@@ -881,7 +881,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                         <div class="thm-progress-bar">
                                                                                             <div class="lead">
                                                                                                 <span class="thm-Price-amount">
-                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>5,000.00</span> </span>
+                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>5,000.00</span> </span>
                                                                                                 <span class="thm-raise-sp">
                                                                                                     Raised
                                                                                                 </span>
@@ -949,13 +949,13 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                         <div class="thm-progress-bar">
                                                                                             <div class="lead">
                                                                                                 <span class="thm-Price-amount">
-                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>4,500.00</span> </span>
+                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>4,500.00</span> </span>
                                                                                                 <span class="thm-raise-sp">
                                                                                                     Raised
                                                                                                 </span>
                                                                                                 <div class="thm-meta-desc pull-right text-right">
                                                                                                     <span class="thm-Price-amount">
-                                                                                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>7,000.00</span>
+                                                                                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>7,000.00</span>
                                                                                                     </span>
                                                                                                     <span class="thm-raise-sp">
                                                                                                         Goal
@@ -1017,13 +1017,13 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                         <div class="thm-progress-bar">
                                                                                             <div class="lead">
                                                                                                 <span class="thm-Price-amount">
-                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>5,000.00</span> </span>
+                                                                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>5,000.00</span> </span>
                                                                                                 <span class="thm-raise-sp">
                                                                                                     Raised
                                                                                                 </span>
                                                                                                 <div class="thm-meta-desc pull-right text-right">
                                                                                                     <span class="thm-Price-amount">
-                                                                                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>7,000.00</span>
+                                                                                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>7,000.00</span>
                                                                                                     </span>
                                                                                                     <span class="thm-raise-sp">
                                                                                                         Goal
