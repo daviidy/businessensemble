@@ -97,6 +97,8 @@ h2{font-size:2rem;}
 }
 /*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/css/main.css?ver=all ; media=all */
 @media all{
+.wpneo_donate_button_2{color:#00a78d;cursor:pointer;}
+.wpneo_donate_button_2:hover{background:#fff;}
 .wpneo_donate_button{color:#fff;cursor:pointer;}
 .wpneo_donate_button:hover{background:#fff;}
 .thm-progress-bar .progress-bar{color:#fff;height:6px;-webkit-box-shadow:none;box-shadow:none;margin-bottom:0;border-radius:10px;}
@@ -118,6 +120,7 @@ h2{font-size:2rem;}
 .wpneo-single-short-description{font-size:14px;color:#4C4C4C;margin-top:24px;}
 img{max-width:100%;height:auto;}
 .wpneo-single-sidebar .wpneo_donate_button{border-radius:4px;padding:15px 30px;font-weight:400;transition:400ms;}
+.wpneo-single-sidebar .wpneo_donate_button_2{border-radius:4px;padding:15px 30px;font-weight:400;transition:400ms;}
 .thm-single-category li{display:inline-block;margin-right:12px;margin-bottom:5px;}
 .wpneo-campaign-summary-inner ul.thm-single-category a{font-weight:400;}
 }
@@ -180,6 +183,7 @@ a:hover{color:#00bf9c;}
 .wpneo-wrapper{font-size:14px;font-family:Montserrat;font-weight:300;line-height:24px;color:#979aa1;}
 h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:#414040;}
 .wpneo_donate_button{background-color:#00a78d;border-color:#00a78d;color:#fff!important;}
+.wpneo_donate_button_2{background-color:#fff;border: 2px solid #00a78d;color:#00a78d!important;}
 .wpneo_donate_button:hover{background-color:#00a78d;border-color:#00a78d;color:#fff!important;}
 /*! CSS Used from: Embedded */
 .wpneo_donate_button{background-color:#00a78d;color:#fff;}
@@ -657,6 +661,10 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 		.wpneo-campaign-single-left-info .thumbnails{
 			display: inline-flex;
 		}
+
+		.save{
+			margin-top: 40px;
+		}
 	}
 </style>
 
@@ -747,7 +755,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                 <div class="lead">
                                     <ul class="wpcf_predefined_pledge_amount">
-                                        <li><a href="javascript:;" data-predefined-price="50"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Montant minimum par investisseur: </span>{{$annonce->min_investor_amount}} FCFA</span></a> </li>
+                                        <li><a href="javascript:;" data-predefined-price="50"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Montant minimum par investisseur: </span>{{$annonce->min_investor_amount}} €</span></a> </li>
                                         <!--
                                         <li><a href="javascript:;" data-predefined-price="60"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>60.00</span></a> </li>
                                         <li><a href="javascript:;" data-predefined-price="70"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>70.00</span></a> </li>
@@ -755,13 +763,13 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     -->
                                     </ul>
                                     <span class="thm-Price-amount">
-                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>4,500.00</span></span>
+                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>  4,500.00</span></span>
                                     </span>
                                     <span class="thm-raise-sp">Levés</span>
 
                                     <div class="thm-meta-desc pull-right text-right">
                                         <span class="thm-Price-amount">
-                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">FCFA</span>{{$annonce->raising_amount}}</span></span>
+                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>  {{$annonce->raising_amount}}</span></span>
                                         </span>
                                         <span class="thm-raise-sp">
                                             Objectif </span>
@@ -780,11 +788,11 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                 </div>
 
 
-                                <div class="lead">
+                                <div class="lead" style="padding: 15px 0;">
                                     <span class="thm-Price-amount">
-                                        <span class="woocommerce-Price-amount amount">0</span>
+                                        <!--span class="woocommerce-Price-amount amount">0</span-->
                                     </span>
-                                    <span class="thm-raise-sp">Days to go</span>
+                                    <!--span class="thm-raise-sp">Days to go</span-->
                                     <div class="thm-meta-desc pull-right text-right">
                                         <span class="thm-Price-amount">
                                             <span class="woocommerce-Price-amount amount">
@@ -794,8 +802,16 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                             Achevés </span>
                                     </div>
                                 </div>
-                                <div class="wpneo-single-sidebar">
-                                    <a href="/showInterest/{{$annonce->id}}"><span class="wpneo_donate_button">Je suis intéressé</span></a>
+                                <div class="wpneo-single-sidebar row">
+                                	<div class="col-md-6 col-sm-12">
+                                		<a href="/showInterest/{{$annonce->id}}"><span class="wpneo_donate_button">Je suis intéressé</span></a>
+                                	</div>
+                                	<div class="col-md-6 col-sm-12 save" >
+                                		<a href="#"><span class="wpneo_donate_button_2">Sauvegarder</span></a>
+                                	</div>
+
+
+
                                     <!-- <button class="backnow-remind-me"><?php// _e('Remind me', 'backnow'); ?></button> -->
                                 </div>
                                 <div class="wpneo-location-wrapper">
@@ -820,6 +836,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                 <li class="wpneo-current description_tab">
                     <a href="#wpneo-tab-description">A propos</a>
                 </li>
+                <!--
                 <li class=" update_tab">
                     <a href="#wpneo-tab-update">Updates</a>
                 </li>
@@ -829,7 +846,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                 <li class=" reviews_tab">
                     <a href="#wpneo-tab-reviews">Reviews (0)</a>
                 </li>
-
+            -->
             </ul>
         </div>
     </div>
@@ -1123,7 +1140,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                         <td>
                                             Fahim Murshaed </td>
                                         <td>
-                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>4,500.00</span> </td>
+                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span> 4,500.00</span> </td>
                                         <td>November 28, 2017</td>
                                     </tr>
                                 </tbody>

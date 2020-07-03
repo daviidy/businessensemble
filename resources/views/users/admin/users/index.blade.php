@@ -38,6 +38,7 @@
                                         <th>Nom d'utilisateur</th>
                                         <th>Email</th>
                                         <th>Type</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -71,6 +72,7 @@
 
 
                                         </td>
+                                        <td><a href="#">Définir comme admin</a></td>
                                     </tr>
                                     @endforeach
                                 </tbody>

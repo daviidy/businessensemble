@@ -200,7 +200,7 @@ button:-moz-focusring,[type="button"]:-moz-focusring{outline:1px dotted ButtonTe
 .choices__list--single{display:inline-block;padding:4px 16px 4px 4px;width:100%;}
 .choices__list--single .choices__item{width:100%;}
 .choices__list--dropdown{display:none;z-index:1;position:absolute;width:100%;background-color:#FFFFFF;border:1px solid #DDDDDD;top:100%;margin-top:-1px;border-bottom-left-radius:2.5px;border-bottom-right-radius:2.5px;overflow:hidden;word-break:break-all;}
-.choices__list--dropdown .choices__list{position:relative;max-height:300px;overflow:auto;-webkit-overflow-scrolling:touch;will-change:scroll-position;}
+.choices__list--dropdown .choices__list{position:relative;max-height:100%/*300px*/;overflow:auto;-webkit-overflow-scrolling:touch;will-change:scroll-position;}
 .choices__list--dropdown .choices__item{position:relative;padding:10px;font-size:14px;}
 @media (min-width: 640px){
 .choices__list--dropdown .choices__item--selectable{padding-right:100px;}
@@ -233,9 +233,9 @@ form .inner-form .input-field.first-wrap .choices__list--dropdown .choices__item
 form .inner-form .input-field.first-wrap .choices__list--dropdown .choices__item{color:#555;min-height:24px;}
 form .inner-form .input-field.second-wrap{-ms-flex-positive:1;flex-grow:1;}
 form .inner-form .input-field.third-wrap{width:74px;}
-form .inner-form .input-field.third-wrap .btn-search{height:100%;width:100%;white-space:nowrap;color:#fff;border:0;cursor:pointer;background:#63c76a;transition:all .2s ease-out, color .2s ease-out;}
+form .inner-form .input-field.third-wrap .btn-search{height:100%;width:100%;white-space:nowrap;color:#fff;border:0;cursor:pointer;background:rgb(26, 179, 148);transition:all .2s ease-out, color .2s ease-out;}
 form .inner-form .input-field.third-wrap .btn-search svg{width:16px;}
-form .inner-form .input-field.third-wrap .btn-search:hover{background:#50c058;}
+form .inner-form .input-field.third-wrap .btn-search:hover{background:rgb(26, 179, 148);}
 form .inner-form .input-field.third-wrap .btn-search:focus{outline:0;box-shadow:none;}
 @media screen and (max-width: 992px){
 form .inner-form .input-field{height:50px;}
@@ -265,12 +265,14 @@ form .inner-form .input-field.third-wrap{margin-bottom:0;width:100%;}
             <div class="input-field first-wrap">
                 <div class="input-select">
                     <div class="choices" role="listbox" data-type="select-one" tabindex="0" aria-haspopup="true" aria-expanded="false" dir="ltr" aria-activedescendant="choices-choices-single-defaul-m6-item-choice-2">
-                        <div class="choices__inner"><select data-trigger="" name="choices-single-defaul" class="choices__input is-hidden" tabindex="-1" style="display:none;" aria-hidden="true" data-choice="active">
-                                <option value="Category" selected="">Category</option>
+                        <div class="choices__inner">
+                        	<select data-trigger="" name="choices-single-defaul" class="choices__input is-hidden" tabindex="-1" style="display:none;" aria-hidden="true" data-choice="active">
+                                <option id="text_tag_option" value="Category" selected="">Category</option>
                             </select>
                             <div class="choices__list choices__list--single">
-                                <div class="choices__item choices__item--selectable choices__placeholder" data-item="" data-id="1" data-value="Category" aria-selected="true">
-                                    Category
+                                <div class="choices__item choices__item--selectable choices__placeholder" data-item="" data-id="1"  id="choices__placeholder">
+                                	<span>Category</span>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -281,7 +283,7 @@ form .inner-form .input-field.third-wrap{margin-bottom:0;width:100%;}
                                     Category
                                 </div>
                                 <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="" data-choice="" data-id="1" data-value="Accessories" data-choice-selectable=""
-                                  id="choices-choices-single-defaul-m6-item-choice-1" role="option">
+                                  id="choices-choices-single-defaul-m6-item-choice-1 " role="option">
                                     Accessories
                                 </div>
                                 <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="" data-choice="" data-id="3" data-value="Clothing" data-choice-selectable="" id="choices-choices-single-defaul-m6-item-choice-3"
@@ -343,7 +345,7 @@ form .inner-form .input-field.third-wrap{margin-bottom:0;width:100%;}
             <img src="/storage/images/users/{{$user->image}}" alt="profile-image" class="profile">
             <h5 class="card-title">{{ucfirst($user->name)}}</h5>
             <p class="card-text">{{$user->bio}}</p>
-            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+            <!--div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div-->
         </div>
     </div>
     <a href="/chat/{{$user->id}}">
@@ -355,5 +357,21 @@ form .inner-form .input-field.third-wrap{margin-bottom:0;width:100%;}
 @endforeach
 </div>
 </div>
+<script>
+$(document).ready(function(){
+    $(".choices__list--single").click(function(){
+        $(".choices__list--dropdown").toggle();
+    });
+
+    $('.choices__item--choice').click(function() {
+	    var value = $(this).text();
+	    var option = $('#text_tag_option');
+	    $('#choices__placeholder').text(value);
+         option.val(value).text(value);
+	    $(".choices__list--dropdown").hide();
+	    return false;
+	});
+});
+</script>
 
 @endsection
