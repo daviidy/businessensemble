@@ -53,16 +53,16 @@
 
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Quel est le montant total que vous levez ?</label>
-                            <input type="number" value="raising_amount" name="raising_amount" placeholder="FCFA" />
+                            <input type="number" value="raising_amount" name="raising_amount" placeholder="€" />
                         </div>
 
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Combien de ce montant avez-vous déjà levé ?</label>
-                            <input value="{{$annonce->previous_raising_amount}}" type="number" name="previous_raising_amount" placeholder="FCFA" />
+                            <input value="{{$annonce->previous_raising_amount}}" type="number" name="previous_raising_amount" placeholder="€" />
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Quel est le montant minimum par investisseur?</label>
-                            <input value="{{$annonce->min_investor_amount}}" type="number" name="min_investor_amount" placeholder="FCFA" />
+                            <input value="{{$annonce->min_investor_amount}}" type="number" name="min_investor_amount" placeholder="€" />
                         </div>
 
 
