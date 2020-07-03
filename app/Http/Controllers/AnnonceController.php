@@ -24,6 +24,7 @@ class AnnonceController extends Controller
         //
     }
 
+    //liste des annonces dans le back office
     public function indexAdmin()
     {
         if (Auth::check() && Auth::user()->isAdmin()) {
@@ -34,6 +35,44 @@ class AnnonceController extends Controller
             return redirect('home');
         }
 
+    }
+
+    //voir ses annonces
+    public function myProjects(){
+        if (Auth::check() && !Auth::user()->isAdmin()) {
+            if (Auth::user()->isEntrepreneur()) {
+                $annonces = Annonce::where('user_id', Auth::user()->id)->orderby('id', 'asc')->paginate(30);
+                return view('users.entrepreneur.annonces.index', ['annonces'=> $annonces]);
+            }
+            else {
+                return view('users.investor.annonces.index');
+            }
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+    //saveProject
+    public function saveProject(Annonce $annonce){
+        if (Auth::check() && Auth::user()->isInvestor()) {
+            Auth::user()->annonces()->attach($annonce, ['saved' => 1]);
+            return redirect()->back()->with('status', 'L\'annonce a bien été enregistrée dans la liste de vos annonces');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+    //showInterest
+    public function showInterest(Annonce $annonce){
+        if (Auth::check() && Auth::user()->isInvestor()) {
+            Auth::user()->annonces()->attach($annonce, ['interest' => 1]);
+            return redirect('/chat/'.$annonce->user_id);
+        }
+        else {
+            return redirect('home');
+        }
     }
 
 

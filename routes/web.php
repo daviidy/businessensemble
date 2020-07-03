@@ -43,10 +43,12 @@ Route::get('/admin/annonces', 'AnnonceController@indexAdmin');
 Route::get('/admin/annonces/{annonce}/recommend', 'AnnonceController@recommend');
 Route::get('/admin/annonces/{annonce}/unrecommend', 'AnnonceController@unrecommend');
 
-Route::get('/myProjects', 'UserController@myProjects');
+Route::get('/myProjects', 'AnnonceController@myProjects');
 
 Route::get('/publishProject/{annonce}', 'AnnonceController@publishProject');
 Route::get('/unpublishProject/{annonce}', 'AnnonceController@unpublishProject');
+Route::get('/saveProject/{annonce}', 'AnnonceController@saveProject');
+Route::get('/showInterest/{annonce}', 'AnnonceController@showInterest');
 
 Route::get('/whichCategories', 'CategoryController@indexForAnnonces');
 
