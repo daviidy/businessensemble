@@ -258,6 +258,10 @@ form .inner-form .input-field.third-wrap{margin-bottom:0;width:100%;}
 
 <div style="margin-top: 2rem;" class="ss-page-title">Liste des utilisateurs</div>
 
+@if(session('status'))
+@include('includes.status')
+@endif
+
 <div class="row">
 
     <form style="margin: auto;" action="/searchUsers" enctype="multipart/form-data" method="post">
