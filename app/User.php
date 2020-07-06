@@ -92,5 +92,15 @@ class User extends Authenticatable
       return $this->belongsToMany('App\User', 'related_users', 'related_id', 'user_id');
     }
 
+    /**
+     * [users description]
+     * relationship one to many with Purchase model
+     * @return [array] [description]
+     */
+     public function purchases()
+     {
+         return $this->hasMany('App\Purchase');
+     }
+
 
 }

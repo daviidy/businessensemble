@@ -494,16 +494,20 @@ form .inner-form .input-field.third-wrap{margin-bottom:0;width:100%;}
 
 
 <div style="margin-top: 2rem;" class="ss-page-title">Liste des utilisateurs</div>
+@if(session('status'))
+@include('includes.status')
+@endif
 
 <div class="s003">
       <form action="/searchUsers" enctype="multipart/form-data" method="post">
+         @csrf
         <div class="inner-form">
           <div class="input-field first-wrap">
             <div class="input-select">
               <select data-trigger="" name="choices-single-defaul">
-                <option placeholder="">Category</option>
-                <option>New Arrivals</option>
-                <option>Sale</option>
+                <option placeholder="">Type</option>
+                <option>Entrepreneur</option>
+                <option>Investisseur</option>
                 <option>Ladies</option>
                 <option>Men</option>
                 <option>Clothing</option>
@@ -525,6 +529,7 @@ form .inner-form .input-field.third-wrap{margin-bottom:0;width:100%;}
         </div>
       </form>
     </div>
+
 <div style="margin-bottom: 2rem;justify-content: center;" class="styles__CategoryButtons-vgii8s-3 hqqZXZ">
 <div style="padding: 2rem;" class="row">
 
