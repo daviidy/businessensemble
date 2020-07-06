@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="/notifs/amaran/amaran.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-	
+
 	    <link href="/plugin/build/css/simple-iconpicker.min.css" rel="stylesheet">
 	    <script src="/plugin/build/js/simple-iconpicker.min.js"></script>
         <!-- ==============================================
@@ -653,6 +653,7 @@
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Lever des fonds</a></li>
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/searchUsers">Trouver un associé</a></li>
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/whichCategories">Créer une annonce</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/membership">Tarifs</a></li>
                                         <!--
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
                                         	<a data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
@@ -687,7 +688,7 @@
                         </div>
 
                     </div>
-                    
+
                     <!--/.col-md-7-->
 
 
@@ -790,7 +791,7 @@
                                               <a title="Discover Style 2"  href="/whichCategories" >Créer une annonce</a>
                                             </li>
                                             @endauth
-                                            
+
                                         </ul>
                                     </li>
                                 </ul>

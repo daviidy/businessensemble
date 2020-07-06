@@ -21,6 +21,11 @@ Route::resource('users', 'UserController');
 Route::resource('annonces', 'AnnonceController');
 Route::resource('teams', 'TeamController');
 Route::resource('categories', 'CategoryController');
+Route::resource('pricings', 'PricingController');
+
+Route::resource('purchases', 'PurchaseController');
+
+Route::resource('characteristics', 'CharacteristicController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -52,7 +57,10 @@ Route::get('/showInterest/{annonce}', 'AnnonceController@showInterest');
 
 Route::get('/whichCategories', 'CategoryController@indexForAnnonces');
 
-Route::get('/searchUsers', 'UserController@search');
+Route::get('/searchUsers', 'UserController@goToSearch');
+Route::post('/searchUsers', 'UserController@search');
+
+Route::get('/membership', 'PricingController@indexFront');
 
 
     //ajax routes

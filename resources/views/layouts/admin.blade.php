@@ -407,6 +407,36 @@
                                         </ul>
                                     </li>
 
+                                    <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="icon-diamond"></i></span>
+                                            <span class="pcoded-mtext">Offres de prix</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+
+                                            <li class="">
+                                                <a href="/pricings" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Liste des offres</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/pricings/create" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Ajout d'une offre</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/characteristics" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Liste des caractéristiques</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/characteristics/create" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Ajout d'une caractéristique</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
 
 
                                 </ul>

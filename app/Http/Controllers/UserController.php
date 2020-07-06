@@ -38,9 +38,32 @@ class UserController extends Controller
 
 
 
-    public function search(){
+    public function goToSearch(){
             $users = User::orderby('id', 'asc')->paginate(30);
             return view('users.search', ['users'=> $users]);
+    }
+
+
+    public function search(Request $request){
+            if ($request->has('type') && $request->type !== 'Type') {
+              if ($request->has('user')) {
+                $users = User::where('type', $request->type)->where('name', 'like', '%'.$request->user.'%')->get();
+                return view('users.search', ['users'=> $users]);
+              }
+              else {
+                $users = User::where('type', $request->type)->get();
+                return view('users.search', ['users'=> $users]);
+              }
+
+            }
+            elseif ($request->has('user')) {
+              $users = User::where('name', 'like', '%'.$request->user.'%')->get();
+              return view('users.search', ['users'=> $users]);
+            }
+            else {
+              return redirect()->back()->with('status', 'Aucun utilisateur trouvé');
+            }
+
     }
 
     /**
