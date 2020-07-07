@@ -597,7 +597,23 @@
 				   padding: 0px !important;
 
 				}
+				#col-6{
+					max-width: 40%;
+				}
+				#col-5{
+					margin: 0 auto;
+					flex: 0 0 50.666667%;
+    				max-width: 50.666667%;
+				}
+
+				#col-7{
+					flex: 0 0 100%;
+				    max-width: 100%;
+				    padding: 0 44px!important;
+				    text-align: center;
+				}
 			}
+
         </style>
     </head>
     <body class="home page-template page-template-homepage page-template-homepage-php page page-id-33 logged-in woocommerce-js fullwidth-bg elementor-default elementor-page elementor-page-33">
@@ -606,7 +622,7 @@
 
             <div class="site-header-wrap container">
                 <div class="row">
-                    <div class=" clearfix col-6">
+                    <div class=" clearfix col-6" id="col-6">
                         <div class="thm-explore float-left">
                             <a href="#">
                               <i class="fas fa-sliders-h"></i>
@@ -692,7 +708,7 @@
                     <!--/.col-md-7-->
 
 
-                    <div class=" col-md-3 col-5 col-sm-3 order-lg-2 col-lg-auto" style="">
+                    <div class=" col-md-3 col-5 col-sm-3 order-lg-2 col-lg-auto" id="col-5" style="">
                         <div class="themeum-navbar-header">
                             <div class="logo-wrapper">
                                 <a class="themeum-navbar-brand" href="/">
@@ -705,7 +721,7 @@
                     <!--/.col-md-7-->
 
 
-                    <div class="col-7 col-sm-6 d-lg-none">
+                    <div class="col-7 col-sm-6 d-lg-none" id="col-7">
 
                         <button type="button" class="navbar-toggle float-right" data-toggle="collapse" data-target=".navbar-collapse">
                             <i class="fas fa-bars"></i>
