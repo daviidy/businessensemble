@@ -551,6 +551,12 @@ h4{font-size:1.5rem;}
 .modalauth{
 	padding: 25px;
 }
+.styles__CategoryButtons-vgii8s-3 .row {
+    
+   margin-right: 0!important; 
+   margin-left: 0!important;
+   padding: 0 15px;
+}
 
 </style>
 
