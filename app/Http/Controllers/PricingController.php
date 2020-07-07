@@ -88,7 +88,7 @@ class PricingController extends Controller
     public function edit(Pricing $pricing)
     {
         if (Auth::check() && Auth::user()->isAdmin()) {
-            return view('users.admin.pricings.edit', ['pricing' => $pricing,]);
+            return view('users.admin.pricings.edit', ['pricing' => $pricing]);
         }
         else {
             return redirect('home');
