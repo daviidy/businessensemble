@@ -606,7 +606,7 @@
 
             <div class="site-header-wrap container">
                 <div class="row">
-                    <div class=" clearfix col-5">
+                    <div class=" clearfix col-6">
                         <div class="thm-explore float-left">
                             <a href="#">
                               <i class="fas fa-sliders-h"></i>
