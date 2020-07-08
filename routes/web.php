@@ -17,6 +17,10 @@ Route::get('/', 'UserController@bienvenue');
 
 Auth::routes();
 
+//payments gateways
+Route::post('paypal', 'PaymentController@payWithpaypal')->name('paywithpaypal');
+Route::get('status', 'PaymentController@getPaymentStatus')->name('status');
+
 Route::resource('users', 'UserController');
 Route::resource('annonces', 'AnnonceController');
 Route::resource('teams', 'TeamController');

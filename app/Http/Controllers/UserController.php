@@ -45,16 +45,15 @@ class UserController extends Controller
 
 
     public function search(Request $request){
-        $type = strtolower($request->type);
-            if ($request->has('type') && $request->type !== 'Type') {
+            if ($request->has('type') && $request->type !== 'type') {
 
-                //dd($type);
+                //dd($request->type);
               if ($request->has('user')) {
-                $users = User::where('type', $type)->where('name', 'like', '%'.$request->user.'%')->get();
+                $users = User::where('type', $request->type)->where('name', 'like', '%'.$request->user.'%')->get();
                 return view('users.search', ['users'=> $users]);
               }
               else {
-                $users = User::where('type', $type)->get();
+                $users = User::where('type', $request->type)->get();
                 return view('users.search', ['users'=> $users]);
               }
 
