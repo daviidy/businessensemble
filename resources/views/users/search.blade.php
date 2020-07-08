@@ -488,6 +488,10 @@ form .inner-form .input-field.third-wrap{margin-bottom:0;width:100%;}
     padding: 10%;
     border: none;
 }
+.styles__CategoryButtons-vgii8s-3 .row{
+	margin-left: 0!important;
+	margin-right: 0!important;
+}
 </style>
 
 
