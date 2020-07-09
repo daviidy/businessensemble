@@ -44,10 +44,10 @@
                                             <input name="icon_color" data-jscolor="" value="ab2567" style="border-radius: 5px;border: 2px solid #00000000; padding:10px;">
                                         </div>
                                     </div>
-                                    
-                                
 
-                                    
+
+
+
 
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label"></label>
@@ -81,7 +81,7 @@
 
 <script type="text/javascript">
         $(document).ready(function(){
-          
+
           $('.input').iconpicker(".input");
 
 

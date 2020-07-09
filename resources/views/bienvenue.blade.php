@@ -606,7 +606,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                 <div class="elementor-element elementor-element-ae2mfvy elementor-column elementor-col-100 elementor-top-column" data-id="ae2mfvy" data-element_type="column">
                                                     <div class="elementor-column-wrap  elementor-element-populated">
                                                         <div class="elementor-widget-wrap">
-                                                            <div class="elementor-element elementor-element-eb4719c elementor-widget elementor-widget-thm-title" data-id="eb4719c" data-element_type="widget" data-widget_type="thm-title.default">
+                                                            <div class="elementor-element elementor-element-eb4719c elementor-widget elementor-widget-thm-title" data-id="eb4719c" data-element_type="widget" data-widget_type="thm-title.default" id="Nos_projets">
                                                                 <div class="elementor-widget-container">
 
                                                                     <div class="backnow-title-content-wrapper">
@@ -650,9 +650,10 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
 
                                                                                     <div class="row">
 
-                                                                                        <div class="col-lg-4">
+                                                                                        <div class="col-lg-4" >
                                                                                             <div class="themeum-tab-inner d-flex align-items-center">
-                                                                                                <div class="themeum-tab-category">
+                                                                                                <div class="themeum-tab-category"style="margin: 0 auto" >
+
                                                                                                     <div class="thm-cat-icon" style="color:#{{$category->icon_color}}"><i class="fas {{$category->icon}}"></i></div>
                                                                                                     <h3 class="crowd-cat-title"><a href="{{url('categories', $category)}}" data-hcolor="#33d3c0">{{ucfirst($category->name)}}</a></h3>
                                                                                                     <h6>{{count($category->annonces->where('status', 1))}}+ Projets</h6>
@@ -1611,7 +1612,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                         <div class="elementor-container elementor-column-gap-default">
                                             <div class="elementor-row">
                                                 <div class="elementor-element elementor-element-8eb8907 elementor-column elementor-col-33 elementor-top-column" data-id="8eb8907" data-element_type="column">
-                                                    <div class="elementor-column-wrap  elementor-element-populated">
+                                                    <div class="elementor-column-wrap  elementor-element-populated populated">
                                                         <div class="elementor-widget-wrap">
                                                             <div class="elementor-element elementor-element-c101f87 elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="c101f87"
                                                               data-element_type="widget" data-widget_type="icon-box.default">
@@ -1619,7 +1620,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                     <div class="elementor-icon-box-wrapper">
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
-                                                                                <i class="fas fa-assistive-listening-systems"></i> </span>
+                                                                                <img src="/assets/imgs/imobilier.jpg" alt=""> </span>
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
@@ -1634,7 +1635,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-3210aaa elementor-column elementor-col-33 elementor-top-column" data-id="3210aaa" data-element_type="column">
-                                                    <div class="elementor-column-wrap  elementor-element-populated">
+                                                    <div class="elementor-column-wrap  elementor-element-populated populated">
                                                         <div class="elementor-widget-wrap">
                                                             <div class="elementor-element elementor-element-32ae4d5 elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="32ae4d5"
                                                               data-element_type="widget" data-widget_type="icon-box.default">
@@ -1642,7 +1643,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                     <div class="elementor-icon-box-wrapper">
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
-                                                                                <i class="fab fa-gg"></i> </span>
+                                                                              <img src="/assets/imgs/sante.jpg" alt="" style="height:240px;"> </span>
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
@@ -1657,7 +1658,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-d899019 elementor-column elementor-col-33 elementor-top-column" data-id="d899019" data-element_type="column">
-                                                    <div class="elementor-column-wrap  elementor-element-populated">
+                                                    <div class="elementor-column-wrap  elementor-element-populated populated">
                                                         <div class="elementor-widget-wrap">
                                                             <div class="elementor-element elementor-element-ab39082 elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="ab39082"
                                                               data-element_type="widget" data-widget_type="icon-box.default">
@@ -1665,7 +1666,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                     <div class="elementor-icon-box-wrapper">
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
-                                                                                <i class="far fa-sun"></i> </span>
+                                                                                <img src="/assets/imgs/inovation.jpg" alt=""> </span>
                                                                         </div>
                                                                         <div class="elementor-icon-box-content">
                                                                             <h5 class="elementor-icon-box-title">
@@ -1970,7 +1971,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                               data-widget_type="button.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="elementor-button-wrapper">
-                                                                        <a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                                                        <a href="#Nos_projets" class="elementor-button-link elementor-button elementor-size-sm" role="button">
                                                                             <span class="elementor-button-content-wrapper">
                                                                                 <span class="elementor-button-text">Découvrez nos projets</span>
                                                                             </span>
@@ -2053,7 +2054,20 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
             <!--/#content-->
         </section>
 
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.elementor-button-wrapper a').on('click', function (e) {
+				    e.preventDefault();
 
+				    var Nos_projets = this.hash;
+				    var $Nos_projets = $(Nos_projets);
+
+				    $('html, body').stop().animate({
+				        'scrollTop': $Nos_projets.offset().top
+				    }, 800, );
+				});
+			});
+		</script>
 
 
 @endsection

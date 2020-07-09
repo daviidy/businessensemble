@@ -201,7 +201,7 @@
 			.common-menu-wrap .nav>li{display:inline-block;position:relative;padding:0;margin-left:28px;}
 			.thm-explore>a,.common-menu-wrap .nav>li>a{display:inline-block;line-height:30px;padding:0;font-size:14px;font-weight:300;color:#676767;position:relative;padding:12px 0;transition:400ms;-webkit-transition:400ms;}
 			.logo-wrapper{padding:0;}
-			.logo-wrapper a{display:inline-block;padding:14px 0;}
+    .logo-wrapper a{display:inline-block;/*padding:14px 0;*/}
 			.common-menu-wrap .nav>li>a:hover,.common-menu-wrap .nav>li>a:focus{background-color:transparent;}
 			.common-menu-wrap .nav>li.menu-item-has-children{position:relative;z-index:100;}
 			.common-menu-wrap .nav>li.menu-item-has-children>a{position:relative;}
@@ -247,7 +247,7 @@
 			.thm-fullscreen-search label{position:absolute;right:0;top:0;line-height:55px;font-size:18px;color:#fff;text-transform:uppercase;}
 			.themeum-navbar-header{display:inline-block;}
 			.backnow-login-register{position:relative;float:right;padding:10px 0;}
-			.backnow-login-register ul{list-style:none;padding:0;margin:0 0 0 10px;position:relative;display:inline-block;position:relative;}
+			.backnow-login-register ul{list-style:none;padding:0;margin:0 0 0 10px;position:relative;display:flex;position:relative;}
 			.backnow-login-register ul::before{content:'';position:absolute;left:0;top:50%;background:#DCDCDC;width:1px;height:15px;margin-top:-7.5px;}
 			.backnow-login-register ul li{display:inline-block;position:relative;padding:0;margin-left:15px;}
 			.backnow-login-register ul li a{display:block;position:relative;font-size:14px;font-weight:300;color:#676767;}
@@ -613,7 +613,29 @@
 				    text-align: center;
 				}
 			}
-
+      .populated:hover {
+          box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0px 0px 8px 0 rgba(0, 0, 0, 0.19);
+          border-radius: 5px;
+        }
+      .btn {
+          display: inline-block;
+          font-weight: normal;
+          line-height: 1.25;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          border: 1px solid transparent;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border-radius: 0.25rem;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+      }
         </style>
     </head>
     <body class="home page-template page-template-homepage page-template-homepage-php page page-id-33 logged-in woocommerce-js fullwidth-bg elementor-default elementor-page elementor-page-33">
@@ -1041,10 +1063,9 @@
         $(document).ready(function(){
           $("#myBtn").click(function(){
             $("#myModal").modal();
-
           });
 
-          });
+        });
       </script>
 
 
