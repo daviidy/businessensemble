@@ -80,6 +80,7 @@ background-color: #00bf9c !important;
 <section class="pricing py-5">
   <div class="container">
       @auth
+      @if(count(Auth::user()->purchases->where('status', '1')) > 0)
     <div class="row contentbox_row">
           <div class="col-sm-12 contentbox center">
 
@@ -103,6 +104,7 @@ background-color: #00bf9c !important;
           </div>
 
       </div>
+      @endif
       @endauth
     <div class="row">
 

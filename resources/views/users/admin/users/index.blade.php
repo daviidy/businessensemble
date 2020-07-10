@@ -72,7 +72,17 @@
 
 
                                         </td>
-                                        <td><a href="#">Définir comme admin</a></td>
+                                        <td>
+                                            @if($user->type == 'admin')
+                                            <a href="/revokeAdmin/{{$user->id}}">
+                                                Retirer les droits administrateurs
+                                            </a>
+                                            @else
+                                            <a href="/defineAsAdmin/{{$user->id}}">
+                                                Définir comme admin
+                                            </a>
+                                            @endif
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>

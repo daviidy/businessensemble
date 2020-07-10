@@ -36,6 +36,33 @@ class UserController extends Controller
 
     }
 
+    //set user as admin
+    public function defineAsAdmin(User $user)
+    {
+        if (Auth::check() && Auth::user()->isAdmin()) {
+            $user->type = 'admin';
+            $user->save();
+            return redirect()->back()->with('status', 'L\utilisateur '.$user->name.' est maintenant administrateur');
+        }
+        else {
+            return redirect('home');
+        }
+
+    }
+
+    //revoke user admin rights
+    public function revokeAdmin(User $user)
+    {
+        if (Auth::check() && Auth::user()->isAdmin()) {
+            $user->type = 'entrepreneur';
+            $user->save();
+            return redirect()->back()->with('status', 'L\utilisateur '.$user->name.' n\'est maintenant plus administrateur');
+        }
+        else {
+            return redirect('home');
+        }
+
+    }
 
 
     public function goToSearch(){

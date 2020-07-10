@@ -53,6 +53,8 @@ Route::get('/admin/annonces/{annonce}/recommend', 'AnnonceController@recommend')
 Route::get('/admin/annonces/{annonce}/unrecommend', 'AnnonceController@unrecommend');
 
 Route::get('/myProjects', 'AnnonceController@myProjects');
+Route::get('/defineAsAdmin/{user}', 'UserController@defineAsAdmin');
+Route::get('/revokeAdmin/{user}', 'UserController@revokeAdmin');
 
 Route::get('/publishProject/{annonce}', 'AnnonceController@publishProject');
 Route::get('/unpublishProject/{annonce}', 'AnnonceController@unpublishProject');

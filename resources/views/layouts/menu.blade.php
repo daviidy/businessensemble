@@ -680,7 +680,7 @@
                                     <a href="#">Investisseur</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Investir</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#Nos_projets">Investir</a></li>
 
                                     </ul>
                                 </li>
@@ -688,7 +688,7 @@
                                 <a href="#">Porteur de projet</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Lever des fonds</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/whichCategories">Lever des fonds</a></li>
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/searchUsers">Trouver un associé</a></li>
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/whichCategories">Créer une annonce</a></li>
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/membership">Tarifs</a></li>
@@ -807,19 +807,19 @@
                                             <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-384 ">
-                                            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a title="Blog" href="https://demo.themeum.com/wordpress/backnow/blog/">Investir</a></li>
+                                            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a title="Blog" href="Nos_projets">Investir</a></li>
                                             <!--li id="menu-item-1824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824"><a title="Blog fullwidth" href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Explorer</a></li>
                                             <li id="menu-item-1470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1470"><a title="About" href="https://demo.themeum.com/wordpress/backnow/about/">Rechercher</a></li-->
 
                                         </ul>
                                     </li>
-                                    <li id="menu-item-1823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="https://demo.themeum.com/wordpress/backnow/discover/">Porteur de projet</a>
+                                    <li id="menu-item-1823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="#">Porteur de projet</a>
                                         <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-1823">
                                             <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-1823 ">
                                         	<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Lever des fonds</a>
+                                              <a title="Discover Style 2" href="/whichCategories">Lever des fonds</a>
                                             </li>
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
                                               <a title="Discover Style 2" href="/searchUsers">Trouver un associé</a>
