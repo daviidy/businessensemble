@@ -708,7 +708,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                         <div class="wpneo-campaign-summary progressbar-content-wrapper">
                             <div class="wpneo-campaign-summary-inner thm-progress-bar" itemscope="" itemtype="http://schema.org/DonateAction">
                                 <ul class="thm-single-category">
-                                    <li><a href="https://demo.themeum.com/wordpress/backnow/product-category/clothing/" style="color:#33d3c0;"><span>{{$annonce->category->name}}</span></a></li>
+                                    <li><a href="{{url('categories', $annonce->category)}}" style="color:#33d3c0;"><span>{{$annonce->category->name}}</span></a></li>
                                 </ul>
                                 <div></div>
                                 <h2 class="wpneo-campaign-title">{{$annonce->title}}</h2>
