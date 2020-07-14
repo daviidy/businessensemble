@@ -827,7 +827,11 @@ button{background-image:none;}
                                     </div>
                                 </div>
                                 <div class="progress">
+                                    @if($annonce->raising_amount !== 0 && $annonce->raising_amount !== null)
                                     <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%;"></div>
+                                    @else
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: 0%;"></div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -844,7 +848,11 @@ button{background-image:none;}
                                     <span>{{$annonce->user->country}}</span>
                                 </div>
                                 <div class="themeum-author-funded pull-right">
+                                    @if($annonce->raising_amount !== 0 && $annonce->raising_amount !== null)
                                     <h6>{{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%</h6>
+                                    @else
+                                    <h6>0 %</h6>
+                                    @endif
                                     <span>Achevés</span>
                                 </div>
                             </div>

@@ -22,8 +22,8 @@
                  <button type="button" class="btn btn-basic btn-sm vimeo">Vimeo</button>
                 <button type="button" class="btn btn-basic btn-sm update ">Télécharger</button>
             </div>
-            <input class="video_t " id="int" type="url" name="youtube" placeholder="Intégrer une vidéo Youtube" />
-            <input class="video_t " id="vimeo" type="url" name="vimeo" placeholder="Intégrer une vidéo Vimeo" />
+            <input class="video_t " id="int" type="text" name="youtube" placeholder="Intégrer une vidéo Youtube" />
+            <input class="video_t " id="vimeo" type="text" name="vimeo" placeholder="Intégrer une vidéo Vimeo" />
             <input class="video_t" id="tele" type="file" name="videoDownload"/>
         </div>
         <div class="col-md-6 col-sm-12">

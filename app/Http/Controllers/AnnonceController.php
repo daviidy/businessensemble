@@ -206,7 +206,34 @@ class AnnonceController extends Controller
      */
     public function update(Request $request, Annonce $annonce)
     {
+        //dd($request->has('vimeo'));
+        /*
+        $annonce->video = $request->youtube;
+        $annonce->save();
         $annonce->update($request->all());
+
+        */
+
+
+        if ($request->has('youtube') && $request->youtube !== " ") {
+            $annonce->video = $request->youtube;
+            $annonce->save();
+        }
+        elseif ($request->has('vimeo') && $request->vimeo !== " ") {
+            $annonce->video = $request->vimeo;
+            $annonce->save();
+        }
+
+
+
+
+        if ($request->hasFile('videoDownload') ) {
+            $video = $request->file('videoDownload');
+            $filename = time() . '.' . $video->getClientOriginalExtension();
+            $video->move(storage_path('app/public/videos/annonces'), $filename);
+            $annonce->video = $filename;
+            $annonce->save();
+        }
 
         if ($request->hasFile('logo') ) {
             $image = $request->file('logo');
@@ -291,23 +318,7 @@ class AnnonceController extends Controller
           }
         }
 
-        if ($request->has('youtube')) {
-            $annonce->video = $request->youtube;
-            $annonce->save();
-        }
 
-        if ($request->has('vimeo')) {
-            $annonce->video = $request->vimeo;
-            $annonce->save();
-        }
-
-        if ($request->hasFile('videoDownload') ) {
-            $video = $request->file('videoDownload');
-            $filename = time() . '.' . $video->getClientOriginalExtension();
-            $video->move(storage_path('app/public/videos/annonces'), $filename);
-            $annonce->video = $filename;
-            $annonce->save();
-        }
 
         return redirect()->back()->with('status', 'L\'annonce a été modifiée avec succès');
 

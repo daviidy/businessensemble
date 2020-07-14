@@ -423,7 +423,7 @@ footer {
                     <div class="wpneo-links-lists "><a href="https://demo.themeum.com/wordpress/backnow/dashboard/?page_type=bookmark">Bookmarks</a></div>
                 </div>
             </div-->
-            <div class="wp-crowd-new-campaign"><a class="wp-crowd-btn wp-crowd-btn-primary"  href="{{url('annonces', $annonce)}}">Voir l'annonce</a></div>
+            <div class="wp-crowd-new-campaign"><a class="wp-crowd-btn wp-crowd-btn-primary"  href="{{url('annonces', $annonce)}}" target="_blank">Voir l'annonce</a></div>
         </div>
     </div>
 

@@ -730,14 +730,24 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     </span>
                                 -->
 
+                                    @if(count($annonce->users->where('saved', 1)) > 0)
                                     <span class="thm-Price-amount text-center">
                                         <span class="thm-love-btn" data-campaign="1859" data-user="1048">
                                             <i class="far fa-heart"></i>
                                             <span class="woocommerce-Price-amount amount latest-price">
-                                                49 </span>
+                                                {{count($annonce->users->where('saved', 1))}} </span>
                                             <span class="thm-raise-sp">ont enregistré cette annonce</span>
                                         </span>
                                     </span>
+                                    @else
+                                    <span class="thm-Price-amount text-center">
+                                        <span class="thm-love-btn" data-campaign="1859" data-user="1048">
+                                            <i class="far fa-heart"></i>
+
+                                            <span class="thm-raise-sp">Soyez le premier à enregistrer cette annonce</span>
+                                        </span>
+                                    </span>
+                                    @endif
 
                                     <!-- Review Count -->
                                     <!--
@@ -780,11 +790,19 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                 <div class="wpneo-raised-percent">
                                     <div class="wpneo-meta-name">Pourcentage achevé :</div>
+                                    @if($annonce->raising_amount !== 0 && $annonce->raising_amount !== null)
                                     <div class="wpneo-meta-desc">{{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%</div>
+                                    @else
+                                    <div class="wpneo-meta-desc">0%</div>
+                                    @endif
                                 </div>
 
                                 <div class="progress">
+                                    @if($annonce->raising_amount !== 0 && $annonce->raising_amount !== null)
                                     <div class="progress-bar" style="width: {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%"></div> <br>
+                                    @else
+                                    <div class="progress-bar" style="width: 0%"></div> <br>
+                                    @endif
                                 </div>
 
 
@@ -796,12 +814,19 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                     <div class="thm-meta-desc pull-right text-right">
                                         <span class="thm-Price-amount">
                                             <span class="woocommerce-Price-amount amount">
-                                                {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%</span>
+                                                @if($annonce->raising_amount !== 0 && $annonce->raising_amount !== null)
+                                                {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%
+                                                @else
+                                                0%
+                                                @endif
+                                            </span>
                                         </span>
                                         <span class="thm-raise-sp">
                                             Achevés </span>
                                     </div>
                                 </div>
+                                @auth
+                                @if(Auth::user()->isInvestor())
                                 <div class="wpneo-single-sidebar row">
                                 	<div class="col-md-6 col-sm-12">
                                 		<a href="/showInterest/{{$annonce->id}}"><span class="wpneo_donate_button">Je suis intéressé</span></a>
@@ -814,6 +839,8 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                     <!-- <button class="backnow-remind-me"><?php// _e('Remind me', 'backnow'); ?></button> -->
                                 </div>
+                                @endif
+                                @endauth
                                 <div class="wpneo-location-wrapper">
                                     <i class="wpneo-icon wpneo-icon-location"></i>
                                     <span>Nagasaki, Road 8, Japan</span>
@@ -1023,6 +1050,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                         </div>
 
                                         <!-- Social Share -->
+                                        <!--
                                         <div class="backnow-follow-us pull-right">
                                             <div class="backnow-bio-social jssocials" data-url="https://demo.themeum.com/wordpress/backnow/product/dreamfall-chapters-the-longest-journey/">
                                                 <div class="jssocials-shares">
@@ -1034,6 +1062,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                                 </div>
                                             </div>
                                         </div>
+                                    -->
                                     </div>
 
                                 </div>
