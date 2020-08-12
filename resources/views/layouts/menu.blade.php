@@ -644,7 +644,7 @@
 
             <div class="site-header-wrap container">
                 <div class="row">
-                    <div class=" clearfix col-6" id="col-6">
+                    <div class=" clearfix col-7" id="col-6">
                         <div class="thm-explore float-left">
                             <a href="#">
                               <i class="fas fa-sliders-h"></i>
@@ -692,6 +692,23 @@
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/searchUsers">Trouver un associé</a></li>
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/whichCategories">Créer une annonce</a></li>
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/membership">Tarifs</a></li>
+                                        <!--
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
+                                        	<a data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
+                                        </li>
+
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://demo.themeum.com/wordpress/backnow/discover-style-2/">Outil de recherche</a></li>
+                                    -->
+                                    </ul>
+                                </li>
+
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-menu-child">
+                                <a href="#">Présentation</a>
+                                  <i class="fas fa-angle-down"></i>
+                                    <ul role="menu" class="sub-menu">
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Présentation</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Services</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Contact</a></li>
                                         <!--
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
                                         	<a data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
@@ -829,6 +846,23 @@
                                               <a title="Discover Style 2"  href="/whichCategories" >Créer une annonce</a>
                                             </li>
                                             @endauth
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-1825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="#">Présentation</a>
+                                        <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-1825">
+                                            <i class="fas fa-angle-right"></i>
+                                        </span>
+                                        <ul role="menu" class="collapse collapse-1825 ">
+                                        	<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
+                                              <a title="Discover Style 2" href="/whichCategories">Présentation</a>
+                                            </li>
+                                            <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
+                                              <a title="Discover Style 2" href="/searchUsers">Services</a>
+                                            </li>
+                                            <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
+                                              <a title="Discover Style 2" href="/searchUsers">Contact</a>
+                                            </li>
 
                                         </ul>
                                     </li>
