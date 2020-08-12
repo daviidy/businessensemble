@@ -4,6 +4,14 @@
 @section('content')
 
   <style media="screen">
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  *{
+  	font-family: 'Montserrat', sans-serif ;
+
+  }
+  h1,h2,h3,h4,h5,h6,p{
+  	font-family: 'Montserrat', sans-serif !important;
+  }
     /*! CSS Used from: https://businessensemble.fr/wp-content/plugins/designthemes-core-features/shortcodes/css/shortcodes.css?ver=5.2.7 ; media=all */
     @media all {
 
@@ -1592,7 +1600,7 @@
   </style>
 
 
-  <div id="main">
+  <div id="main" style="background-color: #fff;">
     <section class="main-title-section-wrapper default" style="background-color:#eaeff5;">
       <div class="container">
         <div class="main-title-section">
@@ -1642,7 +1650,7 @@
             </div>
           </div>
           <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid dt-sc-centered-border-columns dt-sc-skin-highlight dt-sc-dark-bg vcr_float_right vc_custom_1503923092652"
-            style="position: relative; left: -44.5px; box-sizing: border-box; width: 1349px; padding-left: 44.5px; padding-right: 44.5px;">
+            style="position: relative;/* left: -44.5px;*/ box-sizing: border-box;/* width: 1349px;*/ padding-left: 44.5px; padding-right: 44.5px;">
             <div class="aligncenter wpb_column vc_column_container vc_col-sm-12">
               <div class="vc_column-inner ">
                 <div class="wpb_wrapper">

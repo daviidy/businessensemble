@@ -4,6 +4,14 @@
 @section('content')
 
 <style media="screen">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+	font-family: 'Montserrat', sans-serif ;
+
+}
+h1,h2,h3,h4,h5,h6,p{
+	font-family: 'Montserrat', sans-serif !important;
+}
   /*! CSS Used from: https://businessensemble.fr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7 ; media=all */
   @media all {
     div.wpcf7 .screen-reader-response {
@@ -1441,7 +1449,7 @@
   }
 </style>
 
-<div id="main">
+<div id="main" style="background-color: #fff;">
   <section class="main-title-section-wrapper default" style="background-color:#eaeff5;">
     <div class="container">
       <div class="main-title-section">

@@ -7,8 +7,11 @@
 </style>
 <style type="text/css">
 *{
-	font-family: 'Montserrat', sans-serif !important;
+	font-family: 'Montserrat', sans-serif ;
 
+}
+h1,h2,h3,h4,h5,h6,p{
+	font-family: 'Montserrat', sans-serif !important;
 }
   /*! CSS Used from: https://businessensemble.fr/wp-content/plugins/designthemes-core-features/shortcodes/css/shortcodes.css?ver=5.2.7 ; media=all */
   @media all {
@@ -391,13 +394,13 @@
     }
 
     .text-hook {
-      font-family: 'Lato', sans-serif;
+      font-family: font-family: 'Montserrat', sans-serif ;
     }
 
     h1,
     h2,
     h6 {
-      font-family: 'Rubik', sans-serif;
+      font-family: font-family: 'Montserrat', sans-serif ;
     }
 
     a {
@@ -753,7 +756,7 @@
   }
 
   .main-title-section h1 {
-    font-family: Rubik;
+    font-family: 'Montserrat', sans-serif ;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -1388,7 +1391,7 @@
 </style>
 
 
-  <div id="main">
+  <div id="main" style="background-color: #fff;">
     <section class="main-title-section-wrapper default" style="background-color:#eaeff5;">
       <div class="container">
         <div class="main-title-section">
@@ -1402,7 +1405,7 @@
         <!-- #post-1637 -->
         <div id="post-1637" class="post-1637 page type-page status-publish hentry">
           <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"
-            style="position: relative; left: -44.5px; box-sizing: border-box; width: 1349px;">
+            style="position: relative;/* left: -44.5px;*/ box-sizing: border-box; /*width: 1349px;*/">
             <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
               <div class="vc_column-inner vc_custom_1502889856908" style="background-attachment:fixed;">
                 <div class="wpb_wrapper">

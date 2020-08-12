@@ -706,9 +706,9 @@
                                 <a href="#">Présentation</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Présentation</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Services</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#">Contact</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/presentation">Présentation</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/service">Services</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/contact">Contact</a></li>
                                         <!--
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
                                         	<a data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
@@ -855,13 +855,13 @@
                                         </span>
                                         <ul role="menu" class="collapse collapse-1825 ">
                                         	<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="/whichCategories">Présentation</a>
+                                              <a title="Discover Style 2" href="/presentation">Présentation</a>
                                             </li>
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="/searchUsers">Services</a>
+                                              <a title="Discover Style 2" href="/service">Services</a>
                                             </li>
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="/searchUsers">Contact</a>
+                                              <a title="Discover Style 2" href="/contact">Contact</a>
                                             </li>
 
                                         </ul>
