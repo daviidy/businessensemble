@@ -16,6 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'UserController@bienvenue');
 
 Auth::routes();
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/service', function () {
+    return view('service');
+});
+Route::get('/presentation', function () {
+    return view('presentation');
+});
 
 //payments gateways
 Route::post('paypal', 'PaymentController@payWithpaypal')->name('paywithpaypal');

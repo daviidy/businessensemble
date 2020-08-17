@@ -592,7 +592,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!--END SLIDER-->
                                     <div class="ud-component--logged-out-home--value-props" data-component-props="{&quot;className&quot;:&quot;transfer_billboard_margin&quot;,&quot;type&quot;:&quot;lohp_value_props&quot;}" ng-non-bindable="">
                                         <div class="discovery-unit-empty-render" data-reactroot=""></div>
                                     </div>
