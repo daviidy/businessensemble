@@ -578,7 +578,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                 <div class="elementor-section-wrap">
 
                                     <!--slider-->
-                                    <div class="ud-component--logged-out-home--billboard"
+                                    <!--div class="ud-component--logged-out-home--billboard"
                                       data-component-props="{&quot;image&quot;:&quot;https://img-b.udemycdn.com/notices/home_banner/image/048e0cdc-3e71-47dc-ae30-e9ac7a3504b5.jpg&quot;,&quot;title_responsive&quot;:&quot;Apprenez \u00e0 votre rythme&quot;,&quot;image_responsive&quot;:&quot;https://img-b.udemycdn.com/notices/home_banner/image_responsive/f9cd7c14-72c2-48a4-908f-917ec4d2150f.jpg&quot;,&quot;image_udlite&quot;:&quot;https://img-b.udemycdn.com/notices/home_banner/image_udlite/7cf844b2-4371-45ea-9ef5-e10ea212eac2.jpg&quot;,&quot;subtitle_responsive&quot;:&quot;\u00c9tudiez \u00e0 tout moment le sujet que vous souhaitez. Faites d\u00e8s maintenant votre choix parmi des milliers de cours enseign\u00e9s par des formateurs confirm\u00e9s.&quot;,&quot;id&quot;:8310,&quot;image_responsive_udlite&quot;:&quot;https://img-b.udemycdn.com/notices/home_banner/image_responsive_udlite/772d511b-f5ff-4d43-8b27-1fab0560d0e5.jpg&quot;,&quot;title&quot;:&quot;Apprenez \u00e0 votre rythme&quot;,&quot;url&quot;:&quot;&quot;,&quot;subtitle&quot;:&quot;\u00c9tudiez \u00e0 tout moment le sujet que vous souhaitez. Faites d\u00e8s maintenant votre choix parmi des milliers de cours enseign\u00e9s par des formateurs confirm\u00e9s.&quot;}"
                                       ng-non-bindable="">
                                         <div data-purpose="billboard" class="billboard--billboard--3-fQr" data-reactroot="">
@@ -591,7 +591,8 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
 
                                             </div>
                                         </div>
-                                    </div>
+                                    </div-->
+                                    @include('includes.slide');
                                     <!--END SLIDER-->
                                     <div class="ud-component--logged-out-home--value-props" data-component-props="{&quot;className&quot;:&quot;transfer_billboard_margin&quot;,&quot;type&quot;:&quot;lohp_value_props&quot;}" ng-non-bindable="">
                                         <div class="discovery-unit-empty-render" data-reactroot=""></div>
@@ -642,7 +643,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                             <div class="tab-content" id="pills-tabContent">
                                                                                 @foreach($categories as $category)
                                                                                 @if(count($category->annonces->where('status', 1)) > 0)
-                                                                                <div class="tab-pane fade {{$loop->first ? 'active show' : ''}}" id="{{$category->id}}">
+                                                                                <div class="tab-pane fade {{$loop->first ? 'active in' : ''}}" id="{{$category->id}}">
 
 
 
