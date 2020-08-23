@@ -673,14 +673,14 @@
                         <div id="main-menu" class="common-menu-wrap float-left d-none d-lg-block">
                             <ul id="menu-main-menu" class="nav">
                                 <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children active has-menu-child"><a
-                                      href="/">Accueil</a>
+                                      href="https://businessensemble.fr">Accueil</a>
 
                                 </li>
                                 <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-menu-child">
                                     <a href="#">Investisseur</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="#Nos_projets">Investir</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/#Nos_projets">Investir</a></li>
 
                                     </ul>
                                 </li>
@@ -703,12 +703,12 @@
                                 </li>
 
                                 <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-menu-child">
-                                <a href="#">Présentation</a>
+                                <a href="#">A propos</a>
                                   <i class="fas fa-angle-down"></i>
                                     <ul role="menu" class="sub-menu">
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/presentation">Présentation</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/service">Services</a></li>
-                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="/contact">Contact</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://businessensemble.fr/presentation/">Présentation</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://businessensemble.fr/services-team/">Services</a></li>
+                                        <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child"><a href="https://businessensemble.fr/contact/">Contact</a></li>
                                         <!--
                                         <li class=" menu-item menu-item-type-post_type menu-item-object-page has-menu-child">
                                         	<a data-toggle="modal" data-target="#myModal_2" href="#" >Créer une annonce</a>
@@ -816,7 +816,7 @@
                             <div class="collapse navbar-collapse">
                                 <ul id="menu-main-menu-1" class="nav navbar-nav">
                                     <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-27 active"><a title="Home"
-                                          href="http://demo.themeum.com/wordpress/backnow/">Accueil</a>
+                                          href="https://businessensemble.fr">Accueil</a>
 
                                     </li>
                                     <li id="menu-item-384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-384"><a title="Page" href="#">Investisseur</a>
@@ -824,7 +824,7 @@
                                             <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-384 ">
-                                            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a title="Blog" href="Nos_projets">Investir</a></li>
+                                            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a title="Blog" href="/#Nos_projets">Investir</a></li>
                                             <!--li id="menu-item-1824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824"><a title="Blog fullwidth" href="https://demo.themeum.com/wordpress/backnow/blog-wide/">Explorer</a></li>
                                             <li id="menu-item-1470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1470"><a title="About" href="https://demo.themeum.com/wordpress/backnow/about/">Rechercher</a></li-->
 
@@ -849,19 +849,19 @@
 
                                         </ul>
                                     </li>
-                                    <li id="menu-item-1825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="#">Présentation</a>
+                                    <li id="menu-item-1825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1823"><a title="Discover" href="#">A propos</a>
                                         <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-1825">
                                             <i class="fas fa-angle-right"></i>
                                         </span>
                                         <ul role="menu" class="collapse collapse-1825 ">
                                         	<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="/presentation">Présentation</a>
+                                              <a title="Discover Style 2" href="https://businessensemble.fr/presentation/">Présentation</a>
                                             </li>
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="/service">Services</a>
+                                              <a title="Discover Style 2" href="https://businessensemble.fr/services-team/">Services</a>
                                             </li>
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
-                                              <a title="Discover Style 2" href="/contact">Contact</a>
+                                              <a title="Discover Style 2" href="https://businessensemble.fr/contact/">Contact</a>
                                             </li>
 
                                         </ul>
