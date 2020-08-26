@@ -213,6 +213,7 @@ class AnnonceController extends Controller
         $annonce->update($request->all());
 
         */
+        $annonce->update($request->all());
 
 
         if ($request->has('youtube') && $request->youtube !== " ") {
