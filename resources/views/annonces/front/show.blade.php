@@ -682,7 +682,11 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
 
                                 <div class="video-container pull-left"
                                   style="width:100%; height:390px; margin-bottom:30px; ">
+                                  @if($annonce->logo)
                                     {!!$annonce->video!!}
+                                    @else
+                                    <img style="width: 100%;" src="/storage/images/annonces/{{$annonce->logo}}" alt="">
+                                  @endif
                                 </div>
 
                             </div>
