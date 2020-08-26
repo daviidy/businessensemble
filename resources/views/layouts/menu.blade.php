@@ -15,10 +15,10 @@
         <!-- ==============================================
 		Favicons
 		=============================================== -->
-	    <link rel="shortcut icon" href="/assets/imgs/logo-be.jpg">
-	    <link rel="apple-touch-icon" href="/assets/imgs/logo-be.jpg">
-	    <link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/logo-be.jpg">
-	    <link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/logo-be.jpg">
+	    <link rel="shortcut icon" href="https://businessensemble.fr/cropped-logo-be-jpg/">
+	    <link rel="apple-touch-icon" href="https://businessensemble.fr/cropped-logo-be-jpg/">
+	    <link rel="apple-touch-icon" sizes="72x72" href="https://businessensemble.fr/cropped-logo-be-jpg/">
+	    <link rel="apple-touch-icon" sizes="114x114" href="https://businessensemble.fr/cropped-logo-be-jpg/">
 
 
 
