@@ -116,7 +116,7 @@ background-color: #00bf9c !important;
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
             <h5 class="card-title text-muted text-uppercase text-center">{{$pricing->name}}</h5>
-            <h6 class="card-price text-center">€{{$pricing->price}}<span class="period">/mois</span></h6>
+            <h6 class="card-price text-center">{{$pricing->price}} €<span class="period">/mois</span></h6>
             <hr>
             <ul class="fa-ul">
               @foreach($pricing->characteristics as $characteristic)
