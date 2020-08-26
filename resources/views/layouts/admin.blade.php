@@ -114,6 +114,7 @@
                             </li>
                         </ul>
                         <ul class="nav-right">
+                            <!--
                             <li class="header-notification">
                                 <div class="dropdown-primary dropdown">
                                     <div class="dropdown-toggle" data-toggle="dropdown">
@@ -166,6 +167,7 @@
                                     </div>
                                 </div>
                             </li>
+                        -->
                             <li class="user-profile header-notification">
                                 <div class="dropdown-primary dropdown">
                                     <div class="dropdown-toggle" data-toggle="dropdown">
