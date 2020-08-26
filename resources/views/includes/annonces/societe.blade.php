@@ -53,7 +53,7 @@
 
                         <div class="col-md-6 col-sm-12">
                             <label for="fname">Quel est le montant total que vous levez ?</label>
-                            <input type="number" value="raising_amount" name="raising_amount" placeholder="€" />
+                            <input type="number" value="{{$annonce->raising_amount}}" name="raising_amount" placeholder="€" />
                         </div>
 
                         <div class="col-md-6 col-sm-12">
@@ -70,4 +70,3 @@
 
                     <input type="button" name="next" class="next action-button" value="Suivant" />
                 </fieldset>
-
