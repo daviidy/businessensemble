@@ -48,7 +48,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <a class="float-right" href="/admin/pricings/{{$pricing->id}}/edit">
+                                                    <a class="float-right" href="{{route('pricings.edit', $pricing)}}">
                                                         <i class="icon-pencil text-primary"></i>
                                                     </a>
                                                 </div>

@@ -36,7 +36,7 @@
                     @enderror
                     <button class="kafe-btn kafe-btn-mint btn-block" type="submit" name="subm">Se connecter</button>
                     <br/>
-                    <a class="btn btn-dark " href="/register" role="button">Pas de compte ? Inscrivez-vous</a>
+                    <a class="btn btn-dark " href="/register" role="button">Pas de compte ?</a>
                     <a class="btn btn-dark " href="#" role="button">Mot de passe oublié</a>
                 </form>
 
