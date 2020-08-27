@@ -440,6 +440,9 @@
           .bottom-widget{width:100%;}
           }
           }
+          @media screen and (max-width: 1300px) and (min-width: 991px) {
+            .common-menu-wrap .nav>li>a,.thm-explore ul li a,.thm-explore a,.common-menu-wrap .nav> li > ul li a{font-size:11.5px;}
+          }
           /*! CSS Used from: https://demo.themeum.com/wordpress/backnow/wp-content/themes/backnow/style.css?ver=4.9.15 ; media=all */
           @media all{
           a{text-decoration:none!important;}
@@ -642,9 +645,9 @@
         <header id="masthead" class="site-header header header-solid">
 
 
-            <div class="site-header-wrap container">
+            <div class="site-header-wrap container-fluid">
                 <div class="row">
-                    <div class=" clearfix col-7" id="col-6">
+                    <div class=" clearfix col-6" id="col-6">
                         <div class="thm-explore float-left">
                             <a href="#">
                               <i class="fas fa-sliders-h"></i>
