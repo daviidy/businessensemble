@@ -33,9 +33,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">icone</label>
+                                        <label class="col-sm-2 col-form-label">Image</label>
                                         <div class="col-sm-10">
-                                            <input type=""  name="icon"   class="form-control input" >
+                                            <input type="file"  name="icon"   class="form-control input" >
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -76,6 +76,7 @@
     <div id="styleSelector">
     </div>
 </div>
+<!--=====
 <script src="/js/jscolor.js"></script>
 
 
@@ -87,5 +88,5 @@
 
           });
       </script>
-
+============-->
 @endsection

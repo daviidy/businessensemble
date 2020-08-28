@@ -36,7 +36,7 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Nom de la catégorie</th>
-                                        <th>icone</th>
+                                        <th>Images</th>
                                         <th>Couleur de la catégorie</th>
                                     </tr>
                                 </thead>
