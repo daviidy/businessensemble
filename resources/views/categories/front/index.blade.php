@@ -644,7 +644,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 @endguest
                     <div class="card profile-card-5">
                         <div class="card-img-block">
-                            <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+                            <img class="card-img-top" src="/storage/images/categories/{{$category->image}}" alt="{{$category->name}}">
                         </div>
                             <div class="card-body pt-0">
                             <h5 class="card-title MuiTypography-root Typography-ngwq8z-0 styles__CategoryButton_Title-vgii8s-5 eBqjAL MuiTypography-h4 MuiTypography-alignCenter" m="0,2"">{{$category->name}}</h5>

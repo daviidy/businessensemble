@@ -1,7 +1,7 @@
 @extends('layouts.admin')
-@section('title', 'Création d\'une catégorie')
-@section('page_title', 'Création d\'une catégorie')
-@section('link_title', 'Création d\'une catégorie')
+@section('title', 'Modification d\'une catégorie')
+@section('page_title', 'Modification d\'une catégorie')
+@section('link_title', 'Modification d\'une catégorie')
 
 @section('content')
 
@@ -19,17 +19,18 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <h5>Création d'une catégorie</h5>
+                                <h5>Modification d'une catégorie</h5>
                                 <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>
                             </div>
                             <div class="card-block">
-                                <h4 class="sub-title">Création d'une catégorie</h4>
-                                <form method="post" enctype="multipart/form-data" action="{{route('categories.store')}}">
+                                <h4 class="sub-title">Modification d'une catégorie</h4>
+                                <form method="post" enctype="multipart/form-data" action="{{url('categories', $category)}}">
                                     @csrf
+                                    {{method_field('patch')}}
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Nom de la catégorie</label>
                                         <div class="col-sm-10">
-                                            <input name="name" type="text" class="form-control" placeholder="Nom de la catégorie">
+                                            <input name="name" value="{{$category->name}}" type="text" class="form-control" placeholder="Nom de la catégorie">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -41,7 +42,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Couleur de la catégorie</label>
                                         <div class="col-sm-10">
-                                            <input name="icon_color" data-jscolor="" value="ab2567" style="border-radius: 5px;border: 2px solid #00000000; padding:10px;">
+                                            <input name="icon_color" data-jscolor="" value="{{$category->icon_color}}" style="border-radius: 5px;border: 2px solid #00000000; padding:10px;">
                                         </div>
                                     </div>
 
@@ -53,7 +54,7 @@
                                         <label class="col-sm-2 col-form-label"></label>
                                         <div class="col-sm-10">
                                             <button type="submit" class="btn btn-primary btn-round waves-effect waves-light">
-                                                Ajouter la catégorie
+                                                Modifier la catégorie
                                             </button>
                                         </div>
                                     </div>

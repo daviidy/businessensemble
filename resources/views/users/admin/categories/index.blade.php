@@ -52,7 +52,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <a class="float-right" href="/admin/categories/{{$categorie->id}}">
+                                                    <a class="float-right" href="{{route('categories.edit', $categorie)}}">
                                                         <i class="icon-pencil text-primary"></i>
                                                     </a>
                                                 </div>
