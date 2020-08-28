@@ -552,12 +552,51 @@ h4{font-size:1.5rem;}
 	padding: 25px;
 }
 .styles__CategoryButtons-vgii8s-3 .row {
-    
-   margin-right: 0!important; 
+
+   margin-right: 0!important;
    margin-left: 0!important;
    padding: 0 15px;
 }
 
+/*Profile Card 5*/
+.profile-card-5{
+    margin-top:20px;
+}
+.profile-card-5 .btn{
+    border-radius:2px;
+    text-transform:uppercase;
+    font-size:12px;
+    padding:7px 20px;
+}
+.profile-card-5 .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+
+}
+.profile-card-5 .card-img-block img{
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.63);
+}
+.profile-card-5 h5{
+    color:#4E5E30;
+    font-weight:600;
+}
+.profile-card-5 p{
+    font-size:14px;
+    font-weight:300;
+}
+.profile-card-5 .btn-primary{
+    background-color:#4E5E30;
+    border-color:#4E5E30;
+}
+.categorie .card{
+  margin: 25px 0;
+}
+.profile-card-5:hover{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 </style>
 
 
@@ -568,7 +607,7 @@ h4{font-size:1.5rem;}
                                       ng-non-bindable="">
                                         <div data-purpose="billboard" class="billboard--billboard--3-fQr" data-reactroot="">
                                             <div class="billboard--image-container--2JRqQ"><img src="/assets/imgs/bannerbusinessensemble.png" width="1340" height="400" alt=""></div>
-                                            
+
                                         </div>
                                     </div>
 
@@ -584,7 +623,7 @@ h4{font-size:1.5rem;}
 @foreach($categories as $category)
 
     <div class="col-sm-4">
-                @auth
+              {{--  @auth
                 <a data-toggle="modal" data-target="#modal{{$category->id}}" class="styles__CategoryButton-vgii8s-4 fUQatb" href="#">
                 @endauth
                 @guest
@@ -596,10 +635,23 @@ h4{font-size:1.5rem;}
                     </div>
                     <h4 class="MuiTypography-root Typography-ngwq8z-0 styles__CategoryButton_Title-vgii8s-5 eBqjAL MuiTypography-h4 MuiTypography-alignCenter" m="0,2">{{$category->name}}</h4>
                 </a>
-
-
-    </div>
-
+--}}
+              @auth
+                <a data-toggle="modal" data-target="#modal{{$category->id}}" class="categorie" href="#">
+                @endauth
+                @guest
+                <a data-toggle="modal" data-target="#modalauth" class="" href="#">
+                @endguest
+                    <div class="card profile-card-5">
+                        <div class="card-img-block">
+                            <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+                        </div>
+                            <div class="card-body pt-0">
+                            <h5 class="card-title MuiTypography-root Typography-ngwq8z-0 styles__CategoryButton_Title-vgii8s-5 eBqjAL MuiTypography-h4 MuiTypography-alignCenter" m="0,2"">{{$category->name}}</h5>
+                          </div>
+                    </div>
+                </a>
+                  </div>
 
 @endforeach
 </div>
@@ -701,7 +753,7 @@ h4{font-size:1.5rem;}
   <div class="modal-dialog">
     <div class="modal-content">
 
-      
+
       <!-- Modal body -->
       <div class="modal-body">
       	<h2 class="modal-title modalauth">Veuillez vous connecter afin de créer votre annonce.</h2>
@@ -710,7 +762,7 @@ h4{font-size:1.5rem;}
         </a>
       </div>
 
-      
+
     </div>
   </div>
 </div>
