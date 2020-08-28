@@ -702,8 +702,12 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                             <div class="progress">
+                                                                                                                                @if(count($category->annonces) > 0)
                                                                                                                                 <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="64.29"
-                                                                                                                                  style="width: {{($category->annonces->where('status', 1)->first()->previous_raising_amount / $category->annonces->where('status', 1)->first()->raising_amount) * 100}}%;"></div>
+                                                                                                                                  style="width: {{$category->annonces->where('status', 1)->first()->raising_amount > 0 ? ($category->annonces->where('status', 1)->first()->previous_raising_amount / $category->annonces->where('status', 1)->first()->raising_amount) * 100 : '0'}}%;">
+
+                                                                                                                                  </div>
+                                                                                                                                  @endif
                                                                                                                             </div>
                                                                                                                         </div>
                                                                                                                     </div>
@@ -719,7 +723,7 @@ h5{font-size:16px;font-family: 'Montserrat', sans-serif;font-weight:600;line-hei
                                                                                                                                 <span>{{$category->annonces->where('status', 1)->first()->country}}</span>
                                                                                                                             </div>
                                                                                                                             <div class="themeum-author-funded pull-right">
-                                                                                                                                <h6>{{($category->annonces->where('status', 1)->first()->previous_raising_amount / $category->annonces->where('status', 1)->first()->raising_amount) * 100}}%</h6>
+                                                                                                                                <h6>{{$category->annonces->where('status', 1)->first()->raising_amount > 0 ? ($category->annonces->where('status', 1)->first()->previous_raising_amount / $category->annonces->where('status', 1)->first()->raising_amount) * 100 : '0'}}%</h6>
                                                                                                                                 <span>Achevés</span>
                                                                                                                             </div>
                                                                                                                         </div>

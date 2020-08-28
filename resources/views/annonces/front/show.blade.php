@@ -685,7 +685,7 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                   @if($annonce->video)
                                     {!!$annonce->video!!}
                                     @else
-                                    <img style="width: 100%;" src="{{asset('storage/images/annonces/'.$annonce->logo)}}" alt="">
+                                    <img style="width: 50%; margin: auto; display: block;" src="{{asset('storage/images/annonces/'.$annonce->logo)}}" alt="">
                                   @endif
                                 </div>
 
@@ -897,6 +897,9 @@ ul.wpneo-crowdfunding-update li .wpneo-crowdfunding-update-title{color:#33d3c0;}
                                 <p>{{$annonce->short_description}}</p>
 
                                 <h2>Description de l'entreprise</h2>
+                                @if($annonce->banner !== 'image.jpg')
+                                <img style="width: 50%; margin: auto; display: block;" src="{{asset('storage/images/annonces/'.$annonce->logo)}}" alt="">
+                                @endif
                                 <p>{{$annonce->company_description}}</p>
 
                             </div>

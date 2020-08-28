@@ -214,6 +214,8 @@ class AnnonceController extends Controller
 
         */
 
+       $annonce->update($request->all());
+
         if ($request->has('youtube') && $request->youtube !== " ") {
             $annonce->video = $request->youtube;
             $annonce->save();
@@ -240,6 +242,7 @@ class AnnonceController extends Controller
             Image::make($image)->save(storage_path('app/public/images/annonces/'.$filename));
             $annonce->logo = $filename;
             $annonce->save();
+            //dd($annonce->logo);
         }
 
         if ($request->hasFile('banner') ) {
@@ -317,7 +320,7 @@ class AnnonceController extends Controller
           }
         }
 
-        $annonce->update($request->all());
+
 
 
 

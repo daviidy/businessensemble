@@ -55,6 +55,13 @@ class CategoryController extends Controller
     {
         if (Auth::check() && Auth::user()->isAdmin()) {
             $category = Category::create($request->all());
+            if ($request->hasFile('image') ) {
+                $image = $request->file('image');
+                $filename = time() . '.' . $image->getClientOriginalExtension();
+                Image::make($image)->save(storage_path('app/public/images/categories/'.$filename));
+                $category->image = $filename;
+                $category->save();
+            }
             return redirect('categories')->with('status', 'La catégorie '.$category->name.' a bien été ajoutée');
         }
         else {
@@ -100,6 +107,13 @@ class CategoryController extends Controller
     {
         if (Auth::check() && Auth::user()->isAdmin()) {
             $category->update($request->all());
+            if ($request->hasFile('image') ) {
+                $image = $request->file('image');
+                $filename = time() . '.' . $image->getClientOriginalExtension();
+                Image::make($image)->save(storage_path('app/public/images/categories/'.$filename));
+                $category->image = $filename;
+                $category->save();
+            }
             return redirect('categories')->with('status', 'La catégorie '.$category->name.' a bien été modifiée');
         }
         else {
