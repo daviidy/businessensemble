@@ -844,11 +844,13 @@
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
                                               <a title="Discover Style 2" href="/searchUsers">Trouver un associé</a>
                                             </li>
-                                        	@auth
+
                                             <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
                                               <a title="Discover Style 2"  href="/whichCategories" >Créer une annonce</a>
                                             </li>
-                                            @endauth
+                                            <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822">
+                                              <a title="Discover Style 2"  href="/membership" >Tarifs</a>
+                                            </li>
 
                                         </ul>
                                     </li>
