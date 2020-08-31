@@ -637,6 +637,7 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
                         <div class="progressbar-content-wrapper">
                             <div class="thm-progress-bar">
                                 <div class="lead">
+
                                     <span class="thm-Price-amount">
                                         <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>  {{$annonce->previous_raising_amount}}</span> </span>
                                     <span class="thm-raise-sp">
@@ -652,7 +653,11 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%;"></div>
+                                @if($annonce->raising_amount !== 0 && $annonce->raising_amount !== null)
+                                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%;"></div> <br>
+                                @else
+                                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" data-valuetransitiongoal="58.82" style="width: 0%;"></div>
+                                @endif
                                 </div>
                             </div>
                         </div>
@@ -668,8 +673,15 @@ h2{font-size:36px;font-family:Montserrat;font-weight:400;line-height:42px;color:
 
                                     <span>{{$annonce->user->country}}</span>
                                 </div>
+
                                 <div class="themeum-author-funded pull-right">
-                                    <h6>{{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%</h6>
+                                    <h6>
+                                    @if($annonce->raising_amount !== 0 && $annonce->raising_amount !== null)
+                                    {{($annonce->previous_raising_amount / $annonce->raising_amount) * 100}}%
+                                    @else
+                                    0%
+                                    @endif
+                                    </h6>
                                     <span>Achevés</span>
                                 </div>
                             </div>

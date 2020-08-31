@@ -87,7 +87,11 @@
 
                                             </div>
                                         </td>
+                                        @if($annonce->status == 1)
+                                        <td><a href="/unpublishProject/{{$annonce->id}}">Annuler la publication de l'annonce</a></td>
+                                        @else
                                         <td><a href="/publishProject/{{$annonce->id}}">Publier l'annonce</a></td>
+                                        @endif
                                     </tr>
                                     @endforeach
                                 </tbody>
