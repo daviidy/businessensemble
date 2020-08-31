@@ -82,7 +82,7 @@ class AnnonceController extends Controller
             if (Auth::user()->isAdmin() || Auth::user()->isEntrepreneur()) {
                 $annonce->status = 1;
                 $annonce->save();
-                return redirect()->back()->with('status', 'Votre annonce a été publiée');
+                return redirect()->back()->with('status', 'L\'annonce a été publiée avec succès');
             }
             else {
                 return redirect('home');

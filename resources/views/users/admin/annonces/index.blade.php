@@ -50,13 +50,17 @@
                                     @foreach($annonces as $annonce)
                                     <tr>
                                         <th scope="row">{{$loop->index + 1}}</th>
-                                        <td>{{$annonce->title}}</td>
+                                        <td>
+                                            <a target="__blank" href="{{url('annonces', $annonce)}}">
+                                                {{$annonce->title}}
+                                            </a>
+                                        </td>
                                         <td>{{$annonce->country}}</td>
                                         <td>{{$annonce->phone}}</td>
                                         <td>{{$annonce->raising_amount}}</td>
                                         <td>{{$annonce->min_investor_amount}}</td>
                                         <td>{{$annonce->user->name}}</td>
-                                        
+
 
                                        <td>
                                             <div class="row">
@@ -83,7 +87,7 @@
 
                                             </div>
                                         </td>
-                                        <td><a href="#">Publier l'annonce</a></td>
+                                        <td><a href="/publishProject/{{$annonce->id}}">Publier l'annonce</a></td>
                                     </tr>
                                     @endforeach
                                 </tbody>
